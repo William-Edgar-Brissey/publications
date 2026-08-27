@@ -2,6 +2,8 @@
 
 Canonical source for William Edgar Brissey's public research and architecture publications.
 
+**Publication site:** https://william-edgar-brissey.github.io/publications/
+
 ## Publication model
 
 - Quarto is the canonical authoring and rendering system.
@@ -26,4 +28,3 @@ Pushes to `main` render the project and deploy `_site` through GitHub Pages. In 
 ## Rights
 
 Copyright © 2026 William Edgar Brissey. All rights reserved. No open-source license is granted.
-
