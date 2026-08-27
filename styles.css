@@ -1,0 +1,44 @@
+:root {
+  --publication-ink: #1f2933;
+  --publication-muted: #5b6773;
+  --publication-accent: #245b78;
+  --publication-rule: #d9e1e7;
+  --publication-panel: #f5f8fa;
+}
+
+body {
+  color: var(--publication-ink);
+}
+
+.navbar-brand {
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+
+.quarto-title-banner {
+  background: linear-gradient(135deg, #eef4f7 0%, #f8fafb 100%);
+  border-bottom: 1px solid var(--publication-rule);
+}
+
+.release-status {
+  margin: 1.25rem 0 2rem;
+  padding: 1rem 1.25rem;
+  background: var(--publication-panel);
+  border-left: 4px solid var(--publication-accent);
+  color: var(--publication-muted);
+}
+
+.listing-title,
+h1,
+h2 {
+  color: var(--publication-ink);
+}
+
+a {
+  color: var(--publication-accent);
+}
+
+.nav-footer {
+  border-top: 1px solid var(--publication-rule);
+}
+
