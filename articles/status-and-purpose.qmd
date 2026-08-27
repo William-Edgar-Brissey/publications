@@ -15,7 +15,7 @@ toc: true
 
 ::: {.release-status}
 **Status:** Public Release R0  
-**Role:** Independent AI Systems Architect and Developer
+**Role:** Independent AI Systems Architect, Developer & Consultant
 :::
 
 I am developing an independent body of work at the intersection of AI systems architecture, agent-trace diagnostics, resilience engineering, and interdisciplinary research. Its purpose is to make difficult systems easier to inspect, challenge, and improve—not to present unfinished concepts as established science or deployable products.
@@ -79,4 +79,3 @@ I welcome researchers, systems engineers, independent builders, and critical rev
 The aim is not to defend a finished doctrine. It is to build a disciplined process in which ambitious systems ideas can be examined without overstating what is known.
 
 No claim, timeline, or design element is exempt from correction when better, reproducible evidence becomes available. Reality supersedes theory.
-
