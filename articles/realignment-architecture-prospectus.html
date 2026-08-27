@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="William Edgar Brissey">
+<meta name="dcterms.date" content="2026-08-27">
+<meta name="description" content="A falsifiable, modular research program for examining cross-domain resilience under compounding environmental, infrastructural, computational, and social stress.">
+
+<title>The Realignment Architecture – William Edgar Brissey</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-e3adbaa939bcd423dddc8c8a834270b4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">William Edgar Brissey</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#executive-purpose" id="toc-executive-purpose" class="nav-link active" data-scroll-target="#executive-purpose">Executive purpose</a></li>
+  <li><a href="#what-this-prospectus-does-not-claim" id="toc-what-this-prospectus-does-not-claim" class="nav-link" data-scroll-target="#what-this-prospectus-does-not-claim">What this prospectus does not claim</a></li>
+  <li><a href="#research-objective" id="toc-research-objective" class="nav-link" data-scroll-target="#research-objective">Research objective</a></li>
+  <li><a href="#core-research-questions" id="toc-core-research-questions" class="nav-link" data-scroll-target="#core-research-questions">Core research questions</a>
+  <ul class="collapse">
+  <li><a href="#rq1-coupled-stress" id="toc-rq1-coupled-stress" class="nav-link" data-scroll-target="#rq1-coupled-stress">RQ1 — Coupled stress</a></li>
+  <li><a href="#rq2-graceful-degradation" id="toc-rq2-graceful-degradation" class="nav-link" data-scroll-target="#rq2-graceful-degradation">RQ2 — Graceful degradation</a></li>
+  <li><a href="#rq3-evidence-bound-ai" id="toc-rq3-evidence-bound-ai" class="nav-link" data-scroll-target="#rq3-evidence-bound-ai">RQ3 — Evidence-bound AI</a></li>
+  <li><a href="#rq4-local-resilience-feasibility" id="toc-rq4-local-resilience-feasibility" class="nav-link" data-scroll-target="#rq4-local-resilience-feasibility">RQ4 — Local resilience feasibility</a></li>
+  <li><a href="#rq5-inter-basin-hypotheses" id="toc-rq5-inter-basin-hypotheses" class="nav-link" data-scroll-target="#rq5-inter-basin-hypotheses">RQ5 — Inter-basin hypotheses</a></li>
+  </ul></li>
+  <li><a href="#hypothesis-register" id="toc-hypothesis-register" class="nav-link" data-scroll-target="#hypothesis-register">Hypothesis register</a></li>
+  <li><a href="#architecture-of-the-research-program" id="toc-architecture-of-the-research-program" class="nav-link" data-scroll-target="#architecture-of-the-research-program">Architecture of the research program</a>
+  <ul class="collapse">
+  <li><a href="#realignment-evidence-layer" id="toc-realignment-evidence-layer" class="nav-link" data-scroll-target="#realignment-evidence-layer">1. Realignment evidence layer</a></li>
+  <li><a href="#second-mind" id="toc-second-mind" class="nav-link" data-scroll-target="#second-mind">2. Second Mind</a></li>
+  <li><a href="#agent-trace-diagnostics" id="toc-agent-trace-diagnostics" class="nav-link" data-scroll-target="#agent-trace-diagnostics">3. Agent-trace diagnostics</a></li>
+  <li><a href="#eden-pre-feasibility" id="toc-eden-pre-feasibility" class="nav-link" data-scroll-target="#eden-pre-feasibility">4. EDEN pre-feasibility</a></li>
+  <li><a href="#inter-basin-coupling-work-stream" id="toc-inter-basin-coupling-work-stream" class="nav-link" data-scroll-target="#inter-basin-coupling-work-stream">5. Inter-Basin Coupling work stream</a></li>
+  </ul></li>
+  <li><a href="#claim-discipline" id="toc-claim-discipline" class="nav-link" data-scroll-target="#claim-discipline">Claim discipline</a></li>
+  <li><a href="#evaluation-program" id="toc-evaluation-program" class="nav-link" data-scroll-target="#evaluation-program">Evaluation program</a>
+  <ul class="collapse">
+  <li><a href="#work-package-1-source-and-claim-audit" id="toc-work-package-1-source-and-claim-audit" class="nav-link" data-scroll-target="#work-package-1-source-and-claim-audit">Work package 1 — Source and claim audit</a></li>
+  <li><a href="#work-package-2-competing-model-tests" id="toc-work-package-2-competing-model-tests" class="nav-link" data-scroll-target="#work-package-2-competing-model-tests">Work package 2 — Competing-model tests</a></li>
+  <li><a href="#work-package-3-agent-trace-diagnostic-prototype" id="toc-work-package-3-agent-trace-diagnostic-prototype" class="nav-link" data-scroll-target="#work-package-3-agent-trace-diagnostic-prototype">Work package 3 — Agent-trace diagnostic prototype</a></li>
+  <li><a href="#work-package-4-eden-balance-sheets" id="toc-work-package-4-eden-balance-sheets" class="nav-link" data-scroll-target="#work-package-4-eden-balance-sheets">Work package 4 — EDEN balance sheets</a></li>
+  <li><a href="#work-package-5-governance-and-release-controls" id="toc-work-package-5-governance-and-release-controls" class="nav-link" data-scroll-target="#work-package-5-governance-and-release-controls">Work package 5 — Governance and release controls</a></li>
+  </ul></li>
+  <li><a href="#minimum-evidence-standard" id="toc-minimum-evidence-standard" class="nav-link" data-scroll-target="#minimum-evidence-standard">Minimum evidence standard</a></li>
+  <li><a href="#safety-and-governance-boundaries" id="toc-safety-and-governance-boundaries" class="nav-link" data-scroll-target="#safety-and-governance-boundaries">Safety and governance boundaries</a></li>
+  <li><a href="#publication-sequence" id="toc-publication-sequence" class="nav-link" data-scroll-target="#publication-sequence">Publication sequence</a></li>
+  <li><a href="#collaboration-request" id="toc-collaboration-request" class="nav-link" data-scroll-target="#collaboration-request">Collaboration request</a></li>
+  <li><a href="#revision-and-withdrawal-policy" id="toc-revision-and-withdrawal-policy" class="nav-link" data-scroll-target="#revision-and-withdrawal-policy">Revision and withdrawal policy</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="realignment-architecture-prospectus.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The Realignment Architecture</h1>
+<p class="subtitle lead">A public research prospectus for evidence-bound resilience systems</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">resilience engineering</div>
+    <div class="quarto-category">research prospectus</div>
+    <div class="quarto-category">systems architecture</div>
+    <div class="quarto-category">evidence-bound systems</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    A falsifiable, modular research program for examining cross-domain resilience under compounding environmental, infrastructural, computational, and social stress.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>William Edgar Brissey </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">27 August 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="release-status">
+<ul>
+<li><strong>Status:</strong> Public Release R0</li>
+<li><strong>Revision:</strong> R0</li>
+<li><strong>Claim classification:</strong> Research prospectus—hypotheses, architecture, and evaluation plan</li>
+<li><strong>Role:</strong> Independent AI Systems Architect, Developer &amp; Consultant</li>
+</ul>
+</div>
+<section id="executive-purpose" class="level2">
+<h2 class="anchored" data-anchor-id="executive-purpose">Executive purpose</h2>
+<p>The Realignment Architecture is a research program for examining how environmental stress, infrastructure fragility, computational dependence, maintenance capacity, and institutional decision-making may interact under uncertainty.</p>
+<p>This document converts an earlier architecture white paper into a public research prospectus. It preserves the useful systems questions while withdrawing any implication that a specific collapse timeline, causal chain, physical mechanism, or resilience design has already been proven.</p>
+<p>The program is ambitious by design, but its claims are provisional. Its value will depend on whether independent reviewers can inspect the evidence, reproduce the analysis, identify contradictions, and reject unsupported hypotheses.</p>
+</section>
+<section id="what-this-prospectus-does-not-claim" class="level2">
+<h2 class="anchored" data-anchor-id="what-this-prospectus-does-not-claim">What this prospectus does not claim</h2>
+<p>This release does not claim that:</p>
+<ul>
+<li>a particular climate or infrastructure collapse date has been established;</li>
+<li>Atlantic, Pacific, geophysical, economic, or biological processes form one verified causal chain;</li>
+<li>a proposed resilience node is technically, economically, environmentally, or legally feasible;</li>
+<li>an AI architecture can replace expert judgment or accountable human authority;</li>
+<li>equations, simulations, or model agreement constitute empirical validation; or</li>
+<li>a complete engineering blueprint or deployable product is being released.</li>
+</ul>
+<p>Claims involving climate dynamics, ocean circulation, geophysics, public safety, nuclear systems, biology, infrastructure, economics, or regulation require domain-specific review and primary evidence.</p>
+</section>
+<section id="research-objective" class="level2">
+<h2 class="anchored" data-anchor-id="research-objective">Research objective</h2>
+<p>The objective is to determine whether a provenance-first systems architecture can improve the quality of cross-domain resilience research by making five things explicit:</p>
+<ol type="1">
+<li>what was observed;</li>
+<li>what was inferred;</li>
+<li>what remains a hypothesis;</li>
+<li>what would falsify the hypothesis; and</li>
+<li>what human decision, if any, the evidence can responsibly support.</li>
+</ol>
+<p>The architecture is therefore a method for organizing inquiry before it is a theory of the world.</p>
+</section>
+<section id="core-research-questions" class="level2">
+<h2 class="anchored" data-anchor-id="core-research-questions">Core research questions</h2>
+<section id="rq1-coupled-stress" class="level3">
+<h3 class="anchored" data-anchor-id="rq1-coupled-stress">RQ1 — Coupled stress</h3>
+<p>Under what measurable conditions do stresses in environmental, infrastructure, computational, economic, and human-maintenance systems amplify one another rather than remain independent?</p>
+</section>
+<section id="rq2-graceful-degradation" class="level3">
+<h3 class="anchored" data-anchor-id="rq2-graceful-degradation">RQ2 — Graceful degradation</h3>
+<p>Which decentralized architectures provide demonstrably better continuity, recoverability, and failure containment than comparable centralized designs under defined stress scenarios?</p>
+</section>
+<section id="rq3-evidence-bound-ai" class="level3">
+<h3 class="anchored" data-anchor-id="rq3-evidence-bound-ai">RQ3 — Evidence-bound AI</h3>
+<p>Can a human-gated AI workflow preserve provenance, disagreement, uncertainty, and revision history better than an ordinary document- and dashboard-centered research workflow?</p>
+</section>
+<section id="rq4-local-resilience-feasibility" class="level3">
+<h3 class="anchored" data-anchor-id="rq4-local-resilience-feasibility">RQ4 — Local resilience feasibility</h3>
+<p>Can proposed local resilience systems be described with complete energy, water, material, labor, maintenance, safety, regulatory, and economic balance sheets before implementation claims are made?</p>
+</section>
+<section id="rq5-inter-basin-hypotheses" class="level3">
+<h3 class="anchored" data-anchor-id="rq5-inter-basin-hypotheses">RQ5 — Inter-basin hypotheses</h3>
+<p>Which proposed links among oceanic and atmospheric processes are supported by primary observations, which are only correlations, and which fail when tested against alternative explanations?</p>
+</section>
+</section>
+<section id="hypothesis-register" class="level2">
+<h2 class="anchored" data-anchor-id="hypothesis-register">Hypothesis register</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>ID</th>
+<th>Provisional hypothesis</th>
+<th>Required evidence</th>
+<th>Break condition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>H1</td>
+<td>Cross-domain stress can create nonlinear service degradation.</td>
+<td>Time-aligned, versioned observations across defined system boundaries and comparison against simpler independent-stress models.</td>
+<td>A simpler model explains the observations equally well or better.</td>
+</tr>
+<tr class="even">
+<td>H2</td>
+<td>Decentralized systems can improve continuity under selected failure modes.</td>
+<td>Comparable architectures, explicit loads, failure injections, recovery metrics, and lifecycle costs.</td>
+<td>Benefits disappear after maintenance, coordination, security, or cost burdens are included.</td>
+</tr>
+<tr class="odd">
+<td>H3</td>
+<td>Provenance-first, human-gated AI can improve auditability.</td>
+<td>Controlled workflow comparisons measuring citation accuracy, evidence recovery, contradiction detection, reviewer effort, and error rates.</td>
+<td>The architecture fails to improve predefined measures or introduces unacceptable new failure modes.</td>
+</tr>
+<tr class="even">
+<td>H4</td>
+<td>A local resilience-node concept can be evaluated before construction.</td>
+<td>Conserved-unit balance sheets, supplier and maintenance assumptions, hazard analysis, regulatory review, and sensitivity analysis.</td>
+<td>Any critical input, waste stream, safety function, or maintenance dependency cannot be closed or responsibly bounded.</td>
+</tr>
+<tr class="odd">
+<td>H5</td>
+<td>Selected inter-basin relationships may be distinguishable from shared forcing or coincidence.</td>
+<td>Primary datasets, lag specifications, causal assumptions, null models, out-of-sample tests, and independent replication.</td>
+<td>Results are unstable across datasets, preprocessing choices, time windows, or credible null models.</td>
+</tr>
+</tbody>
+</table>
+<p>The register is a starting point. Each material claim must eventually have an owner, source set, test, status, and revision history.</p>
+</section>
+<section id="architecture-of-the-research-program" class="level2">
+<h2 class="anchored" data-anchor-id="architecture-of-the-research-program">Architecture of the research program</h2>
+<section id="realignment-evidence-layer" class="level3">
+<h3 class="anchored" data-anchor-id="realignment-evidence-layer">1. Realignment evidence layer</h3>
+<p>The Realignment evidence layer is a proposed method for compiling sources, datasets, claims, counterclaims, assumptions, and unresolved contradictions into an inspectable research graph.</p>
+<p>Its intended output is not automatic truth. It is a traceable record showing how a conclusion was assembled and where the record remains weak.</p>
+</section>
+<section id="second-mind" class="level3">
+<h3 class="anchored" data-anchor-id="second-mind">2. Second Mind</h3>
+<p>The Second Mind is a local-first, human-reviewed advisory architecture. It is intended to support resumable research, explicit uncertainty, and recoverable decision trails.</p>
+<p>It must not make unreviewed high-consequence decisions, conceal model disagreement, or convert probabilistic output into authoritative instruction.</p>
+</section>
+<section id="agent-trace-diagnostics" class="level3">
+<h3 class="anchored" data-anchor-id="agent-trace-diagnostics">3. Agent-trace diagnostics</h3>
+<p>The most immediate engineering work is an evidence-bound, post-mortem agent-trace diagnostic platform. It is intended to examine supplied workflow traces, identify the earliest observed evidence-backed divergence, bind findings to exact evidence, and preserve human adjudication.</p>
+<p>This component provides the most direct near-term opportunity for measurable software evaluation.</p>
+</section>
+<section id="eden-pre-feasibility" class="level3">
+<h3 class="anchored" data-anchor-id="eden-pre-feasibility">4. EDEN pre-feasibility</h3>
+<p>EDEN is a pre-feasibility concept for localized resilience. Any public technical treatment must begin with conserved quantities, dependency inventories, failure modes, lifecycle maintenance, safety cases, regulatory constraints, and economic sensitivity.</p>
+<p>A concept diagram is not a feasibility result.</p>
+</section>
+<section id="inter-basin-coupling-work-stream" class="level3">
+<h3 class="anchored" data-anchor-id="inter-basin-coupling-work-stream">5. Inter-Basin Coupling work stream</h3>
+<p>Inter-Basin Coupling is an exploratory research stream. It will separate observation from correlation, correlation from causal inference, and causal inference from forecast.</p>
+<p>No inter-basin claim should advance without primary data provenance, explicit lag choices, alternative hypotheses, sensitivity analysis, and a reproducible test plan.</p>
+</section>
+</section>
+<section id="claim-discipline" class="level2">
+<h2 class="anchored" data-anchor-id="claim-discipline">Claim discipline</h2>
+<p>Every substantive statement should be labeled internally using the following classes:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Class</th>
+<th>Meaning</th>
+<th>Publication requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Observation</td>
+<td>Directly reported or measured information.</td>
+<td>Primary source, dataset identifier, date, unit, and retrieval path.</td>
+</tr>
+<tr class="even">
+<td>Inference</td>
+<td>A conclusion drawn from observations.</td>
+<td>Stated reasoning, assumptions, uncertainty, and alternatives.</td>
+</tr>
+<tr class="odd">
+<td>Hypothesis</td>
+<td>A testable provisional explanation.</td>
+<td>Falsification test, break condition, and status.</td>
+</tr>
+<tr class="even">
+<td>Design proposal</td>
+<td>A candidate architecture or mechanism.</td>
+<td>Interfaces, dependencies, hazards, validation plan, and maturity.</td>
+</tr>
+<tr class="odd">
+<td>Decision</td>
+<td>A human-authorized action.</td>
+<td>Accountable owner, evidence reviewed, limits, and revision record.</td>
+</tr>
+</tbody>
+</table>
+<p>Rhetorical confidence must never substitute for movement from one class to another.</p>
+</section>
+<section id="evaluation-program" class="level2">
+<h2 class="anchored" data-anchor-id="evaluation-program">Evaluation program</h2>
+<section id="work-package-1-source-and-claim-audit" class="level3">
+<h3 class="anchored" data-anchor-id="work-package-1-source-and-claim-audit">Work package 1 — Source and claim audit</h3>
+<ul>
+<li>build a primary-source inventory;</li>
+<li>record dataset and document versions;</li>
+<li>identify unsupported numerical and causal claims;</li>
+<li>separate historical observation from forward projection; and</li>
+<li>preserve credible disagreement.</li>
+</ul>
+</section>
+<section id="work-package-2-competing-model-tests" class="level3">
+<h3 class="anchored" data-anchor-id="work-package-2-competing-model-tests">Work package 2 — Competing-model tests</h3>
+<ul>
+<li>define system boundaries and measurable variables;</li>
+<li>test proposed relationships against simpler explanations;</li>
+<li>declare lag choices and preprocessing decisions;</li>
+<li>use out-of-sample evaluation where possible; and</li>
+<li>publish null and negative results.</li>
+</ul>
+</section>
+<section id="work-package-3-agent-trace-diagnostic-prototype" class="level3">
+<h3 class="anchored" data-anchor-id="work-package-3-agent-trace-diagnostic-prototype">Work package 3 — Agent-trace diagnostic prototype</h3>
+<ul>
+<li>define representative trace formats;</li>
+<li>create synthetic and public test cases;</li>
+<li>measure evidence binding, divergence localization, false positives, false negatives, and reviewer effort;</li>
+<li>red-team prompt injection and provenance failures; and</li>
+<li>retain human decision authority.</li>
+</ul>
+</section>
+<section id="work-package-4-eden-balance-sheets" class="level3">
+<h3 class="anchored" data-anchor-id="work-package-4-eden-balance-sheets">Work package 4 — EDEN balance sheets</h3>
+<ul>
+<li>quantify energy, water, material, waste, labor, maintenance, and replacement flows;</li>
+<li>identify single points of failure and external dependencies;</li>
+<li>conduct hazard and regulatory reviews;</li>
+<li>compare alternatives; and</li>
+<li>state clearly when a boundary cannot be closed.</li>
+</ul>
+</section>
+<section id="work-package-5-governance-and-release-controls" class="level3">
+<h3 class="anchored" data-anchor-id="work-package-5-governance-and-release-controls">Work package 5 — Governance and release controls</h3>
+<ul>
+<li>maintain revisioned claim registers;</li>
+<li>document reviewer disagreement;</li>
+<li>define stop-work and withdrawal criteria;</li>
+<li>distinguish research releases from product claims; and</li>
+<li>publish corrections against a controlling version.</li>
+</ul>
+</section>
+</section>
+<section id="minimum-evidence-standard" class="level2">
+<h2 class="anchored" data-anchor-id="minimum-evidence-standard">Minimum evidence standard</h2>
+<p>A material claim should not appear in a controlling release unless the record identifies:</p>
+<ul>
+<li>the primary source or dataset;</li>
+<li>the exact observation used;</li>
+<li>the unit, time range, and system boundary;</li>
+<li>the transformation or analysis applied;</li>
+<li>the uncertainty and competing interpretation;</li>
+<li>the test that could disconfirm the claim; and</li>
+<li>the revision that introduced or changed it.</li>
+</ul>
+<p>Secondary synthesis can help discover sources, but it cannot replace inspection of the underlying evidence.</p>
+</section>
+<section id="safety-and-governance-boundaries" class="level2">
+<h2 class="anchored" data-anchor-id="safety-and-governance-boundaries">Safety and governance boundaries</h2>
+<p>The program is advisory and research-oriented. It does not authorize autonomous control of infrastructure, medical care, financial systems, public safety, energy facilities, or other high-consequence operations.</p>
+<p>Human review is not a ceremonial final step. It is part of the architecture. Reviewers must be able to reject a model conclusion, inspect its evidence trail, and record a reason without the system rewriting the disagreement as consensus.</p>
+<p>Sensitive data, proprietary traces, and personal information require explicit handling rules, access controls, minimization, and deletion procedures before evaluation.</p>
+</section>
+<section id="publication-sequence" class="level2">
+<h2 class="anchored" data-anchor-id="publication-sequence">Publication sequence</h2>
+<p>The controlling prospectus will remain available as one complete document. Subsequent releases will be modular and will link back to it:</p>
+<ol type="1">
+<li><strong>Foundations and claim discipline</strong></li>
+<li><strong>Environmental and inter-basin hypotheses</strong></li>
+<li><strong>Infrastructure stress and graceful degradation</strong></li>
+<li><strong>Second Mind and agent-trace diagnostics</strong></li>
+<li><strong>EDEN pre-feasibility and conserved-unit balance sheets</strong></li>
+<li><strong>Governance, economics, falsification, and release controls</strong></li>
+</ol>
+<p>Modules may be released chapter by chapter when they can stand independently. Longer technical groupings may be released as books only when all included chapters share one evidence standard and revision state.</p>
+<p>No module inherits credibility merely because it appears in the same architecture.</p>
+</section>
+<section id="collaboration-request" class="level2">
+<h2 class="anchored" data-anchor-id="collaboration-request">Collaboration request</h2>
+<p>I welcome researchers, systems engineers, software evaluators, domain specialists, independent builders, and critical reviewers who can:</p>
+<ul>
+<li>test or falsify a specific hypothesis;</li>
+<li>identify missing primary sources;</li>
+<li>propose competing explanations;</li>
+<li>review safety, feasibility, regulatory, or economic assumptions;</li>
+<li>contribute reproducible tests or public datasets; and</li>
+<li>help define measurable software-evaluation criteria.</li>
+</ul>
+<p>The immediate collaboration priority is the agent-trace diagnostic prototype because it can be evaluated with bounded public or synthetic data while the broader physical and resilience claims undergo slower domain review.</p>
+</section>
+<section id="revision-and-withdrawal-policy" class="level2">
+<h2 class="anchored" data-anchor-id="revision-and-withdrawal-policy">Revision and withdrawal policy</h2>
+<p>A controlling release will be revised when stronger evidence changes a claim, boundary, or test. A claim will be downgraded or withdrawn when its evidence cannot be reproduced, when a credible alternative performs better, or when required provenance is unavailable.</p>
+<p>Older revisions may remain in repository history for provenance, but they must not be presented as current.</p>
+<p>For the program-wide publication principles, see <a href="../articles/status-and-purpose.html">Status and Purpose of This Work</a>.</p>
+<p>Reality supersedes theory.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/william-edgar-brissey\.github\.io\/publications\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright © 2026 William Edgar Brissey. All rights reserved.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Independent research—not a claim of established science or deployable products.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

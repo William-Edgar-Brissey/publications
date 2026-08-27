@@ -7,6 +7,111 @@
     "text": "Copyright and use\nCopyright © 2026 William Edgar Brissey. All rights reserved.\nNo open-source license is granted. Publication of these materials does not grant permission to reproduce, modify, redistribute, sublicense, or incorporate them into another work except as permitted by applicable law or by prior written authorization from the copyright holder.\nExternal software and services referenced by this publication project remain subject to their respective licenses and terms."
   },
   {
+    "objectID": "articles/realignment-architecture-prospectus.html",
+    "href": "articles/realignment-architecture-prospectus.html",
+    "title": "The Realignment Architecture",
+    "section": "",
+    "text": "Status: Public Release R0\nRevision: R0\nClaim classification: Research prospectus—hypotheses, architecture, and evaluation plan\nRole: Independent AI Systems Architect, Developer & Consultant"
+  },
+  {
+    "objectID": "articles/realignment-architecture-prospectus.html#executive-purpose",
+    "href": "articles/realignment-architecture-prospectus.html#executive-purpose",
+    "title": "The Realignment Architecture",
+    "section": "Executive purpose",
+    "text": "Executive purpose\nThe Realignment Architecture is a research program for examining how environmental stress, infrastructure fragility, computational dependence, maintenance capacity, and institutional decision-making may interact under uncertainty.\nThis document converts an earlier architecture white paper into a public research prospectus. It preserves the useful systems questions while withdrawing any implication that a specific collapse timeline, causal chain, physical mechanism, or resilience design has already been proven.\nThe program is ambitious by design, but its claims are provisional. Its value will depend on whether independent reviewers can inspect the evidence, reproduce the analysis, identify contradictions, and reject unsupported hypotheses."
+  },
+  {
+    "objectID": "articles/realignment-architecture-prospectus.html#what-this-prospectus-does-not-claim",
+    "href": "articles/realignment-architecture-prospectus.html#what-this-prospectus-does-not-claim",
+    "title": "The Realignment Architecture",
+    "section": "What this prospectus does not claim",
+    "text": "What this prospectus does not claim\nThis release does not claim that:\n\na particular climate or infrastructure collapse date has been established;\nAtlantic, Pacific, geophysical, economic, or biological processes form one verified causal chain;\na proposed resilience node is technically, economically, environmentally, or legally feasible;\nan AI architecture can replace expert judgment or accountable human authority;\nequations, simulations, or model agreement constitute empirical validation; or\na complete engineering blueprint or deployable product is being released.\n\nClaims involving climate dynamics, ocean circulation, geophysics, public safety, nuclear systems, biology, infrastructure, economics, or regulation require domain-specific review and primary evidence."
+  },
+  {
+    "objectID": "articles/realignment-architecture-prospectus.html#research-objective",
+    "href": "articles/realignment-architecture-prospectus.html#research-objective",
+    "title": "The Realignment Architecture",
+    "section": "Research objective",
+    "text": "Research objective\nThe objective is to determine whether a provenance-first systems architecture can improve the quality of cross-domain resilience research by making five things explicit:\n\nwhat was observed;\nwhat was inferred;\nwhat remains a hypothesis;\nwhat would falsify the hypothesis; and\nwhat human decision, if any, the evidence can responsibly support.\n\nThe architecture is therefore a method for organizing inquiry before it is a theory of the world."
+  },
+  {
+    "objectID": "articles/realignment-architecture-prospectus.html#core-research-questions",
+    "href": "articles/realignment-architecture-prospectus.html#core-research-questions",
+    "title": "The Realignment Architecture",
+    "section": "Core research questions",
+    "text": "Core research questions\n\nRQ1 — Coupled stress\nUnder what measurable conditions do stresses in environmental, infrastructure, computational, economic, and human-maintenance systems amplify one another rather than remain independent?\n\n\nRQ2 — Graceful degradation\nWhich decentralized architectures provide demonstrably better continuity, recoverability, and failure containment than comparable centralized designs under defined stress scenarios?\n\n\nRQ3 — Evidence-bound AI\nCan a human-gated AI workflow preserve provenance, disagreement, uncertainty, and revision history better than an ordinary document- and dashboard-centered research workflow?\n\n\nRQ4 — Local resilience feasibility\nCan proposed local resilience systems be described with complete energy, water, material, labor, maintenance, safety, regulatory, and economic balance sheets before implementation claims are made?\n\n\nRQ5 — Inter-basin hypotheses\nWhich proposed links among oceanic and atmospheric processes are supported by primary observations, which are only correlations, and which fail when tested against alternative explanations?"
+  },
+  {
+    "objectID": "articles/realignment-architecture-prospectus.html#hypothesis-register",
+    "href": "articles/realignment-architecture-prospectus.html#hypothesis-register",
+    "title": "The Realignment Architecture",
+    "section": "Hypothesis register",
+    "text": "Hypothesis register\n\n\n\n\n\n\n\n\n\nID\nProvisional hypothesis\nRequired evidence\nBreak condition\n\n\n\n\nH1\nCross-domain stress can create nonlinear service degradation.\nTime-aligned, versioned observations across defined system boundaries and comparison against simpler independent-stress models.\nA simpler model explains the observations equally well or better.\n\n\nH2\nDecentralized systems can improve continuity under selected failure modes.\nComparable architectures, explicit loads, failure injections, recovery metrics, and lifecycle costs.\nBenefits disappear after maintenance, coordination, security, or cost burdens are included.\n\n\nH3\nProvenance-first, human-gated AI can improve auditability.\nControlled workflow comparisons measuring citation accuracy, evidence recovery, contradiction detection, reviewer effort, and error rates.\nThe architecture fails to improve predefined measures or introduces unacceptable new failure modes.\n\n\nH4\nA local resilience-node concept can be evaluated before construction.\nConserved-unit balance sheets, supplier and maintenance assumptions, hazard analysis, regulatory review, and sensitivity analysis.\nAny critical input, waste stream, safety function, or maintenance dependency cannot be closed or responsibly bounded.\n\n\nH5\nSelected inter-basin relationships may be distinguishable from shared forcing or coincidence.\nPrimary datasets, lag specifications, causal assumptions, null models, out-of-sample tests, and independent replication.\nResults are unstable across datasets, preprocessing choices, time windows, or credible null models.\n\n\n\nThe register is a starting point. Each material claim must eventually have an owner, source set, test, status, and revision history."
+  },
+  {
+    "objectID": "articles/realignment-architecture-prospectus.html#architecture-of-the-research-program",
+    "href": "articles/realignment-architecture-prospectus.html#architecture-of-the-research-program",
+    "title": "The Realignment Architecture",
+    "section": "Architecture of the research program",
+    "text": "Architecture of the research program\n\n1. Realignment evidence layer\nThe Realignment evidence layer is a proposed method for compiling sources, datasets, claims, counterclaims, assumptions, and unresolved contradictions into an inspectable research graph.\nIts intended output is not automatic truth. It is a traceable record showing how a conclusion was assembled and where the record remains weak.\n\n\n2. Second Mind\nThe Second Mind is a local-first, human-reviewed advisory architecture. It is intended to support resumable research, explicit uncertainty, and recoverable decision trails.\nIt must not make unreviewed high-consequence decisions, conceal model disagreement, or convert probabilistic output into authoritative instruction.\n\n\n3. Agent-trace diagnostics\nThe most immediate engineering work is an evidence-bound, post-mortem agent-trace diagnostic platform. It is intended to examine supplied workflow traces, identify the earliest observed evidence-backed divergence, bind findings to exact evidence, and preserve human adjudication.\nThis component provides the most direct near-term opportunity for measurable software evaluation.\n\n\n4. EDEN pre-feasibility\nEDEN is a pre-feasibility concept for localized resilience. Any public technical treatment must begin with conserved quantities, dependency inventories, failure modes, lifecycle maintenance, safety cases, regulatory constraints, and economic sensitivity.\nA concept diagram is not a feasibility result.\n\n\n5. Inter-Basin Coupling work stream\nInter-Basin Coupling is an exploratory research stream. It will separate observation from correlation, correlation from causal inference, and causal inference from forecast.\nNo inter-basin claim should advance without primary data provenance, explicit lag choices, alternative hypotheses, sensitivity analysis, and a reproducible test plan."
+  },
+  {
+    "objectID": "articles/realignment-architecture-prospectus.html#claim-discipline",
+    "href": "articles/realignment-architecture-prospectus.html#claim-discipline",
+    "title": "The Realignment Architecture",
+    "section": "Claim discipline",
+    "text": "Claim discipline\nEvery substantive statement should be labeled internally using the following classes:\n\n\n\n\n\n\n\n\nClass\nMeaning\nPublication requirement\n\n\n\n\nObservation\nDirectly reported or measured information.\nPrimary source, dataset identifier, date, unit, and retrieval path.\n\n\nInference\nA conclusion drawn from observations.\nStated reasoning, assumptions, uncertainty, and alternatives.\n\n\nHypothesis\nA testable provisional explanation.\nFalsification test, break condition, and status.\n\n\nDesign proposal\nA candidate architecture or mechanism.\nInterfaces, dependencies, hazards, validation plan, and maturity.\n\n\nDecision\nA human-authorized action.\nAccountable owner, evidence reviewed, limits, and revision record.\n\n\n\nRhetorical confidence must never substitute for movement from one class to another."
+  },
+  {
+    "objectID": "articles/realignment-architecture-prospectus.html#evaluation-program",
+    "href": "articles/realignment-architecture-prospectus.html#evaluation-program",
+    "title": "The Realignment Architecture",
+    "section": "Evaluation program",
+    "text": "Evaluation program\n\nWork package 1 — Source and claim audit\n\nbuild a primary-source inventory;\nrecord dataset and document versions;\nidentify unsupported numerical and causal claims;\nseparate historical observation from forward projection; and\npreserve credible disagreement.\n\n\n\nWork package 2 — Competing-model tests\n\ndefine system boundaries and measurable variables;\ntest proposed relationships against simpler explanations;\ndeclare lag choices and preprocessing decisions;\nuse out-of-sample evaluation where possible; and\npublish null and negative results.\n\n\n\nWork package 3 — Agent-trace diagnostic prototype\n\ndefine representative trace formats;\ncreate synthetic and public test cases;\nmeasure evidence binding, divergence localization, false positives, false negatives, and reviewer effort;\nred-team prompt injection and provenance failures; and\nretain human decision authority.\n\n\n\nWork package 4 — EDEN balance sheets\n\nquantify energy, water, material, waste, labor, maintenance, and replacement flows;\nidentify single points of failure and external dependencies;\nconduct hazard and regulatory reviews;\ncompare alternatives; and\nstate clearly when a boundary cannot be closed.\n\n\n\nWork package 5 — Governance and release controls\n\nmaintain revisioned claim registers;\ndocument reviewer disagreement;\ndefine stop-work and withdrawal criteria;\ndistinguish research releases from product claims; and\npublish corrections against a controlling version."
+  },
+  {
+    "objectID": "articles/realignment-architecture-prospectus.html#minimum-evidence-standard",
+    "href": "articles/realignment-architecture-prospectus.html#minimum-evidence-standard",
+    "title": "The Realignment Architecture",
+    "section": "Minimum evidence standard",
+    "text": "Minimum evidence standard\nA material claim should not appear in a controlling release unless the record identifies:\n\nthe primary source or dataset;\nthe exact observation used;\nthe unit, time range, and system boundary;\nthe transformation or analysis applied;\nthe uncertainty and competing interpretation;\nthe test that could disconfirm the claim; and\nthe revision that introduced or changed it.\n\nSecondary synthesis can help discover sources, but it cannot replace inspection of the underlying evidence."
+  },
+  {
+    "objectID": "articles/realignment-architecture-prospectus.html#safety-and-governance-boundaries",
+    "href": "articles/realignment-architecture-prospectus.html#safety-and-governance-boundaries",
+    "title": "The Realignment Architecture",
+    "section": "Safety and governance boundaries",
+    "text": "Safety and governance boundaries\nThe program is advisory and research-oriented. It does not authorize autonomous control of infrastructure, medical care, financial systems, public safety, energy facilities, or other high-consequence operations.\nHuman review is not a ceremonial final step. It is part of the architecture. Reviewers must be able to reject a model conclusion, inspect its evidence trail, and record a reason without the system rewriting the disagreement as consensus.\nSensitive data, proprietary traces, and personal information require explicit handling rules, access controls, minimization, and deletion procedures before evaluation."
+  },
+  {
+    "objectID": "articles/realignment-architecture-prospectus.html#publication-sequence",
+    "href": "articles/realignment-architecture-prospectus.html#publication-sequence",
+    "title": "The Realignment Architecture",
+    "section": "Publication sequence",
+    "text": "Publication sequence\nThe controlling prospectus will remain available as one complete document. Subsequent releases will be modular and will link back to it:\n\nFoundations and claim discipline\nEnvironmental and inter-basin hypotheses\nInfrastructure stress and graceful degradation\nSecond Mind and agent-trace diagnostics\nEDEN pre-feasibility and conserved-unit balance sheets\nGovernance, economics, falsification, and release controls\n\nModules may be released chapter by chapter when they can stand independently. Longer technical groupings may be released as books only when all included chapters share one evidence standard and revision state.\nNo module inherits credibility merely because it appears in the same architecture."
+  },
+  {
+    "objectID": "articles/realignment-architecture-prospectus.html#collaboration-request",
+    "href": "articles/realignment-architecture-prospectus.html#collaboration-request",
+    "title": "The Realignment Architecture",
+    "section": "Collaboration request",
+    "text": "Collaboration request\nI welcome researchers, systems engineers, software evaluators, domain specialists, independent builders, and critical reviewers who can:\n\ntest or falsify a specific hypothesis;\nidentify missing primary sources;\npropose competing explanations;\nreview safety, feasibility, regulatory, or economic assumptions;\ncontribute reproducible tests or public datasets; and\nhelp define measurable software-evaluation criteria.\n\nThe immediate collaboration priority is the agent-trace diagnostic prototype because it can be evaluated with bounded public or synthetic data while the broader physical and resilience claims undergo slower domain review."
+  },
+  {
+    "objectID": "articles/realignment-architecture-prospectus.html#revision-and-withdrawal-policy",
+    "href": "articles/realignment-architecture-prospectus.html#revision-and-withdrawal-policy",
+    "title": "The Realignment Architecture",
+    "section": "Revision and withdrawal policy",
+    "text": "Revision and withdrawal policy\nA controlling release will be revised when stronger evidence changes a claim, boundary, or test. A claim will be downgraded or withdrawn when its evidence cannot be reproduced, when a credible alternative performs better, or when required provenance is unavailable.\nOlder revisions may remain in repository history for provenance, but they must not be presented as current.\nFor the program-wide publication principles, see Status and Purpose of This Work.\nReality supersedes theory."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "William Edgar Brissey is an independent AI systems architect, developer, and consultant.\nHis work focuses on systems architecture, evidence-bound agent-trace diagnostics, provenance, resilience engineering, and interdisciplinary research. The public record distinguishes observations, inferences, hypotheses, and design proposals, and keeps consequential decisions under accountable human authority.\nCurrent materials are research and architecture publications. They are not claims of established science, commercially available offerings, or empirically validated solutions unless a release explicitly states otherwise.\nLinkedIn"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Research & Architecture",
@@ -19,13 +124,6 @@
     "title": "Research & Architecture",
     "section": "Publications",
     "text": "Publications"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "William Edgar Brissey is an independent AI systems architect, developer, and consultant.\nHis work focuses on systems architecture, evidence-bound agent-trace diagnostics, provenance, resilience engineering, and interdisciplinary research. The public record distinguishes observations, inferences, hypotheses, and design proposals, and keeps consequential decisions under accountable human authority.\nCurrent materials are research and architecture publications. They are not claims of established science, commercially available offerings, or empirically validated solutions unless a release explicitly states otherwise.\nLinkedIn"
   },
   {
     "objectID": "articles/status-and-purpose.html",
