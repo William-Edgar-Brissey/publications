@@ -10,12 +10,29 @@ categories:
   - evidence-bound systems
 description: "A public statement of scope, maturity, evaluation standards, and collaboration principles for an independent systems-architecture research program."
 status: "Public Release R0"
+revision: "R0"
+claim-classification: "Research prospectus and architecture status statement"
 toc: true
+format:
+  html:
+    theme: cosmo
+    css: ../styles.css
+    toc: true
+    link-external-newwindow: true
+  pdf:
+    toc: true
+    papersize: letter
+    geometry:
+      - margin=1in
+    colorlinks: true
+format-links: [pdf]
 ---
 
 ::: {.release-status}
-**Status:** Public Release R0  
-**Role:** Independent AI Systems Architect, Developer & Consultant
+- **Status:** Public Release R0
+- **Revision:** R0
+- **Claim classification:** Research prospectus and architecture status statement
+- **Role:** Independent AI Systems Architect, Developer & Consultant
 :::
 
 I am developing an independent body of work at the intersection of AI systems architecture, agent-trace diagnostics, resilience engineering, and interdisciplinary research. Its purpose is to make difficult systems easier to inspect, challenge, and improve—not to present unfinished concepts as established science or deployable products.
