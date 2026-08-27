@@ -1,0 +1,14 @@
+---
+title: "About"
+description: "About William Edgar Brissey's independent research and architecture work."
+toc: false
+---
+
+**William Edgar Brissey** is an independent AI systems architect and developer.
+
+His work focuses on systems architecture, evidence-bound agent-trace diagnostics, provenance, resilience engineering, and interdisciplinary research. The public record distinguishes observations, inferences, hypotheses, and design proposals, and keeps consequential decisions under accountable human authority.
+
+Current materials are research and architecture publications. They are not claims of established science, commercially available offerings, or empirically validated solutions unless a release explicitly states otherwise.
+
+[LinkedIn](https://www.linkedin.com/in/william-edgar-brissey-3490b82b9/){.btn .btn-primary}
+
