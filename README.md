@@ -8,6 +8,7 @@ Canonical source for William Edgar Brissey's public research and architecture pu
 
 - Quarto is the canonical authoring and rendering system.
 - GitHub Pages is the public host.
+- Approved articles are rendered as canonical HTML pages with downloadable PDF editions.
 - The Buffer Start Page is an identity and link hub, not the article archive.
 - Social platforms distribute links to canonical releases rather than hosting the controlling version.
 
