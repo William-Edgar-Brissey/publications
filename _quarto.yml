@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "William Edgar Brissey"
+  site-url: "https://william-edgar-brissey.github.io/publications/"
+  description: "Independent research and architecture publications by William Edgar Brissey."
+  navbar:
+    left:
+      - href: index.qmd
+        text: Publications
+      - href: about.qmd
+        text: About
+  page-footer:
+    left: "Copyright © 2026 William Edgar Brissey. All rights reserved."
+    right: "Independent research—not a claim of established science or deployable products."
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    link-external-newwindow: true
+
+execute:
+  freeze: auto
+
