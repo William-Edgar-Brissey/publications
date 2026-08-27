@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "COPYRIGHT.html",
+    "href": "COPYRIGHT.html",
+    "title": "Copyright and use",
+    "section": "",
+    "text": "Copyright and use\nCopyright © 2026 William Edgar Brissey. All rights reserved.\nNo open-source license is granted. Publication of these materials does not grant permission to reproduce, modify, redistribute, sublicense, or incorporate them into another work except as permitted by applicable law or by prior written authorization from the copyright holder.\nExternal software and services referenced by this publication project remain subject to their respective licenses and terms."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Research & Architecture",
+    "section": "",
+    "text": "I publish evidence-bound work in AI systems architecture, agent-trace diagnostics, resilience engineering, and interdisciplinary research.\nEach release is labeled by status and revision. The purpose is to make claims inspectable, preserve credible disagreement, and expose ideas to correction—not to present unfinished concepts as established science or deployable products."
+  },
+  {
+    "objectID": "index.html#publications",
+    "href": "index.html#publications",
+    "title": "Research & Architecture",
+    "section": "Publications",
+    "text": "Publications"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "William Edgar Brissey is an independent AI systems architect and developer.\nHis work focuses on systems architecture, evidence-bound agent-trace diagnostics, provenance, resilience engineering, and interdisciplinary research. The public record distinguishes observations, inferences, hypotheses, and design proposals, and keeps consequential decisions under accountable human authority.\nCurrent materials are research and architecture publications. They are not claims of established science, commercially available offerings, or empirically validated solutions unless a release explicitly states otherwise.\nLinkedIn"
+  },
+  {
+    "objectID": "articles/status-and-purpose.html",
+    "href": "articles/status-and-purpose.html",
+    "title": "Status and Purpose of This Work",
+    "section": "",
+    "text": "Status: Public Release R0\nRole: Independent AI Systems Architect and Developer\nI am developing an independent body of work at the intersection of AI systems architecture, agent-trace diagnostics, resilience engineering, and interdisciplinary research. Its purpose is to make difficult systems easier to inspect, challenge, and improve—not to present unfinished concepts as established science or deployable products.\nThis distinction matters. The Realignment Architecture, EDEN, and the Second Mind are research and architecture programs at different levels of maturity. They are not completed technologies, commercially available offerings, or empirically validated solutions. Where they make physical, environmental, computational, or social claims, those claims remain hypotheses until they survive appropriate expert review and reproducible testing."
+  },
+  {
+    "objectID": "articles/status-and-purpose.html#what-i-am-building-now",
+    "href": "articles/status-and-purpose.html#what-i-am-building-now",
+    "title": "Status and Purpose of This Work",
+    "section": "What I am building now",
+    "text": "What I am building now\nMy immediate engineering work is an evidence-bound, post-mortem agent-trace diagnostic platform under development. Its intended purpose is to help investigators reconstruct what happened inside a multi-agent or model-assisted workflow after the fact: which evidence was available, which claims were made, where disagreement appeared, and how a conclusion or failure developed.\nThe design emphasis is provenance, traceability, preserved disagreement, and human review. It is diagnostic rather than authoritative. It does not treat model consensus as truth, and it is not intended to autonomously control high-consequence systems.\nThe public materials will continue to describe this work generically until the implementation, evaluation criteria, and publication controls are mature enough to support a formal product identity."
+  },
+  {
+    "objectID": "articles/status-and-purpose.html#the-broader-research-program",
+    "href": "articles/status-and-purpose.html#the-broader-research-program",
+    "title": "Status and Purpose of This Work",
+    "section": "The broader research program",
+    "text": "The broader research program\nThe broader work explores several connected questions:\n\nThe Realignment Architecture is a candidate research architecture for examining compounding vulnerabilities across environmental, infrastructure, computational, and economic systems. It is a prospectus pending validation, not a forecast or proof.\nEDEN is a pre-feasibility resilience concept concerned with localized continuity under stressed conditions. Its technical, regulatory, biological, energy, and economic assumptions require domain-specific review before any implementation claim would be justified.\nThe Second Mind is a human-reviewed, local-first advisory architecture. It is not a substitute for professional judgment, institutional accountability, or human decision authority.\nInter-Basin Coupling is an exploratory line of inquiry into possible interactions across oceanic and climate systems. Its claims must be tied to primary observations, explicit causal assumptions, and falsifiable tests.\n\nThese strands are connected by a common method, not by a claim that one unified theory has already been proven."
+  },
+  {
+    "objectID": "articles/status-and-purpose.html#the-role-of-the-architect",
+    "href": "articles/status-and-purpose.html#the-role-of-the-architect",
+    "title": "Status and Purpose of This Work",
+    "section": "The role of the architect",
+    "text": "The role of the architect\nMy role is architectural integration: identifying relationships across disciplines, defining interfaces and failure boundaries, preserving the provenance of claims, and specifying the conditions under which an idea should be corrected or rejected.\nThat role does not replace the work of oceanographers, geophysicists, climate scientists, security researchers, safety engineers, economists, regulators, or local operators. Serious validation requires relevant specialists, suitable infrastructure, primary data, and independent replication.\nI am responsible for stating clearly where synthesis ends and verified evidence begins."
+  },
+  {
+    "objectID": "articles/status-and-purpose.html#how-the-work-should-be-evaluated",
+    "href": "articles/status-and-purpose.html#how-the-work-should-be-evaluated",
+    "title": "Status and Purpose of This Work",
+    "section": "How the work should be evaluated",
+    "text": "How the work should be evaluated\nThe standard is not rhetorical coherence. The standard is whether claims are inspectable and whether the architecture makes it easier to discover error.\nAccordingly, the work should:\n\ndistinguish observation, inference, hypothesis, and design proposal;\nidentify the evidence supporting each material claim;\npreserve credible disagreement rather than average it away;\ndefine break conditions and tests that could falsify a claim;\nrecord revisions when stronger evidence changes the architecture; and\nkeep consequential decisions under accountable human authority.\n\nMulti-model review can help expose gaps and contradictions, but it is not independent empirical validation. Models can share blind spots, repeat the same source error, or agree for the wrong reason. Their output must remain subordinate to evidence and expert scrutiny."
+  },
+  {
+    "objectID": "articles/status-and-purpose.html#publication-and-collaboration",
+    "href": "articles/status-and-purpose.html#publication-and-collaboration",
+    "title": "Status and Purpose of This Work",
+    "section": "Publication and collaboration",
+    "text": "Publication and collaboration\nI will publish this work selectively. Current releases will be clearly labeled by status and revision. Older drafts may remain useful as a record of development, but they should not be treated as the controlling version when a corrected release exists.\nI welcome researchers, systems engineers, independent builders, and critical reviewers who can:\n\ntest or attempt to falsify specific hypotheses;\nidentify unsupported claims or missing primary sources;\nreview safety, security, regulatory, and feasibility assumptions;\npropose measurable evaluation criteria; and\ncontribute implementations only where the evidence and governance justify them.\n\nThe aim is not to defend a finished doctrine. It is to build a disciplined process in which ambitious systems ideas can be examined without overstating what is known.\nNo claim, timeline, or design element is exempt from correction when better, reproducible evidence becomes available. Reality supersedes theory."
+  }
+]
