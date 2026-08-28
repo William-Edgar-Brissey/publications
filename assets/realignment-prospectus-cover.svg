@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The Realignment Architecture</title>
+  <desc id="desc">Publication cover for a public research prospectus by William Edgar Brissey.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1c30"/>
+      <stop offset="0.62" stop-color="#153a56"/>
+      <stop offset="1" stop-color="#286d76"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.76" cy="0.24" r="0.62">
+      <stop offset="0" stop-color="#69b9b8" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#69b9b8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.12">
+    <circle cx="1310" cy="180" r="145"/>
+    <circle cx="1310" cy="180" r="250"/>
+    <circle cx="1310" cy="180" r="355"/>
+    <path d="M1010 0v900M1160 0v900M1310 0v900M1460 0v900"/>
+    <path d="M860 180h740M860 330h740M860 480h740M860 630h740"/>
+  </g>
+  <rect x="104" y="94" width="116" height="8" rx="4" fill="#c99a58"/>
+  <text x="104" y="154" fill="#c99a58" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" letter-spacing="5">PUBLIC RESEARCH PROSPECTUS · R0</text>
+  <text x="104" y="305" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="94" font-weight="700">
+    <tspan x="104" dy="0">The Realignment</tspan>
+    <tspan x="104" dy="102">Architecture</tspan>
+  </text>
+  <text x="108" y="505" fill="#d6e2e5" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="400">
+    <tspan x="108" dy="0">A falsifiable research program for evidence-bound</tspan>
+    <tspan x="108" dy="48">resilience systems under compounding stress</tspan>
+  </text>
+  <line x1="106" y1="670" x2="785" y2="670" stroke="#ffffff" stroke-opacity="0.28"/>
+  <text x="108" y="732" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">WILLIAM EDGAR BRISSEY</text>
+  <text x="108" y="776" fill="#a9c5ca" font-family="Arial, Helvetica, sans-serif" font-size="23" letter-spacing="1">Independent AI Systems Architect, Developer &amp; Consultant</text>
+  <text x="108" y="836" fill="#c99a58" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" letter-spacing="2">EVIDENCE · PROVENANCE · FALSIFICATION · HUMAN AUTHORITY</text>
+</svg>

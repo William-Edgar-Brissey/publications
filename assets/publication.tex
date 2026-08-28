@@ -1,0 +1,50 @@
+% Shared PDF typography and page furniture for public research editions.
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{caption}
+
+\definecolor{BrandNavy}{HTML}{10253F}
+\definecolor{BrandTeal}{HTML}{2F7480}
+\definecolor{BrandGold}{HTML}{C99A58}
+\definecolor{BodyInk}{HTML}{202B35}
+
+\color{BodyInk}
+\AtBeginDocument{
+  \hypersetup{
+    colorlinks=true,
+    linkcolor=BrandTeal,
+    urlcolor=BrandTeal,
+    citecolor=BrandTeal,
+    pdfborder={0 0 0}
+  }
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.52em}
+\setlist[itemize]{leftmargin=1.35em,itemsep=0.22em,topsep=0.3em}
+\setlist[enumerate]{leftmargin=1.55em,itemsep=0.22em,topsep=0.3em}
+\captionsetup{font=small,labelfont=bf}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\sffamily\color{BrandNavy} WILLIAM EDGAR BRISSEY}
+\fancyhead[R]{\small\sffamily\color{BrandTeal} PUBLIC RESEARCH EDITION}
+\fancyfoot[C]{\small\sffamily\color{BrandNavy} \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{BrandGold}\leaders\hrule height \headrulewidth\hfill}}
+
+\addtokomafont{title}{\color{BrandNavy}\rmfamily}
+\addtokomafont{subtitle}{\color{BrandTeal}\sffamily}
+\addtokomafont{author}{\color{BodyInk}\sffamily}
+\addtokomafont{date}{\color{BodyInk}\sffamily}
+\addtokomafont{section}{\color{BrandNavy}\rmfamily}
+\addtokomafont{subsection}{\color{BrandTeal}\rmfamily}
+\addtokomafont{subsubsection}{\color{BodyInk}\sffamily}
+
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
