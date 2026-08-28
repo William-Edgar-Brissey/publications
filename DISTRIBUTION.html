@@ -208,6 +208,11 @@ ul.task-list li input[type="checkbox"] {
 <td>Full newsletter draft, email preview, and deliberate final send</td>
 </tr>
 <tr class="odd">
+<td>Authenticated UI execution</td>
+<td>One bounded Grok Publisher Bot, when already included in an eligible plan</td>
+<td>Creates or updates drafts in Substack and other unsupported channel UIs, then stops for approval</td>
+</tr>
+<tr class="even">
 <td>Social artwork</td>
 <td>Repository-controlled 1600×900 covers</td>
 <td>Consistent Open Graph, X, LinkedIn, and newsletter previews</td>
@@ -216,6 +221,7 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p>Typefully was selected over a generic scheduler because it explicitly supports X Articles, LinkedIn PDF documents, realistic previews, collaboration, an API, MCP, and an official Agent Skill. Postiz and Mixpost remain credible short-form schedulers, but self-hosting them would add infrastructure and platform-app maintenance without solving the long-form edition problem.</p>
 <p>Substack is handled separately. Its documented public API does not expose general long-form publishing. The safe operating model is to create a private draft, review the web and email previews, and make the final send a deliberate human action. Session-cookie automation must not run in GitHub Actions or receive credentials through chat.</p>
+<p>Grok Bot is an optional last-mile executor, not the source of content or design. Its early-beta cloud computer can work through authenticated interfaces that lack a reliable API, but it must consume the repository-generated bundle and follow <code>grok-bot-handoff.md</code>. Use one Publisher Bot with narrow channel ownership. Do not create overlapping bots, provide API secrets, permit source edits, or authorize an unattended publish. If Grok Bot is not already included in an eligible plan, the release bundle remains fully usable through ordinary private-draft workflows.</p>
 </section>
 <section id="release-workflow" class="level2">
 <h2 class="anchored" data-anchor-id="release-workflow">Release workflow</h2>
@@ -226,7 +232,8 @@ ul.task-list li input[type="checkbox"] {
 <li>Download and review the bundle against <code>channel-qa.md</code>.</li>
 <li>When the Typefully connection is configured, rerun with <strong>Create private X Article and LinkedIn document drafts</strong> enabled.</li>
 <li>Review the realistic X and LinkedIn previews in Typefully, then approve publication.</li>
-<li>Create or update the private Substack draft from <code>substack-article.md</code>, review both web and email previews, then send deliberately.</li>
+<li>Create or update the private Substack draft from <code>substack-article.md</code> manually, with the draft-only MCP, or with one bounded Grok Publisher Bot following <code>grok-bot-handoff.md</code>.</li>
+<li>Review the Substack web and email previews, then send deliberately.</li>
 <li>Record every live URL in the release log before promotion begins.</li>
 </ol>
 </section>
@@ -249,7 +256,8 @@ ul.task-list li input[type="checkbox"] {
 <li>the complete rendered PDF;</li>
 <li>the 1600×900 publication cover;</li>
 <li><code>manifest.json</code> — controlling source, revision, canonical URL, and edition map; and</li>
-<li><code>channel-qa.md</code> — mandatory visual and metadata review.</li>
+<li><code>channel-qa.md</code> — mandatory visual and metadata review; and</li>
+<li><code>grok-bot-handoff.md</code> — exact, bounded instructions for authenticated UI draft creation when that execution path is used.</li>
 </ul>
 </section>
 <section id="publication-rule" class="level2">
