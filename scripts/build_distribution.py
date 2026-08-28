@@ -214,6 +214,7 @@ def main() -> None:
             "linkedin_document": pdf_name if copied_pdf else None,
             "substack_article": "substack-article.md",
             "cover": cover_name if copied_cover else None,
+            "grok_bot_handoff": "grok-bot-handoff.md",
         },
         "release_policy": "Private drafts first; publication requires human confirmation.",
     }
@@ -235,6 +236,39 @@ def main() -> None:
 - [ ] Final publish/send approved by William Edgar Brissey
 """
     (bundle / "channel-qa.md").write_text(qa, encoding="utf-8")
+
+    bot_handoff = f"""# Grok Publisher Bot handoff — {title}
+
+## Authority and boundaries
+
+You are the bounded Publisher Bot for this one release. The repository bundle is the controlling source. Do not rewrite, summarize, embellish, or make new claims. Do not edit GitHub, change the canonical source, expose credentials, create another bot, spend money, schedule a release, or publish without William Edgar Brissey's explicit approval in the active release thread.
+
+## Controlling record
+
+- Title: {title}
+- Status: {metadata.get('status', '')}
+- Revision: {metadata.get('revision', '')}
+- Canonical URL: {canonical_url}
+- Git revision: {manifest['git_revision']}
+
+## Substack draft task
+
+1. Open the connected Substack publication and create a **private draft**.
+2. Use `substack-article.md` as the complete article body. Preserve headings, lists, emphasis, links, and converted table records.
+3. Use `{cover_name if copied_cover else 'the supplied cover image'}` as the publication cover and social preview image.
+4. Confirm the title, subtitle, author, status, revision, date, canonical source link, and claim classification agree with `manifest.json`.
+5. Inspect both the Substack web preview and email preview at desktop and mobile widths. Correct only transport or formatting defects; never change substantive meaning.
+6. Save the draft and return the draft URL plus a concise defect report. **Stop before Publish/Send.**
+
+## Optional direct-channel fallback
+
+Use direct X or LinkedIn interfaces only if Typefully is unavailable and William explicitly assigns that channel to this Bot. For X, create a complete native Article from `x-article.md` with the supplied cover. For LinkedIn, create a document post using `{pdf_name}` and `linkedin-caption.txt`. Save as drafts where the platform permits and stop for approval.
+
+## Acceptance evidence
+
+Return: channel, draft URL, preview surfaces checked, assets used, any formatting corrections, any unresolved defect, and confirmation that nothing was published or scheduled.
+"""
+    (bundle / "grok-bot-handoff.md").write_text(bot_handoff, encoding="utf-8")
 
     print(json.dumps(manifest, indent=2, ensure_ascii=False))
 

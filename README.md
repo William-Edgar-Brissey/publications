@@ -12,6 +12,7 @@ Canonical source for William Edgar Brissey's public research and architecture pu
 - The Start Page is an identity and link hub, not the article archive.
 - X, LinkedIn, and Substack receive complete channel-native editions while the GitHub revision remains controlling.
 - Distribution automation creates private drafts and review bundles; it does not bypass human approval.
+- An optional bounded Grok Publisher Bot may carry a generated bundle through authenticated channel UIs, but it cannot rewrite source material or publish without explicit approval.
 
 Each publication must state its status and revision. Corrections replace the controlling version while prior releases may remain in history for provenance.
 
