@@ -1,6 +1,17 @@
 name: Build publication distribution bundle
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - articles/**
+      - assets/**
+      - scripts/**
+      - .github/workflows/distribution.yml
+      - _quarto.yml
+      - styles.css
+      - DISTRIBUTION.md
   workflow_dispatch:
     inputs:
       source:
@@ -25,7 +36,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      PUBLICATION_SOURCE: ${{ inputs.source }}
+      PUBLICATION_SOURCE: ${{ inputs.source || 'articles/realignment-architecture-prospectus.qmd' }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
@@ -50,7 +61,7 @@ jobs:
         run: python scripts/create_typefully_drafts.py "dist/$(basename "$PUBLICATION_SOURCE" .qmd)"
 
       - name: Create private Typefully drafts
-        if: ${{ inputs.create_typefully_drafts }}
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.create_typefully_drafts }}
         env:
           TYPEFULLY_API_KEY: ${{ secrets.TYPEFULLY_API_KEY }}
           TYPEFULLY_SOCIAL_SET_ID: ${{ secrets.TYPEFULLY_SOCIAL_SET_ID }}
@@ -59,7 +70,7 @@ jobs:
       - name: Upload review bundle
         uses: actions/upload-artifact@v4
         with:
-          name: publication-distribution-bundle
+          name: publication-distribution-${{ github.sha }}
           path: dist/
           if-no-files-found: error
           retention-days: 30

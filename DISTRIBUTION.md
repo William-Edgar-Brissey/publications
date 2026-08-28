@@ -25,8 +25,8 @@ Grok Bot is an optional last-mile executor, not the source of content or design.
 
 1. Review and merge the controlling `.qmd` source.
 2. Let `publish.yml` render canonical HTML and PDF editions.
-3. Run **Build publication distribution bundle** from GitHub Actions.
-4. Download and review the bundle against `channel-qa.md`.
+3. Let **Build publication distribution bundle** automatically create the review artifact; use its manual trigger only to select another source or create connected private drafts.
+4. Download and review the commit-bound bundle against `channel-qa.md`.
 5. When the Typefully connection is configured, rerun with **Create private X Article and LinkedIn document drafts** enabled.
 6. Review the realistic X and LinkedIn previews in Typefully, then approve publication.
 7. Create or update the private Substack draft from `substack-article.md` manually, with the draft-only MCP, or with one bounded Grok Publisher Bot following `grok-bot-handoff.md`.
