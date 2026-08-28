@@ -1,0 +1,53 @@
+$if(title)$
+\begin{titlepage}
+\newgeometry{margin=0in}
+\pagecolor{BrandNavy}
+\color{white}
+\thispagestyle{empty}
+
+\vspace*{0.72in}
+\hspace*{0.78in}{\color{BrandGold}\rule{1.1in}{4pt}}
+
+\vspace{0.34in}
+\hspace*{0.78in}{\sffamily\bfseries\color{BrandGold}\fontsize{12}{14}\selectfont
+$if(status)$$status$$else$PUBLIC RESEARCH EDITION$endif$
+}
+
+\vspace{0.72in}
+\hspace*{0.78in}\begin{minipage}{6.65in}
+{\raggedright\hyphenpenalty=10000\exhyphenpenalty=10000\rmfamily\bfseries\fontsize{36}{40}\selectfont $title$\par}
+$if(subtitle)$
+\vspace{0.35in}
+{\sffamily\color{white!78}\fontsize{17}{23}\selectfont $subtitle$\par}
+$endif$
+\end{minipage}
+
+\vfill
+\hspace*{0.78in}\begin{minipage}{6.65in}
+{\color{white!42}\rule{6.1in}{0.6pt}}\\[0.24in]
+{\sffamily\bfseries\fontsize{15}{18}\selectfont $for(author)$$author$$sep$, $endfor$\par}
+\vspace{0.08in}
+{\sffamily\color{white!68}\fontsize{10.5}{14}\selectfont Independent AI Systems Architect, Developer \& Consultant\par}
+\vspace{0.34in}
+{\sffamily\bfseries\color{BrandGold}\fontsize{9.5}{12}\selectfont EVIDENCE \textbullet\ PROVENANCE \textbullet\ FALSIFICATION \textbullet\ HUMAN AUTHORITY\par}
+\vspace{0.25in}
+{\sffamily\color{white!62}\fontsize{9}{12}\selectfont $date$\par}
+$if(claim-classification)$
+\vspace{0.09in}
+{\sffamily\color{white!58}\fontsize{8.5}{11}\selectfont $claim-classification$\par}
+$endif$
+\end{minipage}
+\vspace*{0.64in}
+
+\restoregeometry
+\end{titlepage}
+\nopagecolor
+\color{BodyInk}
+\setcounter{page}{1}
+
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+$endif$

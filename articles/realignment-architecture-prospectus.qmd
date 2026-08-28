@@ -10,10 +10,19 @@ categories:
   - systems architecture
   - evidence-bound systems
 description: "A falsifiable, modular research program for examining cross-domain resilience under compounding environmental, infrastructural, computational, and social stress."
+abstract: "A controlled public prospectus that defines falsifiable questions, evidence standards, break conditions, evaluation work packages, and governance boundaries for a cross-domain resilience research program."
+keywords:
+  - evidence-bound systems
+  - resilience engineering
+  - agent-trace diagnostics
+  - systems architecture
+image: ../assets/realignment-prospectus-cover.png
 status: "Public Release R0"
 revision: "R0"
 claim-classification: "Research prospectus—hypotheses, architecture, and evaluation plan"
 toc: true
+number-sections: true
+title-block-banner: true
 format:
   html:
     theme: cosmo
@@ -22,12 +31,29 @@ format:
     link-external-newwindow: true
   pdf:
     toc: true
+    toc-depth: 3
+    number-sections: true
+    documentclass: scrartcl
+    pdf-engine: pdflatex
+    fontsize: 11pt
     papersize: letter
     geometry:
-      - margin=1in
+      - top=0.82in
+      - bottom=0.8in
+      - left=0.82in
+      - right=0.82in
     colorlinks: true
+    keep-tex: true
+    template-partials:
+      - ../assets/before-body.tex
+    include-in-header:
+      - ../assets/publication.tex
 format-links: [pdf]
 ---
+
+```{=latex}
+\clearpage
+```
 
 ::: {.release-status}
 - **Status:** Public Release R0

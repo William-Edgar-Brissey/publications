@@ -2,12 +2,27 @@
 title: "About"
 description: "About William Edgar Brissey's independent research and architecture work."
 toc: false
+title-block-banner: true
 ---
 
-**William Edgar Brissey** is an independent AI systems architect, developer, and consultant.
+::: {.about-panel}
+## William Edgar Brissey
 
-His work focuses on systems architecture, evidence-bound agent-trace diagnostics, provenance, resilience engineering, and interdisciplinary research. The public record distinguishes observations, inferences, hypotheses, and design proposals, and keeps consequential decisions under accountable human authority.
+**Independent AI Systems Architect, Developer & Consultant**
+
+I develop evidence-bound architectures for AI-assisted investigation, post-mortem agent-trace diagnostics, provenance, resilience engineering, and interdisciplinary research.
+
+[Connect on LinkedIn](https://www.linkedin.com/in/william-edgar-brissey-3490b82b9/){.btn .btn-light}
+:::
+
+The public record distinguishes observations, inferences, hypotheses, design proposals, and decisions. It preserves credible disagreement and keeps consequential authority with accountable people.
 
 Current materials are research and architecture publications. They are not claims of established science, commercially available offerings, or empirically validated solutions unless a release explicitly states otherwise.
 
-[LinkedIn](https://www.linkedin.com/in/william-edgar-brissey-3490b82b9/){.btn .btn-primary}
+## Working principles
+
+- **Evidence before assertion.** A coherent story is not a verified claim.
+- **Provenance before confidence.** Readers should be able to recover the source, transformation, uncertainty, and revision behind a conclusion.
+- **Disagreement before false consensus.** Credible contradictions remain visible until evidence resolves them.
+- **Human authority before automation.** AI-assisted workflows remain advisory in consequential settings.
+- **Correction before defense.** A stronger reproducible result supersedes the architecture.

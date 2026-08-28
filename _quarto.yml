@@ -1,28 +1,56 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - assets/**
 
 website:
   title: "William Edgar Brissey"
   site-url: "https://william-edgar-brissey.github.io/publications/"
   description: "Independent research and architecture publications by William Edgar Brissey."
+  open-graph: true
+  twitter-card:
+    card-style: summary_large_image
+  page-navigation: true
+  back-to-top-navigation: true
+  reader-mode: true
+  repo-url: "https://github.com/William-Edgar-Brissey/publications"
+  repo-actions: [source, issue]
+  search:
+    location: navbar
+    type: overlay
   navbar:
+    background: "#10253f"
+    foreground: "#f8f5ef"
+    pinned: true
     left:
       - href: index.qmd
         text: Publications
       - href: about.qmd
         text: About
+    right:
+      - icon: linkedin
+        href: "https://www.linkedin.com/in/william-edgar-brissey-3490b82b9/"
+        aria-label: LinkedIn
+      - icon: github
+        href: "https://github.com/William-Edgar-Brissey/publications"
+        aria-label: GitHub
   page-footer:
     left: "Copyright © 2026 William Edgar Brissey. All rights reserved."
-    right: "Independent research—not a claim of established science or deployable products."
+    center: "Evidence before assertion. Revision before certainty."
+    right: "Independent research—not established science or a deployable product."
 
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
+    toc-location: right
+    toc-depth: 3
+    smooth-scroll: true
+    anchor-sections: true
+    code-copy: true
     link-external-newwindow: true
 
 execute:
   freeze: auto
-

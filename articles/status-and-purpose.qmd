@@ -9,10 +9,18 @@ categories:
   - research prospectus
   - evidence-bound systems
 description: "A public statement of scope, maturity, evaluation standards, and collaboration principles for an independent systems-architecture research program."
+abstract: "A concise public statement of scope, maturity, evaluation standards, correction policy, and collaboration principles for an independent systems-architecture research program."
+keywords:
+  - AI systems architecture
+  - research governance
+  - evidence-bound systems
+image: ../assets/status-purpose-cover.png
 status: "Public Release R0"
 revision: "R0"
 claim-classification: "Research prospectus and architecture status statement"
 toc: true
+number-sections: true
+title-block-banner: true
 format:
   html:
     theme: cosmo
@@ -21,12 +29,29 @@ format:
     link-external-newwindow: true
   pdf:
     toc: true
+    toc-depth: 3
+    number-sections: true
+    documentclass: scrartcl
+    pdf-engine: pdflatex
+    fontsize: 11pt
     papersize: letter
     geometry:
-      - margin=1in
+      - top=0.82in
+      - bottom=0.8in
+      - left=0.82in
+      - right=0.82in
     colorlinks: true
+    keep-tex: true
+    template-partials:
+      - ../assets/before-body.tex
+    include-in-header:
+      - ../assets/publication.tex
 format-links: [pdf]
 ---
+
+```{=latex}
+\clearpage
+```
 
 ::: {.release-status}
 - **Status:** Public Release R0

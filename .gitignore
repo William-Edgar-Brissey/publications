@@ -1,3 +1,16 @@
 /.quarto/
 /_site/
+/dist/
+/site_libs/
+/tmp/
 
+
+**/*.quarto_ipynb
+**/__pycache__/
+*.pyc
+articles/*.aux
+articles/*.html
+articles/*.log
+articles/*.pdf
+articles/*.tex
+articles/*.toc

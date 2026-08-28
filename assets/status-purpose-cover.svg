@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Status and Purpose of This Work</title>
+  <desc id="desc">Publication cover for William Edgar Brissey's systems-architecture research status statement.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10253f"/>
+      <stop offset="0.67" stop-color="#1d4e65"/>
+      <stop offset="1" stop-color="#2f7480"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g transform="translate(1130 145)" fill="none" stroke="#ffffff" stroke-opacity="0.13">
+    <path d="M0 0h300v300H0z"/>
+    <path d="M55 55h190v190H55z"/>
+    <path d="M110 110h80v80h-80z"/>
+    <path d="M0 0l110 110M300 0L190 110M0 300l110-110M300 300L190 190"/>
+  </g>
+  <rect x="104" y="94" width="116" height="8" rx="4" fill="#c99a58"/>
+  <text x="104" y="154" fill="#c99a58" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" letter-spacing="5">PUBLIC STATUS STATEMENT · R0</text>
+  <text x="104" y="305" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="92" font-weight="700">
+    <tspan x="104" dy="0">Status and Purpose</tspan>
+    <tspan x="104" dy="101">of This Work</tspan>
+  </text>
+  <text x="108" y="505" fill="#d6e2e5" font-family="Arial, Helvetica, sans-serif" font-size="35">
+    <tspan x="108" dy="0">Scope, maturity, evaluation standards,</tspan>
+    <tspan x="108" dy="48">correction policy, and collaboration principles</tspan>
+  </text>
+  <line x1="106" y1="670" x2="785" y2="670" stroke="#ffffff" stroke-opacity="0.28"/>
+  <text x="108" y="732" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">WILLIAM EDGAR BRISSEY</text>
+  <text x="108" y="776" fill="#b9d0d3" font-family="Arial, Helvetica, sans-serif" font-size="23" letter-spacing="1">Independent AI Systems Architect, Developer &amp; Consultant</text>
+  <text x="108" y="836" fill="#c99a58" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" letter-spacing="2">INSPECTABLE · REVISIONED · HUMAN-GATED</text>
+</svg>

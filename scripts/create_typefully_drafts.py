@@ -1,0 +1,140 @@
+#!/usr/bin/env python3
+"""Create private Typefully drafts from a generated distribution bundle.
+
+This script never publishes or schedules content. It uploads the cover/PDF and
+creates private drafts for review. TYPEFULLY_API_KEY and
+TYPEFULLY_SOCIAL_SET_ID must be supplied as secrets.
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import time
+import urllib.error
+import urllib.request
+from pathlib import Path
+
+
+API_BASE = os.environ.get("TYPEFULLY_API_BASE", "https://api.typefully.com/v2").rstrip("/")
+
+
+def request_json(method: str, endpoint: str, api_key: str, payload: dict | None = None) -> dict:
+    data = json.dumps(payload).encode("utf-8") if payload is not None else None
+    request = urllib.request.Request(
+        f"{API_BASE}{endpoint}",
+        data=data,
+        method=method,
+        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=45) as response:
+            return json.loads(response.read().decode("utf-8") or "{}")
+    except urllib.error.HTTPError as exc:
+        detail = exc.read().decode("utf-8", errors="replace")[:1000]
+        raise RuntimeError(f"Typefully returned HTTP {exc.code}: {detail}") from exc
+
+
+def upload_media(path: Path, social_set_id: str, api_key: str) -> str:
+    ticket = request_json(
+        "POST",
+        f"/social-sets/{social_set_id}/media/upload",
+        api_key,
+        {"file_name": path.name},
+    )
+    upload_url = ticket.get("upload_url")
+    media_id = ticket.get("media_id")
+    if not upload_url or not media_id:
+        raise RuntimeError(f"Incomplete Typefully upload ticket for {path.name}")
+
+    upload = urllib.request.Request(upload_url, data=path.read_bytes(), method="PUT")
+    with urllib.request.urlopen(upload, timeout=90):
+        pass
+
+    deadline = time.monotonic() + 120
+    while time.monotonic() < deadline:
+        state = request_json(
+            "GET", f"/social-sets/{social_set_id}/media/{media_id}", api_key
+        )
+        if state.get("status") == "ready":
+            return str(media_id)
+        if state.get("status") in {"error", "failed"}:
+            raise RuntimeError(f"Typefully failed to process {path.name}: {state}")
+        time.sleep(2)
+    raise RuntimeError(f"Timed out while Typefully processed {path.name}")
+
+
+def create_draft(social_set_id: str, api_key: str, payload: dict) -> dict:
+    return request_json(
+        "POST", f"/social-sets/{social_set_id}/drafts", api_key, payload
+    )
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("bundle", type=Path)
+    parser.add_argument(
+        "--submit",
+        action="store_true",
+        help="Create private Typefully drafts. Without this flag, validate and print payloads only.",
+    )
+    args = parser.parse_args()
+
+    manifest = json.loads((args.bundle / "manifest.json").read_text(encoding="utf-8"))
+    x_markdown = (args.bundle / manifest["editions"]["x_article"]).read_text(encoding="utf-8")
+    linkedin_text = (args.bundle / manifest["editions"]["linkedin_caption"]).read_text(
+        encoding="utf-8"
+    )
+
+    x_payload = {
+        "platforms": {"x_article": {"content_markdown": x_markdown}},
+        "draft_title": f"{manifest['title']} — X Article",
+        "scratchpad_text": (
+            "Private review draft generated from GitHub revision "
+            f"{manifest['git_revision']}. Do not publish until channel QA is complete."
+        ),
+    }
+    linkedin_payload = {
+        "platforms": {
+            "linkedin": {"enabled": True, "posts": [{"text": linkedin_text}]}
+        },
+        "draft_title": f"{manifest['title']} — LinkedIn document edition",
+        "scratchpad_text": (
+            "Private review draft generated from GitHub revision "
+            f"{manifest['git_revision']}. Attach the complete PDF and confirm preview before publishing."
+        ),
+    }
+
+    if not args.submit:
+        print(json.dumps({"x_article": x_payload, "linkedin": linkedin_payload}, indent=2))
+        return
+
+    api_key = os.environ.get("TYPEFULLY_API_KEY")
+    social_set_id = os.environ.get("TYPEFULLY_SOCIAL_SET_ID")
+    if not api_key or not social_set_id:
+        raise RuntimeError("TYPEFULLY_API_KEY and TYPEFULLY_SOCIAL_SET_ID are required")
+
+    cover_name = manifest["editions"].get("cover")
+    if cover_name:
+        cover_id = upload_media(args.bundle / cover_name, social_set_id, api_key)
+        x_payload["platforms"]["x_article"]["cover_media_id"] = cover_id
+
+    pdf_name = manifest["editions"].get("linkedin_document")
+    if not pdf_name:
+        raise RuntimeError("The distribution bundle has no rendered PDF for LinkedIn")
+    pdf_id = upload_media(args.bundle / pdf_name, social_set_id, api_key)
+    linkedin_payload["platforms"]["linkedin"]["posts"][0]["media_ids"] = [pdf_id]
+
+    results = {
+        "x_article": create_draft(social_set_id, api_key, x_payload),
+        "linkedin": create_draft(social_set_id, api_key, linkedin_payload),
+    }
+    (args.bundle / "typefully-draft-results.json").write_text(
+        json.dumps(results, indent=2) + "\n", encoding="utf-8"
+    )
+    print(json.dumps(results, indent=2))
+
+
+if __name__ == "__main__":
+    main()

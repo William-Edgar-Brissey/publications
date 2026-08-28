@@ -9,8 +9,9 @@ Canonical source for William Edgar Brissey's public research and architecture pu
 - Quarto is the canonical authoring and rendering system.
 - GitHub Pages is the public host.
 - Approved articles are rendered as canonical HTML pages with downloadable PDF editions.
-- The Buffer Start Page is an identity and link hub, not the article archive.
-- Social platforms distribute links to canonical releases rather than hosting the controlling version.
+- The Start Page is an identity and link hub, not the article archive.
+- X, LinkedIn, and Substack receive complete channel-native editions while the GitHub revision remains controlling.
+- Distribution automation creates private drafts and review bundles; it does not bypass human approval.
 
 Each publication must state its status and revision. Corrections replace the controlling version while prior releases may remain in history for provenance.
 
@@ -25,6 +26,8 @@ quarto preview
 ## Deployment
 
 Pushes to `main` render the project and deploy `_site` through GitHub Pages. In the repository settings, select **GitHub Actions** as the Pages source.
+
+See [DISTRIBUTION.md](DISTRIBUTION.md) for the professional cross-channel release workflow.
 
 ## Rights
 

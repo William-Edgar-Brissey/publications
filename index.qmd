@@ -1,6 +1,7 @@
 ---
 title: "Research & Architecture"
 subtitle: "Independent publications by William Edgar Brissey"
+title-block-style: none
 listing:
   contents: articles
   sort: "date desc"
@@ -12,9 +13,67 @@ listing:
 page-layout: full
 ---
 
-I publish evidence-bound work in AI systems architecture, agent-trace diagnostics, resilience engineering, and interdisciplinary research.
+::: {.publication-hero}
+::: {.eyebrow}
+William Edgar Brissey · Independent research
+:::
+
+# Architecture for systems that must earn trust
+
+Evidence-bound work in AI systems architecture, agent-trace diagnostics, resilience engineering, and interdisciplinary research.
+
+::: {.hero-actions}
+[Read the Research Prospectus](articles/realignment-architecture-prospectus.qmd)
+[Download the PDF](articles/realignment-architecture-prospectus.pdf)
+:::
+:::
+
+## Featured release
+
+::: {.featured-release}
+::: {}
+::: {.publication-kicker}
+Public Release R0 · Research Prospectus
+:::
+
+## The Realignment Architecture
+
+A falsifiable, modular research program for examining cross-domain resilience under compounding environmental, infrastructural, computational, and social stress.
+
+[Read the complete publication →](articles/realignment-architecture-prospectus.qmd)
+:::
+
+::: {.release-abstract}
+**Controlling version**<br>
+HTML and PDF editions are generated from one revisioned source. Claims are explicitly separated into observations, inferences, hypotheses, design proposals, and human decisions.
+
+**Current priority**<br>
+An evidence-bound, post-mortem agent-trace diagnostic prototype with measurable evaluation criteria.
+:::
+:::
+
+## Publication standard
+
+::: {.publication-standard}
+::: {}
+### Inspectable
+
+Material claims identify their evidence, assumptions, uncertainty, and break conditions.
+:::
+
+::: {}
+### Revisioned
+
+Every public release states its status and revision; corrections replace the controlling version without erasing provenance.
+:::
+
+::: {}
+### Human-gated
+
+AI may assist research and drafting, but consequential decisions remain attributable to accountable people.
+:::
+:::
 
 Each release is labeled by status and revision. The purpose is to make claims inspectable, preserve credible disagreement, and expose ideas to correction—not to present unfinished concepts as established science or deployable products.
 
-## Publications
-
+## All publications
