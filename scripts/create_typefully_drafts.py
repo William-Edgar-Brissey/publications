@@ -99,10 +99,10 @@ def main() -> None:
         "platforms": {
             "linkedin": {"enabled": True, "posts": [{"text": linkedin_text}]}
         },
-        "draft_title": f"{manifest['title']} — LinkedIn document edition",
+        "draft_title": f"{manifest['title']} — LinkedIn edition",
         "scratchpad_text": (
             "Private review draft generated from GitHub revision "
-            f"{manifest['git_revision']}. Attach the complete PDF and confirm preview before publishing."
+            f"{manifest['git_revision']}. Confirm preview before publishing."
         ),
     }
 
@@ -116,15 +116,16 @@ def main() -> None:
         raise RuntimeError("TYPEFULLY_API_KEY and TYPEFULLY_SOCIAL_SET_ID are required")
 
     cover_name = manifest["editions"].get("cover")
-    if cover_name:
+    if cover_name and (args.bundle / cover_name).exists():
         cover_id = upload_media(args.bundle / cover_name, social_set_id, api_key)
         x_payload["platforms"]["x_article"]["cover_media_id"] = cover_id
 
     pdf_name = manifest["editions"].get("linkedin_document")
-    if not pdf_name:
-        raise RuntimeError("The distribution bundle has no rendered PDF for LinkedIn")
-    pdf_id = upload_media(args.bundle / pdf_name, social_set_id, api_key)
-    linkedin_payload["platforms"]["linkedin"]["posts"][0]["media_ids"] = [pdf_id]
+    if pdf_name and (args.bundle / pdf_name).exists():
+        pdf_id = upload_media(args.bundle / pdf_name, social_set_id, api_key)
+        linkedin_payload["platforms"]["linkedin"]["posts"][0]["media_ids"] = [pdf_id]
+    else:
+        linkedin_payload["scratchpad_text"] += " No PDF was attached; text-only LinkedIn draft."
 
     results = {
         "x_article": create_draft(social_set_id, api_key, x_payload),

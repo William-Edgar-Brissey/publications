@@ -5,6 +5,12 @@ description: "Controlling public brief for the Realignment elemental thesis. CL-
 date: 2026-08-29
 categories: [realignment, climate, claim-register, book-one]
 author: "William Edgar Brissey"
+format:
+  html: default
+  pdf:
+    toc: false
+    colorlinks: true
+    geometry: margin=1in
 ---
 
 **Status:** Public research brief · Revision RA-CR-2026-08-29 · v1.0.0  
