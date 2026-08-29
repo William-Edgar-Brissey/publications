@@ -23,8 +23,8 @@ William Edgar Brissey · Independent research
 Evidence-bound work in AI systems architecture, agent-trace diagnostics, resilience engineering, and interdisciplinary research.
 
 ::: {.hero-actions}
+[Read the Coupling Register](articles/book-one-coupling-register.qmd)
 [Read the Research Prospectus](articles/realignment-architecture-prospectus.qmd)
-[Download the PDF](articles/realignment-architecture-prospectus.pdf)
 :::
 :::
 
@@ -33,22 +33,22 @@ Evidence-bound work in AI systems architecture, agent-trace diagnostics, resilie
 ::: {.featured-release}
 ::: {}
 ::: {.publication-kicker}
-Public Release R0 · Research Prospectus
+Public Release RA-CR-2026-08-29 · Book One
 :::
 
-## The Realignment Architecture
+## Coupling Register: Water, Air, Earth, Fire
 
-A falsifiable, modular research program for examining cross-domain resilience under compounding environmental, infrastructural, computational, and social stress.
+The elemental thesis is now a scored coupling graph. CL-002 remains at pilot. 2026 ocean heat and El Niño are current. The 2030s volcanic winter stays parked.
 
-[Read the complete publication →](articles/realignment-architecture-prospectus.qmd)
+[Read the controlling brief →](articles/book-one-coupling-register.qmd)
 :::
 
 ::: {.release-abstract}
 **Controlling version**<br>
-HTML and PDF editions are generated from one revisioned source. Claims are explicitly separated into observations, inferences, hypotheses, design proposals, and human decisions.
+Claim grades live in the Coupling Register, not in Book One's narrative voice.
 
 **Current priority**<br>
-An evidence-bound, post-mortem agent-trace diagnostic prototype with measurable evaluation criteria.
+Adversarial review of named cells (CL-002, CL-003, CL-011–016). Safety & Non-Deployment Policy is unchanged.
 :::
 :::
 
