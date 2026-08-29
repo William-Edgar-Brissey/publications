@@ -105,25 +105,32 @@
     "text": "13 Revision and withdrawal policy\nA controlling release will be revised when stronger evidence changes a claim, boundary, or test. A claim will be downgraded or withdrawn when its evidence cannot be reproduced, when a credible alternative performs better, or when required provenance is unavailable.\nOlder revisions may remain in repository history for provenance, but they must not be presented as current.\nFor the program-wide publication principles, see Status and Purpose of This Work.\nReality supersedes theory."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "offer.html",
+    "href": "offer.html",
+    "title": "Independent review of one exported agent incident",
     "section": "",
-    "text": "Independent AI Systems Architect, Developer & Consultant\nI develop evidence-bound architectures for AI-assisted investigation, post-mortem agent-trace diagnostics, provenance, resilience engineering, and interdisciplinary research.\nConnect on LinkedIn\nThe public record distinguishes observations, inferences, hypotheses, design proposals, and decisions. It preserves credible disagreement and keeps consequential authority with accountable people.\nCurrent materials are research and architecture publications. They are not claims of established science, commercially available offerings, or empirically validated solutions unless a release explicitly states otherwise."
+    "text": "William Edgar Brissey\nIndependent AI Systems Architect, Developer, and Consultant\nI review one bounded LangSmith or LangGraph export and return a signed written opinion: what the file shows, what I infer, what I will not claim.\nI do not replace your tracer. I do not change your systems. I do not take a login. A model may draft. I adjudicate and sign.\nThis page is an offer overview. It is not the engagement agreement."
   },
   {
-    "objectID": "about.html#william-edgar-brissey",
-    "href": "about.html#william-edgar-brissey",
-    "title": "About",
-    "section": "",
-    "text": "Independent AI Systems Architect, Developer & Consultant\nI develop evidence-bound architectures for AI-assisted investigation, post-mortem agent-trace diagnostics, provenance, resilience engineering, and interdisciplinary research.\nConnect on LinkedIn"
+    "objectID": "offer.html#when-this-is-the-right-door",
+    "href": "offer.html#when-this-is-the-right-door",
+    "title": "Independent review of one exported agent incident",
+    "section": "When this is the right door",
+    "text": "When this is the right door\n\nA production or client-facing agent already traces to LangSmith or LangGraph.\nOne incident window is costing time, money, or a client relationship.\nYou can export runs as a file, or you can say plainly that you cannot."
   },
   {
-    "objectID": "about.html#working-principles",
-    "href": "about.html#working-principles",
-    "title": "About",
-    "section": "Working principles",
-    "text": "Working principles\n\nEvidence before assertion. A coherent story is not a verified claim.\nProvenance before confidence. Readers should be able to recover the source, transformation, uncertainty, and revision behind a conclusion.\nDisagreement before false consensus. Credible contradictions remain visible until evidence resolves them.\nHuman authority before automation. AI-assisted workflows remain advisory in consequential settings.\nCorrection before defense. A stronger reproducible result supersedes the architecture."
+    "objectID": "offer.html#when-it-is-not",
+    "href": "offer.html#when-it-is-not",
+    "title": "Independent review of one exported agent incident",
+    "section": "When it is not",
+    "text": "When it is not\n\nYou need a patch installed, production access, or a certificate.\nThe only artifact is screenshots or someone else’s GitHub issue.\nYou want every agent in the company reviewed as one job."
+  },
+  {
+    "objectID": "offer.html#what-happens-first",
+    "href": "offer.html#what-happens-first",
+    "title": "Independent review of one exported agent incident",
+    "section": "What happens first",
+    "text": "What happens first\nFifteen minutes. No file on that call.\nIf there is no export yet, the next paid step is requested as scope (Export Clinic or Readiness Audit) — not forced as a Diagnostic.\nBook a 15-minute fit call\nRelated: What a LangSmith export must contain before anyone can review it"
   },
   {
     "objectID": "DISTRIBUTION.html",
@@ -166,6 +173,27 @@
     "title": "Publication distribution system",
     "section": "",
     "text": "Automation may prepare, validate, upload, and create private drafts. It may not erase the distinction between a generated artifact and a reviewed public release. Final publication remains human-approved on every channel."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Independent AI Systems Architect, Developer & Consultant\nI develop evidence-bound architectures for AI-assisted investigation, post-mortem agent-trace diagnostics, provenance, resilience engineering, and interdisciplinary research.\nConnect on LinkedIn\nThe public record distinguishes observations, inferences, hypotheses, design proposals, and decisions. It preserves credible disagreement and keeps consequential authority with accountable people.\nCurrent materials are research and architecture publications. They are not claims of established science, commercially available offerings, or empirically validated solutions unless a release explicitly states otherwise."
+  },
+  {
+    "objectID": "about.html#william-edgar-brissey",
+    "href": "about.html#william-edgar-brissey",
+    "title": "About",
+    "section": "",
+    "text": "Independent AI Systems Architect, Developer & Consultant\nI develop evidence-bound architectures for AI-assisted investigation, post-mortem agent-trace diagnostics, provenance, resilience engineering, and interdisciplinary research.\nConnect on LinkedIn"
+  },
+  {
+    "objectID": "about.html#working-principles",
+    "href": "about.html#working-principles",
+    "title": "About",
+    "section": "Working principles",
+    "text": "Working principles\n\nEvidence before assertion. A coherent story is not a verified claim.\nProvenance before confidence. Readers should be able to recover the source, transformation, uncertainty, and revision behind a conclusion.\nDisagreement before false consensus. Credible contradictions remain visible until evidence resolves them.\nHuman authority before automation. AI-assisted workflows remain advisory in consequential settings.\nCorrection before defense. A stronger reproducible result supersedes the architecture."
   },
   {
     "objectID": "index.html",

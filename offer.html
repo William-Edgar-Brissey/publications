@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="A signed written opinion on one bounded LangSmith or LangGraph export. No system changes.">
 
-<title>Research &amp; Architecture – William Edgar Brissey</title>
+<title>Independent review of one exported agent incident – William Edgar Brissey</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -35,8 +36,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -46,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5ae99206f1678a31ea1cac1af8f801d0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f5470103d7c4afe33fe6f0ac560fb4e5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,80 +72,22 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-subtitle','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Research &amp; Architecture – William Edgar Brissey">
-<meta property="og:description" content="Independent publications by William Edgar Brissey">
+<meta property="og:title" content="Independent review of one exported agent incident – William Edgar Brissey">
+<meta property="og:description" content="A signed written opinion on one bounded LangSmith or LangGraph export. No system changes.">
 <meta property="og:site_name" content="William Edgar Brissey">
-<meta name="twitter:title" content="Research &amp; Architecture – William Edgar Brissey">
-<meta name="twitter:description" content="Independent publications by William Edgar Brissey">
+<meta name="twitter:title" content="Independent review of one exported agent incident – William Edgar Brissey">
+<meta name="twitter:description" content="A signed written opinion on one bounded LangSmith or LangGraph export. No system changes.">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -161,7 +102,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
@@ -193,151 +134,70 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Independent review of one exported agent incident</h1>
+                  <div>
+        <div class="description">
+          A signed written opinion on one bounded LangSmith or LangGraph export. No system changes.
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#featured-release" id="toc-featured-release" class="nav-link active" data-scroll-target="#featured-release">Featured release</a></li>
-  <li><a href="#publication-standard" id="toc-publication-standard" class="nav-link" data-scroll-target="#publication-standard">Publication standard</a></li>
-  <li><a href="#all-publications" id="toc-all-publications" class="nav-link" data-scroll-target="#all-publications">All publications</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/William-Edgar-Brissey/publications/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/William-Edgar-Brissey/publications/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="QUklMjBzeXN0ZW1zJTIwYXJjaGl0ZWN0dXJl">AI systems architecture <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZXZpZGVuY2UtYm91bmQlMjBzeXN0ZW1z">evidence-bound systems <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cmVzZWFyY2glMjBwcm9zcGVjdHVz">research prospectus <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cmVzaWxpZW5jZSUyMGVuZ2luZWVyaW5n">resilience engineering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c3lzdGVtcyUyMGFyY2hpdGVjdHVyZQ==">systems architecture <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Research &amp; Architecture</h1></header>
-
-<header id="title-block-header">
-
-<p class="subtitle lead">Independent publications by William Edgar Brissey</p>
-
-</header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
-<div class="publication-hero">
-<div class="eyebrow">
-<p>William Edgar Brissey · Independent research</p>
-</div>
-<section id="architecture-for-systems-that-must-earn-trust" class="level1">
-<h1>Architecture for systems that must earn trust</h1>
-<p>Evidence-bound work in AI systems architecture, agent-trace diagnostics, resilience engineering, and interdisciplinary research.</p>
-<div class="hero-actions">
-<p><a href="./articles/realignment-architecture-prospectus.html">Read the Research Prospectus</a> <a href="articles/realignment-architecture-prospectus.pdf">Download the PDF</a></p>
-</div>
-</section>
-</div>
-<section id="featured-release" class="level2">
-<h2 class="anchored" data-anchor-id="featured-release">Featured release</h2>
-<div class="featured-release">
-<div>
-<div class="publication-kicker">
-<p>Public Release R0 · Research Prospectus</p>
-</div>
-<section id="the-realignment-architecture" class="level2">
-<h2 class="anchored" data-anchor-id="the-realignment-architecture">The Realignment Architecture</h2>
-<p>A falsifiable, modular research program for examining cross-domain resilience under compounding environmental, infrastructural, computational, and social stress.</p>
-<p><a href="./articles/realignment-architecture-prospectus.html">Read the complete publication →</a></p>
-</section>
-</div>
-<div class="release-abstract">
-<p><strong>Controlling version</strong><br> HTML and PDF editions are generated from one revisioned source. Claims are explicitly separated into observations, inferences, hypotheses, design proposals, and human decisions.</p>
-<p><strong>Current priority</strong><br> An evidence-bound, post-mortem agent-trace diagnostic prototype with measurable evaluation criteria.</p>
-</div>
-</div>
-</section>
-<section id="publication-standard" class="level2">
-<h2 class="anchored" data-anchor-id="publication-standard">Publication standard</h2>
-<div class="publication-standard">
-<section id="inspectable" class="level3">
-<h3 class="anchored" data-anchor-id="inspectable">Inspectable</h3>
-<p>Material claims identify their evidence, assumptions, uncertainty, and break conditions.</p>
-</section>
-<section id="revisioned" class="level3">
-<h3 class="anchored" data-anchor-id="revisioned">Revisioned</h3>
-<p>Every public release states its status and revision; corrections replace the controlling version without erasing provenance.</p>
-</section>
-<section id="human-gated" class="level3">
-<h3 class="anchored" data-anchor-id="human-gated">Human-gated</h3>
-<p>AI may assist research and drafting, but consequential decisions remain attributable to accountable people.</p>
-</section>
-</div>
-<p>Each release is labeled by status and revision. The purpose is to make claims inspectable, preserve credible disagreement, and expose ideas to correction—not to present unfinished concepts as established science or deployable products.</p>
-</section>
-<section id="all-publications" class="level2">
-<h2 class="anchored" data-anchor-id="all-publications">All publications</h2>
 
+
+
+<p>William Edgar Brissey<br>
+Independent AI Systems Architect, Developer, and Consultant</p>
+<p>I review <strong>one bounded LangSmith or LangGraph export</strong> and return a signed written opinion: what the file shows, what I infer, what I will not claim.</p>
+<p>I do not replace your tracer. I do not change your systems. I do not take a login. A model may draft. I adjudicate and sign.</p>
+<p>This page is an offer overview. It is not the engagement agreement.</p>
+<section id="when-this-is-the-right-door" class="level2">
+<h2 class="anchored" data-anchor-id="when-this-is-the-right-door">When this is the right door</h2>
+<ul>
+<li>A production or client-facing agent already traces to LangSmith or LangGraph.</li>
+<li>One incident window is costing time, money, or a client relationship.</li>
+<li>You can export runs as a file, or you can say plainly that you cannot.</li>
+</ul>
+</section>
+<section id="when-it-is-not" class="level2">
+<h2 class="anchored" data-anchor-id="when-it-is-not">When it is not</h2>
+<ul>
+<li>You need a patch installed, production access, or a certificate.</li>
+<li>The only artifact is screenshots or someone else’s GitHub issue.</li>
+<li>You want every agent in the company reviewed as one job.</li>
+</ul>
+</section>
+<section id="what-happens-first" class="level2">
+<h2 class="anchored" data-anchor-id="what-happens-first">What happens first</h2>
+<p>Fifteen minutes. <strong>No file on that call.</strong></p>
+<p>If there is no export yet, the next paid step is requested as scope (Export Clinic or Readiness Audit) — not forced as a Diagnostic.</p>
+<p><a href="mailto:wbrissey@gmail.com?subject=Fit%20call%20%E2%80%94%20one%20exported%20incident" class="btn btn-primary">Book a 15-minute fit call</a></p>
+<p>Related: <a href="articles/langsmith-export-requirements.qmd">What a LangSmith export must contain before anyone can review it</a></p>
 
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="cmVzaWxpZW5jZSUyMGVuZ2luZWVyaW5nJTJDcmVzZWFyY2glMjBwcm9zcGVjdHVzJTJDc3lzdGVtcyUyMGFyY2hpdGVjdHVyZSUyQ2V2aWRlbmNlLWJvdW5kJTIwc3lzdGVtcw==" data-listing-date-sort="1787788800000" data-listing-file-modified-sort="1787975094212" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1558">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./articles/realignment-architecture-prospectus.html" class="no-external">The Realignment Architecture</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./articles/realignment-architecture-prospectus.html" class="no-external">A public research prospectus for evidence-bound resilience systems</a>
-</div>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cmVzaWxpZW5jZSUyMGVuZ2luZWVyaW5n'); return false;">resilience engineering</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cmVzZWFyY2glMjBwcm9zcGVjdHVz'); return false;">research prospectus</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('c3lzdGVtcyUyMGFyY2hpdGVjdHVyZQ=='); return false;">systems architecture</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZXZpZGVuY2UtYm91bmQlMjBzeXN0ZW1z'); return false;">evidence-bound systems</div>
-
-</div>
-<div class="delink listing-description"><a href="./articles/realignment-architecture-prospectus.html" class="no-external">
-<p>A falsifiable, modular research program for examining cross-domain resilience under compounding environmental, infrastructural, computational, and social stress.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./articles/realignment-architecture-prospectus.html" class="no-external">
-<div class="listing-date">
-Aug 27, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="QUklMjBzeXN0ZW1zJTIwYXJjaGl0ZWN0dXJlJTJDcmVzZWFyY2glMjBwcm9zcGVjdHVzJTJDZXZpZGVuY2UtYm91bmQlMjBzeXN0ZW1z" data-listing-date-sort="1787788800000" data-listing-file-modified-sort="1787975094213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="709">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./articles/status-and-purpose.html" class="no-external">Status and Purpose of This Work</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./articles/status-and-purpose.html" class="no-external">An independent systems-architecture research prospectus</a>
-</div>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QUklMjBzeXN0ZW1zJTIwYXJjaGl0ZWN0dXJl'); return false;">AI systems architecture</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cmVzZWFyY2glMjBwcm9zcGVjdHVz'); return false;">research prospectus</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZXZpZGVuY2UtYm91bmQlMjBzeXN0ZW1z'); return false;">evidence-bound systems</div>
-
-</div>
-<div class="delink listing-description"><a href="./articles/status-and-purpose.html" class="no-external">
-<p>A public statement of scope, maturity, evaluation standards, and collaboration principles for an independent systems-architecture research program.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./articles/status-and-purpose.html" class="no-external">
-<div class="listing-date">
-Aug 27, 2026
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -751,7 +611,7 @@ Aug 27, 2026
 </div>   
     <div class="nav-footer-center">
 <p>Evidence before assertion. Revision before certainty.</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/William-Edgar-Brissey/publications/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/William-Edgar-Brissey/publications/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/William-Edgar-Brissey/publications/blob/main/offer.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/William-Edgar-Brissey/publications/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Independent research—not established science or a deployable product.</p>
 </div>
