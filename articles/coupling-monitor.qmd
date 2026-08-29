@@ -1,6 +1,6 @@
 ---
 title: "Coupling Monitor v1"
-subtitle: "Public-feed board for Book One — not a God's Eye"
+subtitle: "Public-feed board for Book One"
 description: "Daily snapshot of Niño 3.4, USGS M≥6, and open EONET fire/volcano events, shown next to locked register grades. RAPID is stale. CL-016 stays parked."
 date: 2026-08-29
 categories: [realignment, climate, claim-register, monitor]
@@ -39,7 +39,7 @@ This page reads a JSON snapshot written by a public-feed job. Each tile keeps it
 - Fold whale, krill, or phytoplankton die-off into a gauge.
 - Compress CL-003 because fire or heat tiles are red.
 
-Refresh is a GitHub Action (`monitor.yml`), not a person staring at the planet.
+Refresh is a GitHub Action (`monitor.yml`).
 
 ```{=html}
 <style>
