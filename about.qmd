@@ -13,11 +13,14 @@ title-block-banner: true
 I develop evidence-bound architectures for AI-assisted investigation, post-mortem agent-trace diagnostics, provenance, resilience engineering, and interdisciplinary research.
 
 [Connect on LinkedIn](https://www.linkedin.com/in/william-edgar-brissey-3490b82b9/){.btn .btn-light}
+[Incident review](offer.qmd){.btn .btn-primary}
 :::
 
 The public record distinguishes observations, inferences, hypotheses, design proposals, and decisions. It preserves credible disagreement and keeps consequential authority with accountable people.
 
-Current materials are research and architecture publications. They are not claims of established science, commercially available offerings, or empirically validated solutions unless a release explicitly states otherwise.
+Current materials on this site are research and architecture publications. They are not claims of established science or empirically validated solutions unless a release explicitly states otherwise.
+
+A separate, bounded commercial service — independent written review of one LangSmith or LangGraph export — is described on the [incident review](offer.qmd) page. Research programs on this site remain research unless a release says otherwise.
 
 ## Working principles
 
