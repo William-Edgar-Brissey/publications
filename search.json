@@ -7,172 +7,53 @@
     "text": "Copyright and use\nCopyright © 2026 William Edgar Brissey. All rights reserved.\nNo open-source license is granted. Publication of these materials does not grant permission to reproduce, modify, redistribute, sublicense, or incorporate them into another work except as permitted by applicable law or by prior written authorization from the copyright holder.\nExternal software and services referenced by this publication project remain subject to their respective licenses and terms.\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "articles/status-and-purpose.html",
-    "href": "articles/status-and-purpose.html",
-    "title": "Status and Purpose of This Work",
+    "objectID": "articles/book-one-coupling-register.html",
+    "href": "articles/book-one-coupling-register.html",
+    "title": "Book One Coupling Register",
     "section": "",
-    "text": "Status: Public Release R0\nRevision: R0\nClaim classification: Research prospectus and architecture status statement\nRole: Independent AI Systems Architect, Developer & Consultant\nI am developing an independent body of work at the intersection of AI systems architecture, agent-trace diagnostics, resilience engineering, and interdisciplinary research. Its purpose is to make difficult systems easier to inspect, challenge, and improve—not to present unfinished concepts as established science or deployable products.\nThis distinction matters. The Realignment Architecture, EDEN, and the Second Mind are research and architecture programs at different levels of maturity. They are not completed technologies, commercially available offerings, or empirically validated solutions. Where they make physical, environmental, computational, or social claims, those claims remain hypotheses until they survive appropriate expert review and reproducible testing."
+    "text": "Status: Public research brief · Revision RA-CR-2026-08-29 · v1.0.0\nControls: Master Claim Register · Safety & Non-Deployment Policy · Appendices J and K\nNot: a forecast of inevitable collapse, a deployment plan, or established science."
   },
   {
-    "objectID": "articles/status-and-purpose.html#what-i-am-building-now",
-    "href": "articles/status-and-purpose.html#what-i-am-building-now",
-    "title": "Status and Purpose of This Work",
-    "section": "1 What I am building now",
-    "text": "1 What I am building now\nMy immediate engineering work is an evidence-bound, post-mortem agent-trace diagnostic platform under development. Its intended purpose is to help investigators reconstruct what happened inside a multi-agent or model-assisted workflow after the fact: which evidence was available, which claims were made, where disagreement appeared, and how a conclusion or failure developed.\nThe design emphasis is provenance, traceability, preserved disagreement, and human review. It is diagnostic rather than authoritative. It does not treat model consensus as truth, and it is not intended to autonomously control high-consequence systems.\nThe public materials will continue to describe this work generically until the implementation, evaluation criteria, and publication controls are mature enough to support a formal product identity."
+    "objectID": "articles/book-one-coupling-register.html#what-this-release-is-for",
+    "href": "articles/book-one-coupling-register.html#what-this-release-is-for",
+    "title": "Book One Coupling Register",
+    "section": "What this release is for",
+    "text": "What this release is for\nBook One of the Public White Paper treats Water, Air, Earth, and Fire as one interdependent baseline. That thesis is only usable if the joints are scored separately. This page freezes that graph, refreshes the tropical Atlantic surface boxes through June 2026, and states what the August 2026 ocean–atmosphere state is allowed to change.\nAdversarial review is requested on named claim IDs, not on the narrative capstone."
   },
   {
-    "objectID": "articles/status-and-purpose.html#the-broader-research-program",
-    "href": "articles/status-and-purpose.html#the-broader-research-program",
-    "title": "Status and Purpose of This Work",
-    "section": "2 The broader research program",
-    "text": "2 The broader research program\nThe broader work explores several connected questions:\n\nThe Realignment Architecture is a candidate research architecture for examining compounding vulnerabilities across environmental, infrastructure, computational, and economic systems. It is a prospectus pending validation, not a forecast or proof.\nEDEN is a pre-feasibility resilience concept concerned with localized continuity under stressed conditions. Its technical, regulatory, biological, energy, and economic assumptions require domain-specific review before any implementation claim would be justified.\nThe Second Mind is a human-reviewed, local-first advisory architecture. It is not a substitute for professional judgment, institutional accountability, or human decision authority.\nInter-Basin Coupling is an exploratory line of inquiry into possible interactions across oceanic and climate systems. Its claims must be tied to primary observations, explicit causal assumptions, and falsifiable tests.\n\nThese strands are connected by a common method, not by a claim that one unified theory has already been proven."
+    "objectID": "articles/book-one-coupling-register.html#what-2026-actually-shows",
+    "href": "articles/book-one-coupling-register.html#what-2026-actually-shows",
+    "title": "Book One Coupling Register",
+    "section": "What 2026 actually shows",
+    "text": "What 2026 actually shows\n\nExtra-polar sea-surface temperature reached 21.1 °C on 22 August 2026 (Copernicus C3S/ERA5), an all-time daily record in the season when the ocean normally cools.\nOcean heat content in the upper 2,000 m set another annual record in 2025 — the ninth consecutive record year. The 2005–2025 warming rate is more than double 1960–2005.\nEl Niño is present and strengthening. Operational weekly Niño 3.4 in late August 2026 was about +1.8 °C; ensembles favor a very strong event in winter 2026–27. That is the fast Air driver for the next two seasons.\nNOAA PSL TNA and TSA run through June 2026. Early-2026 CEG is slightly negative. TSA still carries the longer warming trend. Niño 3.4 does not explain CEG (R² ≈ 0.03 with a time control).\nRAPID AMOC at 26°N is published through February 2024, not through this week. Mean over 2005–2023 is about 16.9 Sv. Published trends are modest relative to variability. No 2026 collapse number exists in the array product.\nEast African drought flags and western/Mediterranean fire-heat load are current Air→Earth signals. They are not a completed Water→Air→Fire cascade."
   },
   {
-    "objectID": "articles/status-and-purpose.html#the-role-of-the-architect",
-    "href": "articles/status-and-purpose.html#the-role-of-the-architect",
-    "title": "Status and Purpose of This Work",
-    "section": "3 The role of the architect",
-    "text": "3 The role of the architect\nMy role is architectural integration: identifying relationships across disciplines, defining interfaces and failure boundaries, preserving the provenance of claims, and specifying the conditions under which an idea should be corrected or rejected.\nThat role does not replace the work of oceanographers, geophysicists, climate scientists, security researchers, safety engineers, economists, regulators, or local operators. Serious validation requires relevant specialists, suitable infrastructure, primary data, and independent replication.\nI am responsible for stating clearly where synthesis ends and verified evidence begins."
+    "objectID": "articles/book-one-coupling-register.html#what-2026-does-not-show",
+    "href": "articles/book-one-coupling-register.html#what-2026-does-not-show",
+    "title": "Book One Coupling Register",
+    "section": "What 2026 does not show",
+    "text": "What 2026 does not show\n\nA promoted CL-002 (AMOC deceleration as the demonstrated driver of tropical Atlantic SST / ITCZ).\nA compressed CL-003 labor-scissors date.\nA 2030s synchronized Ring-of-Fire or volcanic winter. Appendix K already assigned that to the long tail. It stays parked as CL-016."
   },
   {
-    "objectID": "articles/status-and-purpose.html#how-the-work-should-be-evaluated",
-    "href": "articles/status-and-purpose.html#how-the-work-should-be-evaluated",
-    "title": "Status and Purpose of This Work",
-    "section": "4 How the work should be evaluated",
-    "text": "4 How the work should be evaluated\nThe standard is not rhetorical coherence. The standard is whether claims are inspectable and whether the architecture makes it easier to discover error.\nAccordingly, the work should:\n\ndistinguish observation, inference, hypothesis, and design proposal;\nidentify the evidence supporting each material claim;\npreserve credible disagreement rather than average it away;\ndefine break conditions and tests that could falsify a claim;\nrecord revisions when stronger evidence changes the architecture; and\nkeep consequential decisions under accountable human authority.\n\nMulti-model review can help expose gaps and contradictions, but it is not independent empirical validation. Models can share blind spots, repeat the same source error, or agree for the wrong reason. Their output must remain subordinate to evidence and expert scrutiny."
+    "objectID": "articles/book-one-coupling-register.html#gate-decisions-locked-today",
+    "href": "articles/book-one-coupling-register.html#gate-decisions-locked-today",
+    "title": "Book One Coupling Register",
+    "section": "Gate decisions locked today",
+    "text": "Gate decisions locked today\n\n\n\n\n\n\n\nClaim\nDecision\n\n\n\n\nCL-002\nKEEP PILOT. Surface boxes updated; AMOC predictor still stale.\n\n\nCL-003\nNo clock compression. Demand inventory opened; supply blade absent.\n\n\nCL-006–008\nRegistered as biology track; not folded into CL-002.\n\n\nCL-016\nPARKED.\n\n\nEDEN\nSite-hazard spec issued. Safety Policy unchanged. No inhabited loop."
   },
   {
-    "objectID": "articles/status-and-purpose.html#publication-and-collaboration",
-    "href": "articles/status-and-purpose.html#publication-and-collaboration",
-    "title": "Status and Purpose of This Work",
-    "section": "5 Publication and collaboration",
-    "text": "5 Publication and collaboration\nI will publish this work selectively. Current releases will be clearly labeled by status and revision. Older drafts may remain useful as a record of development, but they should not be treated as the controlling version when a corrected release exists.\nI welcome researchers, systems engineers, independent builders, and critical reviewers who can:\n\ntest or attempt to falsify specific hypotheses;\nidentify unsupported claims or missing primary sources;\nreview safety, security, regulatory, and feasibility assumptions;\npropose measurable evaluation criteria; and\ncontribute implementations only where the evidence and governance justify them.\n\nThe aim is not to defend a finished doctrine. It is to build a disciplined process in which ambitious systems ideas can be examined without overstating what is known.\nNo claim, timeline, or design element is exempt from correction when better, reproducible evidence becomes available. Reality supersedes theory."
+    "objectID": "articles/book-one-coupling-register.html#how-to-attack-this",
+    "href": "articles/book-one-coupling-register.html#how-to-attack-this",
+    "title": "Book One Coupling Register",
+    "section": "How to attack this",
+    "text": "How to attack this\nUse the datasets named in the Coupling Register. A useful critique names a cell, a series, and a break condition. A critique that treats record SST as proof of every volume will be logged as category error.\nSupporting files live in articles/book-one-register/.\nSource repository: William-Edgar-Brissey/publications."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Research & Architecture",
-    "section": "",
-    "text": "Independent publications by William Edgar Brissey"
-  },
-  {
-    "objectID": "index.html#featured-release",
-    "href": "index.html#featured-release",
-    "title": "Research & Architecture",
-    "section": "Featured release",
-    "text": "Featured release\n\n\n\nPublic Release R0 · Research Prospectus\n\n\nThe Realignment Architecture\nA falsifiable, modular research program for examining cross-domain resilience under compounding environmental, infrastructural, computational, and social stress.\nRead the complete publication →\n\n\n\nControlling version HTML and PDF editions are generated from one revisioned source. Claims are explicitly separated into observations, inferences, hypotheses, design proposals, and human decisions.\nCurrent priority An evidence-bound, post-mortem agent-trace diagnostic prototype with measurable evaluation criteria."
-  },
-  {
-    "objectID": "index.html#the-realignment-architecture",
-    "href": "index.html#the-realignment-architecture",
-    "title": "Research & Architecture",
-    "section": "The Realignment Architecture",
-    "text": "The Realignment Architecture\nA falsifiable, modular research program for examining cross-domain resilience under compounding environmental, infrastructural, computational, and social stress.\nRead the complete publication →"
-  },
-  {
-    "objectID": "index.html#publication-standard",
-    "href": "index.html#publication-standard",
-    "title": "Research & Architecture",
-    "section": "Publication standard",
-    "text": "Publication standard\n\n\nInspectable\nMaterial claims identify their evidence, assumptions, uncertainty, and break conditions.\n\n\nRevisioned\nEvery public release states its status and revision; corrections replace the controlling version without erasing provenance.\n\n\nHuman-gated\nAI may assist research and drafting, but consequential decisions remain attributable to accountable people.\n\n\nEach release is labeled by status and revision. The purpose is to make claims inspectable, preserve credible disagreement, and expose ideas to correction—not to present unfinished concepts as established science or deployable products."
-  },
-  {
-    "objectID": "index.html#all-publications",
-    "href": "index.html#all-publications",
-    "title": "Research & Architecture",
-    "section": "All publications",
-    "text": "All publications"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Independent AI Systems Architect, Developer & Consultant\nI develop evidence-bound architectures for AI-assisted investigation, post-mortem agent-trace diagnostics, provenance, resilience engineering, and interdisciplinary research.\nConnect on LinkedIn Incident review\nThe public record distinguishes observations, inferences, hypotheses, design proposals, and decisions. It preserves credible disagreement and keeps consequential authority with accountable people.\nCurrent materials on this site are research and architecture publications. They are not claims of established science or empirically validated solutions unless a release explicitly states otherwise.\nA separate, bounded commercial service — independent written review of one LangSmith or LangGraph export — is described on the incident review page. Research programs on this site remain research unless a release says otherwise."
-  },
-  {
-    "objectID": "about.html#william-edgar-brissey",
-    "href": "about.html#william-edgar-brissey",
-    "title": "About",
-    "section": "",
-    "text": "Independent AI Systems Architect, Developer & Consultant\nI develop evidence-bound architectures for AI-assisted investigation, post-mortem agent-trace diagnostics, provenance, resilience engineering, and interdisciplinary research.\nConnect on LinkedIn Incident review"
-  },
-  {
-    "objectID": "about.html#working-principles",
-    "href": "about.html#working-principles",
-    "title": "About",
-    "section": "Working principles",
-    "text": "Working principles\n\nEvidence before assertion. A coherent story is not a verified claim.\nProvenance before confidence. Readers should be able to recover the source, transformation, uncertainty, and revision behind a conclusion.\nDisagreement before false consensus. Credible contradictions remain visible until evidence resolves them.\nHuman authority before automation. AI-assisted workflows remain advisory in consequential settings.\nCorrection before defense. A stronger reproducible result supersedes the architecture."
-  },
-  {
-    "objectID": "DISTRIBUTION.html",
-    "href": "DISTRIBUTION.html",
-    "title": "Publication distribution system",
-    "section": "",
-    "text": "This repository is the controlling source for every public edition. A release begins as one reviewed Quarto document and becomes several channel-native artifacts; it is not copied blindly into incompatible editors.\n\n\n\n\n\n\n\n\n\n\nLayer\nAdopted technology\nRole\n\n\n\n\nControlling source\nGitHub + Quarto\nRevision history, corrections, canonical HTML, and complete PDF\n\n\nWeb edition\nQuarto + GitHub Pages\nCanonical, searchable, accessible long-form publication\n\n\nPDF edition\nQuarto + KOMA-Script styling\nComplete downloadable and LinkedIn document edition\n\n\nX edition\nTypefully API/MCP/Agent Skill\nNative long-form X Article with cover, preview, comments, and approval\n\n\nLinkedIn edition\nTypefully document post\nComplete PDF as a native LinkedIn document with a concise caption\n\n\nSubstack edition\nGenerated native Markdown + draft-only MCP pattern\nFull newsletter draft, email preview, and deliberate final send\n\n\nAuthenticated UI execution\nOne bounded Grok Publisher Bot, when already included in an eligible plan\nCreates or updates drafts in Substack and other unsupported channel UIs, then stops for approval\n\n\nSocial artwork\nRepository-controlled 1600×900 covers\nConsistent Open Graph, X, LinkedIn, and newsletter previews\n\n\n\nTypefully was selected over a generic scheduler because it explicitly supports X Articles, LinkedIn PDF documents, realistic previews, collaboration, an API, MCP, and an official Agent Skill. Postiz and Mixpost remain credible short-form schedulers, but self-hosting them would add infrastructure and platform-app maintenance without solving the long-form edition problem.\nSubstack is handled separately. Its documented public API does not expose general long-form publishing. The safe operating model is to create a private draft, review the web and email previews, and make the final send a deliberate human action. Session-cookie automation must not run in GitHub Actions or receive credentials through chat.\nGrok Bot is an optional last-mile executor, not the source of content or design. Its early-beta cloud computer can work through authenticated interfaces that lack a reliable API, but it must consume the repository-generated bundle and follow grok-bot-handoff.md. Use one Publisher Bot with narrow channel ownership. Do not create overlapping bots, provide API secrets, permit source edits, or authorize an unattended publish. If Grok Bot is not already included in an eligible plan, the release bundle remains fully usable through ordinary private-draft workflows.\n\n\n\n\nReview and merge the controlling .qmd source.\nLet publish.yml render canonical HTML and PDF editions.\nLet Build publication distribution bundle automatically create the review artifact; use its manual trigger only to select another source or create connected private drafts.\nDownload and review the commit-bound bundle against channel-qa.md.\nWhen the Typefully connection is configured, rerun with Create private X Article and LinkedIn document drafts enabled.\nReview the realistic X and LinkedIn previews in Typefully, then approve publication.\nCreate or update the private Substack draft from substack-article.md manually, with the draft-only MCP, or with one bounded Grok Publisher Bot following grok-bot-handoff.md.\nReview the Substack web and email previews, then send deliberately.\nRecord every live URL in the release log before promotion begins.\n\n\n\n\nAdd these in GitHub repository settings under Secrets and variables → Actions:\n\nTYPEFULLY_API_KEY\nTYPEFULLY_SOCIAL_SET_ID\n\nThe workflow creates private drafts only. It contains no automatic publish or schedule instruction.\n\n\n\nFor each article, scripts/build_distribution.py creates:\n\nx-article.md — complete X Article Markdown with unsupported tables converted to readable labeled records;\nsubstack-article.md — complete Substack-ready Markdown with the same semantic conversion;\nlinkedin-caption.txt — concise caption for the attached complete PDF;\nthe complete rendered PDF;\nthe 1600×900 publication cover;\nmanifest.json — controlling source, revision, canonical URL, and edition map; and\nchannel-qa.md — mandatory visual and metadata review; and\ngrok-bot-handoff.md — exact, bounded instructions for authenticated UI draft creation when that execution path is used.\n\n\n\n\nAutomation may prepare, validate, upload, and create private drafts. It may not erase the distinction between a generated artifact and a reviewed public release. Final publication remains human-approved on every channel."
-  },
-  {
-    "objectID": "DISTRIBUTION.html#adopted-stack",
-    "href": "DISTRIBUTION.html#adopted-stack",
-    "title": "Publication distribution system",
-    "section": "",
-    "text": "Layer\nAdopted technology\nRole\n\n\n\n\nControlling source\nGitHub + Quarto\nRevision history, corrections, canonical HTML, and complete PDF\n\n\nWeb edition\nQuarto + GitHub Pages\nCanonical, searchable, accessible long-form publication\n\n\nPDF edition\nQuarto + KOMA-Script styling\nComplete downloadable and LinkedIn document edition\n\n\nX edition\nTypefully API/MCP/Agent Skill\nNative long-form X Article with cover, preview, comments, and approval\n\n\nLinkedIn edition\nTypefully document post\nComplete PDF as a native LinkedIn document with a concise caption\n\n\nSubstack edition\nGenerated native Markdown + draft-only MCP pattern\nFull newsletter draft, email preview, and deliberate final send\n\n\nAuthenticated UI execution\nOne bounded Grok Publisher Bot, when already included in an eligible plan\nCreates or updates drafts in Substack and other unsupported channel UIs, then stops for approval\n\n\nSocial artwork\nRepository-controlled 1600×900 covers\nConsistent Open Graph, X, LinkedIn, and newsletter previews\n\n\n\nTypefully was selected over a generic scheduler because it explicitly supports X Articles, LinkedIn PDF documents, realistic previews, collaboration, an API, MCP, and an official Agent Skill. Postiz and Mixpost remain credible short-form schedulers, but self-hosting them would add infrastructure and platform-app maintenance without solving the long-form edition problem.\nSubstack is handled separately. Its documented public API does not expose general long-form publishing. The safe operating model is to create a private draft, review the web and email previews, and make the final send a deliberate human action. Session-cookie automation must not run in GitHub Actions or receive credentials through chat.\nGrok Bot is an optional last-mile executor, not the source of content or design. Its early-beta cloud computer can work through authenticated interfaces that lack a reliable API, but it must consume the repository-generated bundle and follow grok-bot-handoff.md. Use one Publisher Bot with narrow channel ownership. Do not create overlapping bots, provide API secrets, permit source edits, or authorize an unattended publish. If Grok Bot is not already included in an eligible plan, the release bundle remains fully usable through ordinary private-draft workflows."
-  },
-  {
-    "objectID": "DISTRIBUTION.html#release-workflow",
-    "href": "DISTRIBUTION.html#release-workflow",
-    "title": "Publication distribution system",
-    "section": "",
-    "text": "Review and merge the controlling .qmd source.\nLet publish.yml render canonical HTML and PDF editions.\nLet Build publication distribution bundle automatically create the review artifact; use its manual trigger only to select another source or create connected private drafts.\nDownload and review the commit-bound bundle against channel-qa.md.\nWhen the Typefully connection is configured, rerun with Create private X Article and LinkedIn document drafts enabled.\nReview the realistic X and LinkedIn previews in Typefully, then approve publication.\nCreate or update the private Substack draft from substack-article.md manually, with the draft-only MCP, or with one bounded Grok Publisher Bot following grok-bot-handoff.md.\nReview the Substack web and email previews, then send deliberately.\nRecord every live URL in the release log before promotion begins."
-  },
-  {
-    "objectID": "DISTRIBUTION.html#required-typefully-secrets",
-    "href": "DISTRIBUTION.html#required-typefully-secrets",
-    "title": "Publication distribution system",
-    "section": "",
-    "text": "Add these in GitHub repository settings under Secrets and variables → Actions:\n\nTYPEFULLY_API_KEY\nTYPEFULLY_SOCIAL_SET_ID\n\nThe workflow creates private drafts only. It contains no automatic publish or schedule instruction."
-  },
-  {
-    "objectID": "DISTRIBUTION.html#generated-bundle",
-    "href": "DISTRIBUTION.html#generated-bundle",
-    "title": "Publication distribution system",
-    "section": "",
-    "text": "For each article, scripts/build_distribution.py creates:\n\nx-article.md — complete X Article Markdown with unsupported tables converted to readable labeled records;\nsubstack-article.md — complete Substack-ready Markdown with the same semantic conversion;\nlinkedin-caption.txt — concise caption for the attached complete PDF;\nthe complete rendered PDF;\nthe 1600×900 publication cover;\nmanifest.json — controlling source, revision, canonical URL, and edition map; and\nchannel-qa.md — mandatory visual and metadata review; and\ngrok-bot-handoff.md — exact, bounded instructions for authenticated UI draft creation when that execution path is used."
-  },
-  {
-    "objectID": "DISTRIBUTION.html#publication-rule",
-    "href": "DISTRIBUTION.html#publication-rule",
-    "title": "Publication distribution system",
-    "section": "",
-    "text": "Automation may prepare, validate, upload, and create private drafts. It may not erase the distinction between a generated artifact and a reviewed public release. Final publication remains human-approved on every channel."
-  },
-  {
-    "objectID": "offer.html",
-    "href": "offer.html",
-    "title": "Independent review of one exported agent incident",
-    "section": "",
-    "text": "William Edgar Brissey\nIndependent AI Systems Architect, Developer, and Consultant\nI review one bounded LangSmith or LangGraph export and return a signed written opinion: what the file shows, what I infer, what I will not claim.\nI do not replace your tracer. I do not change your systems. I do not take a login. A model may draft. I adjudicate and sign.\nThis page is an offer overview. It is not the engagement agreement."
-  },
-  {
-    "objectID": "offer.html#when-this-is-the-right-door",
-    "href": "offer.html#when-this-is-the-right-door",
-    "title": "Independent review of one exported agent incident",
-    "section": "When this is the right door",
-    "text": "When this is the right door\n\nA production or client-facing agent already traces to LangSmith or LangGraph.\nOne incident window is costing time, money, or a client relationship.\nYou can export runs as a file, or you can say plainly that you cannot."
-  },
-  {
-    "objectID": "offer.html#when-it-is-not",
-    "href": "offer.html#when-it-is-not",
-    "title": "Independent review of one exported agent incident",
-    "section": "When it is not",
-    "text": "When it is not\n\nYou need a patch installed, production access, or a certificate.\nThe only artifact is screenshots or someone else’s GitHub issue.\nYou want every agent in the company reviewed as one job."
-  },
-  {
-    "objectID": "offer.html#what-happens-first",
-    "href": "offer.html#what-happens-first",
-    "title": "Independent review of one exported agent incident",
-    "section": "What happens first",
-    "text": "What happens first\nFifteen minutes. No file on that call.\nIf there is no export yet, the next paid step is requested as scope (Export Clinic or Readiness Audit) — not forced as a Diagnostic.\nBook a 15-minute fit call\nRelated: What a LangSmith export must contain before anyone can review it"
+    "objectID": "articles/book-one-coupling-register.html#binding-reminder",
+    "href": "articles/book-one-coupling-register.html#binding-reminder",
+    "title": "Book One Coupling Register",
+    "section": "Binding reminder",
+    "text": "Binding reminder\nHigh-certainty language in Book One is literary emphasis. Operational confidence lives only in this register and the Failed-Hypothesis Ledger. No component is ready for inhabited, nuclear, or safety-critical use."
   },
   {
     "objectID": "articles/realignment-architecture-prospectus.html",
@@ -271,6 +152,174 @@
     "title": "The Realignment Architecture",
     "section": "13 Revision and withdrawal policy",
     "text": "13 Revision and withdrawal policy\nA controlling release will be revised when stronger evidence changes a claim, boundary, or test. A claim will be downgraded or withdrawn when its evidence cannot be reproduced, when a credible alternative performs better, or when required provenance is unavailable.\nOlder revisions may remain in repository history for provenance, but they must not be presented as current.\nFor the program-wide publication principles, see Status and Purpose of This Work.\nReality supersedes theory."
+  },
+  {
+    "objectID": "offer.html",
+    "href": "offer.html",
+    "title": "Independent review of one exported agent incident",
+    "section": "",
+    "text": "William Edgar Brissey\nIndependent AI Systems Architect, Developer, and Consultant\nI review one bounded LangSmith or LangGraph export and return a signed written opinion: what the file shows, what I infer, what I will not claim.\nI do not replace your tracer. I do not change your systems. I do not take a login. A model may draft. I adjudicate and sign.\nThis page is an offer overview. It is not the engagement agreement."
+  },
+  {
+    "objectID": "offer.html#when-this-is-the-right-door",
+    "href": "offer.html#when-this-is-the-right-door",
+    "title": "Independent review of one exported agent incident",
+    "section": "When this is the right door",
+    "text": "When this is the right door\n\nA production or client-facing agent already traces to LangSmith or LangGraph.\nOne incident window is costing time, money, or a client relationship.\nYou can export runs as a file, or you can say plainly that you cannot."
+  },
+  {
+    "objectID": "offer.html#when-it-is-not",
+    "href": "offer.html#when-it-is-not",
+    "title": "Independent review of one exported agent incident",
+    "section": "When it is not",
+    "text": "When it is not\n\nYou need a patch installed, production access, or a certificate.\nThe only artifact is screenshots or someone else’s GitHub issue.\nYou want every agent in the company reviewed as one job."
+  },
+  {
+    "objectID": "offer.html#what-happens-first",
+    "href": "offer.html#what-happens-first",
+    "title": "Independent review of one exported agent incident",
+    "section": "What happens first",
+    "text": "What happens first\nFifteen minutes. No file on that call.\nIf there is no export yet, the next paid step is requested as scope (Export Clinic or Readiness Audit) — not forced as a Diagnostic.\nBook a 15-minute fit call\nRelated: What a LangSmith export must contain before anyone can review it"
+  },
+  {
+    "objectID": "DISTRIBUTION.html",
+    "href": "DISTRIBUTION.html",
+    "title": "Publication distribution system",
+    "section": "",
+    "text": "This repository is the controlling source for every public edition. A release begins as one reviewed Quarto document and becomes several channel-native artifacts; it is not copied blindly into incompatible editors.\n\n\n\n\n\n\n\n\n\n\nLayer\nAdopted technology\nRole\n\n\n\n\nControlling source\nGitHub + Quarto\nRevision history, corrections, canonical HTML, and complete PDF\n\n\nWeb edition\nQuarto + GitHub Pages\nCanonical, searchable, accessible long-form publication\n\n\nPDF edition\nQuarto + KOMA-Script styling\nComplete downloadable and LinkedIn document edition\n\n\nX edition\nTypefully API/MCP/Agent Skill\nNative long-form X Article with cover, preview, comments, and approval\n\n\nLinkedIn edition\nTypefully document post\nComplete PDF as a native LinkedIn document with a concise caption\n\n\nSubstack edition\nGenerated native Markdown + draft-only MCP pattern\nFull newsletter draft, email preview, and deliberate final send\n\n\nAuthenticated UI execution\nOne bounded Grok Publisher Bot, when already included in an eligible plan\nCreates or updates drafts in Substack and other unsupported channel UIs, then stops for approval\n\n\nSocial artwork\nRepository-controlled 1600×900 covers\nConsistent Open Graph, X, LinkedIn, and newsletter previews\n\n\n\nTypefully was selected over a generic scheduler because it explicitly supports X Articles, LinkedIn PDF documents, realistic previews, collaboration, an API, MCP, and an official Agent Skill. Postiz and Mixpost remain credible short-form schedulers, but self-hosting them would add infrastructure and platform-app maintenance without solving the long-form edition problem.\nSubstack is handled separately. Its documented public API does not expose general long-form publishing. The safe operating model is to create a private draft, review the web and email previews, and make the final send a deliberate human action. Session-cookie automation must not run in GitHub Actions or receive credentials through chat.\nGrok Bot is an optional last-mile executor, not the source of content or design. Its early-beta cloud computer can work through authenticated interfaces that lack a reliable API, but it must consume the repository-generated bundle and follow grok-bot-handoff.md. Use one Publisher Bot with narrow channel ownership. Do not create overlapping bots, provide API secrets, permit source edits, or authorize an unattended publish. If Grok Bot is not already included in an eligible plan, the release bundle remains fully usable through ordinary private-draft workflows.\n\n\n\n\nReview and merge the controlling .qmd source.\nLet publish.yml render canonical HTML and PDF editions.\nLet Build publication distribution bundle automatically create the review artifact; use its manual trigger only to select another source or create connected private drafts.\nDownload and review the commit-bound bundle against channel-qa.md.\nWhen the Typefully connection is configured, rerun with Create private X Article and LinkedIn document drafts enabled.\nReview the realistic X and LinkedIn previews in Typefully, then approve publication.\nCreate or update the private Substack draft from substack-article.md manually, with the draft-only MCP, or with one bounded Grok Publisher Bot following grok-bot-handoff.md.\nReview the Substack web and email previews, then send deliberately.\nRecord every live URL in the release log before promotion begins.\n\n\n\n\nAdd these in GitHub repository settings under Secrets and variables → Actions:\n\nTYPEFULLY_API_KEY\nTYPEFULLY_SOCIAL_SET_ID\n\nThe workflow creates private drafts only. It contains no automatic publish or schedule instruction.\n\n\n\nFor each article, scripts/build_distribution.py creates:\n\nx-article.md — complete X Article Markdown with unsupported tables converted to readable labeled records;\nsubstack-article.md — complete Substack-ready Markdown with the same semantic conversion;\nlinkedin-caption.txt — concise caption for the attached complete PDF;\nthe complete rendered PDF;\nthe 1600×900 publication cover;\nmanifest.json — controlling source, revision, canonical URL, and edition map; and\nchannel-qa.md — mandatory visual and metadata review; and\ngrok-bot-handoff.md — exact, bounded instructions for authenticated UI draft creation when that execution path is used.\n\n\n\n\nAutomation may prepare, validate, upload, and create private drafts. It may not erase the distinction between a generated artifact and a reviewed public release. Final publication remains human-approved on every channel."
+  },
+  {
+    "objectID": "DISTRIBUTION.html#adopted-stack",
+    "href": "DISTRIBUTION.html#adopted-stack",
+    "title": "Publication distribution system",
+    "section": "",
+    "text": "Layer\nAdopted technology\nRole\n\n\n\n\nControlling source\nGitHub + Quarto\nRevision history, corrections, canonical HTML, and complete PDF\n\n\nWeb edition\nQuarto + GitHub Pages\nCanonical, searchable, accessible long-form publication\n\n\nPDF edition\nQuarto + KOMA-Script styling\nComplete downloadable and LinkedIn document edition\n\n\nX edition\nTypefully API/MCP/Agent Skill\nNative long-form X Article with cover, preview, comments, and approval\n\n\nLinkedIn edition\nTypefully document post\nComplete PDF as a native LinkedIn document with a concise caption\n\n\nSubstack edition\nGenerated native Markdown + draft-only MCP pattern\nFull newsletter draft, email preview, and deliberate final send\n\n\nAuthenticated UI execution\nOne bounded Grok Publisher Bot, when already included in an eligible plan\nCreates or updates drafts in Substack and other unsupported channel UIs, then stops for approval\n\n\nSocial artwork\nRepository-controlled 1600×900 covers\nConsistent Open Graph, X, LinkedIn, and newsletter previews\n\n\n\nTypefully was selected over a generic scheduler because it explicitly supports X Articles, LinkedIn PDF documents, realistic previews, collaboration, an API, MCP, and an official Agent Skill. Postiz and Mixpost remain credible short-form schedulers, but self-hosting them would add infrastructure and platform-app maintenance without solving the long-form edition problem.\nSubstack is handled separately. Its documented public API does not expose general long-form publishing. The safe operating model is to create a private draft, review the web and email previews, and make the final send a deliberate human action. Session-cookie automation must not run in GitHub Actions or receive credentials through chat.\nGrok Bot is an optional last-mile executor, not the source of content or design. Its early-beta cloud computer can work through authenticated interfaces that lack a reliable API, but it must consume the repository-generated bundle and follow grok-bot-handoff.md. Use one Publisher Bot with narrow channel ownership. Do not create overlapping bots, provide API secrets, permit source edits, or authorize an unattended publish. If Grok Bot is not already included in an eligible plan, the release bundle remains fully usable through ordinary private-draft workflows."
+  },
+  {
+    "objectID": "DISTRIBUTION.html#release-workflow",
+    "href": "DISTRIBUTION.html#release-workflow",
+    "title": "Publication distribution system",
+    "section": "",
+    "text": "Review and merge the controlling .qmd source.\nLet publish.yml render canonical HTML and PDF editions.\nLet Build publication distribution bundle automatically create the review artifact; use its manual trigger only to select another source or create connected private drafts.\nDownload and review the commit-bound bundle against channel-qa.md.\nWhen the Typefully connection is configured, rerun with Create private X Article and LinkedIn document drafts enabled.\nReview the realistic X and LinkedIn previews in Typefully, then approve publication.\nCreate or update the private Substack draft from substack-article.md manually, with the draft-only MCP, or with one bounded Grok Publisher Bot following grok-bot-handoff.md.\nReview the Substack web and email previews, then send deliberately.\nRecord every live URL in the release log before promotion begins."
+  },
+  {
+    "objectID": "DISTRIBUTION.html#required-typefully-secrets",
+    "href": "DISTRIBUTION.html#required-typefully-secrets",
+    "title": "Publication distribution system",
+    "section": "",
+    "text": "Add these in GitHub repository settings under Secrets and variables → Actions:\n\nTYPEFULLY_API_KEY\nTYPEFULLY_SOCIAL_SET_ID\n\nThe workflow creates private drafts only. It contains no automatic publish or schedule instruction."
+  },
+  {
+    "objectID": "DISTRIBUTION.html#generated-bundle",
+    "href": "DISTRIBUTION.html#generated-bundle",
+    "title": "Publication distribution system",
+    "section": "",
+    "text": "For each article, scripts/build_distribution.py creates:\n\nx-article.md — complete X Article Markdown with unsupported tables converted to readable labeled records;\nsubstack-article.md — complete Substack-ready Markdown with the same semantic conversion;\nlinkedin-caption.txt — concise caption for the attached complete PDF;\nthe complete rendered PDF;\nthe 1600×900 publication cover;\nmanifest.json — controlling source, revision, canonical URL, and edition map; and\nchannel-qa.md — mandatory visual and metadata review; and\ngrok-bot-handoff.md — exact, bounded instructions for authenticated UI draft creation when that execution path is used."
+  },
+  {
+    "objectID": "DISTRIBUTION.html#publication-rule",
+    "href": "DISTRIBUTION.html#publication-rule",
+    "title": "Publication distribution system",
+    "section": "",
+    "text": "Automation may prepare, validate, upload, and create private drafts. It may not erase the distinction between a generated artifact and a reviewed public release. Final publication remains human-approved on every channel."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Independent AI Systems Architect, Developer & Consultant\nI develop evidence-bound architectures for AI-assisted investigation, post-mortem agent-trace diagnostics, provenance, resilience engineering, and interdisciplinary research.\nConnect on LinkedIn Incident review\nThe public record distinguishes observations, inferences, hypotheses, design proposals, and decisions. It preserves credible disagreement and keeps consequential authority with accountable people.\nCurrent materials on this site are research and architecture publications. They are not claims of established science or empirically validated solutions unless a release explicitly states otherwise.\nA separate, bounded commercial service — independent written review of one LangSmith or LangGraph export — is described on the incident review page. Research programs on this site remain research unless a release says otherwise."
+  },
+  {
+    "objectID": "about.html#william-edgar-brissey",
+    "href": "about.html#william-edgar-brissey",
+    "title": "About",
+    "section": "",
+    "text": "Independent AI Systems Architect, Developer & Consultant\nI develop evidence-bound architectures for AI-assisted investigation, post-mortem agent-trace diagnostics, provenance, resilience engineering, and interdisciplinary research.\nConnect on LinkedIn Incident review"
+  },
+  {
+    "objectID": "about.html#working-principles",
+    "href": "about.html#working-principles",
+    "title": "About",
+    "section": "Working principles",
+    "text": "Working principles\n\nEvidence before assertion. A coherent story is not a verified claim.\nProvenance before confidence. Readers should be able to recover the source, transformation, uncertainty, and revision behind a conclusion.\nDisagreement before false consensus. Credible contradictions remain visible until evidence resolves them.\nHuman authority before automation. AI-assisted workflows remain advisory in consequential settings.\nCorrection before defense. A stronger reproducible result supersedes the architecture."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Research & Architecture",
+    "section": "",
+    "text": "Independent publications by William Edgar Brissey"
+  },
+  {
+    "objectID": "index.html#featured-release",
+    "href": "index.html#featured-release",
+    "title": "Research & Architecture",
+    "section": "Featured release",
+    "text": "Featured release\n\n\n\nPublic Release R0 · Research Prospectus\n\n\nThe Realignment Architecture\nA falsifiable, modular research program for examining cross-domain resilience under compounding environmental, infrastructural, computational, and social stress.\nRead the complete publication →\n\n\n\nControlling version HTML and PDF editions are generated from one revisioned source. Claims are explicitly separated into observations, inferences, hypotheses, design proposals, and human decisions.\nCurrent priority An evidence-bound, post-mortem agent-trace diagnostic prototype with measurable evaluation criteria."
+  },
+  {
+    "objectID": "index.html#the-realignment-architecture",
+    "href": "index.html#the-realignment-architecture",
+    "title": "Research & Architecture",
+    "section": "The Realignment Architecture",
+    "text": "The Realignment Architecture\nA falsifiable, modular research program for examining cross-domain resilience under compounding environmental, infrastructural, computational, and social stress.\nRead the complete publication →"
+  },
+  {
+    "objectID": "index.html#publication-standard",
+    "href": "index.html#publication-standard",
+    "title": "Research & Architecture",
+    "section": "Publication standard",
+    "text": "Publication standard\n\n\nInspectable\nMaterial claims identify their evidence, assumptions, uncertainty, and break conditions.\n\n\nRevisioned\nEvery public release states its status and revision; corrections replace the controlling version without erasing provenance.\n\n\nHuman-gated\nAI may assist research and drafting, but consequential decisions remain attributable to accountable people.\n\n\nEach release is labeled by status and revision. The purpose is to make claims inspectable, preserve credible disagreement, and expose ideas to correction—not to present unfinished concepts as established science or deployable products."
+  },
+  {
+    "objectID": "index.html#all-publications",
+    "href": "index.html#all-publications",
+    "title": "Research & Architecture",
+    "section": "All publications",
+    "text": "All publications"
+  },
+  {
+    "objectID": "articles/status-and-purpose.html",
+    "href": "articles/status-and-purpose.html",
+    "title": "Status and Purpose of This Work",
+    "section": "",
+    "text": "Status: Public Release R0\nRevision: R0\nClaim classification: Research prospectus and architecture status statement\nRole: Independent AI Systems Architect, Developer & Consultant\nI am developing an independent body of work at the intersection of AI systems architecture, agent-trace diagnostics, resilience engineering, and interdisciplinary research. Its purpose is to make difficult systems easier to inspect, challenge, and improve—not to present unfinished concepts as established science or deployable products.\nThis distinction matters. The Realignment Architecture, EDEN, and the Second Mind are research and architecture programs at different levels of maturity. They are not completed technologies, commercially available offerings, or empirically validated solutions. Where they make physical, environmental, computational, or social claims, those claims remain hypotheses until they survive appropriate expert review and reproducible testing."
+  },
+  {
+    "objectID": "articles/status-and-purpose.html#what-i-am-building-now",
+    "href": "articles/status-and-purpose.html#what-i-am-building-now",
+    "title": "Status and Purpose of This Work",
+    "section": "1 What I am building now",
+    "text": "1 What I am building now\nMy immediate engineering work is an evidence-bound, post-mortem agent-trace diagnostic platform under development. Its intended purpose is to help investigators reconstruct what happened inside a multi-agent or model-assisted workflow after the fact: which evidence was available, which claims were made, where disagreement appeared, and how a conclusion or failure developed.\nThe design emphasis is provenance, traceability, preserved disagreement, and human review. It is diagnostic rather than authoritative. It does not treat model consensus as truth, and it is not intended to autonomously control high-consequence systems.\nThe public materials will continue to describe this work generically until the implementation, evaluation criteria, and publication controls are mature enough to support a formal product identity."
+  },
+  {
+    "objectID": "articles/status-and-purpose.html#the-broader-research-program",
+    "href": "articles/status-and-purpose.html#the-broader-research-program",
+    "title": "Status and Purpose of This Work",
+    "section": "2 The broader research program",
+    "text": "2 The broader research program\nThe broader work explores several connected questions:\n\nThe Realignment Architecture is a candidate research architecture for examining compounding vulnerabilities across environmental, infrastructure, computational, and economic systems. It is a prospectus pending validation, not a forecast or proof.\nEDEN is a pre-feasibility resilience concept concerned with localized continuity under stressed conditions. Its technical, regulatory, biological, energy, and economic assumptions require domain-specific review before any implementation claim would be justified.\nThe Second Mind is a human-reviewed, local-first advisory architecture. It is not a substitute for professional judgment, institutional accountability, or human decision authority.\nInter-Basin Coupling is an exploratory line of inquiry into possible interactions across oceanic and climate systems. Its claims must be tied to primary observations, explicit causal assumptions, and falsifiable tests.\n\nThese strands are connected by a common method, not by a claim that one unified theory has already been proven."
+  },
+  {
+    "objectID": "articles/status-and-purpose.html#the-role-of-the-architect",
+    "href": "articles/status-and-purpose.html#the-role-of-the-architect",
+    "title": "Status and Purpose of This Work",
+    "section": "3 The role of the architect",
+    "text": "3 The role of the architect\nMy role is architectural integration: identifying relationships across disciplines, defining interfaces and failure boundaries, preserving the provenance of claims, and specifying the conditions under which an idea should be corrected or rejected.\nThat role does not replace the work of oceanographers, geophysicists, climate scientists, security researchers, safety engineers, economists, regulators, or local operators. Serious validation requires relevant specialists, suitable infrastructure, primary data, and independent replication.\nI am responsible for stating clearly where synthesis ends and verified evidence begins."
+  },
+  {
+    "objectID": "articles/status-and-purpose.html#how-the-work-should-be-evaluated",
+    "href": "articles/status-and-purpose.html#how-the-work-should-be-evaluated",
+    "title": "Status and Purpose of This Work",
+    "section": "4 How the work should be evaluated",
+    "text": "4 How the work should be evaluated\nThe standard is not rhetorical coherence. The standard is whether claims are inspectable and whether the architecture makes it easier to discover error.\nAccordingly, the work should:\n\ndistinguish observation, inference, hypothesis, and design proposal;\nidentify the evidence supporting each material claim;\npreserve credible disagreement rather than average it away;\ndefine break conditions and tests that could falsify a claim;\nrecord revisions when stronger evidence changes the architecture; and\nkeep consequential decisions under accountable human authority.\n\nMulti-model review can help expose gaps and contradictions, but it is not independent empirical validation. Models can share blind spots, repeat the same source error, or agree for the wrong reason. Their output must remain subordinate to evidence and expert scrutiny."
+  },
+  {
+    "objectID": "articles/status-and-purpose.html#publication-and-collaboration",
+    "href": "articles/status-and-purpose.html#publication-and-collaboration",
+    "title": "Status and Purpose of This Work",
+    "section": "5 Publication and collaboration",
+    "text": "5 Publication and collaboration\nI will publish this work selectively. Current releases will be clearly labeled by status and revision. Older drafts may remain useful as a record of development, but they should not be treated as the controlling version when a corrected release exists.\nI welcome researchers, systems engineers, independent builders, and critical reviewers who can:\n\ntest or attempt to falsify specific hypotheses;\nidentify unsupported claims or missing primary sources;\nreview safety, security, regulatory, and feasibility assumptions;\npropose measurable evaluation criteria; and\ncontribute implementations only where the evidence and governance justify them.\n\nThe aim is not to defend a finished doctrine. It is to build a disciplined process in which ambitious systems ideas can be examined without overstating what is known.\nNo claim, timeline, or design element is exempt from correction when better, reproducible evidence becomes available. Reality supersedes theory."
   },
   {
     "objectID": "articles/langsmith-export-requirements.html",

@@ -3,6 +3,7 @@
     "listing": "/index.html",
     "items": [
       "/articles/langsmith-export-requirements.html",
+      "/articles/book-one-coupling-register.html",
       "/articles/realignment-architecture-prospectus.html",
       "/articles/status-and-purpose.html"
     ]
