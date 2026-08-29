@@ -245,25 +245,11 @@
     "text": "All publications"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "monitor.html",
+    "href": "monitor.html",
+    "title": "Coupling Monitor v1",
     "section": "",
-    "text": "Independent AI Systems Architect, Developer & Consultant\nI develop evidence-bound architectures for AI-assisted investigation, post-mortem agent-trace diagnostics, provenance, resilience engineering, and interdisciplinary research.\nConnect on LinkedIn Incident review\nThe public record distinguishes observations, inferences, hypotheses, design proposals, and decisions. It preserves credible disagreement and keeps consequential authority with accountable people.\nCurrent materials on this site are research and architecture publications. They are not claims of established science or empirically validated solutions unless a release explicitly states otherwise.\nA separate, bounded commercial service — independent written review of one LangSmith or LangGraph export — is described on the incident review page. Research programs on this site remain research unless a release says otherwise."
-  },
-  {
-    "objectID": "about.html#william-edgar-brissey",
-    "href": "about.html#william-edgar-brissey",
-    "title": "About",
-    "section": "",
-    "text": "Independent AI Systems Architect, Developer & Consultant\nI develop evidence-bound architectures for AI-assisted investigation, post-mortem agent-trace diagnostics, provenance, resilience engineering, and interdisciplinary research.\nConnect on LinkedIn Incident review"
-  },
-  {
-    "objectID": "about.html#working-principles",
-    "href": "about.html#working-principles",
-    "title": "About",
-    "section": "Working principles",
-    "text": "Working principles\n\nEvidence before assertion. A coherent story is not a verified claim.\nProvenance before confidence. Readers should be able to recover the source, transformation, uncertainty, and revision behind a conclusion.\nDisagreement before false consensus. Credible contradictions remain visible until evidence resolves them.\nHuman authority before automation. AI-assisted workflows remain advisory in consequential settings.\nCorrection before defense. A stronger reproducible result supersedes the architecture."
+    "text": "Status: Operational board · Monitor v1.0 · binds to RA-CR-2026-08-29\nControlling register · Source snapshot\n\n\nLoading snapshot…\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "DISTRIBUTION.html",
@@ -306,6 +292,27 @@
     "title": "Publication distribution system",
     "section": "",
     "text": "Automation may prepare, validate, upload, and create private drafts. It may not erase the distinction between a generated artifact and a reviewed public release. Final publication remains human-approved on every channel."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Independent AI Systems Architect, Developer & Consultant\nI develop evidence-bound architectures for AI-assisted investigation, post-mortem agent-trace diagnostics, provenance, resilience engineering, and interdisciplinary research.\nConnect on LinkedIn Incident review\nThe public record distinguishes observations, inferences, hypotheses, design proposals, and decisions. It preserves credible disagreement and keeps consequential authority with accountable people.\nCurrent materials on this site are research and architecture publications. They are not claims of established science or empirically validated solutions unless a release explicitly states otherwise.\nA separate, bounded commercial service — independent written review of one LangSmith or LangGraph export — is described on the incident review page. Research programs on this site remain research unless a release says otherwise."
+  },
+  {
+    "objectID": "about.html#william-edgar-brissey",
+    "href": "about.html#william-edgar-brissey",
+    "title": "About",
+    "section": "",
+    "text": "Independent AI Systems Architect, Developer & Consultant\nI develop evidence-bound architectures for AI-assisted investigation, post-mortem agent-trace diagnostics, provenance, resilience engineering, and interdisciplinary research.\nConnect on LinkedIn Incident review"
+  },
+  {
+    "objectID": "about.html#working-principles",
+    "href": "about.html#working-principles",
+    "title": "About",
+    "section": "Working principles",
+    "text": "Working principles\n\nEvidence before assertion. A coherent story is not a verified claim.\nProvenance before confidence. Readers should be able to recover the source, transformation, uncertainty, and revision behind a conclusion.\nDisagreement before false consensus. Credible contradictions remain visible until evidence resolves them.\nHuman authority before automation. AI-assisted workflows remain advisory in consequential settings.\nCorrection before defense. A stronger reproducible result supersedes the architecture."
   },
   {
     "objectID": "offer.html",
