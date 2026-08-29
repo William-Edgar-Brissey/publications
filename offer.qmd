@@ -1,0 +1,37 @@
+---
+title: "Independent review of one exported agent incident"
+description: "A signed written opinion on one bounded LangSmith or LangGraph export. No system changes."
+toc: false
+title-block-banner: true
+---
+
+William Edgar Brissey  
+Independent AI Systems Architect, Developer, and Consultant
+
+I review **one bounded LangSmith or LangGraph export** and return a signed written opinion: what the file shows, what I infer, what I will not claim.
+
+I do not replace your tracer. I do not change your systems. I do not take a login. A model may draft. I adjudicate and sign.
+
+This page is an offer overview. It is not the engagement agreement.
+
+## When this is the right door
+
+- A production or client-facing agent already traces to LangSmith or LangGraph.
+- One incident window is costing time, money, or a client relationship.
+- You can export runs as a file, or you can say plainly that you cannot.
+
+## When it is not
+
+- You need a patch installed, production access, or a certificate.
+- The only artifact is screenshots or someone else's GitHub issue.
+- You want every agent in the company reviewed as one job.
+
+## What happens first
+
+Fifteen minutes. **No file on that call.**
+
+If there is no export yet, the next paid step is requested as scope (Export Clinic or Readiness Audit) — not forced as a Diagnostic.
+
+[Book a 15-minute fit call](mailto:wbrissey@gmail.com?subject=Fit%20call%20%E2%80%94%20one%20exported%20incident){.btn .btn-primary}
+
+Related: [What a LangSmith export must contain before anyone can review it](articles/langsmith-export-requirements.qmd)
