@@ -5,6 +5,9 @@ on:
   push:
     branches:
       - main
+  workflow_run:
+    workflows: ["Refresh Coupling Monitor snapshot"]
+    types: [completed]
 
 permissions:
   contents: write
@@ -15,6 +18,7 @@ concurrency:
 
 jobs:
   build-deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
