@@ -13,7 +13,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 OUT = Path("assets/monitor/snapshot.json")
-UA = {"User-Agent": "RealignmentCouplingMonitor/1.0 (+https://william-edgar-brissey.github.io/publications/)"}
+UA = {"User-Agent": "Mozilla/5.0 (compatible; CouplingMonitor/1.0; +https://william-edgar-brissey.github.io/publications/)"}
 
 
 def now_iso() -> str:
@@ -30,25 +30,54 @@ def get_json(url: str):
     return json.loads(get(url).decode("utf-8"))
 
 
-def nino34() -> dict:
-    url = (
-        "https://coastwatch.pfeg.noaa.gov/erddap/tabledap/ncepNinoSSTwk.json"
-        "?time,Nino34_sst,Nino34_ssta&orderByMax(%22time%22)"
-    )
-    raw = get_json(url)
-    rows = raw.get("table", {}).get("rows") or []
+def nino34_cpc() -> dict:
+    url = "https://www.cpc.ncep.noaa.gov/data/indices/sstoi.indices"
+    text = get(url).decode("utf-8", errors="replace")
+    rows = [ln.split() for ln in text.splitlines() if ln.strip() and ln.strip()[0].isdigit()]
     if not rows:
-        raise RuntimeError("ERDDAP returned no Nino 3.4 rows")
-    time_s, sst, ssta = rows[0]
+        raise RuntimeError("CPC sstoi.indices had no data rows")
+    last = rows[-1]
+    if len(last) < 10:
+        raise RuntimeError(f"CPC sstoi.indices row too short: {last}")
+    year, month = last[0], last[1]
+    sst = float(last[8])
+    ssta = float(last[9])
     return {
         "ok": True,
-        "source": "NOAA / CoastWatch ERDDAP ncepNinoSSTwk (OISST.v2 weekly)",
-        "source_url": "https://coastwatch.pfeg.noaa.gov/erddap/tabledap/ncepNinoSSTwk.html",
-        "time": time_s,
+        "source": "NOAA CPC sstoi.indices monthly Nino 3.4",
+        "source_url": url,
+        "time": f"{year}-{int(month):02d}",
         "sst_c": sst,
         "anomaly_c": ssta,
-        "note": "Weekly Nino 3.4. Not extra-polar SST and not AMOC.",
+        "note": "Monthly Nino 3.4. Not extra-polar SST and not AMOC.",
     }
+
+
+def nino34() -> dict:
+    try:
+        return nino34_cpc()
+    except Exception as cpc_exc:
+        url = (
+            "https://coastwatch.pfeg.noaa.gov/erddap/tabledap/ncepNinoSSTwk.json"
+            "?time,Nino34_sst,Nino34_ssta&orderByMax(%22time%22)"
+        )
+        try:
+            raw = get_json(url)
+            rows = raw.get("table", {}).get("rows") or []
+            if not rows:
+                raise RuntimeError("ERDDAP returned no Nino 3.4 rows")
+            time_s, sst, ssta = rows[0]
+            return {
+                "ok": True,
+                "source": "NOAA / CoastWatch ERDDAP ncepNinoSSTwk (OISST.v2 weekly)",
+                "source_url": "https://coastwatch.pfeg.noaa.gov/erddap/tabledap/ncepNinoSSTwk.html",
+                "time": time_s,
+                "sst_c": sst,
+                "anomaly_c": ssta,
+                "note": "Weekly Nino 3.4. Not extra-polar SST and not AMOC.",
+            }
+        except Exception as erd_exc:
+            raise RuntimeError(f"CPC failed ({cpc_exc}); ERDDAP failed ({erd_exc})") from erd_exc
 
 
 def quakes(days: int = 30, minmag: float = 6.0) -> dict:
