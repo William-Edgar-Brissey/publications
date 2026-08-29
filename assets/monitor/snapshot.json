@@ -1,6 +1,6 @@
 {
   "schema": "coupling-monitor-v1",
-  "fetched_at": "2026-08-29T07:59:06+00:00",
+  "fetched_at": "2026-08-29T08:02:27+00:00",
   "disclaimer": "Operational monitor of public feeds. Not a collapse forecast, not a promotion of CL-002, not a 2026 AMOC value.",
   "canonical_register": "https://william-edgar-brissey.github.io/publications/articles/book-one-coupling-register.html",
   "locked": {
@@ -9,12 +9,12 @@
       "claim": "CL-001 / CL-002 predictor",
       "value": "No 2026 RAPID Sv number",
       "vintage": "Published through February 2024",
-      "note": "Do not infer AMOC from Niño 3.4 or extra-polar SST.",
+      "note": "Do not infer AMOC from Nino 3.4 or extra-polar SST.",
       "source_url": "https://rapid.ac.uk/"
     },
     "cl002": {
       "status": "PILOT",
-      "claim": "CL-002 AMOC → tropical Atlantic / ITCZ",
+      "claim": "CL-002 AMOC to tropical Atlantic / ITCZ",
       "note": "Surface boxes updated through June 2026. Mechanism not promoted."
     },
     "cl003": {
@@ -46,7 +46,7 @@
     "time": "2026-08-19T00:00:00Z",
     "sst_c": 29.4,
     "anomaly_c": 2.6,
-    "note": "Weekly Niño 3.4. Not extra-polar SST and not AMOC."
+    "note": "Weekly Nino 3.4. Not extra-polar SST and not AMOC."
   },
   "quakes_m6": {
     "ok": true,
@@ -56,10 +56,136 @@
     "min_magnitude": 6.0,
     "count": 13,
     "events": [
-      {"id": "us6000tkt2", "mag": 7.7, "place": "68 km NNW of Ende, Indonesia", "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkt2"},
-      {"id": "us6000tjl2", "mag": 7.4, "place": "5 km S of San José del Palmar, Colombia", "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tjl2"},
-      {"id": "us6000tkyk", "mag": 6.9, "place": "9 km WNW of Pematangsiantar, Indonesia", "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkyk"},
-      {"id": "us6000tm81", "mag": 6.7, "place": "31 km NW of Aniso, Peru", "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tm81"}
+      {
+        "id": "us6000tkt2",
+        "mag": 7.7,
+        "place": "68 km NNW of Ende, Indonesia",
+        "time_ms": 1786744701564,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkt2",
+        "lon": 121.3517,
+        "lat": -8.3101,
+        "depth_km": 10
+      },
+      {
+        "id": "us6000tjl2",
+        "mag": 7.4,
+        "place": "5 km S of San Jos\u00e9 del Palmar, Colombia",
+        "time_ms": 1786365268125,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tjl2",
+        "lon": -76.2422,
+        "lat": 4.8436,
+        "depth_km": 110.285
+      },
+      {
+        "id": "us6000tkyk",
+        "mag": 6.9,
+        "place": "9 km WNW of Pematangsiantar, Indonesia",
+        "time_ms": 1786791291798,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkyk",
+        "lon": 98.9853,
+        "lat": 2.9863,
+        "depth_km": 175
+      },
+      {
+        "id": "us6000tm81",
+        "mag": 6.7,
+        "place": "31 km NW of Aniso, Peru",
+        "time_ms": 1787248818626,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tm81",
+        "lon": -73.5236,
+        "lat": -14.6414,
+        "depth_km": 99
+      },
+      {
+        "id": "us6000ti6x",
+        "mag": 6.3,
+        "place": "28 km SW of Sarangani, Philippines",
+        "time_ms": 1785903246073,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti6x",
+        "lon": 125.3134,
+        "lat": 5.1995,
+        "depth_km": 10
+      },
+      {
+        "id": "us6000ti8i",
+        "mag": 6.3,
+        "place": "south of the Kermadec Islands",
+        "time_ms": 1785915806215,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti8i",
+        "lon": 179.4683,
+        "lat": -33.6969,
+        "depth_km": 216.73
+      },
+      {
+        "id": "us6000tmrw",
+        "mag": 6.2,
+        "place": "Scotia Sea",
+        "time_ms": 1787386957740,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tmrw",
+        "lon": -47.6047,
+        "lat": -60.3789,
+        "depth_km": 10
+      },
+      {
+        "id": "us6000tkuc",
+        "mag": 6.1,
+        "place": "58 km N of Ende, Indonesia",
+        "time_ms": 1786746517550,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkuc",
+        "lon": 121.5717,
+        "lat": -8.3186,
+        "depth_km": 10
+      },
+      {
+        "id": "us6000tl4w",
+        "mag": 6.1,
+        "place": "56 km NNE of Port-Olry, Vanuatu",
+        "time_ms": 1786850424373,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tl4w",
+        "lon": 167.1934,
+        "lat": -14.5474,
+        "depth_km": 188.148
+      },
+      {
+        "id": "us6000tk74",
+        "mag": 6,
+        "place": "South Sandwich Islands region",
+        "time_ms": 1786535232117,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tk74",
+        "lon": -28.9899,
+        "lat": -60.2445,
+        "depth_km": 10
+      },
+      {
+        "id": "us6000tmz6",
+        "mag": 6,
+        "place": "33 km SSW of Honch\u014d, Japan",
+        "time_ms": 1787492693514,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tmz6",
+        "lon": 142.8255,
+        "lat": 41.8344,
+        "depth_km": 42.867
+      },
+      {
+        "id": "us6000tn41",
+        "mag": 6,
+        "place": "215 km NNE of Lospalos, Timor Leste",
+        "time_ms": 1787580617299,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tn41",
+        "lon": 127.4598,
+        "lat": -6.6264,
+        "depth_km": 10
+      },
+      {
+        "id": "us7000tcf3",
+        "mag": 6,
+        "place": "145 km N of Caluula, Somalia",
+        "time_ms": 1787864858352,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tcf3",
+        "lon": 50.5425,
+        "lat": 13.2654,
+        "depth_km": 10
+      }
     ]
   },
   "volcanoes_open": {
@@ -69,10 +195,126 @@
     "category": "volcanoes",
     "count": 20,
     "events": [
-      {"id": "EONET_20710", "title": "Nevados del Chillan Volcano, Chile"},
-      {"id": "EONET_20409", "title": "Telica Volcano, Nicaragua"},
-      {"id": "EONET_20411", "title": "Kikai Volcano, Japan"},
-      {"id": "EONET_20410", "title": "Bezymianny Volcano, Russia"}
+      {
+        "id": "EONET_20710",
+        "title": "Nevados del Chillan Volcano, Chile",
+        "category": "volcanoes",
+        "link": "https://volcano.si.edu/volcano.cfm?vn=357070"
+      },
+      {
+        "id": "EONET_20409",
+        "title": "Telica Volcano, Nicaragua",
+        "category": "volcanoes",
+        "link": "https://volcano.si.edu/volcano.cfm?vn=344040"
+      },
+      {
+        "id": "EONET_20392",
+        "title": "Ivao Group Volcano, Russia",
+        "category": "volcanoes",
+        "link": "https://volcano.si.edu/volcano.cfm?vn=290111"
+      },
+      {
+        "id": "EONET_20395",
+        "title": "Titan Ridge Volcano, Papua New Guinea",
+        "category": "volcanoes",
+        "link": "https://science.nasa.gov/earth/earth-observatory/new-eruption-in-the-bismarck-sea/"
+      },
+      {
+        "id": "EONET_20411",
+        "title": "Kikai Volcano, Japan",
+        "category": "volcanoes",
+        "link": "https://volcano.si.edu/volcano.cfm?vn=282060"
+      },
+      {
+        "id": "EONET_20410",
+        "title": "Bezymianny Volcano, Russia",
+        "category": "volcanoes",
+        "link": "https://volcano.si.edu/volcano.cfm?vn=300250"
+      },
+      {
+        "id": "EONET_20413",
+        "title": "Langila Volcano, Papua New Guinea",
+        "category": "volcanoes",
+        "link": "https://volcano.si.edu/volcano.cfm?vn=252010"
+      },
+      {
+        "id": "EONET_20103",
+        "title": "Rincon de la Vieja Volcano, Costa Rica",
+        "category": "volcanoes",
+        "link": "https://volcano.si.edu/volcano.cfm?vn=345020"
+      },
+      {
+        "id": "EONET_20102",
+        "title": "Masaya Volcano, Nicaragua",
+        "category": "volcanoes",
+        "link": "https://volcano.si.edu/volcano.cfm?vn=344100"
+      },
+      {
+        "id": "EONET_17165",
+        "title": "Mayon Volcano, Philippines",
+        "category": "volcanoes",
+        "link": "https://science.nasa.gov/earth/earth-observatory/eruption-at-mayon/"
+      },
+      {
+        "id": "EONET_17166",
+        "title": "Sabancaya Volcano, Peru",
+        "category": "volcanoes",
+        "link": "https://volcano.si.edu/volcano.cfm?vn=354006"
+      },
+      {
+        "id": "EONET_16203",
+        "title": "Ambae Volcano, Vanuatu",
+        "category": "volcanoes",
+        "link": "https://volcano.si.edu/volcano.cfm?vn=257030"
+      },
+      {
+        "id": "EONET_16202",
+        "title": "Purac\u00e9 Volcano, Colombia",
+        "category": "volcanoes",
+        "link": "https://volcano.si.edu/volcano.cfm?vn=351060"
+      },
+      {
+        "id": "EONET_15811",
+        "title": "Kanlaon Volcano, Philippines",
+        "category": "volcanoes",
+        "link": "https://volcano.si.edu/volcano.cfm?vn=272020"
+      },
+      {
+        "id": "EONET_15330",
+        "title": "Krasheninnikov Volcano, Russia",
+        "category": "volcanoes",
+        "link": "https://science.nasa.gov/earth/earth-observatory/krasheninnikova-remains-restless/"
+      },
+      {
+        "id": "EONET_13342",
+        "title": "Popocatepetl Volcano,\u00a0Mexico",
+        "category": "volcanoes",
+        "link": "https://volcano.si.edu/volcano.cfm?vn=341090"
+      },
+      {
+        "id": "EONET_12813",
+        "title": "Lewotolok Volcano, Indonesia",
+        "category": "volcanoes",
+        "link": "https://volcano.si.edu/volcano.cfm?vn=264230"
+      },
+      {
+        "id": "EONET_12367",
+        "title": "Kilauea Volcano, Hawaii",
+        "category": "volcanoes",
+        "link": "https://science.nasa.gov/earth/earth-observatory/restless-kilauea-launches-lava-and-ash/"
+      },
+      {
+        "id": "EONET_10631",
+        "title": "Sheveluch Volcano, Russia",
+        "category": "volcanoes",
+        "link": "https://volcano.si.edu/volcano.cfm?vn=300270"
+      },
+      {
+        "id": "EONET_9679",
+        "title": "Suwanosejima Volcano, Japan",
+        "category": "volcanoes",
+        "link": "https://volcano.si.edu/volcano.cfm?vn=282030"
+      }
     ]
   },
   "wildfires_open": {
@@ -82,7 +324,126 @@
     "category": "wildfires",
     "count": 20,
     "events": [
-      {"id": "seed", "title": "Open EONET wildfire list capped at 20. Daily job replaces this seed."}
+      {
+        "id": "EONET_23453",
+        "title": "Wildfire Calico, Humboldt, Nevada",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-NVHTF-020624"
+      },
+      {
+        "id": "EONET_23455",
+        "title": "Wildfire McConnell, Humboldt, Nevada",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-NVWID-020620"
+      },
+      {
+        "id": "EONET_23466",
+        "title": "Wildfire LAUGHLIN, Colfax, New Mexico",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-NMN2S-27-2057027"
+      },
+      {
+        "id": "EONET_23456",
+        "title": "Wildfire MUSTANG, Malheur, Oregon",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-ORVAD-260267"
+      },
+      {
+        "id": "EONET_23462",
+        "title": "Wildfire California  Creek, Elko, Nevada",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-NVHTF-010537"
+      },
+      {
+        "id": "EONET_23457",
+        "title": "Wildfire S-1 VYA, Washoe, Nevada",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-CANOD-005304"
+      },
+      {
+        "id": "EONET_23459",
+        "title": "Wildfire Tom Creek, Tooele, Utah",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-UTWDD-200672"
+      },
+      {
+        "id": "EONET_23452",
+        "title": "Wildfire Ross, Palo Pinto, Texas",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-TXTXS-267549"
+      },
+      {
+        "id": "EONET_23458",
+        "title": "Wildfire Oxley, Elko, Nevada",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-NVEKD-010515"
+      },
+      {
+        "id": "EONET_23461",
+        "title": "Wildfire H2, Palm Beach, Florida",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-FLFLS-261800142"
+      },
+      {
+        "id": "EONET_23465",
+        "title": "Wildfire Rabbit Ear East, Union, New Mexico",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-NMN2S-000724"
+      },
+      {
+        "id": "EONET_23463",
+        "title": "Wildfire Mitchell, Ware, Georgia",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-GAOKR-002585"
+      },
+      {
+        "id": "EONET_23209",
+        "title": "Wildfire Old Deer, Carson, Texas",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-TXTXS-267516"
+      },
+      {
+        "id": "EONET_23225",
+        "title": "Wildfire 22, Miami-Dade, Florida",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-FLFLS-1800143"
+      },
+      {
+        "id": "EONET_23215",
+        "title": "Wildfire Rustler, Motley, Texas",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-TXTXS-267465"
+      },
+      {
+        "id": "EONET_23454",
+        "title": "Wildfire Electric, Whatcom, Washington",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-WAMSF-000494"
+      },
+      {
+        "id": "EONET_23219",
+        "title": "Wildfire Shale Butte, Lincoln, Idaho",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-IDTFD-000206"
+      },
+      {
+        "id": "EONET_23211",
+        "title": "Wildfire McCulley, Baker, Oregon",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-ORWWF-000531"
+      },
+      {
+        "id": "EONET_23218",
+        "title": "Wildfire Hawk, Washoe, Nevada",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-NVRNOX-030739"
+      },
+      {
+        "id": "EONET_23460",
+        "title": "Wildfire Hawk, Washoe, Nevada",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-NVTMFX-030739"
+      }
     ]
   },
   "errors": [],
