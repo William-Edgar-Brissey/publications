@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """Create private Typefully drafts from a generated distribution bundle.
 
-This script never publishes or schedules content. It uploads the cover/PDF and
-creates private drafts for review. TYPEFULLY_API_KEY and
+This script never publishes or schedules content. TYPEFULLY_API_KEY and
 TYPEFULLY_SOCIAL_SET_ID must be supplied as secrets.
 """
 
@@ -10,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import mimetypes
 import os
 import time
 import urllib.error
@@ -48,9 +48,19 @@ def upload_media(path: Path, social_set_id: str, api_key: str) -> str:
     if not upload_url or not media_id:
         raise RuntimeError(f"Incomplete Typefully upload ticket for {path.name}")
 
-    upload = urllib.request.Request(upload_url, data=path.read_bytes(), method="PUT")
-    with urllib.request.urlopen(upload, timeout=90):
-        pass
+    content_type = mimetypes.guess_type(path.name)[0] or "application/octet-stream"
+    upload = urllib.request.Request(
+        upload_url,
+        data=path.read_bytes(),
+        method="PUT",
+        headers={"Content-Type": content_type},
+    )
+    try:
+        with urllib.request.urlopen(upload, timeout=90):
+            pass
+    except urllib.error.HTTPError as exc:
+        detail = exc.read().decode("utf-8", errors="replace")[:500]
+        raise RuntimeError(f"Media PUT failed HTTP {exc.code} for {path.name}: {detail}") from exc
 
     deadline = time.monotonic() + 120
     while time.monotonic() < deadline:
@@ -69,6 +79,14 @@ def create_draft(social_set_id: str, api_key: str, payload: dict) -> dict:
     return request_json(
         "POST", f"/social-sets/{social_set_id}/drafts", api_key, payload
     )
+
+
+def try_upload(path: Path, social_set_id: str, api_key: str) -> str | None:
+    try:
+        return upload_media(path, social_set_id, api_key)
+    except Exception as exc:
+        print(f"Skipping media {path.name}: {exc}")
+        return None
 
 
 def main() -> None:
@@ -114,20 +132,20 @@ def main() -> None:
     social_set_id = (os.environ.get("TYPEFULLY_SOCIAL_SET_ID") or "").strip()
     if not api_key or not social_set_id:
         raise RuntimeError("TYPEFULLY_API_KEY and TYPEFULLY_SOCIAL_SET_ID are required")
-    if any(ch in social_set_id for ch in " \t\r\n"):
-        raise RuntimeError("TYPEFULLY_SOCIAL_SET_ID still contains whitespace after strip")
 
     cover_name = manifest["editions"].get("cover")
     if cover_name and (args.bundle / cover_name).exists():
-        cover_id = upload_media(args.bundle / cover_name, social_set_id, api_key)
-        x_payload["platforms"]["x_article"]["cover_media_id"] = cover_id
+        cover_id = try_upload(args.bundle / cover_name, social_set_id, api_key)
+        if cover_id:
+            x_payload["platforms"]["x_article"]["cover_media_id"] = cover_id
 
     pdf_name = manifest["editions"].get("linkedin_document")
     if pdf_name and (args.bundle / pdf_name).exists():
-        pdf_id = upload_media(args.bundle / pdf_name, social_set_id, api_key)
-        linkedin_payload["platforms"]["linkedin"]["posts"][0]["media_ids"] = [pdf_id]
-    else:
-        linkedin_payload["scratchpad_text"] += " No PDF was attached; text-only LinkedIn draft."
+        pdf_id = try_upload(args.bundle / pdf_name, social_set_id, api_key)
+        if pdf_id:
+            linkedin_payload["platforms"]["linkedin"]["posts"][0]["media_ids"] = [pdf_id]
+        else:
+            linkedin_payload["scratchpad_text"] += " PDF upload skipped; text-only LinkedIn draft."
 
     results = {
         "x_article": create_draft(social_set_id, api_key, x_payload),
