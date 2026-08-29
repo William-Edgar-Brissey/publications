@@ -104,6 +104,13 @@ def main() -> None:
     linkedin_text = (args.bundle / manifest["editions"]["linkedin_caption"]).read_text(
         encoding="utf-8"
     )
+    site = manifest.get("canonical_url") or "https://william-edgar-brissey.github.io/publications/articles/book-one-coupling-register.html"
+    substack_text = (
+        f"{manifest['title']}\n\n"
+        "Water, Air, Earth, and Fire scored as separate joints. "
+        "CL-002 stays pilot. CL-016 stays parked.\n\n"
+        f"{site}\n"
+    )
 
     x_payload = {
         "platforms": {"x_article": {"content_markdown": x_markdown}},
@@ -123,9 +130,16 @@ def main() -> None:
             f"{manifest['git_revision']}. Confirm preview before publishing."
         ),
     }
+    substack_payload = {
+        "platforms": {
+            "substack": {"enabled": True, "posts": [{"text": substack_text}]}
+        },
+        "draft_title": f"{manifest['title']} — Substack Note",
+        "scratchpad_text": "Substack Notes beta. Not a newsletter issue.",
+    }
 
     if not args.submit:
-        print(json.dumps({"x_article": x_payload, "linkedin": linkedin_payload}, indent=2))
+        print(json.dumps({"x_article": x_payload, "linkedin": linkedin_payload, "substack": substack_payload}, indent=2))
         return
 
     api_key = (os.environ.get("TYPEFULLY_API_KEY") or "").strip()
@@ -151,6 +165,10 @@ def main() -> None:
         "x_article": create_draft(social_set_id, api_key, x_payload),
         "linkedin": create_draft(social_set_id, api_key, linkedin_payload),
     }
+    try:
+        results["substack"] = create_draft(social_set_id, api_key, substack_payload)
+    except Exception as exc:
+        results["substack"] = {"error": str(exc)}
     (args.bundle / "typefully-draft-results.json").write_text(
         json.dumps(results, indent=2) + "\n", encoding="utf-8"
     )
