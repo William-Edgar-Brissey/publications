@@ -24,6 +24,7 @@ Evidence-bound work in AI systems architecture, agent-trace diagnostics, resilie
 
 ::: {.hero-actions}
 [Read the Coupling Register](articles/book-one-coupling-register.qmd)
+[Open the Coupling Monitor](articles/coupling-monitor.qmd)
 [Read the Research Prospectus](articles/realignment-architecture-prospectus.qmd)
 :::
 :::
@@ -41,6 +42,7 @@ Public Release RA-CR-2026-08-29 · Book One
 The elemental thesis is now a scored coupling graph. CL-002 remains at pilot. 2026 ocean heat and El Niño are current. The 2030s volcanic winter stays parked.
 
 [Read the controlling brief →](articles/book-one-coupling-register.qmd)
+[Open the live monitor →](articles/coupling-monitor.qmd)
 :::
 
 ::: {.release-abstract}

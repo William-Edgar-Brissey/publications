@@ -1,0 +1,66 @@
+---
+title: "Coupling Monitor v1"
+subtitle: "Public-feed board for Book One — not a God's Eye"
+description: "Daily snapshot of Niño 3.4, USGS M≥6, and open EONET fire/volcano events, shown next to locked register grades. RAPID is stale. CL-016 stays parked."
+date: 2026-08-29
+categories: [realignment, climate, claim-register, monitor]
+author: "William Edgar Brissey"
+include-after-body:
+  - text: |
+      <script src="../assets/monitor/monitor.js"></script>
+---
+
+**Status:** Operational board · Monitor v1.0 · binds to RA-CR-2026-08-29  
+**Not:** a collapse siren, a live AMOC series, or established science.
+
+This page reads a JSON snapshot written by a public-feed job. Each tile keeps its own vintage. Record SST does not move CL-002 or CL-016.
+
+[Controlling register](book-one-coupling-register.qmd) · [Source snapshot](../assets/monitor/snapshot.json)
+
+<div id="coupling-monitor" class="coupling-monitor" data-snapshot="../assets/monitor/snapshot.json">
+<p>Loading snapshot…</p>
+</div>
+
+## What v1 is allowed to show
+
+| Tile | Feed | Cadence |
+|---|---|---|
+| Niño 3.4 anomaly | NOAA CoastWatch ERDDAP weekly OISST.v2 | Weekly product, fetched daily |
+| Extra-polar SST | Locked from the 22 Aug 2026 Copernicus figure in the register | Manual |
+| RAPID AMOC | None. Last public array product through Feb 2024 | STALE |
+| USGS M≥6 | FDSN event service, 30-day window | Daily |
+| Open volcanoes / wildfires | NASA EONET v3 `status=open` | Daily |
+| CL-002 / CL-003 / CL-016 / biology | Register gates | Manual |
+
+## What it must not do
+
+- Invent a 2026 Sverdrup number.
+- Treat EONET open volcanoes as a synchronized Ring of Fire.
+- Fold whale, krill, or phytoplankton die-off into a gauge.
+- Compress CL-003 because fire or heat tiles are red.
+
+Refresh is a GitHub Action (`monitor.yml`), not a person staring at the planet.
+
+```{=html}
+<style>
+.coupling-monitor { margin: 1.5rem 0 2.5rem; }
+.mon-head { margin-bottom: 1rem; }
+.mon-fetched { font-variant-numeric: tabular-nums; color: #4b5d73; }
+.mon-disc { max-width: 48rem; }
+.mon-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr)); gap: 0.9rem; }
+.mon-tile { border: 1px solid #d5dce3; border-radius: 6px; padding: 0.9rem 1rem 1rem; background: #fbfaf7; }
+.mon-tile h2 { font-size: 1.05rem; margin: 0.2rem 0 0.5rem; }
+.mon-kicker { font-size: 0.72rem; letter-spacing: 0.06em; font-weight: 700; text-transform: uppercase; }
+.mon-value { font-size: 1.35rem; font-weight: 650; margin: 0.2rem 0; }
+.mon-meta { font-size: 0.85rem; color: #4b5d73; }
+.mon-list { margin: 0.4rem 0 0; padding-left: 1.1rem; }
+.mon-list li { margin: 0.2rem 0; }
+.mon-live .mon-kicker { color: #1f6b3a; }
+.mon-stale .mon-kicker { color: #8a5a12; }
+.mon-pilot .mon-kicker { color: #1f4b7a; }
+.mon-parked .mon-kicker { color: #6b3a6b; }
+.mon-locked .mon-kicker { color: #334155; }
+.mon-developing .mon-kicker { color: #7a4a12; }
+.mon-errors { margin-top: 1.5rem; }
+</style>
+```
