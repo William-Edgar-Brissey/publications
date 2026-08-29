@@ -1,0 +1,30 @@
+name: Weekly Coupling Monitor social posts
+
+on:
+  schedule:
+    - cron: "5 13 * * 1"
+  workflow_dispatch:
+    inputs:
+      schedule_next_monday:
+        description: "Schedule for next Monday 09:00 America/New_York"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Schedule Typefully X and LinkedIn posts
+        env:
+          TYPEFULLY_API_KEY: ${{ secrets.TYPEFULLY_API_KEY }}
+          TYPEFULLY_SOCIAL_SET_ID: ${{ secrets.TYPEFULLY_SOCIAL_SET_ID }}
+        run: python scripts/post_monitor_weekly.py
