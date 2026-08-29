@@ -110,10 +110,12 @@ def main() -> None:
         print(json.dumps({"x_article": x_payload, "linkedin": linkedin_payload}, indent=2))
         return
 
-    api_key = os.environ.get("TYPEFULLY_API_KEY")
-    social_set_id = os.environ.get("TYPEFULLY_SOCIAL_SET_ID")
+    api_key = (os.environ.get("TYPEFULLY_API_KEY") or "").strip()
+    social_set_id = (os.environ.get("TYPEFULLY_SOCIAL_SET_ID") or "").strip()
     if not api_key or not social_set_id:
         raise RuntimeError("TYPEFULLY_API_KEY and TYPEFULLY_SOCIAL_SET_ID are required")
+    if any(ch in social_set_id for ch in " \t\r\n"):
+        raise RuntimeError("TYPEFULLY_SOCIAL_SET_ID still contains whitespace after strip")
 
     cover_name = manifest["editions"].get("cover")
     if cover_name and (args.bundle / cover_name).exists():
