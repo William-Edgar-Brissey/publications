@@ -26,6 +26,8 @@ website:
     left:
       - href: index.qmd
         text: Publications
+      - href: offer.qmd
+        text: Incident review
       - href: about.qmd
         text: About
     right:
