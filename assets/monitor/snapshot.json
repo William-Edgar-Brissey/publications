@@ -1,0 +1,90 @@
+{
+  "schema": "coupling-monitor-v1",
+  "fetched_at": "2026-08-29T07:59:06+00:00",
+  "disclaimer": "Operational monitor of public feeds. Not a collapse forecast, not a promotion of CL-002, not a 2026 AMOC value.",
+  "canonical_register": "https://william-edgar-brissey.github.io/publications/articles/book-one-coupling-register.html",
+  "locked": {
+    "amoc_rapid": {
+      "status": "STALE",
+      "claim": "CL-001 / CL-002 predictor",
+      "value": "No 2026 RAPID Sv number",
+      "vintage": "Published through February 2024",
+      "note": "Do not infer AMOC from Niño 3.4 or extra-polar SST.",
+      "source_url": "https://rapid.ac.uk/"
+    },
+    "cl002": {
+      "status": "PILOT",
+      "claim": "CL-002 AMOC → tropical Atlantic / ITCZ",
+      "note": "Surface boxes updated through June 2026. Mechanism not promoted."
+    },
+    "cl003": {
+      "status": "DEVELOPING",
+      "claim": "CL-003 infrastructural scissors",
+      "note": "No clock compression. Labor-hour series still absent."
+    },
+    "cl016": {
+      "status": "PARKED",
+      "claim": "CL-016 synchronized Ring of Fire / volcanic winter",
+      "note": "Appendix K long tail. Open EONET volcanoes are not this claim."
+    },
+    "biology": {
+      "status": "PARKED",
+      "claim": "Blended whale / krill / phytoplankton collapse",
+      "note": "No honest global pulse in v1 feeds."
+    },
+    "register_lock": {
+      "extra_polar_sst_c": 21.1,
+      "extra_polar_sst_date": "2026-08-22",
+      "extra_polar_sst_source": "Copernicus C3S/ERA5 as cited in RA-CR-2026-08-29",
+      "note": "Manual lock from the Coupling Register. Not refreshed by this job."
+    }
+  },
+  "nino34": {
+    "ok": true,
+    "source": "NOAA / CoastWatch ERDDAP ncepNinoSSTwk (OISST.v2 weekly)",
+    "source_url": "https://coastwatch.pfeg.noaa.gov/erddap/tabledap/ncepNinoSSTwk.html",
+    "time": "2026-08-19T00:00:00Z",
+    "sst_c": 29.4,
+    "anomaly_c": 2.6,
+    "note": "Weekly Niño 3.4. Not extra-polar SST and not AMOC."
+  },
+  "quakes_m6": {
+    "ok": true,
+    "source": "USGS FDSN event service",
+    "source_url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-07-30&minmagnitude=6.0&orderby=magnitude",
+    "window_days": 30,
+    "min_magnitude": 6.0,
+    "count": 13,
+    "events": [
+      {"id": "us6000tkt2", "mag": 7.7, "place": "68 km NNW of Ende, Indonesia", "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkt2"},
+      {"id": "us6000tjl2", "mag": 7.4, "place": "5 km S of San José del Palmar, Colombia", "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tjl2"},
+      {"id": "us6000tkyk", "mag": 6.9, "place": "9 km WNW of Pematangsiantar, Indonesia", "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkyk"},
+      {"id": "us6000tm81", "mag": 6.7, "place": "31 km NW of Aniso, Peru", "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tm81"}
+    ]
+  },
+  "volcanoes_open": {
+    "ok": true,
+    "source": "NASA EONET v3 open events",
+    "source_url": "https://eonet.gsfc.nasa.gov/api/v3/events?category=volcanoes&status=open&limit=20",
+    "category": "volcanoes",
+    "count": 20,
+    "events": [
+      {"id": "EONET_20710", "title": "Nevados del Chillan Volcano, Chile"},
+      {"id": "EONET_20409", "title": "Telica Volcano, Nicaragua"},
+      {"id": "EONET_20411", "title": "Kikai Volcano, Japan"},
+      {"id": "EONET_20410", "title": "Bezymianny Volcano, Russia"}
+    ]
+  },
+  "wildfires_open": {
+    "ok": true,
+    "source": "NASA EONET v3 open events",
+    "source_url": "https://eonet.gsfc.nasa.gov/api/v3/events?category=wildfires&status=open&limit=20",
+    "category": "wildfires",
+    "count": 20,
+    "events": [
+      {"id": "seed", "title": "Open EONET wildfire list capped at 20. Daily job replaces this seed."}
+    ]
+  },
+  "errors": [],
+  "health": "ok"
+}
