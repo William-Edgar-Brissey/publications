@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Create and schedule weekly Coupling Monitor posts on Typefully.
+"""Create weekly Coupling Monitor posts on Typefully (X, LinkedIn, Substack Notes).
 
-Reads assets/monitor/snapshot.json. Schedules X and LinkedIn for the next
-Monday 09:00 America/New_York unless --now is passed.
+Reads assets/monitor/snapshot.json. Typefully schedule API is 404; drafts stay
+private until scheduled in the UI for Monday 09:00 America/New_York.
 """
 
 from __future__ import annotations
@@ -19,6 +19,7 @@ from zoneinfo import ZoneInfo
 API_BASE = os.environ.get("TYPEFULLY_API_BASE", "https://api.typefully.com/v2").rstrip("/")
 SNAPSHOT = Path("assets/monitor/snapshot.json")
 MONITOR_URL = "https://william-edgar-brissey.github.io/publications/monitor.html"
+REGISTER_URL = "https://william-edgar-brissey.github.io/publications/articles/book-one-coupling-register.html"
 ET = ZoneInfo("America/New_York")
 
 
@@ -47,7 +48,7 @@ def next_monday_nine(now: datetime | None = None) -> datetime:
     return target
 
 
-def copy_from_snapshot(snap: dict) -> tuple[str, str]:
+def copy_from_snapshot(snap: dict) -> dict[str, str]:
     nino = snap.get("nino34") or {}
     if nino.get("ok"):
         nino_line = f"Niño 3.4 {nino.get('time')}: {nino.get('anomaly_c'):+} °C (CPC monthly)"
@@ -57,55 +58,46 @@ def copy_from_snapshot(snap: dict) -> tuple[str, str]:
     sst_line = f"Extra-polar SST locked {lock.get('extra_polar_sst_c')} °C on {lock.get('extra_polar_sst_date')}"
     q = snap.get("quakes_m6") or {}
     q_line = f"USGS M≥6 last 30d: {q.get('count', '?')}" if q.get("ok") else "USGS M≥6 stale"
-    x = (
-        "Coupling Monitor weekly board\n\n"
-        f"{nino_line}\n"
-        f"{sst_line}\n"
-        f"{q_line}\n"
-        "RAPID AMOC remains stale. CL-002 stays pilot. CL-016 stays parked.\n\n"
-        f"{MONITOR_URL}\n"
-    )
-    li = (
-        "Coupling Monitor — weekly board\n\n"
-        "Water / Air / Earth / Fire tiles from public feeds, graded separately.\n\n"
-        f"{nino_line}\n"
-        f"{sst_line}\n"
-        f"{q_line}\n\n"
-        "RAPID AMOC has no 2026 Sv number. CL-002 remains pilot. "
-        "CL-016 (volcanic winter) remains parked.\n\n"
-        f"Board: {MONITOR_URL}\n"
-        "Register: https://william-edgar-brissey.github.io/publications/articles/book-one-coupling-register.html\n"
-    )
-    return x, li
+    gates = "RAPID AMOC remains stale. CL-002 stays pilot. CL-016 stays parked."
+    return {
+        "x": (
+            "Coupling Monitor weekly board\n\n"
+            f"{nino_line}\n{sst_line}\n{q_line}\n{gates}\n\n{MONITOR_URL}\n"
+        ),
+        "linkedin": (
+            "Coupling Monitor — weekly board\n\n"
+            "Water / Air / Earth / Fire tiles from public feeds, graded separately.\n\n"
+            f"{nino_line}\n{sst_line}\n{q_line}\n\n{gates}\n\n"
+            f"Board: {MONITOR_URL}\nRegister: {REGISTER_URL}\n"
+        ),
+        "substack": (
+            "Weekly Coupling Monitor\n\n"
+            f"{nino_line}\n{sst_line}\n{q_line}\n\n{gates}\n\n{MONITOR_URL}\n"
+        ),
+    }
 
 
-def schedule_draft(social_set_id: str, draft_id: str, api_key: str, when_iso: str) -> dict:
-    errors = []
-    for endpoint, body in (
-        (f"/social-sets/{social_set_id}/drafts/{draft_id}/schedule", {"scheduled_date": when_iso}),
-        (f"/social-sets/{social_set_id}/drafts/{draft_id}/schedule", {"time": when_iso}),
-        (f"/social-sets/{social_set_id}/drafts/{draft_id}", {"scheduled_date": when_iso}),
-    ):
-        try:
-            return request_json("POST", endpoint, api_key, body)
-        except Exception as exc:
-            errors.append(str(exc))
-            try:
-                return request_json("PATCH", endpoint, api_key, body)
-            except Exception as exc2:
-                errors.append(str(exc2))
-    raise RuntimeError("Schedule failed: " + " | ".join(errors[:4]))
+def create_platform_draft(social_set_id: str, api_key: str, platform: str, text: str, title: str) -> dict:
+    return request_json(
+        "POST",
+        f"/social-sets/{social_set_id}/drafts",
+        api_key,
+        {
+            "platforms": {platform: {"enabled": True, "posts": [{"text": text}]}},
+            "draft_title": title,
+        },
+    )
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--now", action="store_true", help="Publish-attempt immediately instead of next Monday 09:00 ET")
+    parser.add_argument("--now", action="store_true")
     args = parser.parse_args()
 
     snap = json.loads(SNAPSHOT.read_text(encoding="utf-8"))
-    x_text, li_text = copy_from_snapshot(snap)
+    texts = copy_from_snapshot(snap)
     when = datetime.now(timezone.utc) if args.now else next_monday_nine()
-    when_iso = when.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    day = when.astimezone(ET).date()
 
     api_key = (os.environ.get("TYPEFULLY_API_KEY") or "").strip()
     social_set_id = (os.environ.get("TYPEFULLY_SOCIAL_SET_ID") or "").strip()
@@ -113,40 +105,32 @@ def main() -> None:
         raise RuntimeError("TYPEFULLY_API_KEY and TYPEFULLY_SOCIAL_SET_ID are required")
 
     created = {}
-    created["x"] = request_json(
-        "POST",
-        f"/social-sets/{social_set_id}/drafts",
-        api_key,
-        {
-            "platforms": {"x": {"enabled": True, "posts": [{"text": x_text}]}},
-            "draft_title": f"Coupling Monitor weekly — X — {when.astimezone(ET).date()}",
-        },
-    )
-    created["linkedin"] = request_json(
-        "POST",
-        f"/social-sets/{social_set_id}/drafts",
-        api_key,
-        {
-            "platforms": {"linkedin": {"enabled": True, "posts": [{"text": li_text}]}},
-            "draft_title": f"Coupling Monitor weekly — LinkedIn — {when.astimezone(ET).date()}",
-        },
-    )
-
-    scheduled = {}
-    for name, draft in created.items():
-        draft_id = str(draft.get("id") or draft.get("draft_id"))
+    errors = {}
+    titles = {
+        "x": f"Coupling Monitor weekly — X — {day}",
+        "linkedin": f"Coupling Monitor weekly — LinkedIn — {day}",
+        "substack": f"Coupling Monitor weekly — Substack Note — {day}",
+    }
+    for platform, text in texts.items():
         try:
-            scheduled[name] = schedule_draft(social_set_id, draft_id, api_key, when_iso)
+            created[platform] = create_platform_draft(
+                social_set_id, api_key, platform, text, titles[platform]
+            )
         except Exception as exc:
-            scheduled[name] = {"error": str(exc), "draft_id": draft_id, "private_url": draft.get("private_url")}
+            errors[platform] = str(exc)
 
     out = {
         "when_et": when.astimezone(ET).isoformat(),
-        "when_utc": when_iso,
-        "created": {k: {"id": v.get("id"), "private_url": v.get("private_url"), "status": v.get("status")} for k, v in created.items()},
-        "scheduled": scheduled,
+        "created": {
+            k: {"id": v.get("id"), "private_url": v.get("private_url"), "status": v.get("status")}
+            for k, v in created.items()
+        },
+        "errors": errors,
+        "note": "Typefully schedule API is 404. Open Drafts and Schedule for Monday 09:00 ET.",
     }
     print(json.dumps(out, indent=2))
+    if errors and not created:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":
