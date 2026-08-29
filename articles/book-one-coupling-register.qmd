@@ -1,0 +1,55 @@
+---
+title: "Book One Coupling Register"
+subtitle: "Water, Air, Earth, and Fire as a scored graph — not a single clock"
+description: "Controlling public brief for the Realignment elemental thesis. CL-002 stays at pilot. 2026 ocean heat and El Niño are current. The 2030s volcanic winter remains parked."
+date: 2026-08-29
+categories: [realignment, climate, claim-register, book-one]
+author: "William Edgar Brissey"
+---
+
+**Status:** Public research brief · Revision RA-CR-2026-08-29 · v1.0.0  
+**Controls:** Master Claim Register · Safety & Non-Deployment Policy · Appendices J and K  
+**Not:** a forecast of inevitable collapse, a deployment plan, or established science.
+
+## What this release is for
+
+Book One of the Public White Paper treats Water, Air, Earth, and Fire as one interdependent baseline. That thesis is only usable if the joints are scored separately. This page freezes that graph, refreshes the tropical Atlantic surface boxes through June 2026, and states what the August 2026 ocean–atmosphere state is allowed to change.
+
+Adversarial review is requested on named claim IDs, not on the narrative capstone.
+
+## What 2026 actually shows
+
+- Extra-polar sea-surface temperature reached 21.1 °C on 22 August 2026 (Copernicus C3S/ERA5), an all-time daily record in the season when the ocean normally cools.
+- Ocean heat content in the upper 2,000 m set another annual record in 2025 — the ninth consecutive record year. The 2005–2025 warming rate is more than double 1960–2005.
+- El Niño is present and strengthening. Operational weekly Niño 3.4 in late August 2026 was about +1.8 °C; ensembles favor a very strong event in winter 2026–27. That is the fast Air driver for the next two seasons.
+- NOAA PSL TNA and TSA run through June 2026. Early-2026 CEG is slightly negative. TSA still carries the longer warming trend. Niño 3.4 does not explain CEG (R² ≈ 0.03 with a time control).
+- RAPID AMOC at 26°N is published through February 2024, not through this week. Mean over 2005–2023 is about 16.9 Sv. Published trends are modest relative to variability. No 2026 collapse number exists in the array product.
+- East African drought flags and western/Mediterranean fire-heat load are current Air→Earth signals. They are not a completed Water→Air→Fire cascade.
+
+## What 2026 does not show
+
+- A promoted CL-002 (AMOC deceleration as the demonstrated driver of tropical Atlantic SST / ITCZ).
+- A compressed CL-003 labor-scissors date.
+- A 2030s synchronized Ring-of-Fire or volcanic winter. Appendix K already assigned that to the long tail. It stays parked as CL-016.
+
+## Gate decisions locked today
+
+| Claim | Decision |
+|---|---|
+| CL-002 | KEEP PILOT. Surface boxes updated; AMOC predictor still stale. |
+| CL-003 | No clock compression. Demand inventory opened; supply blade absent. |
+| CL-006–008 | Registered as biology track; not folded into CL-002. |
+| CL-016 | PARKED. |
+| EDEN | Site-hazard spec issued. Safety Policy unchanged. No inhabited loop. |
+
+## How to attack this
+
+Use the datasets named in the Coupling Register. A useful critique names a cell, a series, and a break condition. A critique that treats record SST as proof of every volume will be logged as category error.
+
+Supporting files live in `articles/book-one-register/`.
+
+Source repository: [William-Edgar-Brissey/publications](https://github.com/William-Edgar-Brissey/publications).
+
+## Binding reminder
+
+High-certainty language in Book One is literary emphasis. Operational confidence lives only in this register and the Failed-Hypothesis Ledger. No component is ready for inhabited, nuclear, or safety-critical use.
