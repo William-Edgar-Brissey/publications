@@ -1,0 +1,38 @@
+name: Refresh Coupling Monitor snapshot
+
+on:
+  schedule:
+    - cron: "20 12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coupling-monitor
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch public feeds
+        run: python scripts/fetch_monitor.py
+
+      - name: Commit snapshot if it changed
+        run: |
+          git config user.name "coupling-monitor-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/monitor/snapshot.json
+          if git diff --cached --quiet; then
+            echo "No snapshot change"
+            exit 0
+          fi
+          git commit -m "Refresh Coupling Monitor snapshot"
+          git push

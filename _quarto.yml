@@ -26,6 +26,8 @@ website:
     left:
       - href: index.qmd
         text: Publications
+      - href: articles/coupling-monitor.qmd
+        text: Monitor
       - href: offer.qmd
         text: Incident review
       - href: about.qmd
