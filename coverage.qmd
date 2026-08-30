@@ -1,43 +1,47 @@
 ---
-title: "What we can see"
-subtitle: "Field board under Seven Rules R0 — not God’s Eye"
+title: "What the instruments show"
+subtitle: "A coverage board — not a warning siren"
 date: 2026-08-30
 author: "William Edgar Brissey"
 ---
 
-**Seven Rules declaration**  
-Governing control: `SEVEN_RULES_UNIVERSAL_MODEL_CONTROL_AND_EXECUTION_START_R0_2026-08-30.md`  
-Master protocol: RA-CR-2026-08-29 Coupling Register  
-Assignment packet: Book One field coverage  
-Model/provider/version: Grok / NOT FULLY EXPOSED  
-Research cutoff: 2026-08-30T21:50Z  
-Subject/batch: FIELD-COVERAGE-2026-08-30  
-Independent initial submission: YES  
-Material unknowns disclosed: YES  
-Contrary evidence sought: YES  
-Privacy/legal review completed: YES (public instruments only)  
-Kernel status: NOT RUN — not a truth certificate  
-Human adjudication: PENDING
+This page answers one question: **can we actually see the thing people are arguing about?**
 
-Rules in one line: accuracy over signal; honesty; reconstructable work; adversarial alternatives; visible provenance; human signs; evidence beats the story.
+If we cannot see it, we say so. We do not fill the hole with a story.
 
-Register: [Coupling Register](articles/book-one-coupling-register.qmd) wins if this page disagrees.  
-Weekly read: [Week 35 brief](articles/weekly-brief-2026-w35.qmd).  
-Older Niño board: [Monitor v1](articles/coupling-monitor.qmd) — **not the same ledger yet** (Rule Three gap).
+[This week's plain-language brief](articles/weekly-brief-2026-w35.qmd) · [Claim register (controls what we are allowed to assert)](articles/book-one-coupling-register.qmd)
 
-Advice. Not orders. No inhabited loop. No autonomous control.
+## Right now
 
-## Can we see it?
+**Rain.** We have 30 years of monthly rain at nine places (Ubay, Manaus, Lagos, Nairobi, Jakarta, Mumbai, Mexico City, São Paulo, Paris). That is a sample, not the planet. The newest CHIRPS month on the public server was **July 2026**. August is late, not “no rain.”
 
-| What | Claim ID | Label | State |
-|---|---|---|---|
-| CHIRPS rain, 9 points, 1991–2020 | Water joint; not CL-002 | FACT — PROVISIONAL series | Current month often **DELAYED** |
-| ERA5 temp+rain, same points | Air/Water context | FACT — PROVISIONAL | Complete on those points |
-| USGS M4.5+ tropics vs extra | Earth joint | FACT — PROVISIONAL climatology | Complete 1991–2020 |
-| FIRMS daily boxes | Fire joint | FACT — PROVISIONAL | LIVE; west_south **NO_COVERAGE** |
-| CPC ONI | Air index for RQ5 v0 only | FACT — PROVISIONAL | MJJ 2026 +1.39 |
-| AMOC / RAPID | **CL-002 PILOT** | UNKNOWN here | Do not infer from rain |
-| Volcanic winter | **CL-016 PARKED** | not claimed | Absent on purpose |
-| EDEN habitability | pre-feasibility elsewhere | UNKNOWN / insufficient from 9 points | Forbidden reading |
+**Heat.** Same nine places have a 30-year temperature series from ERA5. Useful for “is this July odd for *this* place?” Useless as a world average.
 
-Credits: CHIRPS/UCSB, ERA5/ECMWF via Open-Meteo, USGS, EMSC, BMKG, NASA FIRMS, CPC ONI.
+**Earthquakes.** We counted global quakes magnitude 4.5 and up, month by month, 1991–2020, split tropics vs the rest. That is a background rate, not this week's shaking at your house.
+
+**Fire.** A satellite pass on 30 August 2026 saw about **5,000** hotspots worldwide. One whole western-southern box came back **empty while another box had thousands.** Empty here means the pull failed that region, not that nothing is burning.
+
+**Pacific heat index (ONI).** The latest published seasonal number (May–July 2026) is **+1.39**. That is a Pacific measurement. It is not proof that your rainy season has already changed.
+
+**Atlantic overturning (AMOC).** We do not have a fresh number on this board. Older public notes already called that series stale. Do not read rain in Ubay as “the AMOC.”
+
+**Volcanic winter / collapsing food web / “move south.”** Not on this page. Those claims are parked or not supported by these gauges.
+
+## How to use this
+
+1. Look up **your** weather and fire service (PAGASA, BMKG, SMN, INMET, NOAA, …). This board does not replace them.
+2. Compare a month to **the same month** in the 30-year record, not to Paris and not to “the tropics.”
+3. If a box is empty or a month is late, treat it as **missing**, not calm.
+
+This is advice. You can ignore it. No one is ordered to move, build, or stop a treatment because of this page.
+
+---
+
+<details>
+<summary>Record-keeping (you can skip this)</summary>
+
+Seven Rules R0 apply. Human sign-off on this wording: pending. Automated kernel: not run. Labels used above are observations with named sources, plus gaps called gaps.
+
+Sources: CHIRPS/UCSB, ERA5/ECMWF via Open-Meteo, USGS, NASA FIRMS, CPC ONI, BMKG when pulled.
+
+</details>
