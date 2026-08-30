@@ -387,44 +387,37 @@
   {
     "objectID": "articles/weekly-brief-2026-w35.html",
     "href": "articles/weekly-brief-2026-w35.html",
-    "title": "Weekly field brief — week of 24–30 August 2026",
+    "title": "This week, in ordinary language",
     "section": "",
-    "text": "Seven Rules declaration\nGoverning control: SEVEN_RULES_UNIVERSAL_MODEL_CONTROL_AND_EXECUTION_START_R0_2026-08-30.md\nMaster protocol: Book One Coupling Register RA-CR-2026-08-29 + field series (not World Leaders Master Protocol)\nAssignment packet: Book One field board / weekly brief\nModel/provider/version: Grok / NOT FULLY EXPOSED\nResearch cutoff: 2026-08-30T21:50Z\nSubject/batch: FIELD-BRIEF-2026-W35\nIndependent initial submission: YES (this revision rebinder)\nMaterial unknowns disclosed: YES\nContrary evidence sought: YES (FIRMS empty box; RQ5 nulls; RAPID stale)\nPrivacy/legal review completed: YES for this public-instrument brief (no private persons profiled)\nKernel status: NOT RUN — never imply truth certification\nHuman adjudication: PENDING\nThis page is RESEARCH DRAFT until William signs PASS / FAIL / PASS WITH OPEN FINDINGS."
+    "text": "If you only read one page, read this one. The coverage board is the longer gauge list."
   },
   {
-    "objectID": "articles/weekly-brief-2026-w35.html#the-seven-rules-in-force-here",
-    "href": "articles/weekly-brief-2026-w35.html#the-seven-rules-in-force-here",
-    "title": "Weekly field brief — week of 24–30 August 2026",
-    "section": "The seven rules in force here",
-    "text": "The seven rules in force here\n\nAccuracy over signal.\n\nHonesty; no allegation-to-fact.\n\nReconstructable handoff.\n\nAdversarial alternatives stay on the page.\n\nProvenance and gaps visible.\n\nAI drafts; human adjudicates.\n\nEvidence beats the story; no one names their read “reality.”\n\nAdvice only. Not a demand. Official warnings outrank this brief."
+    "objectID": "articles/weekly-brief-2026-w35.html#what-happened-in-the-data",
+    "href": "articles/weekly-brief-2026-w35.html#what-happened-in-the-data",
+    "title": "This week, in ordinary language",
+    "section": "What happened in the data",
+    "text": "What happened in the data\nThe Pacific’s published seasonal temperature index (ONI, May–July) is warm (+1.39). That is one ocean product, not a weather forecast for your town.\nSatellites counted about 5,000 fire hotspots in a day. One large part of the map returned zero while another part returned thousands. Zero there is a blind spot, not a safe zone.\nThe rain dataset we use for history is still sitting on July. August rain from that source is not in yet. Missing is not drought.\nThe Atlantic current people argue about (AMOC) is not updated here. We will not pretend it is."
   },
   {
-    "objectID": "articles/weekly-brief-2026-w35.html#observed-fact-provisional-unless-noted",
-    "href": "articles/weekly-brief-2026-w35.html#observed-fact-provisional-unless-noted",
-    "title": "Weekly field brief — week of 24–30 August 2026",
-    "section": "Observed (FACT — PROVISIONAL unless noted)",
-    "text": "Observed (FACT — PROVISIONAL unless noted)\n\n\n\nInstrument\nStatement\nLabel\nEvidence\n\n\n\n\nCPC ONI MJJ 2026\nanomaly +1.39\nFACT — PROVISIONAL\noni.ascii.txt last rows MJJ 2026\n\n\nFIRMS NOAA-20 ~2026-08-30T06:02Z\nn=4968; tropics 601\nFACT — PROVISIONAL\nfour-box live pull recorded in project-register\n\n\nFIRMS west_south box\nn=0 while east_north=4116\nFACT — PROVISIONAL; treat as NO_COVERAGE\nsame pull\n\n\nCHIRPS current month\nAugust 2026 not on UCSB monthly tree\nFACT — VERIFIED as DELAYED\nlast file seen 2026.07\n\n\nRAPID AMOC\nnot in this job\nUNKNOWN / INSUFFICIENT; Monitor v1 already STALE\nno new array product fetched\n\n\n\nANALYSIS / INFERENCE: a warm ONI value is not a Water→Air→Fire cascade and does not move CL-002 (pilot) or CL-016 (parked).\nDISPUTED / open: Coupling Monitor v1 and the gods_eye series are still two ledgers (Rule Three defect)."
+    "objectID": "articles/weekly-brief-2026-w35.html#what-that-does-not-mean",
+    "href": "articles/weekly-brief-2026-w35.html#what-that-does-not-mean",
+    "title": "This week, in ordinary language",
+    "section": "What that does not mean",
+    "text": "What that does not mean\nIt does not mean the world is ending this week.\nIt does not mean you should leave your country.\nIt does not mean last year’s rain will repeat, or fail, at your house.\nIt does not decide the parked claims about volcanic winter or “move to the Goldilocks band.”\nA separate check of 29 winters found that when that Pacific index was high, Ubay and Manaus rain tended to run the other way, Nairobi the same way, and Mumbai and Paris looked like chance. Same ocean, different places. That is a history test, not next season’s forecast."
   },
   {
-    "objectID": "articles/weekly-brief-2026-w35.html#rq5-v0-analysis-only",
-    "href": "articles/weekly-brief-2026-w35.html#rq5-v0-analysis-only",
-    "title": "Weekly field brief — week of 24–30 August 2026",
-    "section": "RQ5 v0 — ANALYSIS only",
-    "text": "RQ5 v0 — ANALYSIS only\nDJF 1992–2020 CHIRPS sum vs CPC ONI DJF, 29 years, year-shuffle null. Does not change a register gate.\n\n\n\n\n\n\n\n\n\nPlace\nr\np vs null\nAllowed sentence\n\n\n\n\nUbay\n−0.77\n0.000\nStronger than this null. Not “El Niño dries the Philippines.”\n\n\nManaus\n−0.51\n0.002\nSame limit.\n\n\nNairobi\n+0.49\n0.003\nOpposite sign; tropics are not one place.\n\n\nJakarta, Lagos, Mumbai, Paris\n|r| small\n≥0.17\nNot separated from noise.\n\n\n\nBreak: ONI file or CHIRPS months wrong → retract the table."
+    "objectID": "articles/weekly-brief-2026-w35.html#if-you-want-something-useful-to-do",
+    "href": "articles/weekly-brief-2026-w35.html#if-you-want-something-useful-to-do",
+    "title": "This week, in ordinary language",
+    "section": "If you want something useful to do",
+    "text": "If you want something useful to do\n\nRead the warning page of your weather and fire agency before this site.\nKeep ordinary reserves people already know: water, a week of medicine, papers, a neighbor who will check on you.\nIf officials say evacuate or boil water, do that. This brief does not override them.\nIf officials have not said that, do not invent an evacuation from a hotspot count."
   },
   {
-    "objectID": "articles/weekly-brief-2026-w35.html#what-a-person-might-do-advice-not-orders",
-    "href": "articles/weekly-brief-2026-w35.html#what-a-person-might-do-advice-not-orders",
-    "title": "Weekly field brief — week of 24–30 August 2026",
-    "section": "What a person might do — advice, not orders",
-    "text": "What a person might do — advice, not orders\n\n\n\n\n\n\n\n\nSituation\nSuggestion\nDo not\n\n\n\n\nYou live under a national met service\nRead that service first\nTreat a 9-point cell as your roof\n\n\nFire weather\nFollow local bans and official maps\nRead a 0-box as safe\n\n\nHeat or flood headlines\nOrdinary kit: water, meds, papers, neighbors\nRelocate because a dashboard exists\n\n\nEDEN / land / tanks\nWait for a named catchment sheet\nPour concrete from this brief"
-  },
-  {
-    "objectID": "articles/weekly-brief-2026-w35.html#what-would-change-this-brief",
-    "href": "articles/weekly-brief-2026-w35.html#what-would-change-this-brief",
-    "title": "Weekly field brief — week of 24–30 August 2026",
-    "section": "What would change this brief",
-    "text": "What would change this brief\n\nCPC revises ONI.\n\nFIRMS west_south returns a real count or a documented product limit.\n\nCHIRPS publishes 2026.08.\n\nWilliam signs a different gate on CL-002 / CL-016.\n\nHuman Integrator disposition on this file."
+    "objectID": "articles/weekly-brief-2026-w35.html#if-you-are-thinking-about-land-tanks-or-off-grid",
+    "href": "articles/weekly-brief-2026-w35.html#if-you-are-thinking-about-land-tanks-or-off-grid",
+    "title": "This week, in ordinary language",
+    "section": "If you are thinking about land, tanks, or “off-grid”",
+    "text": "If you are thinking about land, tanks, or “off-grid”\nWait until there is a named river basin with a water and hazard sheet. Nine dots on a map are not that sheet.\n\n\n\nRecord-keeping (you can skip this)\n\nWritten under Seven Rules R0. This wording is a draft until William signs it. It is not a World Leaders profile. Sources: CPC ONI text file; FIRMS pull 30 Aug 2026; CHIRPS monthly tree through 2026.07; RQ5 v0 year-shuffle test in project-register."
   },
   {
     "objectID": "articles/field-layer-comparison.html",
