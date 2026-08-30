@@ -1,0 +1,60 @@
+---
+title: "Weekly field brief — week of 24–30 August 2026"
+subtitle: "Advice, not orders. Register still wins."
+date: 2026-08-30
+categories: [realignment, book-one, weekly]
+author: "William Edgar Brissey"
+---
+
+**What this is:** a plain read of what the instruments showed this week.
+**What this is not:** a warning siren, a relocation order, or God’s Eye.
+
+Bound to seven rules:
+
+1. Label observation, inference, hypothesis, advice, decision.
+2. Put the evidence on the page.
+3. Leave disagreement visible.
+4. State what would break the line.
+5. Revise in public when the file changes.
+6. Humans keep the decision.
+7. Non-deployment: advice you may ignore; no one is commanded.
+
+Controlling claims: [Coupling Register](book-one-coupling-register.qmd). Gauges: [What we can see](/coverage.qmd).
+
+## This week, observed
+
+| Instrument | Observation | State |
+|---|---|---|
+| CPC ONI (MJJ 2026) | anomaly **+1.39** | published text file |
+| FIRMS NOAA-20 24h (30 Aug ~06:02 UTC) | **4,968** hotspots; tropics 601 | LIVE; western-southern box **0 = hole** |
+| CHIRPS monthly rain | last grid **2026.07** | August **DELAYED** — not zero rain |
+| USGS M4.5+ 1991–2020 | tropics ~283 / extra ~220 per month mean | climatology, not this week’s quake list |
+| RAPID AMOC | not refreshed here | **STALE** (Monitor v1 already said so) |
+
+**Inference (not a claim grade):** the Pacific index is warm in this CPC product. That is not “a cascade has started.”
+
+**Disagreement left open:** Monitor v1 and this field job are still two databases. Niño on one board, CHIRPS on the other.
+
+## What it may mean for a person (advice)
+
+These are **suggestions**. They are not law, not a bug-out order, and not medical or engineering advice.
+
+| If you live… | You might notice | You could do | Do not |
+|---|---|---|---|
+| Near a coast or on a small island in the tropical Pacific / maritime continent | Seasonal rain that is **not** last year’s pattern | Read **your** met service (PAGASA, BMKG, Fiji Met, …) before this page | Treat Ubay’s CHIRPS cell as your watershed |
+| In a fire-prone dry belt | Hotspot counts move daily and miss whole boxes | Follow local fire bans and official maps | Read FIRMS 0 in one box as “safe” |
+| Anywhere | Heat and rain headlines | Ordinary readiness: water, meds, papers, neighbors | Relocate because a dashboard exists |
+| Planning land, tanks, or “EDEN” | We do not have a catchment water balance | Wait for a named basin sheet | Pour concrete from this brief |
+
+RQ5 v0 (1992–2020, DJF rain vs ONI, vs shuffled years): Ubay and Manaus rain moved **against** ONI more than chance; Nairobi moved **with** it; Mumbai and Paris looked like noise. **That does not tell you what next winter does at your house.** Break condition: the test dies if the ONI file or CHIRPS months are wrong.
+
+## What you should not do because of this page
+
+- Do not move country, sell land, or stop taking prescribed medicine.
+- Do not treat CL-002 as proven or CL-016 as active. They are **pilot** and **parked**.
+- Do not skip official warnings because this board looks calm.
+- Do not skip official all-clears because this board looks busy.
+
+## Decision line
+
+No decision is taken here. If a government, utility, or clinic issues an instruction, **that** instruction outranks this brief.
