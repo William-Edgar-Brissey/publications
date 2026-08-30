@@ -235,28 +235,14 @@
     "href": "coverage.html",
     "title": "What we can see",
     "section": "",
-    "text": "This page is a gauge. It is not a forecast, not a relocation brief, and not permission to build or inhabit anything.\nTwo other pages exist on purpose:\nHuman review required. No autonomous control of water, power, or public safety."
+    "text": "Seven Rules declaration\nGoverning control: SEVEN_RULES_UNIVERSAL_MODEL_CONTROL_AND_EXECUTION_START_R0_2026-08-30.md\nMaster protocol: RA-CR-2026-08-29 Coupling Register\nAssignment packet: Book One field coverage\nModel/provider/version: Grok / NOT FULLY EXPOSED\nResearch cutoff: 2026-08-30T21:50Z\nSubject/batch: FIELD-COVERAGE-2026-08-30\nIndependent initial submission: YES\nMaterial unknowns disclosed: YES\nContrary evidence sought: YES\nPrivacy/legal review completed: YES (public instruments only)\nKernel status: NOT RUN — not a truth certificate\nHuman adjudication: PENDING\nRules in one line: accuracy over signal; honesty; reconstructable work; adversarial alternatives; visible provenance; human signs; evidence beats the story.\nRegister: Coupling Register wins if this page disagrees.\nWeekly read: Week 35 brief.\nOlder Niño board: Monitor v1 — not the same ledger yet (Rule Three gap).\nAdvice. Not orders. No inhabited loop. No autonomous control."
   },
   {
     "objectID": "coverage.html#can-we-see-it",
     "href": "coverage.html#can-we-see-it",
     "title": "What we can see",
     "section": "Can we see it?",
-    "text": "Can we see it?\n\n\n\n\n\n\n\n\n\nWhat\nInforms claim\nCan we see it?\nLatest honest state\n\n\n\n\nRain at 9 points (CHIRPS)\nWater joint; not CL-002\nYes, 1991–2020 monthly\nCurrent calendar month often DELAYED (last file 2026.07)\n\n\nTemp + rain (ERA5)\nAir / Water context\nYes, 1991–2020 monthly\nComplete on those points\n\n\nQuakes M4.5+ tropics vs north/south\nEarth joint\nYes, 1991–2020 monthly\nComplete\n\n\nSatellite hotspots (FIRMS)\nFire joint\nPartial\n4,968 on 2026-08-30; western-southern box returned 0 — that is a hole, not “no fire”\n\n\nNiño 3.4 / ONI\nAir; used in RQ5 v0 only\nYes, CPC text file\nONI MJJ 2026 = +1.39 (observation, not a cascade)\n\n\nAMOC / RAPID (CL-002)\nCL-002 stays PILOT\nNot in this job\nDo not read rain here as AMOC\n\n\nVolcanic winter (CL-016)\nPARKED\nNot claimed\nAbsent on purpose\n\n\nEDEN habitability\nPre-feasibility spec elsewhere\nNo from these 9 points\nForbidden reading"
-  },
-  {
-    "objectID": "coverage.html#rain-vs-a-real-el-niño-index-rq5-v0-not-a-cause",
-    "href": "coverage.html#rain-vs-a-real-el-niño-index-rq5-v0-not-a-cause",
-    "title": "What we can see",
-    "section": "Rain vs a real El Niño index (RQ5 v0 — not a cause)",
-    "text": "Rain vs a real El Niño index (RQ5 v0 — not a cause)\nQuestion asked: in DJF 1992–2020, does CHIRPS rain at a point move with CPC ONI more than a year-shuffled null?\n\n\n\n\n\n\n\n\n\nPlace\nCorrelation r\np vs shuffle\nWhat you may say\n\n\n\n\nUbay\n−0.77\n0.000\nStronger than chance in this test. Not “El Niño dries the Philippines.”\n\n\nManaus\n−0.51\n0.002\nSame rule.\n\n\nNairobi\n+0.49\n0.003\nOpposite sign. One ocean index is not one tropics.\n\n\nJakarta\n−0.27\n0.17\nNot distinguished from null.\n\n\nLagos\n−0.20\n0.29\nNull.\n\n\nMumbai\n+0.07\n0.72\nNull.\n\n\nParis\n−0.18\n0.37\nControl behaved like noise.\n\n\n\nThis test does not change CL-002."
-  },
-  {
-    "objectID": "coverage.html#how-to-read-a-number",
-    "href": "coverage.html#how-to-read-a-number",
-    "title": "What we can see",
-    "section": "How to read a number",
-    "text": "How to read a number\n\nWhat instrument? 2. What month vs that month’s 1991–2020 mean? 3. Is the source late or empty? 4. Which claim ID, if any, is allowed to move?\n\nIf those four are missing, treat the number as decoration.\nCredits: CHIRPS/UCSB, ERA5/ECMWF via Open-Meteo, USGS, EMSC, BMKG, NASA FIRMS, CPC ONI."
+    "text": "Can we see it?\n\n\n\n\n\n\n\n\n\nWhat\nClaim ID\nLabel\nState\n\n\n\n\nCHIRPS rain, 9 points, 1991–2020\nWater joint; not CL-002\nFACT — PROVISIONAL series\nCurrent month often DELAYED\n\n\nERA5 temp+rain, same points\nAir/Water context\nFACT — PROVISIONAL\nComplete on those points\n\n\nUSGS M4.5+ tropics vs extra\nEarth joint\nFACT — PROVISIONAL climatology\nComplete 1991–2020\n\n\nFIRMS daily boxes\nFire joint\nFACT — PROVISIONAL\nLIVE; west_south NO_COVERAGE\n\n\nCPC ONI\nAir index for RQ5 v0 only\nFACT — PROVISIONAL\nMJJ 2026 +1.39\n\n\nAMOC / RAPID\nCL-002 PILOT\nUNKNOWN here\nDo not infer from rain\n\n\nVolcanic winter\nCL-016 PARKED\nnot claimed\nAbsent on purpose\n\n\nEDEN habitability\npre-feasibility elsewhere\nUNKNOWN / insufficient from 9 points\nForbidden reading\n\n\n\nCredits: CHIRPS/UCSB, ERA5/ECMWF via Open-Meteo, USGS, EMSC, BMKG, NASA FIRMS, CPC ONI."
   },
   {
     "objectID": "offer.html",
