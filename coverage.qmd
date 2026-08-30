@@ -1,0 +1,34 @@
+---
+title: "Book One coverage"
+subtitle: "Fire, Earth, Air, Water — observation frame, not a habitability certificate"
+date: 2026-08-30
+author: "William Edgar Brissey"
+---
+
+**Authorization:** William Edgar Brissey, 30 August 2026, 14:24 Asia/Manila.
+
+This page is the public coverage map for Book One components (Fire, Earth, Air, Water / biosphere context). It is an **observation and uncertainty board**. It is **not** a finding that any band can sustain more life, that relocation is warranted, or that EDEN is viable.
+
+## What is live
+
+| Layer | Window | Nodes / domain | State |
+|---|---|---|---|
+| CHIRPS rain | 1991–2020 monthly | 9 points, 50N–50S grid | COMPLETE |
+| ERA5 temp + rain | 1991–2020 monthly | same 9 points | COMPLETE |
+| USGS M4.5+ | 1991–2020 monthly | tropics vs extra-tropical | COMPLETE |
+| FIRMS VIIRS NOAA-20 | daily NRT | global boxes | LIVE (sample 4968 hotspots on 2026-08-30) |
+| CHIRPS 1981–1990 | extension | same 9 points | INGEST AUTHORIZED |
+| National agencies | PAGASA, INPE, BMKG, IDEAM, … | registry | REGISTERED, adapters incremental |
+
+## The nine nodes
+
+Ubay (PH), Manaus, Lagos, Nairobi, Jakarta, Mumbai, Mexico City, São Paulo, Paris control.
+
+These are **sample points**, not continents. A wet July in Mumbai is not a Goldilocks proof.
+
+## How to read EDEN / Goldilocks language here
+
+- **Allowed:** name the Book One components; show where we have series vs where we have `NO_COVERAGE` / `DELAYED` / `FETCH_FAIL`.
+- **Not allowed from this page:** “the Southern band sustains more life,” “relocate,” or “the world dies if the data were missing.”
+
+Controlling numbers: [project-register climatology compact](https://github.com/William-Edgar-Brissey/project-register/blob/main/gods_eye/baselines/CLIMATOLOGY_1991_2020_COMPACT.json).
