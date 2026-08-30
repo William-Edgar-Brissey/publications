@@ -1,48 +1,68 @@
 ---
-title: "This week, in ordinary language"
-subtitle: "24–30 August 2026 · advice, not orders"
+title: "This week: rain where people live, not a dashboard"
+subtitle: "24–30 August 2026"
 date: 2026-08-30
 categories: [realignment, book-one, weekly]
 author: "William Edgar Brissey"
 ---
 
-If you only read one page, read this one. The [coverage board](/coverage.qmd) is the longer gauge list.
+If you are in Luzon this weekend, skip the gauges. Open [PAGASA](https://bagong.pagasa.dost.gov.ph/). They have named **Tropical Depression Pilandok**, a leftover look at **Saudel**, and a **southwest monsoon** already dumping hard rain on western Luzon. As of Sunday morning they had **red flood warnings** on parts of Bataan, Zambales, Tarlac, Pampanga, and Bulacan. Metro Manila was under yellow in several cities.
 
-## What happened in the data
+That is the useful information. This site does not outrank it.
 
-The Pacific’s published seasonal temperature index (ONI, May–July) is **warm (+1.39)**. That is one ocean product, not a weather forecast for your town.
+## What you should actually do
 
-Satellites counted about **5,000** fire hotspots in a day. One large part of the map returned **zero** while another part returned thousands. Zero there is a **blind spot**, not a safe zone.
+**If PAGASA or your barangay says move, move.** Take papers, medicine, and phones in a dry bag. Do not wait for a chart from us.
 
-The rain dataset we use for history is still sitting on **July**. August rain from that source is not in yet. Missing is not drought.
+**If you are in a red or orange rainfall warning:** stay off swollen rivers and low roads. Do not drive through water you cannot see the bottom of. Charge power banks while the line still works.
 
-The Atlantic current people argue about (AMOC) is **not updated here**. We will not pretend it is.
+**If you are not under a warning:** you do not need to leave town because a website exists. Keep drinking water and a week of medicine the way people already do in habagat season. Check on one neighbor who cannot move fast.
 
-## What that does *not* mean
+**Do not** sell land, change countries, or stop a prescribed treatment because of anything on this page.
 
-It does not mean the world is ending this week.  
-It does not mean you should leave your country.  
-It does not mean last year’s rain will repeat, or fail, at your house.  
-It does not decide the parked claims about volcanic winter or “move to the Goldilocks band.”
+## What our board is for — and what it is not
 
-A separate check of 29 winters found that when that Pacific index was high, **Ubay and Manaus rain tended to run the other way**, **Nairobi the same way**, and **Mumbai and Paris looked like chance**. Same ocean, different places. That is a history test, not next season’s forecast.
+PAGASA tells you about **the next 24–72 hours** in the Philippines.
 
-## If you want something useful to do
+Our board is trying to answer a slower question: when a month or a season looks odd, odd compared with **what**? We keep a 30-year rain and temperature memory at nine places, including **Ubay**, plus a daily fire-hotspot count and a Pacific ocean index.
 
-- Read the warning page of **your** weather and fire agency before this site.
-- Keep ordinary reserves people already know: water, a week of medicine, papers, a neighbor who will check on you.
-- If officials say evacuate or boil water, do that. This brief does not override them.
-- If officials have not said that, do not invent an evacuation from a hotspot count.
+It is a memory aid. It is not a warning office. It cannot see your street. It cannot see most of Mindanao or the Visayas as a live flood map. When a box on our fire map comes back empty, that box is **blind**, not safe.
 
-## If you are thinking about land, tanks, or “off-grid”
+## What the slower instruments said this week
 
-Wait until there is a **named river basin** with a water and hazard sheet. Nine dots on a map are not that sheet.
+**Pacific ocean index (ONI), May–July 2026: +1.39.**  
+That number comes from [NOAA CPC](https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt). In plain speech: the central Pacific surface has been warmer than its own recent average. That is **not** why Bataan is flooding today. Today’s water is monsoon plus a depression, which PAGASA already named. A warm Pacific can tilt *later* seasons in some places and not others. We will not pretend we know your barangay’s next six months from one index.
+
+**Rain file we use for history: last month on the server is July.**  
+August from that global product is late. Late is not drought. Do not read a missing file as “the rains failed.”
+
+**Fire satellites, one daily pass: about 5,000 hotspots.**  
+One large western-southern box returned zero while another box returned thousands. Treat zero as “we did not see,” not “nothing is burning.” If you live with grass or forest fire risk, use your national fire map, not our four boxes.
+
+**Atlantic current (AMOC):** not updated here. Anyone using rain in Ubay to “prove” that current has shifted is making a category error.
+
+## If you do not live in the Philippines
+
+Same rule: **your** met service first.  
+[BMKG](https://www.bmkg.go.id/) for Indonesia. [INMET](https://portal.inmet.gov.br/) for Brazil. [NiMet](https://nimet.gov.ng/) for Nigeria. [KMD](https://meteo.go.ke/) for Kenya. [SMN](https://smn.conagua.gob.mx/) for Mexico. [NOAA](https://www.weather.gov/) for the United States.
+
+A warm Pacific index is a background fact. It does not tell a farmer in Nairobi and a clerk in Paris the same story. A small test we ran on 29 winters even pointed **opposite ways** at Ubay and Nairobi. So we will not issue one global instruction.
+
+## What this page refuses to do
+
+It will not tell you the world is ending this week.  
+It will not tell you to move to a “Goldilocks band.”  
+It will not treat nine dots as a habitable-site survey.  
+It will not quietly upgrade a parked claim because the Pacific number is large.
+
+If a later brief has to walk something back, it will say so in the first paragraph.
+
+## Where to read the official products
+
+- Philippines weather and warnings: [PAGASA](https://bagong.pagasa.dost.gov.ph/)  
+- Pacific ONI file: [CPC oni.ascii.txt](https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt)  
+- The slower gauges we keep: [What the instruments show](/coverage.qmd)
 
 ---
 
-<details>
-<summary>Record-keeping (you can skip this)</summary>
-
-Written under Seven Rules R0. This wording is a draft until William signs it. It is not a World Leaders profile. Sources: CPC ONI text file; FIRMS pull 30 Aug 2026; CHIRPS monthly tree through 2026.07; RQ5 v0 year-shuffle test in project-register.
-
-</details>
+*Advice, not an order. Written 30 August 2026. Sources named above. PAGASA warnings change through the day — refresh theirs, not this page.*
