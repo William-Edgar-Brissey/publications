@@ -1,26 +1,50 @@
 #!/usr/bin/env python3
-"""Create weekly Coupling Monitor posts on Typefully (X, LinkedIn, Substack Notes).
+"""Create private Typefully drafts for the human weekly field brief.
 
-Reads assets/monitor/snapshot.json. Typefully schedule API is 404; drafts stay
-private until scheduled in the UI for Monday 09:00 America/New_York.
+Never publishes. Schedule in the Typefully UI after preview.
 """
 
 from __future__ import annotations
 
-import argparse
 import json
 import os
 import urllib.error
 import urllib.request
-from datetime import datetime, timedelta, timezone
-from pathlib import Path
+from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
 API_BASE = os.environ.get("TYPEFULLY_API_BASE", "https://api.typefully.com/v2").rstrip("/")
-SNAPSHOT = Path("assets/monitor/snapshot.json")
-MONITOR_URL = "https://william-edgar-brissey.github.io/publications/monitor.html"
-REGISTER_URL = "https://william-edgar-brissey.github.io/publications/articles/book-one-coupling-register.html"
+BRIEF_URL = "https://william-edgar-brissey.github.io/publications/articles/weekly-brief-2026-w35.html"
+COVER_URL = "https://william-edgar-brissey.github.io/publications/coverage.html"
 ET = ZoneInfo("America/New_York")
+
+X_TEXT = (
+    "This week, in ordinary language\n\n"
+    "The Pacific seasonal index is warm (+1.39). That is not your town forecast.\n\n"
+    "Satellites counted about 5,000 fire hotspots in a day. One large region came back zero — that is a blind spot, not a safe zone.\n\n"
+    "The rain history file is still on July. Missing August is not drought.\n\n"
+    "Read your own weather service first. This page does not order anyone to move.\n\n"
+    f"{BRIEF_URL}\n"
+)
+
+LI_TEXT = (
+    "This week, in ordinary language (24–30 August 2026)\n\n"
+    "What the instruments show — not a siren.\n\n"
+    "• Pacific ONI (May–July): +1.39. One ocean product, not a local forecast.\n"
+    "• Fire hotspots in one daily pass: about 5,000. One map box was empty while another was full — treat empty as blind, not safe.\n"
+    "• Rain climatology file: still July. August from that source is late, not ‘no rain.’\n"
+    "• The Atlantic current people argue about is not updated on this board.\n\n"
+    "If officials tell you to evacuate or boil water, do that. If they have not, do not invent an evacuation from a dashboard.\n\n"
+    f"Brief: {BRIEF_URL}\n"
+    f"Gauges: {COVER_URL}\n"
+)
+
+NOTE_TEXT = (
+    "Weekly field brief\n\n"
+    "Warm Pacific index. Thousands of fire dots. One blind region. Rain file late.\n"
+    "Not a reason to leave your country. Read your met service.\n\n"
+    f"{BRIEF_URL}\n"
+)
 
 
 def request_json(method: str, endpoint: str, api_key: str, payload: dict | None = None) -> dict:
@@ -39,94 +63,42 @@ def request_json(method: str, endpoint: str, api_key: str, payload: dict | None 
         raise RuntimeError(f"Typefully HTTP {exc.code}: {detail}") from exc
 
 
-def next_monday_nine(now: datetime | None = None) -> datetime:
-    now = now or datetime.now(ET)
-    days = (7 - now.weekday()) % 7
-    target = (now + timedelta(days=days)).replace(hour=9, minute=0, second=0, microsecond=0)
-    if target <= now:
-        target += timedelta(days=7)
-    return target
-
-
-def copy_from_snapshot(snap: dict) -> dict[str, str]:
-    nino = snap.get("nino34") or {}
-    if nino.get("ok"):
-        nino_line = f"Niño 3.4 {nino.get('time')}: {nino.get('anomaly_c'):+} °C (CPC monthly)"
-    else:
-        nino_line = f"Niño 3.4 stale ({nino.get('error', 'no fetch')})"
-    lock = (snap.get("locked") or {}).get("register_lock") or {}
-    sst_line = f"Extra-polar SST locked {lock.get('extra_polar_sst_c')} °C on {lock.get('extra_polar_sst_date')}"
-    q = snap.get("quakes_m6") or {}
-    q_line = f"USGS M≥6 last 30d: {q.get('count', '?')}" if q.get("ok") else "USGS M≥6 stale"
-    gates = "RAPID AMOC remains stale. CL-002 stays pilot. CL-016 stays parked."
-    return {
-        "x": (
-            "Coupling Monitor weekly board\n\n"
-            f"{nino_line}\n{sst_line}\n{q_line}\n{gates}\n\n{MONITOR_URL}\n"
-        ),
-        "linkedin": (
-            "Coupling Monitor — weekly board\n\n"
-            "Water / Air / Earth / Fire tiles from public feeds, graded separately.\n\n"
-            f"{nino_line}\n{sst_line}\n{q_line}\n\n{gates}\n\n"
-            f"Board: {MONITOR_URL}\nRegister: {REGISTER_URL}\n"
-        ),
-        "substack": (
-            "Weekly Coupling Monitor\n\n"
-            f"{nino_line}\n{sst_line}\n{q_line}\n\n{gates}\n\n{MONITOR_URL}\n"
-        ),
-    }
-
-
 def create_platform_draft(social_set_id: str, api_key: str, platform: str, text: str, title: str) -> dict:
     return request_json(
         "POST",
         f"/social-sets/{social_set_id}/drafts",
         api_key,
-        {
-            "platforms": {platform: {"enabled": True, "posts": [{"text": text}]}},
-            "draft_title": title,
-        },
+        {"platforms": {platform: {"enabled": True, "posts": [{"text": text}]}}, "draft_title": title},
     )
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--now", action="store_true")
-    args = parser.parse_args()
-
-    snap = json.loads(SNAPSHOT.read_text(encoding="utf-8"))
-    texts = copy_from_snapshot(snap)
-    when = datetime.now(timezone.utc) if args.now else next_monday_nine()
-    day = when.astimezone(ET).date()
-
+    day = datetime.now(ET).date()
     api_key = (os.environ.get("TYPEFULLY_API_KEY") or "").strip()
     social_set_id = (os.environ.get("TYPEFULLY_SOCIAL_SET_ID") or "").strip()
     if not api_key or not social_set_id:
         raise RuntimeError("TYPEFULLY_API_KEY and TYPEFULLY_SOCIAL_SET_ID are required")
 
-    created = {}
-    errors = {}
-    titles = {
-        "x": f"Coupling Monitor weekly — X — {day}",
-        "linkedin": f"Coupling Monitor weekly — LinkedIn — {day}",
-        "substack": f"Coupling Monitor weekly — Substack Note — {day}",
+    created, errors = {}, {}
+    jobs = {
+        "x": ("x", X_TEXT, f"Weekly field brief — X — {day}"),
+        "linkedin": ("linkedin", LI_TEXT, f"Weekly field brief — LinkedIn — {day}"),
+        "substack": ("substack", NOTE_TEXT, f"Weekly field brief — Substack Note — {day}"),
     }
-    for platform, text in texts.items():
+    for key, (platform, text, title) in jobs.items():
         try:
-            created[platform] = create_platform_draft(
-                social_set_id, api_key, platform, text, titles[platform]
-            )
+            created[key] = create_platform_draft(social_set_id, api_key, platform, text, title)
         except Exception as exc:
-            errors[platform] = str(exc)
+            errors[key] = str(exc)
 
     out = {
-        "when_et": when.astimezone(ET).isoformat(),
+        "created_utc": datetime.now(timezone.utc).isoformat(),
         "created": {
             k: {"id": v.get("id"), "private_url": v.get("private_url"), "status": v.get("status")}
             for k, v in created.items()
         },
         "errors": errors,
-        "note": "Typefully schedule API is 404. Open Drafts and Schedule for Monday 09:00 ET.",
+        "note": "Drafts only. Open Typefully, preview, then you publish.",
     }
     print(json.dumps(out, indent=2))
     if errors and not created:
