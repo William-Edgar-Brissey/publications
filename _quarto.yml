@@ -28,6 +28,8 @@ website:
         text: Publications
       - href: articles/coupling-monitor.qmd
         text: Monitor
+      - href: coverage.qmd
+        text: Coverage
       - href: offer.qmd
         text: Incident review
       - href: about.qmd
