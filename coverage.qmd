@@ -1,49 +1,52 @@
 ---
-title: "Book One coverage"
-subtitle: "Fire, Earth, Air, Water — observation frame, not a habitability certificate"
+title: "What we can see"
+subtitle: "Book One field board — numbers first, no story layered on top"
 date: 2026-08-30
 author: "William Edgar Brissey"
 ---
 
-**Authorization:** William Edgar Brissey, 30 August 2026, 14:24 Asia/Manila.
+This page is a **gauge**. It is not a forecast, not a relocation brief, and not permission to build or inhabit anything.
 
-This page is a **coverage and uncertainty board**. It is not a finding that any band sustains more life, that relocation is warranted, or that EDEN is viable.
+Two other pages exist on purpose:
 
-Client incident files stay out of this corpus.
+- [Coupling Register](articles/book-one-coupling-register.qmd) — **which claims are allowed**. That file wins if this page disagrees.
+- [Coupling Monitor](articles/coupling-monitor.qmd) — older Niño / EONET / USGS M6 snapshot. Not yet the same database as the numbers below.
 
-## Scoreboard
+Human review required. No autonomous control of water, power, or public safety.
 
-| Layer | Class | Window | Domain | State |
-|---|---|---|---|---|
-| CHIRPS v2 monthly rain | satellite–station blend | 1991–2020 (1981–1990 ingesting) | 9 points on ~50N–50S grid | COMPLETE / DELAYED for current month |
-| ERA5 via Open-Meteo | reanalysis | 1991–2020 | same 9 points | COMPLETE |
-| USGS M4.5+ monthly | agency catalog | 1991–2020 | tropics vs extra-tropical | COMPLETE |
-| FIRMS VIIRS NOAA-20 | satellite NRT | daily | 4 boxes | LIVE; **west_south box defect** (n=0 while other boxes thousands) |
-| BMKG TEWS | national agency | latest list | Indonesia | ADAPTER ADDED |
-| INPE Queimadas | national agency | Brazil fire | Brazil | REGISTERED, URL not live yet |
-| PAGASA | national agency | PH weather | Philippines | REGISTERED, often gated |
+## Can we see it?
 
-Compare **calendar month to the same calendar month** (July vs July 1991–2020), not to an annual mean and not to Paris.
+| What | Informs claim | Can we see it? | Latest honest state |
+|---|---|---|---|
+| Rain at 9 points (CHIRPS) | Water joint; **not** CL-002 | Yes, 1991–2020 monthly | Current calendar month often **DELAYED** (last file 2026.07) |
+| Temp + rain (ERA5) | Air / Water context | Yes, 1991–2020 monthly | Complete on those points |
+| Quakes M4.5+ tropics vs north/south | Earth joint | Yes, 1991–2020 monthly | Complete |
+| Satellite hotspots (FIRMS) | Fire joint | Partial | **4,968** on 2026-08-30; **western-southern box returned 0 — that is a hole, not “no fire”** |
+| Niño 3.4 / ONI | Air; used in RQ5 v0 only | Yes, CPC text file | ONI MJJ 2026 = **+1.39** (observation, not a cascade) |
+| AMOC / RAPID (CL-002) | CL-002 stays **PILOT** | Not in this job | Do not read rain here as AMOC |
+| Volcanic winter (CL-016) | **PARKED** | Not claimed | Absent on purpose |
+| EDEN habitability | Pre-feasibility spec elsewhere | **No** from these 9 points | Forbidden reading |
 
-## CHIRPS limit
+## Rain vs a real El Niño index (RQ5 v0 — not a cause)
 
-CHIRPS v2 global monthly is a 0.05° grid from 50N to 50S. Calling it “global water” without that bound is false. Paris is the extra-tropical control and sits near that edge.
+Question asked: in DJF 1992–2020, does CHIRPS rain at a point move with CPC ONI more than a **year-shuffled null**?
 
-## FIRMS west_south
+| Place | Correlation r | p vs shuffle | What you may say |
+|---|---:|---:|---|
+| Ubay | −0.77 | 0.000 | Stronger than chance **in this test**. Not “El Niño dries the Philippines.” |
+| Manaus | −0.51 | 0.002 | Same rule. |
+| Nairobi | +0.49 | 0.003 | Opposite sign. One ocean index is not one tropics. |
+| Jakarta | −0.27 | 0.17 | Not distinguished from null. |
+| Lagos | −0.20 | 0.29 | Null. |
+| Mumbai | +0.07 | 0.72 | Null. |
+| Paris | −0.18 | 0.37 | Control behaved like noise. |
 
-On 2026-08-30 the west_south box (`-180,-90,0,0`) returned **0** rows while east_north returned **4116**. That is `NO_COVERAGE` / adapter defect for that box, not “no fire in the western south.”
+This test **does not change CL-002**.
 
-## Lag
+## How to read a number
 
-CHIRPS latest published month at last check was **2026.07**. August is `DELAYED`, not zero rain.
+1. What instrument? 2. What month vs **that month’s** 1991–2020 mean? 3. Is the source late or empty? 4. Which claim ID, if any, is allowed to move?
 
-## Credits (required)
+If those four are missing, treat the number as decoration.
 
-- CHIRPS: UCSB / CHC Climate Hazards Group
-- ERA5: ECMWF via Open-Meteo archive
-- Earthquakes: USGS ANSS / FDSN; EMSC; BMKG TEWS
-- Fire: NASA LANCE FIRMS VIIRS; INPE Queimadas when connected
-
-Hashes of the working series: [SERIES_SHA256.md](https://github.com/William-Edgar-Brissey/project-register/blob/main/gods_eye/baselines/SERIES_SHA256.md).
-
-Numbers: [CLIMATOLOGY_1991_2020_COMPACT.json](https://github.com/William-Edgar-Brissey/project-register/blob/main/gods_eye/baselines/CLIMATOLOGY_1991_2020_COMPACT.json).
+Credits: CHIRPS/UCSB, ERA5/ECMWF via Open-Meteo, USGS, EMSC, BMKG, NASA FIRMS, CPC ONI.
