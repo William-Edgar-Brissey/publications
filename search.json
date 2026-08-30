@@ -366,44 +366,30 @@
   {
     "objectID": "coverage.html",
     "href": "coverage.html",
-    "title": "Book One coverage",
+    "title": "What we can see",
     "section": "",
-    "text": "Authorization: William Edgar Brissey, 30 August 2026, 14:24 Asia/Manila.\nThis page is a coverage and uncertainty board. It is not a finding that any band sustains more life, that relocation is warranted, or that EDEN is viable.\nClient incident files stay out of this corpus."
+    "text": "This page is a gauge. It is not a forecast, not a relocation brief, and not permission to build or inhabit anything.\nTwo other pages exist on purpose:\nHuman review required. No autonomous control of water, power, or public safety."
   },
   {
-    "objectID": "coverage.html#scoreboard",
-    "href": "coverage.html#scoreboard",
-    "title": "Book One coverage",
-    "section": "Scoreboard",
-    "text": "Scoreboard\n\n\n\n\n\n\n\n\n\n\nLayer\nClass\nWindow\nDomain\nState\n\n\n\n\nCHIRPS v2 monthly rain\nsatellite–station blend\n1991–2020 (1981–1990 ingesting)\n9 points on ~50N–50S grid\nCOMPLETE / DELAYED for current month\n\n\nERA5 via Open-Meteo\nreanalysis\n1991–2020\nsame 9 points\nCOMPLETE\n\n\nUSGS M4.5+ monthly\nagency catalog\n1991–2020\ntropics vs extra-tropical\nCOMPLETE\n\n\nFIRMS VIIRS NOAA-20\nsatellite NRT\ndaily\n4 boxes\nLIVE; west_south box defect (n=0 while other boxes thousands)\n\n\nBMKG TEWS\nnational agency\nlatest list\nIndonesia\nADAPTER ADDED\n\n\nINPE Queimadas\nnational agency\nBrazil fire\nBrazil\nREGISTERED, URL not live yet\n\n\nPAGASA\nnational agency\nPH weather\nPhilippines\nREGISTERED, often gated\n\n\n\nCompare calendar month to the same calendar month (July vs July 1991–2020), not to an annual mean and not to Paris."
+    "objectID": "coverage.html#can-we-see-it",
+    "href": "coverage.html#can-we-see-it",
+    "title": "What we can see",
+    "section": "Can we see it?",
+    "text": "Can we see it?\n\n\n\n\n\n\n\n\n\nWhat\nInforms claim\nCan we see it?\nLatest honest state\n\n\n\n\nRain at 9 points (CHIRPS)\nWater joint; not CL-002\nYes, 1991–2020 monthly\nCurrent calendar month often DELAYED (last file 2026.07)\n\n\nTemp + rain (ERA5)\nAir / Water context\nYes, 1991–2020 monthly\nComplete on those points\n\n\nQuakes M4.5+ tropics vs north/south\nEarth joint\nYes, 1991–2020 monthly\nComplete\n\n\nSatellite hotspots (FIRMS)\nFire joint\nPartial\n4,968 on 2026-08-30; western-southern box returned 0 — that is a hole, not “no fire”\n\n\nNiño 3.4 / ONI\nAir; used in RQ5 v0 only\nYes, CPC text file\nONI MJJ 2026 = +1.39 (observation, not a cascade)\n\n\nAMOC / RAPID (CL-002)\nCL-002 stays PILOT\nNot in this job\nDo not read rain here as AMOC\n\n\nVolcanic winter (CL-016)\nPARKED\nNot claimed\nAbsent on purpose\n\n\nEDEN habitability\nPre-feasibility spec elsewhere\nNo from these 9 points\nForbidden reading"
   },
   {
-    "objectID": "coverage.html#chirps-limit",
-    "href": "coverage.html#chirps-limit",
-    "title": "Book One coverage",
-    "section": "CHIRPS limit",
-    "text": "CHIRPS limit\nCHIRPS v2 global monthly is a 0.05° grid from 50N to 50S. Calling it “global water” without that bound is false. Paris is the extra-tropical control and sits near that edge."
+    "objectID": "coverage.html#rain-vs-a-real-el-niño-index-rq5-v0-not-a-cause",
+    "href": "coverage.html#rain-vs-a-real-el-niño-index-rq5-v0-not-a-cause",
+    "title": "What we can see",
+    "section": "Rain vs a real El Niño index (RQ5 v0 — not a cause)",
+    "text": "Rain vs a real El Niño index (RQ5 v0 — not a cause)\nQuestion asked: in DJF 1992–2020, does CHIRPS rain at a point move with CPC ONI more than a year-shuffled null?\n\n\n\n\n\n\n\n\n\nPlace\nCorrelation r\np vs shuffle\nWhat you may say\n\n\n\n\nUbay\n−0.77\n0.000\nStronger than chance in this test. Not “El Niño dries the Philippines.”\n\n\nManaus\n−0.51\n0.002\nSame rule.\n\n\nNairobi\n+0.49\n0.003\nOpposite sign. One ocean index is not one tropics.\n\n\nJakarta\n−0.27\n0.17\nNot distinguished from null.\n\n\nLagos\n−0.20\n0.29\nNull.\n\n\nMumbai\n+0.07\n0.72\nNull.\n\n\nParis\n−0.18\n0.37\nControl behaved like noise.\n\n\n\nThis test does not change CL-002."
   },
   {
-    "objectID": "coverage.html#firms-west_south",
-    "href": "coverage.html#firms-west_south",
-    "title": "Book One coverage",
-    "section": "FIRMS west_south",
-    "text": "FIRMS west_south\nOn 2026-08-30 the west_south box (-180,-90,0,0) returned 0 rows while east_north returned 4116. That is NO_COVERAGE / adapter defect for that box, not “no fire in the western south.”"
-  },
-  {
-    "objectID": "coverage.html#lag",
-    "href": "coverage.html#lag",
-    "title": "Book One coverage",
-    "section": "Lag",
-    "text": "Lag\nCHIRPS latest published month at last check was 2026.07. August is DELAYED, not zero rain."
-  },
-  {
-    "objectID": "coverage.html#credits-required",
-    "href": "coverage.html#credits-required",
-    "title": "Book One coverage",
-    "section": "Credits (required)",
-    "text": "Credits (required)\n\nCHIRPS: UCSB / CHC Climate Hazards Group\nERA5: ECMWF via Open-Meteo archive\nEarthquakes: USGS ANSS / FDSN; EMSC; BMKG TEWS\nFire: NASA LANCE FIRMS VIIRS; INPE Queimadas when connected\n\nHashes of the working series: SERIES_SHA256.md.\nNumbers: CLIMATOLOGY_1991_2020_COMPACT.json."
+    "objectID": "coverage.html#how-to-read-a-number",
+    "href": "coverage.html#how-to-read-a-number",
+    "title": "What we can see",
+    "section": "How to read a number",
+    "text": "How to read a number\n\nWhat instrument? 2. What month vs that month’s 1991–2020 mean? 3. Is the source late or empty? 4. Which claim ID, if any, is allowed to move?\n\nIf those four are missing, treat the number as decoration.\nCredits: CHIRPS/UCSB, ERA5/ECMWF via Open-Meteo, USGS, EMSC, BMKG, NASA FIRMS, CPC ONI."
   },
   {
     "objectID": "articles/field-layer-comparison.html",
