@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""Create private Typefully drafts for the human weekly field brief.
-
-Never publishes. Schedule in the Typefully UI after preview.
-"""
+"""Private Typefully drafts for the human weekly field brief. Never publishes."""
 
 from __future__ import annotations
 
@@ -15,35 +12,31 @@ from zoneinfo import ZoneInfo
 
 API_BASE = os.environ.get("TYPEFULLY_API_BASE", "https://api.typefully.com/v2").rstrip("/")
 BRIEF_URL = "https://william-edgar-brissey.github.io/publications/articles/weekly-brief-2026-w35.html"
-COVER_URL = "https://william-edgar-brissey.github.io/publications/coverage.html"
+PAGASA = "https://bagong.pagasa.dost.gov.ph/"
 ET = ZoneInfo("America/New_York")
 
 X_TEXT = (
-    "This week, in ordinary language\n\n"
-    "The Pacific seasonal index is warm (+1.39). That is not your town forecast.\n\n"
-    "Satellites counted about 5,000 fire hotspots in a day. One large region came back zero — that is a blind spot, not a safe zone.\n\n"
-    "The rain history file is still on July. Missing August is not drought.\n\n"
-    "Read your own weather service first. This page does not order anyone to move.\n\n"
-    f"{BRIEF_URL}\n"
+    "If you are in Luzon this weekend: open PAGASA, not a dashboard.\n\n"
+    "Pilandok is a tropical depression. Western Luzon already has monsoon flood warnings. "
+    "If they say move, move.\n\n"
+    "A warm Pacific number (+1.39) is not why the streets are wet today.\n\n"
+    f"PAGASA: {PAGASA}\n"
+    f"Brief: {BRIEF_URL}\n"
 )
 
 LI_TEXT = (
-    "This week, in ordinary language (24–30 August 2026)\n\n"
-    "What the instruments show — not a siren.\n\n"
-    "• Pacific ONI (May–July): +1.39. One ocean product, not a local forecast.\n"
-    "• Fire hotspots in one daily pass: about 5,000. One map box was empty while another was full — treat empty as blind, not safe.\n"
-    "• Rain climatology file: still July. August from that source is late, not ‘no rain.’\n"
-    "• The Atlantic current people argue about is not updated on this board.\n\n"
-    "If officials tell you to evacuate or boil water, do that. If they have not, do not invent an evacuation from a dashboard.\n\n"
+    "This week: rain where people live, not a dashboard\n\n"
+    "Philippines, 30 August 2026: PAGASA has named Tropical Depression Pilandok and kept southwest-monsoon flood warnings on parts of western Luzon. That is the product that can save a life this weekend.\n\n"
+    "Our board keeps a 30-year memory and a fire count. It does not replace a national warning office. A warm Pacific index (+1.39 for May–July) is not the cause of today’s street flooding.\n\n"
+    "If officials tell you to leave, leave. If they have not, do not invent an evacuation from a chart.\n\n"
+    f"PAGASA: {PAGASA}\n"
     f"Brief: {BRIEF_URL}\n"
-    f"Gauges: {COVER_URL}\n"
 )
 
 NOTE_TEXT = (
-    "Weekly field brief\n\n"
-    "Warm Pacific index. Thousands of fire dots. One blind region. Rain file late.\n"
-    "Not a reason to leave your country. Read your met service.\n\n"
-    f"{BRIEF_URL}\n"
+    "Luzon this weekend: PAGASA first. Pilandok + monsoon rain. "
+    "A Pacific index is not your flood map.\n\n"
+    f"{PAGASA}\n{BRIEF_URL}\n"
 )
 
 
@@ -91,16 +84,7 @@ def main() -> None:
         except Exception as exc:
             errors[key] = str(exc)
 
-    out = {
-        "created_utc": datetime.now(timezone.utc).isoformat(),
-        "created": {
-            k: {"id": v.get("id"), "private_url": v.get("private_url"), "status": v.get("status")}
-            for k, v in created.items()
-        },
-        "errors": errors,
-        "note": "Drafts only. Open Typefully, preview, then you publish.",
-    }
-    print(json.dumps(out, indent=2))
+    print(json.dumps({"created": {k: v.get("private_url") for k, v in created.items()}, "errors": errors}, indent=2))
     if errors and not created:
         raise SystemExit(1)
 
