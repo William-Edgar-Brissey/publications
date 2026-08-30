@@ -7,28 +7,43 @@ author: "William Edgar Brissey"
 
 **Authorization:** William Edgar Brissey, 30 August 2026, 14:24 Asia/Manila.
 
-This page is the public coverage map for Book One components (Fire, Earth, Air, Water / biosphere context). It is an **observation and uncertainty board**. It is **not** a finding that any band can sustain more life, that relocation is warranted, or that EDEN is viable.
+This page is a **coverage and uncertainty board**. It is not a finding that any band sustains more life, that relocation is warranted, or that EDEN is viable.
 
-## What is live
+Client incident files stay out of this corpus.
 
-| Layer | Window | Nodes / domain | State |
-|---|---|---|---|
-| CHIRPS rain | 1991–2020 monthly | 9 points, 50N–50S grid | COMPLETE |
-| ERA5 temp + rain | 1991–2020 monthly | same 9 points | COMPLETE |
-| USGS M4.5+ | 1991–2020 monthly | tropics vs extra-tropical | COMPLETE |
-| FIRMS VIIRS NOAA-20 | daily NRT | global boxes | LIVE (sample 4968 hotspots on 2026-08-30) |
-| CHIRPS 1981–1990 | extension | same 9 points | INGEST AUTHORIZED |
-| National agencies | PAGASA, INPE, BMKG, IDEAM, … | registry | REGISTERED, adapters incremental |
+## Scoreboard
 
-## The nine nodes
+| Layer | Class | Window | Domain | State |
+|---|---|---|---|---|
+| CHIRPS v2 monthly rain | satellite–station blend | 1991–2020 (1981–1990 ingesting) | 9 points on ~50N–50S grid | COMPLETE / DELAYED for current month |
+| ERA5 via Open-Meteo | reanalysis | 1991–2020 | same 9 points | COMPLETE |
+| USGS M4.5+ monthly | agency catalog | 1991–2020 | tropics vs extra-tropical | COMPLETE |
+| FIRMS VIIRS NOAA-20 | satellite NRT | daily | 4 boxes | LIVE; **west_south box defect** (n=0 while other boxes thousands) |
+| BMKG TEWS | national agency | latest list | Indonesia | ADAPTER ADDED |
+| INPE Queimadas | national agency | Brazil fire | Brazil | REGISTERED, URL not live yet |
+| PAGASA | national agency | PH weather | Philippines | REGISTERED, often gated |
 
-Ubay (PH), Manaus, Lagos, Nairobi, Jakarta, Mumbai, Mexico City, São Paulo, Paris control.
+Compare **calendar month to the same calendar month** (July vs July 1991–2020), not to an annual mean and not to Paris.
 
-These are **sample points**, not continents. A wet July in Mumbai is not a Goldilocks proof.
+## CHIRPS limit
 
-## How to read EDEN / Goldilocks language here
+CHIRPS v2 global monthly is a 0.05° grid from 50N to 50S. Calling it “global water” without that bound is false. Paris is the extra-tropical control and sits near that edge.
 
-- **Allowed:** name the Book One components; show where we have series vs where we have `NO_COVERAGE` / `DELAYED` / `FETCH_FAIL`.
-- **Not allowed from this page:** “the Southern band sustains more life,” “relocate,” or “the world dies if the data were missing.”
+## FIRMS west_south
 
-Controlling numbers: [project-register climatology compact](https://github.com/William-Edgar-Brissey/project-register/blob/main/gods_eye/baselines/CLIMATOLOGY_1991_2020_COMPACT.json).
+On 2026-08-30 the west_south box (`-180,-90,0,0`) returned **0** rows while east_north returned **4116**. That is `NO_COVERAGE` / adapter defect for that box, not “no fire in the western south.”
+
+## Lag
+
+CHIRPS latest published month at last check was **2026.07**. August is `DELAYED`, not zero rain.
+
+## Credits (required)
+
+- CHIRPS: UCSB / CHC Climate Hazards Group
+- ERA5: ECMWF via Open-Meteo archive
+- Earthquakes: USGS ANSS / FDSN; EMSC; BMKG TEWS
+- Fire: NASA LANCE FIRMS VIIRS; INPE Queimadas when connected
+
+Hashes of the working series: [SERIES_SHA256.md](https://github.com/William-Edgar-Brissey/project-register/blob/main/gods_eye/baselines/SERIES_SHA256.md).
+
+Numbers: [CLIMATOLOGY_1991_2020_COMPACT.json](https://github.com/William-Edgar-Brissey/project-register/blob/main/gods_eye/baselines/CLIMATOLOGY_1991_2020_COMPACT.json).
