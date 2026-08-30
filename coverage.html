@@ -156,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#right-now" id="toc-right-now" class="nav-link active" data-scroll-target="#right-now">Right now</a></li>
-  <li><a href="#currents-what-is-actually-watched" id="toc-currents-what-is-actually-watched" class="nav-link" data-scroll-target="#currents-what-is-actually-watched">Currents — what is actually watched</a></li>
+  <li><a href="#currents-28-august-2026-surface-sample" id="toc-currents-28-august-2026-surface-sample" class="nav-link" data-scroll-target="#currents-28-august-2026-surface-sample">Currents — 28 August 2026 surface sample</a></li>
   <li><a href="#how-to-use-this" id="toc-how-to-use-this" class="nav-link" data-scroll-target="#how-to-use-this">How to use this</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/William-Edgar-Brissey/publications/blob/main/coverage.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/William-Edgar-Brissey/publications/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -198,32 +198,82 @@ ul.task-list li input[type="checkbox"] {
 
 <p>This page answers one question: <strong>can we actually see the thing people are arguing about?</strong></p>
 <p>If we cannot see it, we say so. We do not fill the hole with a story.</p>
-<p><a href="./articles/weekly-brief-2026-w35.html">This week’s brief</a> · <a href="./articles/book-one-coupling-register.html">Claim register</a> · <a href="https://github.com/William-Edgar-Brissey/project-register/blob/main/gods_eye/CURRENT_GATES.md">Current gates (full table)</a></p>
+<p><a href="./articles/weekly-brief-2026-w35.html">This week’s brief</a> · <a href="./articles/book-one-coupling-register.html">Claim register</a> · <a href="https://github.com/William-Edgar-Brissey/project-register/blob/main/gods_eye/CURRENT_GATES.md">Current gates</a></p>
 <section id="right-now" class="level2">
 <h2 class="anchored" data-anchor-id="right-now">Right now</h2>
-<p><strong>Rain.</strong> Thirty years of monthly rain at nine places (Ubay, Manaus, Lagos, Nairobi, Jakarta, Mumbai, Mexico City, São Paulo, Paris). Sample, not the planet. Newest CHIRPS month on the public server: <strong>July 2026</strong>. August is late, not “no rain.”</p>
-<p><strong>Heat.</strong> Same nine places, ERA5. Useful for “is this July odd <em>here</em>?” Useless as a world average.</p>
-<p><strong>Earthquakes.</strong> Global M4.5+ counts, 1991–2020, tropics vs the rest. Background rate, not this week’s shaking at your house.</p>
-<p><strong>Fire.</strong> One NOAA-20 pass on 30 August 2026: about <strong>5,000</strong> hotspots. One western-southern box empty while another had thousands. Empty = blind, not safe.</p>
-<p><strong>Pacific heat index (ONI).</strong> May–July 2026: <strong>+1.39</strong> (<a href="https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt">CPC file</a>). One ocean product. Not your town forecast.</p>
+<p><strong>Rain.</strong> Nine-place CHIRPS sample. Newest public month: <strong>July 2026</strong>. August is late, not drought.</p>
+<p><strong>Heat.</strong> Same nine places, ERA5. Not a world average.</p>
+<p><strong>Earthquakes.</strong> 1991–2020 M4.5+ background, tropics vs extra. Not your house.</p>
+<p><strong>Fire.</strong> ~5,000 NOAA-20 hotspots on 30 Aug 2026. One box blind.</p>
+<p><strong>Pacific ONI.</strong> May–July 2026 <strong>+1.39</strong>.</p>
 </section>
-<section id="currents-what-is-actually-watched" class="level2">
-<h2 class="anchored" data-anchor-id="currents-what-is-actually-watched">Currents — what is actually watched</h2>
-<p>The ocean is not one conveyor with one number.</p>
-<p><strong>Atlantic overturning (AMOC at 26°N).</strong> RAPID’s last full public series runs through <strong>February 2024</strong>. That tile is <strong>STALE</strong>. We will not print a 2026 Sverdrup. Other Atlantic lines (OSNAP, MOVE, SAMBA) exist and are also delayed or partial. None of them is “off”; they are slow.</p>
-<p><strong>Global surface drift (top ~30 m).</strong> OSCAR v2 is a near-real-time satellite product (~2-day lag). It can show whether the <em>skin</em> of the ocean is slack or racing. It cannot say the deep conveyor collapsed. <strong>We have not ingested OSCAR into the weekly job yet.</strong> State: registered, fetch pending.</p>
-<p><strong>Other named currents.</strong> Agulhas, Indonesian Throughflow, Antarctic Circumpolar, Kuroshio, Brazil Current, equatorial undercurrents: scientists monitor them with arrays, ships, and altimetry. <strong>They are not on this board.</strong> That is our gap, not proof they are unwatched. Full list: <a href="https://github.com/William-Edgar-Brissey/project-register/blob/main/gods_eye/CURRENT_GATES.md">CURRENT_GATES.md</a>.</p>
-<p>Do not read rain in Ubay as “the AMOC.” Do not read a missing Sv as collapse.</p>
-<p><strong>Volcanic winter / food-web collapse / “move south.”</strong> Parked or unsupported by these gauges. Off this page.</p>
+<section id="currents-28-august-2026-surface-sample" class="level2">
+<h2 class="anchored" data-anchor-id="currents-28-august-2026-surface-sample">Currents — 28 August 2026 surface sample</h2>
+<p>These are <strong>one grid cell of satellite-derived geostrophic surface flow</strong> from NOAA AOML (product through 28 Aug 2026). Units: metres per second. <strong>Not</strong> volume transport. <strong>Not</strong> AMOC. A slow cell is not a collapsed conveyor.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Place</th>
+<th style="text-align: right;">Speed (m/s)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Somali</td>
+<td style="text-align: right;">1.01</td>
+</tr>
+<tr class="even">
+<td>Drake Passage</td>
+<td style="text-align: right;">0.55</td>
+</tr>
+<tr class="odd">
+<td>Kuroshio</td>
+<td style="text-align: right;">0.53</td>
+</tr>
+<tr class="even">
+<td>Indonesian Throughflow proxy (Lombok)</td>
+<td style="text-align: right;">0.52</td>
+</tr>
+<tr class="odd">
+<td>Florida Straits</td>
+<td style="text-align: right;">0.33</td>
+</tr>
+<tr class="even">
+<td>Equatorial Pacific</td>
+<td style="text-align: right;">0.20</td>
+</tr>
+<tr class="odd">
+<td>Gulf Stream (mid-box)</td>
+<td style="text-align: right;">0.17</td>
+</tr>
+<tr class="even">
+<td>ACC south of Africa</td>
+<td style="text-align: right;">0.11</td>
+</tr>
+<tr class="odd">
+<td>Brazil Current</td>
+<td style="text-align: right;">0.11</td>
+</tr>
+<tr class="even">
+<td>Agulhas (this cell)</td>
+<td style="text-align: right;">0.07</td>
+</tr>
+</tbody>
+</table>
+<p>The Agulhas number is a <strong>point that may have missed the core</strong>. Do not read it as “the Agulhas died.”</p>
+<p><strong>Still not live here</strong></p>
+<ul>
+<li>RAPID AMOC at 26°N: last full public series <strong>February 2024</strong> — STALE.</li>
+<li>Florida Straits <strong>cable transport (Sv):</strong> interrupted since November 2023 (NOAA note on the 2026 file).</li>
+<li>OSCAR v2 NRT and Copernicus 3D currents: exist behind other portals; not in this job yet.</li>
+<li>OSNAP, MOVE, SAMBA, INSTANT-class ITF volume: delayed arrays.</li>
+</ul>
+<p>Raw JSON: <a href="https://github.com/William-Edgar-Brissey/project-register/blob/main/gods_eye/CURRENTS_NRT_2026-08-28.json">CURRENTS_NRT_2026-08-28.json</a>.</p>
+<p>Parked: volcanic winter, food-web collapse, “move south.”</p>
 </section>
 <section id="how-to-use-this" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-use-this">How to use this</h2>
-<ol type="1">
-<li>Your national weather and fire service first.</li>
-<li>Compare a month to the <strong>same month</strong> in a long record, not to another continent.</li>
-<li>Empty box or late file = missing, not calm.</li>
-</ol>
-<p>Advice. Not an order.</p>
+<p>Your national warning service first. Empty or late = missing, not calm. Advice, not an order.</p>
 
 
 </section>

@@ -235,28 +235,28 @@
     "href": "coverage.html",
     "title": "What the instruments show",
     "section": "",
-    "text": "This page answers one question: can we actually see the thing people are arguing about?\nIf we cannot see it, we say so. We do not fill the hole with a story.\nThis week’s brief · Claim register · Current gates (full table)"
+    "text": "This page answers one question: can we actually see the thing people are arguing about?\nIf we cannot see it, we say so. We do not fill the hole with a story.\nThis week’s brief · Claim register · Current gates"
   },
   {
     "objectID": "coverage.html#right-now",
     "href": "coverage.html#right-now",
     "title": "What the instruments show",
     "section": "Right now",
-    "text": "Right now\nRain. Thirty years of monthly rain at nine places (Ubay, Manaus, Lagos, Nairobi, Jakarta, Mumbai, Mexico City, São Paulo, Paris). Sample, not the planet. Newest CHIRPS month on the public server: July 2026. August is late, not “no rain.”\nHeat. Same nine places, ERA5. Useful for “is this July odd here?” Useless as a world average.\nEarthquakes. Global M4.5+ counts, 1991–2020, tropics vs the rest. Background rate, not this week’s shaking at your house.\nFire. One NOAA-20 pass on 30 August 2026: about 5,000 hotspots. One western-southern box empty while another had thousands. Empty = blind, not safe.\nPacific heat index (ONI). May–July 2026: +1.39 (CPC file). One ocean product. Not your town forecast."
+    "text": "Right now\nRain. Nine-place CHIRPS sample. Newest public month: July 2026. August is late, not drought.\nHeat. Same nine places, ERA5. Not a world average.\nEarthquakes. 1991–2020 M4.5+ background, tropics vs extra. Not your house.\nFire. ~5,000 NOAA-20 hotspots on 30 Aug 2026. One box blind.\nPacific ONI. May–July 2026 +1.39."
   },
   {
-    "objectID": "coverage.html#currents-what-is-actually-watched",
-    "href": "coverage.html#currents-what-is-actually-watched",
+    "objectID": "coverage.html#currents-28-august-2026-surface-sample",
+    "href": "coverage.html#currents-28-august-2026-surface-sample",
     "title": "What the instruments show",
-    "section": "Currents — what is actually watched",
-    "text": "Currents — what is actually watched\nThe ocean is not one conveyor with one number.\nAtlantic overturning (AMOC at 26°N). RAPID’s last full public series runs through February 2024. That tile is STALE. We will not print a 2026 Sverdrup. Other Atlantic lines (OSNAP, MOVE, SAMBA) exist and are also delayed or partial. None of them is “off”; they are slow.\nGlobal surface drift (top ~30 m). OSCAR v2 is a near-real-time satellite product (~2-day lag). It can show whether the skin of the ocean is slack or racing. It cannot say the deep conveyor collapsed. We have not ingested OSCAR into the weekly job yet. State: registered, fetch pending.\nOther named currents. Agulhas, Indonesian Throughflow, Antarctic Circumpolar, Kuroshio, Brazil Current, equatorial undercurrents: scientists monitor them with arrays, ships, and altimetry. They are not on this board. That is our gap, not proof they are unwatched. Full list: CURRENT_GATES.md.\nDo not read rain in Ubay as “the AMOC.” Do not read a missing Sv as collapse.\nVolcanic winter / food-web collapse / “move south.” Parked or unsupported by these gauges. Off this page."
+    "section": "Currents — 28 August 2026 surface sample",
+    "text": "Currents — 28 August 2026 surface sample\nThese are one grid cell of satellite-derived geostrophic surface flow from NOAA AOML (product through 28 Aug 2026). Units: metres per second. Not volume transport. Not AMOC. A slow cell is not a collapsed conveyor.\n\n\n\nPlace\nSpeed (m/s)\n\n\n\n\nSomali\n1.01\n\n\nDrake Passage\n0.55\n\n\nKuroshio\n0.53\n\n\nIndonesian Throughflow proxy (Lombok)\n0.52\n\n\nFlorida Straits\n0.33\n\n\nEquatorial Pacific\n0.20\n\n\nGulf Stream (mid-box)\n0.17\n\n\nACC south of Africa\n0.11\n\n\nBrazil Current\n0.11\n\n\nAgulhas (this cell)\n0.07\n\n\n\nThe Agulhas number is a point that may have missed the core. Do not read it as “the Agulhas died.”\nStill not live here\n\nRAPID AMOC at 26°N: last full public series February 2024 — STALE.\nFlorida Straits cable transport (Sv): interrupted since November 2023 (NOAA note on the 2026 file).\nOSCAR v2 NRT and Copernicus 3D currents: exist behind other portals; not in this job yet.\nOSNAP, MOVE, SAMBA, INSTANT-class ITF volume: delayed arrays.\n\nRaw JSON: CURRENTS_NRT_2026-08-28.json.\nParked: volcanic winter, food-web collapse, “move south.”"
   },
   {
     "objectID": "coverage.html#how-to-use-this",
     "href": "coverage.html#how-to-use-this",
     "title": "What the instruments show",
     "section": "How to use this",
-    "text": "How to use this\n\nYour national weather and fire service first.\nCompare a month to the same month in a long record, not to another continent.\nEmpty box or late file = missing, not calm.\n\nAdvice. Not an order."
+    "text": "How to use this\nYour national warning service first. Empty or late = missing, not calm. Advice, not an order."
   },
   {
     "objectID": "offer.html",
