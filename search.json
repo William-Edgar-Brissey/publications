@@ -233,16 +233,23 @@
   {
     "objectID": "coverage.html",
     "href": "coverage.html",
-    "title": "What we can see",
+    "title": "What the instruments show",
     "section": "",
-    "text": "Seven Rules declaration\nGoverning control: SEVEN_RULES_UNIVERSAL_MODEL_CONTROL_AND_EXECUTION_START_R0_2026-08-30.md\nMaster protocol: RA-CR-2026-08-29 Coupling Register\nAssignment packet: Book One field coverage\nModel/provider/version: Grok / NOT FULLY EXPOSED\nResearch cutoff: 2026-08-30T21:50Z\nSubject/batch: FIELD-COVERAGE-2026-08-30\nIndependent initial submission: YES\nMaterial unknowns disclosed: YES\nContrary evidence sought: YES\nPrivacy/legal review completed: YES (public instruments only)\nKernel status: NOT RUN — not a truth certificate\nHuman adjudication: PENDING\nRules in one line: accuracy over signal; honesty; reconstructable work; adversarial alternatives; visible provenance; human signs; evidence beats the story.\nRegister: Coupling Register wins if this page disagrees.\nWeekly read: Week 35 brief.\nOlder Niño board: Monitor v1 — not the same ledger yet (Rule Three gap).\nAdvice. Not orders. No inhabited loop. No autonomous control."
+    "text": "This page answers one question: can we actually see the thing people are arguing about?\nIf we cannot see it, we say so. We do not fill the hole with a story.\nThis week’s plain-language brief · Claim register (controls what we are allowed to assert)"
   },
   {
-    "objectID": "coverage.html#can-we-see-it",
-    "href": "coverage.html#can-we-see-it",
-    "title": "What we can see",
-    "section": "Can we see it?",
-    "text": "Can we see it?\n\n\n\n\n\n\n\n\n\nWhat\nClaim ID\nLabel\nState\n\n\n\n\nCHIRPS rain, 9 points, 1991–2020\nWater joint; not CL-002\nFACT — PROVISIONAL series\nCurrent month often DELAYED\n\n\nERA5 temp+rain, same points\nAir/Water context\nFACT — PROVISIONAL\nComplete on those points\n\n\nUSGS M4.5+ tropics vs extra\nEarth joint\nFACT — PROVISIONAL climatology\nComplete 1991–2020\n\n\nFIRMS daily boxes\nFire joint\nFACT — PROVISIONAL\nLIVE; west_south NO_COVERAGE\n\n\nCPC ONI\nAir index for RQ5 v0 only\nFACT — PROVISIONAL\nMJJ 2026 +1.39\n\n\nAMOC / RAPID\nCL-002 PILOT\nUNKNOWN here\nDo not infer from rain\n\n\nVolcanic winter\nCL-016 PARKED\nnot claimed\nAbsent on purpose\n\n\nEDEN habitability\npre-feasibility elsewhere\nUNKNOWN / insufficient from 9 points\nForbidden reading\n\n\n\nCredits: CHIRPS/UCSB, ERA5/ECMWF via Open-Meteo, USGS, EMSC, BMKG, NASA FIRMS, CPC ONI."
+    "objectID": "coverage.html#right-now",
+    "href": "coverage.html#right-now",
+    "title": "What the instruments show",
+    "section": "Right now",
+    "text": "Right now\nRain. We have 30 years of monthly rain at nine places (Ubay, Manaus, Lagos, Nairobi, Jakarta, Mumbai, Mexico City, São Paulo, Paris). That is a sample, not the planet. The newest CHIRPS month on the public server was July 2026. August is late, not “no rain.”\nHeat. Same nine places have a 30-year temperature series from ERA5. Useful for “is this July odd for this place?” Useless as a world average.\nEarthquakes. We counted global quakes magnitude 4.5 and up, month by month, 1991–2020, split tropics vs the rest. That is a background rate, not this week’s shaking at your house.\nFire. A satellite pass on 30 August 2026 saw about 5,000 hotspots worldwide. One whole western-southern box came back empty while another box had thousands. Empty here means the pull failed that region, not that nothing is burning.\nPacific heat index (ONI). The latest published seasonal number (May–July 2026) is +1.39. That is a Pacific measurement. It is not proof that your rainy season has already changed.\nAtlantic overturning (AMOC). We do not have a fresh number on this board. Older public notes already called that series stale. Do not read rain in Ubay as “the AMOC.”\nVolcanic winter / collapsing food web / “move south.” Not on this page. Those claims are parked or not supported by these gauges."
+  },
+  {
+    "objectID": "coverage.html#how-to-use-this",
+    "href": "coverage.html#how-to-use-this",
+    "title": "What the instruments show",
+    "section": "How to use this",
+    "text": "How to use this\n\nLook up your weather and fire service (PAGASA, BMKG, SMN, INMET, NOAA, …). This board does not replace them.\nCompare a month to the same month in the 30-year record, not to Paris and not to “the tropics.”\nIf a box is empty or a month is late, treat it as missing, not calm.\n\nThis is advice. You can ignore it. No one is ordered to move, build, or stop a treatment because of this page.\n\n\n\nRecord-keeping (you can skip this)\n\nSeven Rules R0 apply. Human sign-off on this wording: pending. Automated kernel: not run. Labels used above are observations with named sources, plus gaps called gaps.\nSources: CHIRPS/UCSB, ERA5/ECMWF via Open-Meteo, USGS, NASA FIRMS, CPC ONI, BMKG when pulled."
   },
   {
     "objectID": "offer.html",
