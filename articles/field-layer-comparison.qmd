@@ -1,0 +1,37 @@
+---
+title: "Field layer versus adjacent research"
+subtitle: "Book One and the Inter-Basin prospectus as the baseline"
+date: 2026-08-30
+categories: [realignment, book-one, climate]
+author: "William Edgar Brissey"
+---
+
+Controlling text lives in the [Coupling Register](book-one-coupling-register.qmd) and the [Realignment prospectus](realignment-architecture-prospectus.qmd). This note is comparison, not a new CL grade.
+
+The live field layer (CHIRPS/ERA5 1991–2020, USGS monthly, FIRMS boxes, BMKG) is an **evidence board**. It is not GraphCast, not DestinE, and not an EDEN viability score.
+
+Full tables: [BOOK_ONE_FIELD_COMPARISON.md](https://github.com/William-Edgar-Brissey/project-register/blob/main/gods_eye/BOOK_ONE_FIELD_COMPARISON.md).
+
+## Same
+
+ERA5, FIRMS, USGS, BMKG, C3S-class products. We consume them. We did not replace their physics or catalogs.
+
+## Different
+
+Fail-closed states. Calendar-month anomaly. Tropics vs extra-tropical split. Claim IDs stay in the register. Inter-basin work (RQ5) is observation + lag + null — not a learned teleconnection presented as cause.
+
+## Worse than the models people will compare us to
+
+GraphCast, Pangu, NeuralGCM, Prithvi, Earth Engine: they have global grids and (for the first three) forecast skill. We have nine points and no rollout.
+
+Worse than our own Monitor v1: Niño 3.4, EONET, and RAPID are not in the gods_eye interval job yet.
+
+Worse than inter-basin *transfer* literature: no discharge, no legal basin, no canal. Do not confuse RQ5 coupling with IBWT engineering.
+
+## What they should steal
+
+Coverage mask. Latency state. Separate tropical skill. A parked-claim list where the model is not allowed to speak.
+
+## What we should steal back
+
+Wire Monitor v1 series into the same state enum. Add soil moisture / runoff before talking EDEN water balance. Keep non-deployment.
