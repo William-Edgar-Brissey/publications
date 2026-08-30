@@ -9,38 +9,50 @@ This page answers one question: **can we actually see the thing people are argui
 
 If we cannot see it, we say so. We do not fill the hole with a story.
 
-[This week's brief](articles/weekly-brief-2026-w35.qmd) · [Claim register](articles/book-one-coupling-register.qmd) · [Current gates (full table)](https://github.com/William-Edgar-Brissey/project-register/blob/main/gods_eye/CURRENT_GATES.md)
+[This week's brief](articles/weekly-brief-2026-w35.qmd) · [Claim register](articles/book-one-coupling-register.qmd) · [Current gates](https://github.com/William-Edgar-Brissey/project-register/blob/main/gods_eye/CURRENT_GATES.md)
 
 ## Right now
 
-**Rain.** Thirty years of monthly rain at nine places (Ubay, Manaus, Lagos, Nairobi, Jakarta, Mumbai, Mexico City, São Paulo, Paris). Sample, not the planet. Newest CHIRPS month on the public server: **July 2026**. August is late, not “no rain.”
+**Rain.** Nine-place CHIRPS sample. Newest public month: **July 2026**. August is late, not drought.
 
-**Heat.** Same nine places, ERA5. Useful for “is this July odd *here*?” Useless as a world average.
+**Heat.** Same nine places, ERA5. Not a world average.
 
-**Earthquakes.** Global M4.5+ counts, 1991–2020, tropics vs the rest. Background rate, not this week's shaking at your house.
+**Earthquakes.** 1991–2020 M4.5+ background, tropics vs extra. Not your house.
 
-**Fire.** One NOAA-20 pass on 30 August 2026: about **5,000** hotspots. One western-southern box empty while another had thousands. Empty = blind, not safe.
+**Fire.** ~5,000 NOAA-20 hotspots on 30 Aug 2026. One box blind.
 
-**Pacific heat index (ONI).** May–July 2026: **+1.39** ([CPC file](https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt)). One ocean product. Not your town forecast.
+**Pacific ONI.** May–July 2026 **+1.39**.
 
-## Currents — what is actually watched
+## Currents — 28 August 2026 surface sample
 
-The ocean is not one conveyor with one number.
+These are **one grid cell of satellite-derived geostrophic surface flow** from NOAA AOML (product through 28 Aug 2026). Units: metres per second. **Not** volume transport. **Not** AMOC. A slow cell is not a collapsed conveyor.
 
-**Atlantic overturning (AMOC at 26°N).** RAPID’s last full public series runs through **February 2024**. That tile is **STALE**. We will not print a 2026 Sverdrup. Other Atlantic lines (OSNAP, MOVE, SAMBA) exist and are also delayed or partial. None of them is “off”; they are slow.
+| Place | Speed (m/s) |
+|---|---:|
+| Somali | 1.01 |
+| Drake Passage | 0.55 |
+| Kuroshio | 0.53 |
+| Indonesian Throughflow proxy (Lombok) | 0.52 |
+| Florida Straits | 0.33 |
+| Equatorial Pacific | 0.20 |
+| Gulf Stream (mid-box) | 0.17 |
+| ACC south of Africa | 0.11 |
+| Brazil Current | 0.11 |
+| Agulhas (this cell) | 0.07 |
 
-**Global surface drift (top ~30 m).** OSCAR v2 is a near-real-time satellite product (~2-day lag). It can show whether the *skin* of the ocean is slack or racing. It cannot say the deep conveyor collapsed. **We have not ingested OSCAR into the weekly job yet.** State: registered, fetch pending.
+The Agulhas number is a **point that may have missed the core**. Do not read it as “the Agulhas died.”
 
-**Other named currents.** Agulhas, Indonesian Throughflow, Antarctic Circumpolar, Kuroshio, Brazil Current, equatorial undercurrents: scientists monitor them with arrays, ships, and altimetry. **They are not on this board.** That is our gap, not proof they are unwatched. Full list: [CURRENT_GATES.md](https://github.com/William-Edgar-Brissey/project-register/blob/main/gods_eye/CURRENT_GATES.md).
+**Still not live here**
 
-Do not read rain in Ubay as “the AMOC.” Do not read a missing Sv as collapse.
+- RAPID AMOC at 26°N: last full public series **February 2024** — STALE.
+- Florida Straits **cable transport (Sv):** interrupted since November 2023 (NOAA note on the 2026 file).
+- OSCAR v2 NRT and Copernicus 3D currents: exist behind other portals; not in this job yet.
+- OSNAP, MOVE, SAMBA, INSTANT-class ITF volume: delayed arrays.
 
-**Volcanic winter / food-web collapse / “move south.”** Parked or unsupported by these gauges. Off this page.
+Raw JSON: [CURRENTS_NRT_2026-08-28.json](https://github.com/William-Edgar-Brissey/project-register/blob/main/gods_eye/CURRENTS_NRT_2026-08-28.json).
+
+Parked: volcanic winter, food-web collapse, “move south.”
 
 ## How to use this
 
-1. Your national weather and fire service first.
-2. Compare a month to the **same month** in a long record, not to another continent.
-3. Empty box or late file = missing, not calm.
-
-Advice. Not an order.
+Your national warning service first. Empty or late = missing, not calm. Advice, not an order.
