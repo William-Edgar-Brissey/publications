@@ -155,9 +155,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-is-live" id="toc-what-is-live" class="nav-link active" data-scroll-target="#what-is-live">What is live</a></li>
-  <li><a href="#the-nine-nodes" id="toc-the-nine-nodes" class="nav-link" data-scroll-target="#the-nine-nodes">The nine nodes</a></li>
-  <li><a href="#how-to-read-eden-goldilocks-language-here" id="toc-how-to-read-eden-goldilocks-language-here" class="nav-link" data-scroll-target="#how-to-read-eden-goldilocks-language-here">How to read EDEN / Goldilocks language here</a></li>
+  <li><a href="#scoreboard" id="toc-scoreboard" class="nav-link active" data-scroll-target="#scoreboard">Scoreboard</a></li>
+  <li><a href="#chirps-limit" id="toc-chirps-limit" class="nav-link" data-scroll-target="#chirps-limit">CHIRPS limit</a></li>
+  <li><a href="#firms-west_south" id="toc-firms-west_south" class="nav-link" data-scroll-target="#firms-west_south">FIRMS west_south</a></li>
+  <li><a href="#lag" id="toc-lag" class="nav-link" data-scroll-target="#lag">Lag</a></li>
+  <li><a href="#credits-required" id="toc-credits-required" class="nav-link" data-scroll-target="#credits-required">Credits (required)</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/William-Edgar-Brissey/publications/blob/main/coverage.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/William-Edgar-Brissey/publications/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -197,76 +199,103 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><strong>Authorization:</strong> William Edgar Brissey, 30 August 2026, 14:24 Asia/Manila.</p>
-<p>This page is the public coverage map for Book One components (Fire, Earth, Air, Water / biosphere context). It is an <strong>observation and uncertainty board</strong>. It is <strong>not</strong> a finding that any band can sustain more life, that relocation is warranted, or that EDEN is viable.</p>
-<section id="what-is-live" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-live">What is live</h2>
+<p>This page is a <strong>coverage and uncertainty board</strong>. It is not a finding that any band sustains more life, that relocation is warranted, or that EDEN is viable.</p>
+<p>Client incident files stay out of this corpus.</p>
+<section id="scoreboard" class="level2">
+<h2 class="anchored" data-anchor-id="scoreboard">Scoreboard</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Layer</th>
+<th>Class</th>
 <th>Window</th>
-<th>Nodes / domain</th>
+<th>Domain</th>
 <th>State</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>CHIRPS rain</td>
-<td>1991–2020 monthly</td>
-<td>9 points, 50N–50S grid</td>
-<td>COMPLETE</td>
+<td>CHIRPS v2 monthly rain</td>
+<td>satellite–station blend</td>
+<td>1991–2020 (1981–1990 ingesting)</td>
+<td>9 points on ~50N–50S grid</td>
+<td>COMPLETE / DELAYED for current month</td>
 </tr>
 <tr class="even">
-<td>ERA5 temp + rain</td>
-<td>1991–2020 monthly</td>
+<td>ERA5 via Open-Meteo</td>
+<td>reanalysis</td>
+<td>1991–2020</td>
 <td>same 9 points</td>
 <td>COMPLETE</td>
 </tr>
 <tr class="odd">
-<td>USGS M4.5+</td>
-<td>1991–2020 monthly</td>
+<td>USGS M4.5+ monthly</td>
+<td>agency catalog</td>
+<td>1991–2020</td>
 <td>tropics vs extra-tropical</td>
 <td>COMPLETE</td>
 </tr>
 <tr class="even">
 <td>FIRMS VIIRS NOAA-20</td>
-<td>daily NRT</td>
-<td>global boxes</td>
-<td>LIVE (sample 4968 hotspots on 2026-08-30)</td>
+<td>satellite NRT</td>
+<td>daily</td>
+<td>4 boxes</td>
+<td>LIVE; <strong>west_south box defect</strong> (n=0 while other boxes thousands)</td>
 </tr>
 <tr class="odd">
-<td>CHIRPS 1981–1990</td>
-<td>extension</td>
-<td>same 9 points</td>
-<td>INGEST AUTHORIZED</td>
+<td>BMKG TEWS</td>
+<td>national agency</td>
+<td>latest list</td>
+<td>Indonesia</td>
+<td>ADAPTER ADDED</td>
 </tr>
 <tr class="even">
-<td>National agencies</td>
-<td>PAGASA, INPE, BMKG, IDEAM, …</td>
-<td>registry</td>
-<td>REGISTERED, adapters incremental</td>
+<td>INPE Queimadas</td>
+<td>national agency</td>
+<td>Brazil fire</td>
+<td>Brazil</td>
+<td>REGISTERED, URL not live yet</td>
+</tr>
+<tr class="odd">
+<td>PAGASA</td>
+<td>national agency</td>
+<td>PH weather</td>
+<td>Philippines</td>
+<td>REGISTERED, often gated</td>
 </tr>
 </tbody>
 </table>
+<p>Compare <strong>calendar month to the same calendar month</strong> (July vs July 1991–2020), not to an annual mean and not to Paris.</p>
 </section>
-<section id="the-nine-nodes" class="level2">
-<h2 class="anchored" data-anchor-id="the-nine-nodes">The nine nodes</h2>
-<p>Ubay (PH), Manaus, Lagos, Nairobi, Jakarta, Mumbai, Mexico City, São Paulo, Paris control.</p>
-<p>These are <strong>sample points</strong>, not continents. A wet July in Mumbai is not a Goldilocks proof.</p>
+<section id="chirps-limit" class="level2">
+<h2 class="anchored" data-anchor-id="chirps-limit">CHIRPS limit</h2>
+<p>CHIRPS v2 global monthly is a 0.05° grid from 50N to 50S. Calling it “global water” without that bound is false. Paris is the extra-tropical control and sits near that edge.</p>
 </section>
-<section id="how-to-read-eden-goldilocks-language-here" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-read-eden-goldilocks-language-here">How to read EDEN / Goldilocks language here</h2>
+<section id="firms-west_south" class="level2">
+<h2 class="anchored" data-anchor-id="firms-west_south">FIRMS west_south</h2>
+<p>On 2026-08-30 the west_south box (<code>-180,-90,0,0</code>) returned <strong>0</strong> rows while east_north returned <strong>4116</strong>. That is <code>NO_COVERAGE</code> / adapter defect for that box, not “no fire in the western south.”</p>
+</section>
+<section id="lag" class="level2">
+<h2 class="anchored" data-anchor-id="lag">Lag</h2>
+<p>CHIRPS latest published month at last check was <strong>2026.07</strong>. August is <code>DELAYED</code>, not zero rain.</p>
+</section>
+<section id="credits-required" class="level2">
+<h2 class="anchored" data-anchor-id="credits-required">Credits (required)</h2>
 <ul>
-<li><strong>Allowed:</strong> name the Book One components; show where we have series vs where we have <code>NO_COVERAGE</code> / <code>DELAYED</code> / <code>FETCH_FAIL</code>.</li>
-<li><strong>Not allowed from this page:</strong> “the Southern band sustains more life,” “relocate,” or “the world dies if the data were missing.”</li>
+<li>CHIRPS: UCSB / CHC Climate Hazards Group</li>
+<li>ERA5: ECMWF via Open-Meteo archive</li>
+<li>Earthquakes: USGS ANSS / FDSN; EMSC; BMKG TEWS</li>
+<li>Fire: NASA LANCE FIRMS VIIRS; INPE Queimadas when connected</li>
 </ul>
-<p>Controlling numbers: <a href="https://github.com/William-Edgar-Brissey/project-register/blob/main/gods_eye/baselines/CLIMATOLOGY_1991_2020_COMPACT.json">project-register climatology compact</a>.</p>
+<p>Hashes of the working series: <a href="https://github.com/William-Edgar-Brissey/project-register/blob/main/gods_eye/baselines/SERIES_SHA256.md">SERIES_SHA256.md</a>.</p>
+<p>Numbers: <a href="https://github.com/William-Edgar-Brissey/project-register/blob/main/gods_eye/baselines/CLIMATOLOGY_1991_2020_COMPACT.json">CLIMATOLOGY_1991_2020_COMPACT.json</a>.</p>
 
 
 </section>

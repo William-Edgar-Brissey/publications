@@ -214,28 +214,42 @@
     "href": "coverage.html",
     "title": "Book One coverage",
     "section": "",
-    "text": "Authorization: William Edgar Brissey, 30 August 2026, 14:24 Asia/Manila.\nThis page is the public coverage map for Book One components (Fire, Earth, Air, Water / biosphere context). It is an observation and uncertainty board. It is not a finding that any band can sustain more life, that relocation is warranted, or that EDEN is viable."
+    "text": "Authorization: William Edgar Brissey, 30 August 2026, 14:24 Asia/Manila.\nThis page is a coverage and uncertainty board. It is not a finding that any band sustains more life, that relocation is warranted, or that EDEN is viable.\nClient incident files stay out of this corpus."
   },
   {
-    "objectID": "coverage.html#what-is-live",
-    "href": "coverage.html#what-is-live",
+    "objectID": "coverage.html#scoreboard",
+    "href": "coverage.html#scoreboard",
     "title": "Book One coverage",
-    "section": "What is live",
-    "text": "What is live\n\n\n\n\n\n\n\n\n\nLayer\nWindow\nNodes / domain\nState\n\n\n\n\nCHIRPS rain\n1991–2020 monthly\n9 points, 50N–50S grid\nCOMPLETE\n\n\nERA5 temp + rain\n1991–2020 monthly\nsame 9 points\nCOMPLETE\n\n\nUSGS M4.5+\n1991–2020 monthly\ntropics vs extra-tropical\nCOMPLETE\n\n\nFIRMS VIIRS NOAA-20\ndaily NRT\nglobal boxes\nLIVE (sample 4968 hotspots on 2026-08-30)\n\n\nCHIRPS 1981–1990\nextension\nsame 9 points\nINGEST AUTHORIZED\n\n\nNational agencies\nPAGASA, INPE, BMKG, IDEAM, …\nregistry\nREGISTERED, adapters incremental"
+    "section": "Scoreboard",
+    "text": "Scoreboard\n\n\n\n\n\n\n\n\n\n\nLayer\nClass\nWindow\nDomain\nState\n\n\n\n\nCHIRPS v2 monthly rain\nsatellite–station blend\n1991–2020 (1981–1990 ingesting)\n9 points on ~50N–50S grid\nCOMPLETE / DELAYED for current month\n\n\nERA5 via Open-Meteo\nreanalysis\n1991–2020\nsame 9 points\nCOMPLETE\n\n\nUSGS M4.5+ monthly\nagency catalog\n1991–2020\ntropics vs extra-tropical\nCOMPLETE\n\n\nFIRMS VIIRS NOAA-20\nsatellite NRT\ndaily\n4 boxes\nLIVE; west_south box defect (n=0 while other boxes thousands)\n\n\nBMKG TEWS\nnational agency\nlatest list\nIndonesia\nADAPTER ADDED\n\n\nINPE Queimadas\nnational agency\nBrazil fire\nBrazil\nREGISTERED, URL not live yet\n\n\nPAGASA\nnational agency\nPH weather\nPhilippines\nREGISTERED, often gated\n\n\n\nCompare calendar month to the same calendar month (July vs July 1991–2020), not to an annual mean and not to Paris."
   },
   {
-    "objectID": "coverage.html#the-nine-nodes",
-    "href": "coverage.html#the-nine-nodes",
+    "objectID": "coverage.html#chirps-limit",
+    "href": "coverage.html#chirps-limit",
     "title": "Book One coverage",
-    "section": "The nine nodes",
-    "text": "The nine nodes\nUbay (PH), Manaus, Lagos, Nairobi, Jakarta, Mumbai, Mexico City, São Paulo, Paris control.\nThese are sample points, not continents. A wet July in Mumbai is not a Goldilocks proof."
+    "section": "CHIRPS limit",
+    "text": "CHIRPS limit\nCHIRPS v2 global monthly is a 0.05° grid from 50N to 50S. Calling it “global water” without that bound is false. Paris is the extra-tropical control and sits near that edge."
   },
   {
-    "objectID": "coverage.html#how-to-read-eden-goldilocks-language-here",
-    "href": "coverage.html#how-to-read-eden-goldilocks-language-here",
+    "objectID": "coverage.html#firms-west_south",
+    "href": "coverage.html#firms-west_south",
     "title": "Book One coverage",
-    "section": "How to read EDEN / Goldilocks language here",
-    "text": "How to read EDEN / Goldilocks language here\n\nAllowed: name the Book One components; show where we have series vs where we have NO_COVERAGE / DELAYED / FETCH_FAIL.\nNot allowed from this page: “the Southern band sustains more life,” “relocate,” or “the world dies if the data were missing.”\n\nControlling numbers: project-register climatology compact."
+    "section": "FIRMS west_south",
+    "text": "FIRMS west_south\nOn 2026-08-30 the west_south box (-180,-90,0,0) returned 0 rows while east_north returned 4116. That is NO_COVERAGE / adapter defect for that box, not “no fire in the western south.”"
+  },
+  {
+    "objectID": "coverage.html#lag",
+    "href": "coverage.html#lag",
+    "title": "Book One coverage",
+    "section": "Lag",
+    "text": "Lag\nCHIRPS latest published month at last check was 2026.07. August is DELAYED, not zero rain."
+  },
+  {
+    "objectID": "coverage.html#credits-required",
+    "href": "coverage.html#credits-required",
+    "title": "Book One coverage",
+    "section": "Credits (required)",
+    "text": "Credits (required)\n\nCHIRPS: UCSB / CHC Climate Hazards Group\nERA5: ECMWF via Open-Meteo archive\nEarthquakes: USGS ANSS / FDSN; EMSC; BMKG TEWS\nFire: NASA LANCE FIRMS VIIRS; INPE Queimadas when connected\n\nHashes of the working series: SERIES_SHA256.md.\nNumbers: CLIMATOLOGY_1991_2020_COMPACT.json."
   },
   {
     "objectID": "offer.html",
