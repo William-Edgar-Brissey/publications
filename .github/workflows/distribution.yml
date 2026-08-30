@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - articles/**
+      - coverage.qmd
       - assets/**
       - scripts/**
       - .github/workflows/distribution.yml
@@ -17,7 +18,7 @@ on:
       source:
         description: Quarto article source
         required: true
-        default: articles/realignment-architecture-prospectus.qmd
+        default: articles/weekly-brief-2026-w35.qmd
         type: string
       create_typefully_drafts:
         description: Create private X Article and LinkedIn document drafts
@@ -36,7 +37,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      PUBLICATION_SOURCE: ${{ inputs.source || 'articles/realignment-architecture-prospectus.qmd' }}
+      PUBLICATION_SOURCE: ${{ inputs.source || 'articles/weekly-brief-2026-w35.qmd' }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
