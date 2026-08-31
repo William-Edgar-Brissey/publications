@@ -1,6 +1,6 @@
 {
   "schema": "coupling-monitor-v1",
-  "fetched_at": "2026-08-30T12:27:34+00:00",
+  "fetched_at": "2026-08-31T12:27:30+00:00",
   "disclaimer": "Operational monitor of public feeds. Not a collapse forecast, not a promotion of CL-002, not a 2026 AMOC value.",
   "canonical_register": "https://william-edgar-brissey.github.io/publications/articles/book-one-coupling-register.html",
   "locked": {
@@ -51,7 +51,7 @@
   "quakes_m6": {
     "ok": true,
     "source": "USGS FDSN event service",
-    "source_url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-07-31&minmagnitude=6.0&orderby=magnitude",
+    "source_url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-08-01&minmagnitude=6.0&orderby=magnitude",
     "window_days": 30,
     "min_magnitude": 6.0,
     "count": 13,
