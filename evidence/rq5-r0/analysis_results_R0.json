@@ -1,0 +1,77 @@
+{
+  "status": "ANALYSIS_COMPLETE_ON_FROZEN_SOURCES",
+  "historical_commit": "58167f6d7886899f01f8e78ff271dde3d6bb96b2",
+  "primary_disposition": "REPRODUCED",
+  "human_decision": "PENDING",
+  "canonical_mutation": false,
+  "tests": {
+    "ubay_djf_vs_oni_djf": {
+      "n": 29,
+      "pearson_r": -0.7721316619724065,
+      "ordinary_p": 9.29674613303864e-07,
+      "shuffle_n": 2000,
+      "shuffle_seed": 20260831,
+      "shuffle_hits": 0,
+      "shuffle_p": 0.0,
+      "bootstrap_95": [-0.8900618824358324, -0.6346398081858168],
+      "block_bootstrap_95_block3": [-0.8958058709303282, -0.6408683131812818],
+      "leave_one_out": {"min": -0.8009259911158332, "max": -0.744088712741876, "median": -0.7704359251574817},
+      "effective_n_ar1_approx": 28.823064448146145,
+      "detrended_r": -0.8213027681467306,
+      "historical_r": -0.78,
+      "historical_difference": 0.007868338027593569,
+      "reproduction_disposition": "REPRODUCED"
+    },
+    "ubay_djf_vs_prev_son_oni": {
+      "n": 29,
+      "pearson_r": -0.7092832985898904,
+      "ordinary_p": 1.6499872230170573e-05,
+      "shuffle_hits": 0,
+      "shuffle_p": 0.0,
+      "historical_r": -0.75,
+      "reproduction_disposition": "APPROXIMATELY_REPRODUCED"
+    },
+    "ubay_jja_vs_djf_oni": {
+      "n": 29,
+      "pearson_r": -0.15795541003402733,
+      "ordinary_p": 0.4131540452322943,
+      "shuffle_hits": 869,
+      "shuffle_p": 0.4345
+    },
+    "ubay_djf_vs_dmi_djf": {
+      "n": 29,
+      "pearson_r": -0.13535359120479187,
+      "ordinary_p": 0.48388292084071716,
+      "shuffle_hits": 997,
+      "shuffle_p": 0.4985,
+      "historical_r": -0.13,
+      "reproduction_disposition": "REPRODUCED"
+    },
+    "oni_djf_vs_dmi_djf": {
+      "n": 29,
+      "pearson_r": 0.45840557273246735,
+      "ordinary_p": 0.012386982755295359,
+      "shuffle_hits": 18,
+      "shuffle_p": 0.009,
+      "historical_r": 0.47,
+      "reproduction_disposition": "REPRODUCED"
+    },
+    "manaus_djf_vs_oni_djf": {
+      "n": 29,
+      "pearson_r": -0.6844089569855468,
+      "ordinary_p": 4.231315955280374e-05,
+      "shuffle_hits": 0,
+      "shuffle_p": 0.0,
+      "historical_r": -0.62,
+      "reproduction_disposition": "APPROXIMATELY_REPRODUCED"
+    }
+  },
+  "joint_oni_dmi_regression": {
+    "n": 29,
+    "coefficients": {"const": 565.8720619861349, "oni_djf": -213.3028815221659, "dmi_djf": 375.3029692621241},
+    "pvalues": {"const": 1.0499779895652514e-16, "oni_djf": 2.208749391247017e-07, "dmi_djf": 0.04186795497593889},
+    "r_squared": 0.6566839615888798,
+    "condition_number": 6.522168809002056,
+    "interpretation": "conditional association only"
+  }
+}
