@@ -3,6 +3,8 @@ project:
   output-dir: _site
   resources:
     - assets/**
+    - evidence/**
+    - RELEASE_REGISTER.md
 
 website:
   title: "William Edgar Brissey"
