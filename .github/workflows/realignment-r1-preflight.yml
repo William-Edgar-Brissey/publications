@@ -1,0 +1,44 @@
+name: Realignment R1 Release Preflight
+
+on:
+  push:
+    branches:
+      - release/realignment-r1
+    paths:
+      - .github/workflows/realignment-r1-preflight.yml
+
+permissions:
+  contents: read
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install reproduction dependencies
+        run: python -m pip install --disable-pip-version-check numpy pandas scipy
+      - name: Recompute published RQ5 statistics
+        run: python evidence/rq5-r0/recompute_from_matrix.py | tee /tmp/rq5.txt
+      - name: Verify primary coefficient and permutation result
+        run: |
+          grep -q -- "-0.7721316619724065" /tmp/rq5.txt
+          grep -q "'shuffle_hits': 0" /tmp/rq5.txt
+      - name: Render flagship HTML and PDF
+        run: quarto render articles/realignment-architecture-prospectus.qmd
+      - name: Render RQ5 evidence note HTML and PDF
+        run: quarto render articles/rq5-ubay-enso-reproduction.qmd
+      - name: Verify rendered artifacts and evidence resources
+        run: |
+          test -f _site/articles/realignment-architecture-prospectus.html
+          test -f _site/articles/realignment-architecture-prospectus.pdf
+          test -f _site/articles/rq5-ubay-enso-reproduction.html
+          test -f _site/articles/rq5-ubay-enso-reproduction.pdf
+          test -f _site/evidence/rq5-r0/SOURCE_FREEZE_R0.json
+          test -f _site/evidence/rq5-r0/processed_rq5_matrix.csv
