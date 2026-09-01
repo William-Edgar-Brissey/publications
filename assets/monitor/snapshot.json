@@ -1,6 +1,6 @@
 {
   "schema": "coupling-monitor-v1",
-  "fetched_at": "2026-08-31T12:27:30+00:00",
+  "fetched_at": "2026-09-01T12:37:00+00:00",
   "disclaimer": "Operational monitor of public feeds. Not a collapse forecast, not a promotion of CL-002, not a 2026 AMOC value.",
   "canonical_register": "https://william-edgar-brissey.github.io/publications/articles/book-one-coupling-register.html",
   "locked": {
@@ -51,19 +51,19 @@
   "quakes_m6": {
     "ok": true,
     "source": "USGS FDSN event service",
-    "source_url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-08-01&minmagnitude=6.0&orderby=magnitude",
+    "source_url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-08-02&minmagnitude=6.0&orderby=magnitude",
     "window_days": 30,
     "min_magnitude": 6.0,
     "count": 13,
     "events": [
       {
         "id": "us6000tkt2",
-        "mag": 7.7,
-        "place": "68 km NNW of Ende, Indonesia",
-        "time_ms": 1786744701564,
+        "mag": 7.8,
+        "place": "64 km NNW of Ende, Indonesia",
+        "time_ms": 1786744701505,
         "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkt2",
-        "lon": 121.3517,
-        "lat": -8.3101,
+        "lon": 121.3478,
+        "lat": -8.3514,
         "depth_km": 10
       },
       {
@@ -129,11 +129,11 @@
       {
         "id": "us6000tkuc",
         "mag": 6.1,
-        "place": "58 km N of Ende, Indonesia",
-        "time_ms": 1786746517550,
+        "place": "62 km N of Ende, Indonesia",
+        "time_ms": 1786746517743,
         "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkuc",
-        "lon": 121.5717,
-        "lat": -8.3186,
+        "lon": 121.5625,
+        "lat": -8.2904,
         "depth_km": 10
       },
       {
@@ -325,10 +325,88 @@
     "count": 20,
     "events": [
       {
+        "id": "EONET_23656",
+        "title": "Wildfire Ruggs, Morrow, Oregon",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-ORHEPN-000600"
+      },
+      {
+        "id": "EONET_23658",
+        "title": "Wildfire Harris, Throckmorton, Texas",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-TXTXS-267913"
+      },
+      {
+        "id": "EONET_23685",
+        "title": "Wildfire SOUTH RAILROAD, Comanche, Oklahoma",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-OKANA-002690"
+      },
+      {
+        "id": "EONET_23673",
+        "title": "Wildfire Alexander Trail Fire, Pushmataha, Oklahoma",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-OKOKSC-260966"
+      },
+      {
+        "id": "EONET_23683",
+        "title": "Wildfire 4V, San Miguel, New Mexico",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-NMN4S-000549"
+      },
+      {
+        "id": "EONET_23674",
+        "title": "Wildfire WRIGHT, Hughes, Oklahoma",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-OKOMA-002688"
+      },
+      {
+        "id": "EONET_23676",
+        "title": "Wildfire RAILROAD SOUTH, Comanche, Oklahoma",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-OKANA-002686"
+      },
+      {
+        "id": "EONET_23666",
+        "title": "Wildfire McKee Draw, Edwards, Texas",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-TXTXS-267823"
+      },
+      {
+        "id": "EONET_23664",
+        "title": "Wildfire West Fork, Sutton, Texas",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-TXTXS-267801"
+      },
+      {
+        "id": "EONET_23669",
+        "title": "Wildfire Roe 2, Beaverhead, Montana",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-MTCES-266405"
+      },
+      {
+        "id": "EONET_23668",
+        "title": "Wildfire Brushy Canyon, Box Elder, Utah",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-UTBRS-200695"
+      },
+      {
         "id": "EONET_23453",
         "title": "Wildfire Calico, Humboldt, Nevada",
         "category": "wildfires",
         "link": "https://irwin.doi.gov/observer/incidents/2026-NVHTF-020624"
+      },
+      {
+        "id": "EONET_23672",
+        "title": "Wildfire Dudley, Shoshone, Idaho",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-IDIPF-000730"
+      },
+      {
+        "id": "EONET_23681",
+        "title": "Wildfire Plaskett, Monterey, California",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-CALPF-002475"
       },
       {
         "id": "EONET_23455",
@@ -349,100 +427,22 @@
         "link": "https://irwin.doi.gov/observer/incidents/2026-ORVAD-260267"
       },
       {
-        "id": "EONET_23462",
-        "title": "Wildfire California  Creek, Elko, Nevada",
+        "id": "EONET_23663",
+        "title": "Wildfire Blue Eagle, Churchill, Nevada",
         "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-NVHTF-010537"
+        "link": "https://irwin.doi.gov/observer/incidents/2026-NVCCD-030758"
       },
       {
-        "id": "EONET_23457",
-        "title": "Wildfire S-1 VYA, Washoe, Nevada",
+        "id": "EONET_23682",
+        "title": "Wildfire Paddy Creek, Apache, Arizona",
         "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-CANOD-005304"
+        "link": "https://irwin.doi.gov/observer/incidents/2026-AZFTA-000812"
       },
       {
-        "id": "EONET_23459",
-        "title": "Wildfire Tom Creek, Tooele, Utah",
+        "id": "EONET_23677",
+        "title": "Wildfire Buck Creek, Pushmataha, Oklahoma",
         "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-UTWDD-200672"
-      },
-      {
-        "id": "EONET_23452",
-        "title": "Wildfire Ross, Palo Pinto, Texas",
-        "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-TXTXS-267549"
-      },
-      {
-        "id": "EONET_23458",
-        "title": "Wildfire Oxley, Elko, Nevada",
-        "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-NVEKD-010515"
-      },
-      {
-        "id": "EONET_23461",
-        "title": "Wildfire H2, Palm Beach, Florida",
-        "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-FLFLS-261800142"
-      },
-      {
-        "id": "EONET_23465",
-        "title": "Wildfire Rabbit Ear East, Union, New Mexico",
-        "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-NMN2S-000724"
-      },
-      {
-        "id": "EONET_23463",
-        "title": "Wildfire Mitchell, Ware, Georgia",
-        "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-GAOKR-002585"
-      },
-      {
-        "id": "EONET_23209",
-        "title": "Wildfire Old Deer, Carson, Texas",
-        "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-TXTXS-267516"
-      },
-      {
-        "id": "EONET_23225",
-        "title": "Wildfire 22, Miami-Dade, Florida",
-        "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-FLFLS-1800143"
-      },
-      {
-        "id": "EONET_23215",
-        "title": "Wildfire Rustler, Motley, Texas",
-        "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-TXTXS-267465"
-      },
-      {
-        "id": "EONET_23454",
-        "title": "Wildfire Electric, Whatcom, Washington",
-        "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-WAMSF-000494"
-      },
-      {
-        "id": "EONET_23219",
-        "title": "Wildfire Shale Butte, Lincoln, Idaho",
-        "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-IDTFD-000206"
-      },
-      {
-        "id": "EONET_23211",
-        "title": "Wildfire McCulley, Baker, Oregon",
-        "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-ORWWF-000531"
-      },
-      {
-        "id": "EONET_23218",
-        "title": "Wildfire Hawk, Washoe, Nevada",
-        "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-NVRNOX-030739"
-      },
-      {
-        "id": "EONET_23460",
-        "title": "Wildfire Hawk, Washoe, Nevada",
-        "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-NVTMFX-030739"
+        "link": "https://irwin.doi.gov/observer/incidents/2026-OKOKS-260920"
       }
     ]
   },
