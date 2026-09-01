@@ -21,7 +21,12 @@ on:
         default: articles/weekly-brief-2026-w35.qmd
         type: string
       create_typefully_drafts:
-        description: Create private X Article and LinkedIn document drafts
+        description: Legacy optional private Typefully drafts
+        required: true
+        default: false
+        type: boolean
+      publish_x_direct:
+        description: Publish the canonical release announcement directly to X
         required: true
         default: false
         type: boolean
@@ -58,10 +63,19 @@ jobs:
       - name: Build channel-native bundle
         run: python scripts/build_distribution.py "$PUBLICATION_SOURCE" --site-dir _site --output-dir dist
 
-      - name: Validate private Typefully payloads
+      - name: Validate direct X announcement
+        run: python scripts/publish_x.py "dist/$(basename "$PUBLICATION_SOURCE" .qmd)"
+
+      - name: Publish direct X announcement
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.publish_x_direct && vars.X_DIRECT_PUBLISH == 'true' }}
+        env:
+          X_USER_ACCESS_TOKEN: ${{ secrets.X_USER_ACCESS_TOKEN }}
+        run: python scripts/publish_x.py "dist/$(basename "$PUBLICATION_SOURCE" .qmd)" --submit
+
+      - name: Validate legacy Typefully payloads
         run: python scripts/create_typefully_drafts.py "dist/$(basename "$PUBLICATION_SOURCE" .qmd)"
 
-      - name: Create private Typefully drafts
+      - name: Create legacy private Typefully drafts
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.create_typefully_drafts }}
         env:
           TYPEFULLY_API_KEY: ${{ secrets.TYPEFULLY_API_KEY }}
