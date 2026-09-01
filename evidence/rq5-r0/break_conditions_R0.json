@@ -1,0 +1,8 @@
+{
+  "primary_not_reproduced": false,
+  "jja_negative_control_comparable": false,
+  "dmi_competes_materially": false,
+  "product_dependence_chirps": "NOT_EXECUTED_EXACT_HISTORICAL_CHIRPS_MATRIX_NOT_BOUND",
+  "sample_small": true,
+  "autocorrelation_effective_n": 28.823064448146145
+}

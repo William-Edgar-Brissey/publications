@@ -1,0 +1,37 @@
+{
+  "status": "SOURCE_FROZEN_BEFORE_ANALYSIS",
+  "retrieved_at": "2026-08-31T07:54:40.024086+00:00",
+  "requests": {
+    "ubay_djf_era5": {
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=10.05&longitude=124.47&start_date=1991-12-01&end_date=2020-02-29&daily=precipitation_sum&timezone=GMT&models=era5&cell_selection=nearest",
+      "sha256": "390c5d8e297254eb0ddc3017b1d01ad2f83336b2801e4269f13ae9eaf917080e",
+      "bytes": 187648
+    },
+    "ubay_jja_era5": {
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=10.05&longitude=124.47&start_date=1992-06-01&end_date=2020-08-31&daily=precipitation_sum&timezone=GMT&models=era5&cell_selection=nearest",
+      "sha256": "5e3eb5afc4d55bb5373eaccb779d4096e82d2519fd10e0e4566dcaca7d9628c3",
+      "bytes": 187702
+    },
+    "manaus_djf_era5": {
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-3.12&longitude=-60.02&start_date=1991-12-01&end_date=2020-02-29&daily=precipitation_sum&timezone=GMT&models=era5&cell_selection=nearest",
+      "sha256": "d3ed07fe786e17493f392a8e7d705d41cfd8b4f145e2eaa8e84fa5e90c71d87a",
+      "bytes": 188922
+    },
+    "cpc_oni_v5": {
+      "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/oni/v5/",
+      "sha256": "f758bd32a26ac7c390b0d91c78fceba2256f758a5dbb29d9916cfea489d41a2c",
+      "bytes": 162867
+    },
+    "psl_dmi_hadisst": {
+      "url": "https://psl.noaa.gov/data/timeseries/month/data/dmi.had.long.csv",
+      "sha256": "fd40b356618b251bfaf5984d4da2fa97bf173a787fdfd9785e8ba28ba601e0cf",
+      "bytes": 39650
+    }
+  },
+  "random_seed": 20260831,
+  "shuffle_count": 2000,
+  "bootstrap_count": 5000,
+  "season_rule": "DJF season y = Dec(y-1)+Jan(y)+Feb(y); JJA y = Jun+Jul+Aug(y)",
+  "missing_rule": "pairwise complete for correlations; no synthetic imputation",
+  "detrending": "primary historical comparison is not detrended; detrending is sensitivity only"
+}
