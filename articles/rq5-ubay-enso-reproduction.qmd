@@ -1,0 +1,242 @@
+---
+title: "Reproducing RQ5: Ubay Rainfall and ENSO"
+subtitle: "A source-frozen reconstruction of a 1992–2020 seasonal association"
+author: "William Edgar Brissey"
+date: "2026-09-01"
+date-format: "D MMMM YYYY"
+categories:
+  - reproducibility
+  - climate data
+  - evidence architecture
+  - Realignment
+description: "A public evidence note documenting the fresh reconstruction of the historical Ubay DJF ERA5 precipitation vs CPC ONI association."
+abstract: "The historical Realignment RQ5 analysis reported a Pearson correlation of -0.78 between Ubay DJF ERA5 precipitation and CPC ONI over 29 seasons from 1992–2020. A new source-frozen reconstruction produced r=-0.7721 with strong resampling stability and weak seasonal/DMI controls. The result is classified as a reproduced association, not a causal mechanism."
+status: "Public Evidence Note R0"
+revision: "R0"
+claim-classification: "Reproduced statistical association; causation unresolved"
+toc: true
+number-sections: true
+title-block-banner: true
+format:
+  html:
+    theme: cosmo
+    css: ../styles.css
+    toc: true
+    link-external-newwindow: true
+  pdf:
+    toc: true
+    number-sections: true
+    documentclass: scrartcl
+    pdf-engine: pdflatex
+    fontsize: 11pt
+    papersize: letter
+    geometry:
+      - top=0.82in
+      - bottom=0.8in
+      - left=0.82in
+      - right=0.82in
+    colorlinks: true
+    keep-tex: true
+    template-partials:
+      - ../assets/before-body.tex
+    include-in-header:
+      - ../assets/publication.tex
+format-links: [pdf]
+---
+
+::: {.release-status}
+- **Status:** Public Evidence Note R0
+- **Historical claim:** Ubay DJF ERA5 precipitation vs CPC ONI, `r = -0.78`
+- **Fresh reconstruction:** `r = -0.772131662`
+- **Disposition:** **REPRODUCED ASSOCIATION**
+- **Causal status:** unresolved
+:::
+
+## Why this note exists
+
+The purpose of this note is not to promote a climate correlation into a causal theory.
+
+It documents an attempt to answer a narrower question:
+
+> Can a previously reported Realignment result be reconstructed from freshly retrieved public source data after the acquisition recipe is frozen before analysis?
+
+The answer for the primary Ubay seasonal association is **yes**.
+
+The historical result remains preserved. The fresh result is a separate evidence object.
+
+## Historical result and provenance gap
+
+The prior RQ5 analysis reported:
+
+- Ubay, Bohol;
+- ERA5 daily precipitation aggregated to DJF;
+- CPC Oceanic Niño Index;
+- 29 DJF seasons, 1992–2020;
+- Pearson `r = -0.78`;
+- 2,000 year-shuffle nulls.
+
+The original result document survived, but the exact original ERA5 input matrix was not preserved with it.
+
+That means a byte-identical reconstruction cannot be claimed.
+
+The proper response was to execute the historical recipe again and preserve the new source bytes separately.
+
+## Source freeze
+
+The following acquisition parameters were frozen before the new correlation was calculated.
+
+| Source | Frozen request |
+|---|---|
+| Ubay DJF ERA5 | `10.05 N, 124.47 E`, 1991-12-01 through 2020-02-29, daily `precipitation_sum`, GMT, `models=era5`, nearest cell |
+| Ubay JJA ERA5 | same coordinate, 1992-06-01 through 2020-08-31 |
+| Manaus DJF ERA5 | `-3.12, -60.02`, 1991-12-01 through 2020-02-29 |
+| CPC ONI | historical ERSSTv5 seasonal ONI table |
+| DMI | NOAA PSL HadISST DMI monthly series |
+
+The exact URLs and SHA-256 bindings are published in [`SOURCE_FREEZE_R0.json`](../evidence/rq5-r0/SOURCE_FREEZE_R0.json).
+
+The acquisition date was 31 August 2026 UTC.
+
+Open-Meteo documents its Historical Weather API as a reanalysis interface and recommends selecting ERA5 or ERA5-Land when consistent data over multiple decades are required.
+
+CPC currently uses RONI for official operational ENSO monitoring, but the ERSSTv5 ONI historical table continues to be maintained. RQ5 used ONI v5 because reproduction must preserve the historical input definition rather than silently substitute a newer index.
+
+## Analysis rules
+
+The reconstruction used:
+
+- DJF season `y = Dec(y-1) + Jan(y) + Feb(y)`;
+- JJA season `y = Jun(y) + Jul(y) + Aug(y)`;
+- pairwise-complete correlations;
+- no synthetic imputation;
+- random seed `20260831`;
+- 2,000 shuffled-year permutations;
+- 5,000 ordinary bootstrap samples;
+- block bootstrap with block length 3;
+- the primary historical comparison without detrending;
+- detrending only as sensitivity analysis.
+
+The processed 29-season matrix is public at [`processed_rq5_matrix.csv`](../evidence/rq5-r0/processed_rq5_matrix.csv).
+
+## Primary result
+
+For Ubay DJF precipitation vs DJF ONI:
+
+- `n = 29`;
+- Pearson `r = -0.772131662`;
+- ordinary `p = 9.2967e-7`;
+- shuffled-year hits = `0 / 2000`;
+- bootstrap 95% interval ≈ `[-0.8901, -0.6346]`;
+- block-bootstrap 95% interval ≈ `[-0.8958, -0.6409]`;
+- detrended `r ≈ -0.8213`;
+- leave-one-season-out range ≈ `[-0.8009, -0.7441]`.
+
+The historical coefficient was `-0.78`.
+
+Absolute coefficient difference: approximately `0.0079`.
+
+**Disposition: REPRODUCED.**
+
+The empirical permutation result should be read literally as **zero hits in 2,000 permutations**, not as proof that the true probability is exactly zero.
+
+## Controls and comparisons
+
+| Test | Fresh result | Interpretation |
+|---|---:|---|
+| Ubay DJF vs previous SON ONI | `r = -0.7093` | approximately reproduces historical `-0.75` |
+| Ubay JJA vs DJF ONI | `r = -0.1580`, shuffle `p = 0.4345` | weak / non-significant negative control |
+| Ubay DJF vs DJF DMI | `r = -0.1354`, shuffle `p = 0.4985` | weak DMI relationship |
+| DJF ONI vs DJF DMI | `r = +0.4584`, ordinary `p = 0.0124` | climate modes are not independent |
+| Manaus DJF vs DJF ONI | `r = -0.6844` | approximately reproduces historical `-0.62` |
+
+One discrepancy remains visible: the historical negative-control wording stated `p > 0.5`; the fresh JJA shuffle value was `0.4345`.
+
+The substantive conclusion remains weak/non-significant, but the literal old p-value statement did not reproduce.
+
+## Competing-mode regression
+
+A conventional OLS model using ONI and DMI together was executed as a **conditional-association** test.
+
+For `n = 29`:
+
+- model R² ≈ `0.657`;
+- ONI coefficient ≈ `-213.3 mm / ONI unit`, `p ≈ 2.21e-7`;
+- DMI coefficient ≈ `+375.3 mm / DMI unit`, `p ≈ 0.0419`.
+
+This does not create causal identification.
+
+It only shows that the ONI association remains strong in this small bounded model while DMI is included.
+
+## Why stronger causal tools were not forced onto the sample
+
+Method selection is itself part of evidence discipline.
+
+The gate recorded:
+
+- conventional ONI+DMI regression: **EXECUTED**, association interpretation only;
+- Tigramite PCMCI+: **UNDERPOWERED** for 29 sparse seasonal observations;
+- pyEDM / CCM: **UNDERPOWERED** for a reliable convergence claim at this sample length;
+- DoWhy-style DAG identification: **ASSUMPTIONS NOT MET**, because a sufficient measured confounder set and identification design were not established.
+
+Running a causal library is not the same thing as earning a causal claim.
+
+## Break conditions
+
+The new execution did **not** trigger these simple break conditions:
+
+- primary correlation failed reproduction;
+- JJA negative control became comparably strong;
+- DMI became a comparably strong competing association.
+
+One important product-sensitivity question remains open because the exact historical CHIRPS matrix was not part of this bound reconstruction.
+
+The sample also remains small.
+
+## Source independence
+
+This is not an independent-author replication of the historical analysis.
+
+The historical RQ5 and the reconstruction share the same research program and intended recipe.
+
+The reconstruction does, however, establish that a fresh retrieval from the stated public upstreams produces a very similar primary coefficient.
+
+The upstream evidence families are explicitly distinct:
+
+- ERA5/ECMWF precipitation through Open-Meteo;
+- NOAA/ERSSTv5 ONI;
+- NOAA PSL / HadISST1.1 DMI.
+
+Different documents reporting those same upstream products must not be counted as new independent measurements.
+
+## Public reproducibility files
+
+This release publishes:
+
+- [`SOURCE_FREEZE_R0.json`](../evidence/rq5-r0/SOURCE_FREEZE_R0.json) — exact request URLs, parameters, retrieval hashes, season rules and seed;
+- [`processed_rq5_matrix.csv`](../evidence/rq5-r0/processed_rq5_matrix.csv) — the 29-season analysis matrix;
+- [`analysis_results_R0.json`](../evidence/rq5-r0/analysis_results_R0.json) — primary and control statistics;
+- [`causal_method_admissibility_R0.json`](../evidence/rq5-r0/causal_method_admissibility_R0.json);
+- [`break_conditions_R0.json`](../evidence/rq5-r0/break_conditions_R0.json);
+- [`recompute_from_matrix.py`](../evidence/rq5-r0/recompute_from_matrix.py) — a small public script for recomputing the principal correlations and permutation counts from the published matrix.
+
+Raw remote payloads are not redistributed here. Their exact retrieval URLs, byte lengths, and SHA-256 digests are preserved in the source-freeze record.
+
+## Source foundations
+
+- Open-Meteo, [Historical Weather API](https://open-meteo.com/en/docs/historical-weather-api).
+- NOAA Climate Prediction Center, [Oceanic Niño Index — ERSSTv5 historical table](https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/oni/v5/).
+- NOAA Physical Sciences Laboratory, [Dipole Mode Index](https://psl.noaa.gov/data/timeseries/month/DMI/).
+
+## Conclusion
+
+The primary RQ5 Ubay result survives fresh reconstruction:
+
+**historical `r = -0.78` → fresh `r = -0.7721`.**
+
+That is meaningful evidence for a stable seasonal association in this bounded dataset.
+
+It is not causal authority.
+
+A stronger claim requires a stronger design.
+
+[Return to The Realignment Architecture R1](realignment-architecture-prospectus.qmd).
