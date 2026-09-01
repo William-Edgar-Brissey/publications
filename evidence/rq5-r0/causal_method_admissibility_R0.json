@@ -1,0 +1,25 @@
+{
+  "conventional_joint_regression": {
+    "status": "EXECUTED",
+    "result": {
+      "n": 29,
+      "coefficients": {"const": 565.8720619861349, "oni_djf": -213.3028815221659, "dmi_djf": 375.3029692621241},
+      "pvalues": {"const": 1.0499779895652514e-16, "oni_djf": 2.208749391247017e-07, "dmi_djf": 0.04186795497593889},
+      "r_squared": 0.6566839615888798,
+      "condition_number": 6.522168809002056
+    },
+    "interpretation": "conditional association only"
+  },
+  "Tigramite_PCMCI_plus": {
+    "status": "UNDERPOWERED",
+    "reason": "29 seasonal samples and sparse annualized variables do not support a defensible high-dimensional time-series causal search"
+  },
+  "pyEDM_CCM": {
+    "status": "UNDERPOWERED",
+    "reason": "29 seasonal samples are too short for a reliable convergence-based nonlinear state-space claim"
+  },
+  "DoWhy_DAG": {
+    "status": "ASSUMPTIONS_NOT_MET",
+    "reason": "observational identification assumptions and sufficient measured confounder set are not established by this matrix"
+  }
+}
