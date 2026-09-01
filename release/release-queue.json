@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1",
+  "policy": {
+    "required_pr_label": "release-approved",
+    "default_timezone": "Asia/Manila",
+    "canonical_branch": "main",
+    "automatic_merge_enabled": true,
+    "notes": "A scheduled release requires approved=true, state=scheduled, a due ISO-8601 release_at value, an open non-draft PR, and the human-applied release-approved label."
+  },
+  "releases": [
+    {
+      "id": "realignment-architecture-r1",
+      "title": "Realignment Architecture R1",
+      "source": "articles/realignment-architecture-prospectus.qmd",
+      "pr_number": 2,
+      "state": "planned",
+      "approved": false,
+      "release_at": null,
+      "channels": {
+        "github_pages": true,
+        "distribution_bundle": true,
+        "x_direct": false,
+        "linkedin": "artifact",
+        "substack": "artifact"
+      },
+      "notes": "Existing release PR is intentionally not scheduled by this file until a release time is added, approved is set true, state is set to scheduled, and the PR receives the release-approved label."
+    }
+  ]
+}
