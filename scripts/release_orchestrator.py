@@ -147,13 +147,16 @@ def execute_release(
     result["status"] = "merged"
 
     if item.get("channels", {}).get("distribution_bundle", True):
+        publish_x = "true" if item.get("channels", {}).get("x_direct") is True else "false"
         run_gh([
             "workflow", "run", "distribution.yml",
             "--ref", "main",
             "-f", f"source={item['source']}",
             "-f", "create_typefully_drafts=false",
+            "-f", f"publish_x_direct={publish_x}",
         ])
         result["distribution_workflow"] = "requested"
+        result["x_direct_requested"] = publish_x == "true"
 
     return result
 
