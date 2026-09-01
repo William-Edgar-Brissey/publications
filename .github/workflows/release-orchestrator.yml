@@ -1,0 +1,62 @@
+name: Scheduled publication release orchestrator
+
+on:
+  workflow_dispatch:
+    inputs:
+      execute:
+        description: Execute eligible releases instead of dry-run validation
+        required: true
+        default: false
+        type: boolean
+      now_override:
+        description: Optional ISO-8601 test time; leave blank for current time
+        required: false
+        type: string
+  schedule:
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+concurrency:
+  group: publication-release-orchestrator
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Check out canonical branch
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate queue and inspect due releases
+        if: ${{ github.event_name == 'workflow_dispatch' && !inputs.execute }}
+        run: |
+          args=()
+          if [ -n "${{ inputs.now_override }}" ]; then args+=(--now "${{ inputs.now_override }}"); fi
+          python scripts/release_orchestrator.py release/release-queue.json "${args[@]}"
+
+      - name: Execute scheduled releases
+        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.execute) }}
+        run: |
+          args=(--execute)
+          if [ -n "${{ inputs.now_override }}" ]; then args+=(--now "${{ inputs.now_override }}"); fi
+          python scripts/release_orchestrator.py release/release-queue.json "${args[@]}"
+
+      - name: Upload release decision record
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-orchestrator-${{ github.run_id }}
+          path: release-orchestrator-result.json
+          if-no-files-found: warn
+          retention-days: 90
