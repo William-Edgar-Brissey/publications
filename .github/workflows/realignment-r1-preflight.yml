@@ -32,8 +32,28 @@ jobs:
           grep -q "'shuffle_hits': 0" /tmp/rq5.txt
       - name: Render flagship HTML
         run: quarto render articles/realignment-architecture-prospectus.qmd --to html
-      - name: Render flagship PDF
-        run: quarto render articles/realignment-architecture-prospectus.qmd --to pdf
+      - name: Capture flagship PDF compiler output
+        id: flagship_pdf
+        shell: bash
+        run: |
+          set +e
+          quarto render articles/realignment-architecture-prospectus.qmd --to pdf > /tmp/flagship-pdf.log 2>&1
+          code=$?
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          cat /tmp/flagship-pdf.log
+          find . -maxdepth 4 -name 'realignment-architecture-prospectus.tex' -print -exec cp {} /tmp/flagship.tex \;
+          exit 0
+      - name: Upload PDF diagnostic
+        uses: actions/upload-artifact@v4
+        with:
+          name: realignment-r1-pdf-diagnostic
+          path: |
+            /tmp/flagship-pdf.log
+            /tmp/flagship.tex
+          if-no-files-found: warn
+          retention-days: 7
+      - name: Enforce flagship PDF success
+        run: test "${{ steps.flagship_pdf.outputs.exit_code }}" = "0"
       - name: Render RQ5 evidence note HTML
         run: quarto render articles/rq5-ubay-enso-reproduction.qmd --to html
       - name: Render RQ5 evidence note PDF
