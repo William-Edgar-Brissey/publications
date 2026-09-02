@@ -1,10 +1,80 @@
 [
   {
-    "objectID": "COPYRIGHT.html",
-    "href": "COPYRIGHT.html",
-    "title": "Copyright and use",
+    "objectID": "DISTRIBUTION.html",
+    "href": "DISTRIBUTION.html",
+    "title": "Publication distribution system",
     "section": "",
-    "text": "Copyright and use\nCopyright © 2026 William Edgar Brissey. All rights reserved.\nNo open-source license is granted. Publication of these materials does not grant permission to reproduce, modify, redistribute, sublicense, or incorporate them into another work except as permitted by applicable law or by prior written authorization from the copyright holder.\nExternal software and services referenced by this publication project remain subject to their respective licenses and terms.\n\n\n\n\n Back to top"
+    "text": "This repository is the controlling source for every public edition. A release begins as one reviewed Quarto document and becomes several channel-native artifacts; it is not copied blindly into incompatible editors.\n\n\n\n\n\n\n\n\n\n\nLayer\nAdopted technology\nRole\n\n\n\n\nControlling source\nGitHub + Quarto\nRevision history, corrections, canonical HTML, and complete PDF\n\n\nWeb edition\nQuarto + GitHub Pages\nCanonical, searchable, accessible long-form publication\n\n\nPDF edition\nQuarto + KOMA-Script styling\nComplete downloadable and LinkedIn document edition\n\n\nX edition\nTypefully API/MCP/Agent Skill\nNative long-form X Article with cover, preview, comments, and approval\n\n\nLinkedIn edition\nTypefully document post\nComplete PDF as a native LinkedIn document with a concise caption\n\n\nSubstack edition\nGenerated native Markdown + draft-only MCP pattern\nFull newsletter draft, email preview, and deliberate final send\n\n\nAuthenticated UI execution\nOne bounded Grok Publisher Bot, when already included in an eligible plan\nCreates or updates drafts in Substack and other unsupported channel UIs, then stops for approval\n\n\nSocial artwork\nRepository-controlled 1600×900 covers\nConsistent Open Graph, X, LinkedIn, and newsletter previews\n\n\n\nTypefully was selected over a generic scheduler because it explicitly supports X Articles, LinkedIn PDF documents, realistic previews, collaboration, an API, MCP, and an official Agent Skill. Postiz and Mixpost remain credible short-form schedulers, but self-hosting them would add infrastructure and platform-app maintenance without solving the long-form edition problem.\nSubstack is handled separately. Its documented public API does not expose general long-form publishing. The safe operating model is to create a private draft, review the web and email previews, and make the final send a deliberate human action. Session-cookie automation must not run in GitHub Actions or receive credentials through chat.\nGrok Bot is an optional last-mile executor, not the source of content or design. Its early-beta cloud computer can work through authenticated interfaces that lack a reliable API, but it must consume the repository-generated bundle and follow grok-bot-handoff.md. Use one Publisher Bot with narrow channel ownership. Do not create overlapping bots, provide API secrets, permit source edits, or authorize an unattended publish. If Grok Bot is not already included in an eligible plan, the release bundle remains fully usable through ordinary private-draft workflows.\n\n\n\n\nReview and merge the controlling .qmd source.\nLet publish.yml render canonical HTML and PDF editions.\nLet Build publication distribution bundle automatically create the review artifact; use its manual trigger only to select another source or create connected private drafts.\nDownload and review the commit-bound bundle against channel-qa.md.\nWhen the Typefully connection is configured, rerun with Create private X Article and LinkedIn document drafts enabled.\nReview the realistic X and LinkedIn previews in Typefully, then approve publication.\nCreate or update the private Substack draft from substack-article.md manually, with the draft-only MCP, or with one bounded Grok Publisher Bot following grok-bot-handoff.md.\nReview the Substack web and email previews, then send deliberately.\nRecord every live URL in the release log before promotion begins.\n\n\n\n\nAdd these in GitHub repository settings under Secrets and variables → Actions:\n\nTYPEFULLY_API_KEY\nTYPEFULLY_SOCIAL_SET_ID\n\nThe workflow creates private drafts only. It contains no automatic publish or schedule instruction.\n\n\n\nFor each article, scripts/build_distribution.py creates:\n\nx-article.md — complete X Article Markdown with unsupported tables converted to readable labeled records;\nsubstack-article.md — complete Substack-ready Markdown with the same semantic conversion;\nlinkedin-caption.txt — concise caption for the attached complete PDF;\nthe complete rendered PDF;\nthe 1600×900 publication cover;\nmanifest.json — controlling source, revision, canonical URL, and edition map; and\nchannel-qa.md — mandatory visual and metadata review; and\ngrok-bot-handoff.md — exact, bounded instructions for authenticated UI draft creation when that execution path is used.\n\n\n\n\nAutomation may prepare, validate, upload, and create private drafts. It may not erase the distinction between a generated artifact and a reviewed public release. Final publication remains human-approved on every channel."
+  },
+  {
+    "objectID": "DISTRIBUTION.html#adopted-stack",
+    "href": "DISTRIBUTION.html#adopted-stack",
+    "title": "Publication distribution system",
+    "section": "",
+    "text": "Layer\nAdopted technology\nRole\n\n\n\n\nControlling source\nGitHub + Quarto\nRevision history, corrections, canonical HTML, and complete PDF\n\n\nWeb edition\nQuarto + GitHub Pages\nCanonical, searchable, accessible long-form publication\n\n\nPDF edition\nQuarto + KOMA-Script styling\nComplete downloadable and LinkedIn document edition\n\n\nX edition\nTypefully API/MCP/Agent Skill\nNative long-form X Article with cover, preview, comments, and approval\n\n\nLinkedIn edition\nTypefully document post\nComplete PDF as a native LinkedIn document with a concise caption\n\n\nSubstack edition\nGenerated native Markdown + draft-only MCP pattern\nFull newsletter draft, email preview, and deliberate final send\n\n\nAuthenticated UI execution\nOne bounded Grok Publisher Bot, when already included in an eligible plan\nCreates or updates drafts in Substack and other unsupported channel UIs, then stops for approval\n\n\nSocial artwork\nRepository-controlled 1600×900 covers\nConsistent Open Graph, X, LinkedIn, and newsletter previews\n\n\n\nTypefully was selected over a generic scheduler because it explicitly supports X Articles, LinkedIn PDF documents, realistic previews, collaboration, an API, MCP, and an official Agent Skill. Postiz and Mixpost remain credible short-form schedulers, but self-hosting them would add infrastructure and platform-app maintenance without solving the long-form edition problem.\nSubstack is handled separately. Its documented public API does not expose general long-form publishing. The safe operating model is to create a private draft, review the web and email previews, and make the final send a deliberate human action. Session-cookie automation must not run in GitHub Actions or receive credentials through chat.\nGrok Bot is an optional last-mile executor, not the source of content or design. Its early-beta cloud computer can work through authenticated interfaces that lack a reliable API, but it must consume the repository-generated bundle and follow grok-bot-handoff.md. Use one Publisher Bot with narrow channel ownership. Do not create overlapping bots, provide API secrets, permit source edits, or authorize an unattended publish. If Grok Bot is not already included in an eligible plan, the release bundle remains fully usable through ordinary private-draft workflows."
+  },
+  {
+    "objectID": "DISTRIBUTION.html#release-workflow",
+    "href": "DISTRIBUTION.html#release-workflow",
+    "title": "Publication distribution system",
+    "section": "",
+    "text": "Review and merge the controlling .qmd source.\nLet publish.yml render canonical HTML and PDF editions.\nLet Build publication distribution bundle automatically create the review artifact; use its manual trigger only to select another source or create connected private drafts.\nDownload and review the commit-bound bundle against channel-qa.md.\nWhen the Typefully connection is configured, rerun with Create private X Article and LinkedIn document drafts enabled.\nReview the realistic X and LinkedIn previews in Typefully, then approve publication.\nCreate or update the private Substack draft from substack-article.md manually, with the draft-only MCP, or with one bounded Grok Publisher Bot following grok-bot-handoff.md.\nReview the Substack web and email previews, then send deliberately.\nRecord every live URL in the release log before promotion begins."
+  },
+  {
+    "objectID": "DISTRIBUTION.html#required-typefully-secrets",
+    "href": "DISTRIBUTION.html#required-typefully-secrets",
+    "title": "Publication distribution system",
+    "section": "",
+    "text": "Add these in GitHub repository settings under Secrets and variables → Actions:\n\nTYPEFULLY_API_KEY\nTYPEFULLY_SOCIAL_SET_ID\n\nThe workflow creates private drafts only. It contains no automatic publish or schedule instruction."
+  },
+  {
+    "objectID": "DISTRIBUTION.html#generated-bundle",
+    "href": "DISTRIBUTION.html#generated-bundle",
+    "title": "Publication distribution system",
+    "section": "",
+    "text": "For each article, scripts/build_distribution.py creates:\n\nx-article.md — complete X Article Markdown with unsupported tables converted to readable labeled records;\nsubstack-article.md — complete Substack-ready Markdown with the same semantic conversion;\nlinkedin-caption.txt — concise caption for the attached complete PDF;\nthe complete rendered PDF;\nthe 1600×900 publication cover;\nmanifest.json — controlling source, revision, canonical URL, and edition map; and\nchannel-qa.md — mandatory visual and metadata review; and\ngrok-bot-handoff.md — exact, bounded instructions for authenticated UI draft creation when that execution path is used."
+  },
+  {
+    "objectID": "DISTRIBUTION.html#publication-rule",
+    "href": "DISTRIBUTION.html#publication-rule",
+    "title": "Publication distribution system",
+    "section": "",
+    "text": "Automation may prepare, validate, upload, and create private drafts. It may not erase the distinction between a generated artifact and a reviewed public release. Final publication remains human-approved on every channel."
+  },
+  {
+    "objectID": "monitor.html",
+    "href": "monitor.html",
+    "title": "Coupling Monitor v1",
+    "section": "",
+    "text": "Status: Operational board · Monitor v1.0 · binds to RA-CR-2026-08-29\nControlling register · Source snapshot\n\n\nLoading snapshot…\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "offer.html",
+    "href": "offer.html",
+    "title": "Independent review of one exported agent incident",
+    "section": "",
+    "text": "William Edgar Brissey\nIndependent AI Systems Architect, Developer, and Consultant\nI review one bounded LangSmith or LangGraph export and return a signed written opinion: what the file shows, what I infer, what I will not claim.\nI do not replace your tracer. I do not change your systems. I do not take a login. A model may draft. I adjudicate and sign.\nThis page is an offer overview. It is not the engagement agreement."
+  },
+  {
+    "objectID": "offer.html#when-this-is-the-right-door",
+    "href": "offer.html#when-this-is-the-right-door",
+    "title": "Independent review of one exported agent incident",
+    "section": "When this is the right door",
+    "text": "When this is the right door\n\nA production or client-facing agent already traces to LangSmith or LangGraph.\nOne incident window is costing time, money, or a client relationship.\nYou can export runs as a file, or you can say plainly that you cannot."
+  },
+  {
+    "objectID": "offer.html#when-it-is-not",
+    "href": "offer.html#when-it-is-not",
+    "title": "Independent review of one exported agent incident",
+    "section": "When it is not",
+    "text": "When it is not\n\nYou need a patch installed, production access, or a certificate.\nThe only artifact is screenshots or someone else’s GitHub issue.\nYou want every agent in the company reviewed as one job."
+  },
+  {
+    "objectID": "offer.html#what-happens-first",
+    "href": "offer.html#what-happens-first",
+    "title": "Independent review of one exported agent incident",
+    "section": "What happens first",
+    "text": "What happens first\nFifteen minutes. No file on that call.\nIf there is no export yet, the next paid step is requested as scope (Export Clinic or Readiness Audit) — not forced as a Diagnostic.\nBook a 15-minute fit call\nRelated: What a LangSmith export must contain before anyone can review it"
   },
   {
     "objectID": "articles/book-one-coupling-register.html",
@@ -54,62 +124,6 @@
     "title": "Book One Coupling Register",
     "section": "Binding reminder",
     "text": "Binding reminder\nHigh-certainty language in Book One is literary emphasis. Operational confidence lives only in this register and the Failed-Hypothesis Ledger. No component is ready for inhabited, nuclear, or safety-critical use."
-  },
-  {
-    "objectID": "articles/book-one-register/substack-article.html",
-    "href": "articles/book-one-register/substack-article.html",
-    "title": "Book One is a coupling graph now",
-    "section": "",
-    "text": "Revision RA-CR-2026-08-29 Research prospectus. Not a collapse forecast. Not a deployment plan.\nThe Realignment Public White Paper treats Water, Air, Earth, and Fire as one interdependent baseline. That sentence is only usable if the joints are scored separately. Today that graph is public.\nRead the controlling brief: https://william-edgar-brissey.github.io/publications/articles/book-one-coupling-register.html\n\n\n\nExtra-polar sea-surface temperature reached 21.1°C on 22 August 2026 (Copernicus C3S). That is an all-time daily record in the season when the ocean normally cools.\n2025 set another record for upper-2,000 m ocean heat content — the ninth consecutive annual record.\nEl Niño is present and strengthening. That is the fast Air driver for the next two seasons.\nNOAA PSL TNA and TSA run through June 2026. Early-2026 CEG is slightly negative. Niño 3.4 does not explain CEG.\n\n\n\n\n\nCL-002 (AMOC → tropical Atlantic / ITCZ) is still pilot. RAPID is published through February 2024, not through this week.\nCL-003 (infrastructural scissors) is not clock-compressed. There is still no labor-hour series.\nCL-016 (2030s synchronized Ring of Fire / volcanic winter) stays parked, matching Appendix K.\n\n\n\n\nName a cell, a dataset, and a break condition.\nOpen review: https://github.com/William-Edgar-Brissey/publications/issues/1"
-  },
-  {
-    "objectID": "articles/book-one-register/substack-article.html#what-2026-shows",
-    "href": "articles/book-one-register/substack-article.html#what-2026-shows",
-    "title": "Book One is a coupling graph now",
-    "section": "",
-    "text": "Extra-polar sea-surface temperature reached 21.1°C on 22 August 2026 (Copernicus C3S). That is an all-time daily record in the season when the ocean normally cools.\n2025 set another record for upper-2,000 m ocean heat content — the ninth consecutive annual record.\nEl Niño is present and strengthening. That is the fast Air driver for the next two seasons.\nNOAA PSL TNA and TSA run through June 2026. Early-2026 CEG is slightly negative. Niño 3.4 does not explain CEG."
-  },
-  {
-    "objectID": "articles/book-one-register/substack-article.html#what-2026-does-not-show",
-    "href": "articles/book-one-register/substack-article.html#what-2026-does-not-show",
-    "title": "Book One is a coupling graph now",
-    "section": "",
-    "text": "CL-002 (AMOC → tropical Atlantic / ITCZ) is still pilot. RAPID is published through February 2024, not through this week.\nCL-003 (infrastructural scissors) is not clock-compressed. There is still no labor-hour series.\nCL-016 (2030s synchronized Ring of Fire / volcanic winter) stays parked, matching Appendix K."
-  },
-  {
-    "objectID": "articles/book-one-register/substack-article.html#how-to-attack-it",
-    "href": "articles/book-one-register/substack-article.html#how-to-attack-it",
-    "title": "Book One is a coupling graph now",
-    "section": "",
-    "text": "Name a cell, a dataset, and a break condition.\nOpen review: https://github.com/William-Edgar-Brissey/publications/issues/1"
-  },
-  {
-    "objectID": "articles/book-one-register/CL002_2026_REFRESH.html",
-    "href": "articles/book-one-register/CL002_2026_REFRESH.html",
-    "title": "CL-002 Water-Air refresh",
-    "section": "",
-    "text": "CL-002 Water-Air refresh\nDate: 29 August 2026\nStatus: KEEP PILOT (unchanged)\nNOAA PSL TNA and TSA through June 2026; Nino 3.4 through July 2026. T26/RAPID not updated (Xing 2023 / RAPID to Feb 2024).\n\n\n\nYear\nTNA\nTSA\nCEG\nNino 3.4 anom\n\n\n\n\n2024\n+0.96\n+0.63\n+0.33\n+0.38\n\n\n2025\n+0.31\n+0.14\n+0.18\n-0.32\n\n\n2026 Jan-Jun\n+0.17\n+0.30\n-0.13\n+0.58\n\n\n\nCEG ~ Nino 3.4 + time over 2004-Jun 2026: Nino coefficient ~0, R2 ~0.03. ENSO does not own CEG. AMOC still not shown to own it because T26 ends in 2023.\nDo not promote CL-002. Do not compress CL-003 from this refresh.\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "articles/book-one-register/COUPLING_REGISTER_v1.0.html",
-    "href": "articles/book-one-register/COUPLING_REGISTER_v1.0.html",
-    "title": "Book One Coupling Register",
-    "section": "",
-    "text": "ID: RA-CR-2026-08-29\nVersion: 1.0.0\nDate: 29 August 2026\nStatus: CONTROLLING for Water / Air / Earth / Fire claim joints\nAuthority: Master Claim Register + Safety & Non-Deployment Policy\nRule: Reality supersedes everything. Literary certainty in Book One is not an evidence grade.\n\n\nBook One asserts that Water, Air, Earth, and Fire are interdependent. This register is the only operational form of that thesis: a scored coupling graph. No volume may inherit another volume’s grade.\n\n\n\n\n\n\n\n\n\n\n\nDate\nDecision\nResult\n\n\n\n\n2026-08-29\nCL-002 on Xing + 2023 indices\nPARTIAL_SIGNAL_KEEP_PILOT\n\n\n2026-08-29\nCL-002 on TNA/TSA/CEG through Jun 2026 without new T26\nKEEP PILOT\n\n\n2026-08-29\nCL-003 clock compression\nDENIED\n\n\n2026-08-29\nCL-016 2030s Ring of Fire\nPARKED\n\n\n\nSee the public brief at /articles/book-one-coupling-register.qmd and the full scored tables in the same directory on GitHub."
-  },
-  {
-    "objectID": "articles/book-one-register/COUPLING_REGISTER_v1.0.html#purpose",
-    "href": "articles/book-one-register/COUPLING_REGISTER_v1.0.html#purpose",
-    "title": "Book One Coupling Register",
-    "section": "",
-    "text": "Book One asserts that Water, Air, Earth, and Fire are interdependent. This register is the only operational form of that thesis: a scored coupling graph. No volume may inherit another volume’s grade."
-  },
-  {
-    "objectID": "articles/book-one-register/COUPLING_REGISTER_v1.0.html#gate-log",
-    "href": "articles/book-one-register/COUPLING_REGISTER_v1.0.html#gate-log",
-    "title": "Book One Coupling Register",
-    "section": "",
-    "text": "Date\nDecision\nResult\n\n\n\n\n2026-08-29\nCL-002 on Xing + 2023 indices\nPARTIAL_SIGNAL_KEEP_PILOT\n\n\n2026-08-29\nCL-002 on TNA/TSA/CEG through Jun 2026 without new T26\nKEEP PILOT\n\n\n2026-08-29\nCL-003 clock compression\nDENIED\n\n\n2026-08-29\nCL-016 2030s Ring of Fire\nPARKED\n\n\n\nSee the public brief at /articles/book-one-coupling-register.qmd and the full scored tables in the same directory on GitHub."
   },
   {
     "objectID": "articles/realignment-architecture-prospectus.html",
@@ -210,6 +224,293 @@
     "text": "13 Revision and withdrawal policy\nA controlling release will be revised when stronger evidence changes a claim, boundary, or test. A claim will be downgraded or withdrawn when its evidence cannot be reproduced, when a credible alternative performs better, or when required provenance is unavailable.\nOlder revisions may remain in repository history for provenance, but they must not be presented as current.\nFor the program-wide publication principles, see Status and Purpose of This Work.\nReality supersedes theory."
   },
   {
+    "objectID": "articles/book-one-register/PARKED_CLAIMS.html",
+    "href": "articles/book-one-register/PARKED_CLAIMS.html",
+    "title": "Parked claim IDs",
+    "section": "",
+    "text": "Parked claim IDs\n\n\n\nID\nWhy parked\n\n\n\n\nCL-009\nAntarctic track is not CL-002\n\n\nCL-010\nNo export time series\n\n\nCL-016\nAppendix K; no 2026 global eruption-rate jump\n\n\nblended food-chain collapse\nSplit into CL-006-009\n\n\nCL-003 compression from 22 Aug 2026 SST\nSST is not labor hours\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "articles/book-one-register/EDEN_SITE_HAZARD_SPEC_v1.html",
+    "href": "articles/book-one-register/EDEN_SITE_HAZARD_SPEC_v1.html",
+    "title": "EDEN site-hazard specification v1.0",
+    "section": "",
+    "text": "EDEN site-hazard specification v1.0\nStatus: RESEARCH DESIGN CONSTRAINTS — not a construction permit.\nRequired tests before Stage 3: H-HEAT, H-DROUGHT, H-FLOOD, H-FIRE, H-SLOPE, H-SEIS, H-GRID, H-FOOD, H-BIO.\n2026 data sizes water, cooling, fire/smoke, and El Nino-year drought storage. It does not size the first prototype for global ash winter.\nSafety Policy unchanged: no inhabited closed loop, no nuclear under this brand, no LLM life-support.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "articles/book-one-register/substack-article.html",
+    "href": "articles/book-one-register/substack-article.html",
+    "title": "Book One is a coupling graph now",
+    "section": "",
+    "text": "Revision RA-CR-2026-08-29 Research prospectus. Not a collapse forecast. Not a deployment plan.\nThe Realignment Public White Paper treats Water, Air, Earth, and Fire as one interdependent baseline. That sentence is only usable if the joints are scored separately. Today that graph is public.\nRead the controlling brief: https://william-edgar-brissey.github.io/publications/articles/book-one-coupling-register.html\n\n\n\nExtra-polar sea-surface temperature reached 21.1°C on 22 August 2026 (Copernicus C3S). That is an all-time daily record in the season when the ocean normally cools.\n2025 set another record for upper-2,000 m ocean heat content — the ninth consecutive annual record.\nEl Niño is present and strengthening. That is the fast Air driver for the next two seasons.\nNOAA PSL TNA and TSA run through June 2026. Early-2026 CEG is slightly negative. Niño 3.4 does not explain CEG.\n\n\n\n\n\nCL-002 (AMOC → tropical Atlantic / ITCZ) is still pilot. RAPID is published through February 2024, not through this week.\nCL-003 (infrastructural scissors) is not clock-compressed. There is still no labor-hour series.\nCL-016 (2030s synchronized Ring of Fire / volcanic winter) stays parked, matching Appendix K.\n\n\n\n\nName a cell, a dataset, and a break condition.\nOpen review: https://github.com/William-Edgar-Brissey/publications/issues/1"
+  },
+  {
+    "objectID": "articles/book-one-register/substack-article.html#what-2026-shows",
+    "href": "articles/book-one-register/substack-article.html#what-2026-shows",
+    "title": "Book One is a coupling graph now",
+    "section": "",
+    "text": "Extra-polar sea-surface temperature reached 21.1°C on 22 August 2026 (Copernicus C3S). That is an all-time daily record in the season when the ocean normally cools.\n2025 set another record for upper-2,000 m ocean heat content — the ninth consecutive annual record.\nEl Niño is present and strengthening. That is the fast Air driver for the next two seasons.\nNOAA PSL TNA and TSA run through June 2026. Early-2026 CEG is slightly negative. Niño 3.4 does not explain CEG."
+  },
+  {
+    "objectID": "articles/book-one-register/substack-article.html#what-2026-does-not-show",
+    "href": "articles/book-one-register/substack-article.html#what-2026-does-not-show",
+    "title": "Book One is a coupling graph now",
+    "section": "",
+    "text": "CL-002 (AMOC → tropical Atlantic / ITCZ) is still pilot. RAPID is published through February 2024, not through this week.\nCL-003 (infrastructural scissors) is not clock-compressed. There is still no labor-hour series.\nCL-016 (2030s synchronized Ring of Fire / volcanic winter) stays parked, matching Appendix K."
+  },
+  {
+    "objectID": "articles/book-one-register/substack-article.html#how-to-attack-it",
+    "href": "articles/book-one-register/substack-article.html#how-to-attack-it",
+    "title": "Book One is a coupling graph now",
+    "section": "",
+    "text": "Name a cell, a dataset, and a break condition.\nOpen review: https://github.com/William-Edgar-Brissey/publications/issues/1"
+  },
+  {
+    "objectID": "articles/langsmith-export-requirements.html",
+    "href": "articles/langsmith-export-requirements.html",
+    "title": "What a LangSmith export must contain before anyone can review it",
+    "section": "",
+    "text": "Observability captured the run. That is not the same as a file someone else can inspect.\nA review of an agent incident is only as strong as the export. Most “we have LangSmith” conversations still fail this test. The failure is usually not the model. It is the package."
+  },
+  {
+    "objectID": "articles/langsmith-export-requirements.html#screenshots-are-not-an-export",
+    "href": "articles/langsmith-export-requirements.html#screenshots-are-not-an-export",
+    "title": "What a LangSmith export must contain before anyone can review it",
+    "section": "Screenshots are not an export",
+    "text": "Screenshots are not an export\nA screenshot proves that a UI existed at a moment. It does not give stable run IDs, order, tool payloads, or a hash of what was sent.\nIf the only artifact is a picture of the tracer, the honest next step is to produce a file — or to admit the system cannot."
+  },
+  {
+    "objectID": "articles/langsmith-export-requirements.html#a-reviewable-package-is-small-and-named",
+    "href": "articles/langsmith-export-requirements.html#a-reviewable-package-is-small-and-named",
+    "title": "What a LangSmith export must contain before anyone can review it",
+    "section": "A reviewable package is small and named",
+    "text": "A reviewable package is small and named\nOne path. One window. Named start and end, or named run IDs. JSON or JSONL in a zip. No keys in the file. Secrets removed before the file leaves the account. A SHA-256 of the file as sent.\nThe hash proves the bits did not change in transit. It does not prove the bits were redacted."
+  },
+  {
+    "objectID": "articles/langsmith-export-requirements.html#fields-that-have-to-exist",
+    "href": "articles/langsmith-export-requirements.html#fields-that-have-to-exist",
+    "title": "What a LangSmith export must contain before anyone can review it",
+    "section": "Fields that have to exist",
+    "text": "Fields that have to exist\n\nStable run or trace ID on every included run\nTimestamps or another order that reconstructs the path\nRun type or name\nStatus or error, or an explicit note that the vendor did not emit it\nParent / session linkage, or an explicit note that this is one isolated run\n\nIf the complaint is a loop, retry, or overshoot, tool records have to be in the file — or the reviewer must not claim they saw the loop in the trace."
+  },
+  {
+    "objectID": "articles/langsmith-export-requirements.html#absence-is-evidence-of-absence-in-the-file",
+    "href": "articles/langsmith-export-requirements.html#absence-is-evidence-of-absence-in-the-file",
+    "title": "What a LangSmith export must contain before anyone can review it",
+    "section": "Absence is evidence of absence in the file",
+    "text": "Absence is evidence of absence in the file\nA missing stop-condition field is not proof that the product had no stop rule. It is proof that this export does not contain one.\nIf you want a finding about a stop rule, attach the rule as text the owner supplies, or accept that the finding cannot be “the agent ignored the stop rule.” It can only be “the export does not show a stop event.”"
+  },
+  {
+    "objectID": "articles/langsmith-export-requirements.html#refuse",
+    "href": "articles/langsmith-export-requirements.html#refuse",
+    "title": "What a LangSmith export must contain before anyone can review it",
+    "section": "Refuse",
+    "text": "Refuse\nLive dashboard logins. Org-wide dumps with no window. Unredacted secrets. An invoice with no traces offered as proof the model misbehaved.\nJSON that parses is not the same as a path a human can reconstruct. If IDs, order, or tool records are missing, the correct outcome is not a guessed root cause. It is: correct the export, or stop.\nThis note is evidence hygiene. It is not an engagement and not a certificate."
+  },
+  {
+    "objectID": "COPYRIGHT.html",
+    "href": "COPYRIGHT.html",
+    "title": "Copyright and use",
+    "section": "",
+    "text": "Copyright and use\nCopyright © 2026 William Edgar Brissey. All rights reserved.\nNo open-source license is granted. Publication of these materials does not grant permission to reproduce, modify, redistribute, sublicense, or incorporate them into another work except as permitted by applicable law or by prior written authorization from the copyright holder.\nExternal software and services referenced by this publication project remain subject to their respective licenses and terms.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Research & Architecture",
+    "section": "",
+    "text": "Independent publications by William Edgar Brissey"
+  },
+  {
+    "objectID": "index.html#featured-release",
+    "href": "index.html#featured-release",
+    "title": "Research & Architecture",
+    "section": "Featured release",
+    "text": "Featured release\n\n\n\nPublic Release RA-CR-2026-08-29 · Book One\n\n\nCoupling Register: Water, Air, Earth, Fire\nThe elemental thesis is now a scored coupling graph. CL-002 remains at pilot. 2026 ocean heat and El Niño are current. The 2030s volcanic winter stays parked.\nRead the controlling brief → Open the live monitor →\n\n\n\nControlling version Claim grades live in the Coupling Register, not in Book One’s narrative voice.\nCurrent priority Adversarial review of named cells (CL-002, CL-003, CL-011–016). Safety & Non-Deployment Policy is unchanged."
+  },
+  {
+    "objectID": "index.html#coupling-register-water-air-earth-fire",
+    "href": "index.html#coupling-register-water-air-earth-fire",
+    "title": "Research & Architecture",
+    "section": "Coupling Register: Water, Air, Earth, Fire",
+    "text": "Coupling Register: Water, Air, Earth, Fire\nThe elemental thesis is now a scored coupling graph. CL-002 remains at pilot. 2026 ocean heat and El Niño are current. The 2030s volcanic winter stays parked.\nRead the controlling brief → Open the live monitor →"
+  },
+  {
+    "objectID": "index.html#publication-standard",
+    "href": "index.html#publication-standard",
+    "title": "Research & Architecture",
+    "section": "Publication standard",
+    "text": "Publication standard\n\n\nInspectable\nMaterial claims identify their evidence, assumptions, uncertainty, and break conditions.\n\n\nRevisioned\nEvery public release states its status and revision; corrections replace the controlling version without erasing provenance.\n\n\nHuman-gated\nAI may assist research and drafting, but consequential decisions remain attributable to accountable people.\n\n\nEach release is labeled by status and revision. The purpose is to make claims inspectable, preserve credible disagreement, and expose ideas to correction—not to present unfinished concepts as established science or deployable products."
+  },
+  {
+    "objectID": "index.html#all-publications",
+    "href": "index.html#all-publications",
+    "title": "Research & Architecture",
+    "section": "All publications",
+    "text": "All publications"
+  },
+  {
+    "objectID": "articles/status-and-purpose.html",
+    "href": "articles/status-and-purpose.html",
+    "title": "Status and Purpose of This Work",
+    "section": "",
+    "text": "Status: Public Release R0\nRevision: R0\nClaim classification: Research prospectus and architecture status statement\nRole: Independent AI Systems Architect, Developer & Consultant\nI am developing an independent body of work at the intersection of AI systems architecture, agent-trace diagnostics, resilience engineering, and interdisciplinary research. Its purpose is to make difficult systems easier to inspect, challenge, and improve—not to present unfinished concepts as established science or deployable products.\nThis distinction matters. The Realignment Architecture, EDEN, and the Second Mind are research and architecture programs at different levels of maturity. They are not completed technologies, commercially available offerings, or empirically validated solutions. Where they make physical, environmental, computational, or social claims, those claims remain hypotheses until they survive appropriate expert review and reproducible testing."
+  },
+  {
+    "objectID": "articles/status-and-purpose.html#what-i-am-building-now",
+    "href": "articles/status-and-purpose.html#what-i-am-building-now",
+    "title": "Status and Purpose of This Work",
+    "section": "1 What I am building now",
+    "text": "1 What I am building now\nMy immediate engineering work is an evidence-bound, post-mortem agent-trace diagnostic platform under development. Its intended purpose is to help investigators reconstruct what happened inside a multi-agent or model-assisted workflow after the fact: which evidence was available, which claims were made, where disagreement appeared, and how a conclusion or failure developed.\nThe design emphasis is provenance, traceability, preserved disagreement, and human review. It is diagnostic rather than authoritative. It does not treat model consensus as truth, and it is not intended to autonomously control high-consequence systems.\nThe public materials will continue to describe this work generically until the implementation, evaluation criteria, and publication controls are mature enough to support a formal product identity."
+  },
+  {
+    "objectID": "articles/status-and-purpose.html#the-broader-research-program",
+    "href": "articles/status-and-purpose.html#the-broader-research-program",
+    "title": "Status and Purpose of This Work",
+    "section": "2 The broader research program",
+    "text": "2 The broader research program\nThe broader work explores several connected questions:\n\nThe Realignment Architecture is a candidate research architecture for examining compounding vulnerabilities across environmental, infrastructure, computational, and economic systems. It is a prospectus pending validation, not a forecast or proof.\nEDEN is a pre-feasibility resilience concept concerned with localized continuity under stressed conditions. Its technical, regulatory, biological, energy, and economic assumptions require domain-specific review before any implementation claim would be justified.\nThe Second Mind is a human-reviewed, local-first advisory architecture. It is not a substitute for professional judgment, institutional accountability, or human decision authority.\nInter-Basin Coupling is an exploratory line of inquiry into possible interactions across oceanic and climate systems. Its claims must be tied to primary observations, explicit causal assumptions, and falsifiable tests.\n\nThese strands are connected by a common method, not by a claim that one unified theory has already been proven."
+  },
+  {
+    "objectID": "articles/status-and-purpose.html#the-role-of-the-architect",
+    "href": "articles/status-and-purpose.html#the-role-of-the-architect",
+    "title": "Status and Purpose of This Work",
+    "section": "3 The role of the architect",
+    "text": "3 The role of the architect\nMy role is architectural integration: identifying relationships across disciplines, defining interfaces and failure boundaries, preserving the provenance of claims, and specifying the conditions under which an idea should be corrected or rejected.\nThat role does not replace the work of oceanographers, geophysicists, climate scientists, security researchers, safety engineers, economists, regulators, or local operators. Serious validation requires relevant specialists, suitable infrastructure, primary data, and independent replication.\nI am responsible for stating clearly where synthesis ends and verified evidence begins."
+  },
+  {
+    "objectID": "articles/status-and-purpose.html#how-the-work-should-be-evaluated",
+    "href": "articles/status-and-purpose.html#how-the-work-should-be-evaluated",
+    "title": "Status and Purpose of This Work",
+    "section": "4 How the work should be evaluated",
+    "text": "4 How the work should be evaluated\nThe standard is not rhetorical coherence. The standard is whether claims are inspectable and whether the architecture makes it easier to discover error.\nAccordingly, the work should:\n\ndistinguish observation, inference, hypothesis, and design proposal;\nidentify the evidence supporting each material claim;\npreserve credible disagreement rather than average it away;\ndefine break conditions and tests that could falsify a claim;\nrecord revisions when stronger evidence changes the architecture; and\nkeep consequential decisions under accountable human authority.\n\nMulti-model review can help expose gaps and contradictions, but it is not independent empirical validation. Models can share blind spots, repeat the same source error, or agree for the wrong reason. Their output must remain subordinate to evidence and expert scrutiny."
+  },
+  {
+    "objectID": "articles/status-and-purpose.html#publication-and-collaboration",
+    "href": "articles/status-and-purpose.html#publication-and-collaboration",
+    "title": "Status and Purpose of This Work",
+    "section": "5 Publication and collaboration",
+    "text": "5 Publication and collaboration\nI will publish this work selectively. Current releases will be clearly labeled by status and revision. Older drafts may remain useful as a record of development, but they should not be treated as the controlling version when a corrected release exists.\nI welcome researchers, systems engineers, independent builders, and critical reviewers who can:\n\ntest or attempt to falsify specific hypotheses;\nidentify unsupported claims or missing primary sources;\nreview safety, security, regulatory, and feasibility assumptions;\npropose measurable evaluation criteria; and\ncontribute implementations only where the evidence and governance justify them.\n\nThe aim is not to defend a finished doctrine. It is to build a disciplined process in which ambitious systems ideas can be examined without overstating what is known.\nNo claim, timeline, or design element is exempt from correction when better, reproducible evidence becomes available. Reality supersedes theory."
+  },
+  {
+    "objectID": "articles/weekly-brief-2026-w35.html",
+    "href": "articles/weekly-brief-2026-w35.html",
+    "title": "This week on the planet — one brief",
+    "section": "",
+    "text": "This is a global note. It is written the same for every reader. It will not try to name your river, your fire line, or your power grid. Those jobs belong to the weather and civil-protection service where you live.\nA page that pretended to brief eight billion streets would be a lie. A page that only briefed one country would be a private letter. This is the middle path: what the shared instruments showed, what that is allowed to mean, and how to attach it to your official warning without us mapping your house."
+  },
+  {
+    "objectID": "articles/weekly-brief-2026-w35.html#the-three-facts-this-week",
+    "href": "articles/weekly-brief-2026-w35.html#the-three-facts-this-week",
+    "title": "This week on the planet — one brief",
+    "section": "The three facts this week",
+    "text": "The three facts this week\n1. The central Pacific, as published, is warm.\nNOAA’s seasonal ONI for May–July 2026 is +1.39. Source: CPC oni.ascii.txt.\nThat is one ocean product. It is not a rain forecast for your town. In past winters, the same index has lined up with drier seasons in some places and wetter in others. We will not issue one seasonal instruction for Earth.\n2. Fire satellites saw thousands of hotspots — and went blind in one large box.\nA daily NOAA-20 pass on 30 August counted on the order of 5,000 thermal anomalies. One western-southern query box returned zero while another box returned thousands. Zero means we did not see that box, not “nothing is burning.” Use your national fire service for the ground you stand on.\n3. The rain memory we keep is still on July.\nThe global CHIRPS monthly file we use for history had not published August by the time this was written. A missing month is late data, not a failed wet season. Do not read a hole as drought.\nA fourth thing we do not have: a fresh number for the Atlantic overturning current people argue about. We will not invent one."
+  },
+  {
+    "objectID": "articles/weekly-brief-2026-w35.html#what-this-is-allowed-to-mean",
+    "href": "articles/weekly-brief-2026-w35.html#what-this-is-allowed-to-mean",
+    "title": "This week on the planet — one brief",
+    "section": "What this is allowed to mean",
+    "text": "What this is allowed to mean\n\n\n\n\n\n\n\nYou might think\nAllowed reading\n\n\n\n\n“The Pacific number is high, so my harvest is already decided.”\nNo. Same ocean, different coasts, different signs in history.\n\n\n“The fire count is high, so my hills are next.”\nNo. Counts are global and one region was blind.\n\n\n“August rain is missing from their file, so the rains failed.”\nNo. The file is late.\n\n\n“This board replaces my weather service.”\nNo. Ever.\n\n\n“I should move country because a dashboard exists.”\nNo."
+  },
+  {
+    "objectID": "articles/weekly-brief-2026-w35.html#how-to-make-it-local-without-us-writing-200-editions",
+    "href": "articles/weekly-brief-2026-w35.html#how-to-make-it-local-without-us-writing-200-editions",
+    "title": "This week on the planet — one brief",
+    "section": "How to make it local without us writing 200 editions",
+    "text": "How to make it local without us writing 200 editions\nYou already have a local office. Use it in this order:\n\nOpen the national or regional warning page for where you are (met service, civil protection, fire service). If they say leave, leave. If they say boil water, boil water.\nAsk only one extra question of this board: is the slow background odd compared with a long record? That is ONI, a 30-year month at a sample of cities, a fire count with holes marked.\nIf you want a named-place sheet later (one town, one basin), that is a separate request with coordinates and the name of your official service. It is not this weekly file. We will not generate a custom brief for every reader as a hidden default.\n\nSample cities on the slow board exist so the South and the North both appear: Ubay, Jakarta, Mumbai, Nairobi, Lagos, Manaus, São Paulo, Mexico City, Paris. They are dots, not your catchment."
+  },
+  {
+    "objectID": "articles/weekly-brief-2026-w35.html#what-a-person-anywhere-can-do-this-week",
+    "href": "articles/weekly-brief-2026-w35.html#what-a-person-anywhere-can-do-this-week",
+    "title": "This week on the planet — one brief",
+    "section": "What a person anywhere can do this week",
+    "text": "What a person anywhere can do this week\nThese are suggestions. They are not law.\n\nKnow which official account issues warnings where you sleep. Bookmark it.\nKeep what people already keep in unsettled seasons: drinking water, a week of medicine, copies of papers, a way to hear an official alert without this site.\nIf you farm or manage water, compare this month to the same month in a long record when you have one — not to a city on another continent.\nIf a map we publish has an empty box over you, assume no coverage, not safety.\n\nDo not treat this brief as a reason to relocate, stop treatment, or pour concrete for a private refuge."
+  },
+  {
+    "objectID": "articles/weekly-brief-2026-w35.html#next-week",
+    "href": "articles/weekly-brief-2026-w35.html#next-week",
+    "title": "This week on the planet — one brief",
+    "section": "Next week",
+    "text": "Next week\nSame three questions: Pacific index, fire sight vs holes, whether the rain memory caught up. New numbers if the files move. Same refusal to turn a global note into a local siren.\nGauges: What the instruments show.\nClaim control if this page and the register disagree: Coupling Register."
+  },
+  {
+    "objectID": "articles/book-one-register/CL003_DEMAND_STARTER.html",
+    "href": "articles/book-one-register/CL003_DEMAND_STARTER.html",
+    "title": "CL-003 demand-side starter",
+    "section": "",
+    "text": "CL-003 demand-side starter\nStatus: OPEN / INCOMPLETE. No clock compression.\nRegional starters: (1) Western North America fire and grid; (2) Western Europe and Mediterranean heat, drought, fire.\nPromotion requires five consecutive years where weather-attributed repair-hours rise and qualified crew hours fail to match after automation credit. Labor series is not in this package.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "articles/book-one-register/COUPLING_REGISTER_v1.0.html",
+    "href": "articles/book-one-register/COUPLING_REGISTER_v1.0.html",
+    "title": "Book One Coupling Register",
+    "section": "",
+    "text": "ID: RA-CR-2026-08-29\nVersion: 1.0.0\nDate: 29 August 2026\nStatus: CONTROLLING for Water / Air / Earth / Fire claim joints\nAuthority: Master Claim Register + Safety & Non-Deployment Policy\nRule: Reality supersedes everything. Literary certainty in Book One is not an evidence grade.\n\n\nBook One asserts that Water, Air, Earth, and Fire are interdependent. This register is the only operational form of that thesis: a scored coupling graph. No volume may inherit another volume’s grade.\n\n\n\n\n\n\n\n\n\n\n\nDate\nDecision\nResult\n\n\n\n\n2026-08-29\nCL-002 on Xing + 2023 indices\nPARTIAL_SIGNAL_KEEP_PILOT\n\n\n2026-08-29\nCL-002 on TNA/TSA/CEG through Jun 2026 without new T26\nKEEP PILOT\n\n\n2026-08-29\nCL-003 clock compression\nDENIED\n\n\n2026-08-29\nCL-016 2030s Ring of Fire\nPARKED\n\n\n\nSee the public brief at /articles/book-one-coupling-register.qmd and the full scored tables in the same directory on GitHub."
+  },
+  {
+    "objectID": "articles/book-one-register/COUPLING_REGISTER_v1.0.html#purpose",
+    "href": "articles/book-one-register/COUPLING_REGISTER_v1.0.html#purpose",
+    "title": "Book One Coupling Register",
+    "section": "",
+    "text": "Book One asserts that Water, Air, Earth, and Fire are interdependent. This register is the only operational form of that thesis: a scored coupling graph. No volume may inherit another volume’s grade."
+  },
+  {
+    "objectID": "articles/book-one-register/COUPLING_REGISTER_v1.0.html#gate-log",
+    "href": "articles/book-one-register/COUPLING_REGISTER_v1.0.html#gate-log",
+    "title": "Book One Coupling Register",
+    "section": "",
+    "text": "Date\nDecision\nResult\n\n\n\n\n2026-08-29\nCL-002 on Xing + 2023 indices\nPARTIAL_SIGNAL_KEEP_PILOT\n\n\n2026-08-29\nCL-002 on TNA/TSA/CEG through Jun 2026 without new T26\nKEEP PILOT\n\n\n2026-08-29\nCL-003 clock compression\nDENIED\n\n\n2026-08-29\nCL-016 2030s Ring of Fire\nPARKED\n\n\n\nSee the public brief at /articles/book-one-coupling-register.qmd and the full scored tables in the same directory on GitHub."
+  },
+  {
+    "objectID": "articles/book-one-register/CL002_2026_REFRESH.html",
+    "href": "articles/book-one-register/CL002_2026_REFRESH.html",
+    "title": "CL-002 Water-Air refresh",
+    "section": "",
+    "text": "CL-002 Water-Air refresh\nDate: 29 August 2026\nStatus: KEEP PILOT (unchanged)\nNOAA PSL TNA and TSA through June 2026; Nino 3.4 through July 2026. T26/RAPID not updated (Xing 2023 / RAPID to Feb 2024).\n\n\n\nYear\nTNA\nTSA\nCEG\nNino 3.4 anom\n\n\n\n\n2024\n+0.96\n+0.63\n+0.33\n+0.38\n\n\n2025\n+0.31\n+0.14\n+0.18\n-0.32\n\n\n2026 Jan-Jun\n+0.17\n+0.30\n-0.13\n+0.58\n\n\n\nCEG ~ Nino 3.4 + time over 2004-Jun 2026: Nino coefficient ~0, R2 ~0.03. ENSO does not own CEG. AMOC still not shown to own it because T26 ends in 2023.\nDo not promote CL-002. Do not compress CL-003 from this refresh.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "articles/field-layer-comparison.html",
+    "href": "articles/field-layer-comparison.html",
+    "title": "Field layer versus adjacent research",
+    "section": "",
+    "text": "Controlling text lives in the Coupling Register and the Realignment prospectus. This note is comparison, not a new CL grade.\nThe live field layer (CHIRPS/ERA5 1991–2020, USGS monthly, FIRMS boxes, BMKG) is an evidence board. It is not GraphCast, not DestinE, and not an EDEN viability score.\nFull tables: BOOK_ONE_FIELD_COMPARISON.md."
+  },
+  {
+    "objectID": "articles/field-layer-comparison.html#same",
+    "href": "articles/field-layer-comparison.html#same",
+    "title": "Field layer versus adjacent research",
+    "section": "Same",
+    "text": "Same\nERA5, FIRMS, USGS, BMKG, C3S-class products. We consume them. We did not replace their physics or catalogs."
+  },
+  {
+    "objectID": "articles/field-layer-comparison.html#different",
+    "href": "articles/field-layer-comparison.html#different",
+    "title": "Field layer versus adjacent research",
+    "section": "Different",
+    "text": "Different\nFail-closed states. Calendar-month anomaly. Tropics vs extra-tropical split. Claim IDs stay in the register. Inter-basin work (RQ5) is observation + lag + null — not a learned teleconnection presented as cause."
+  },
+  {
+    "objectID": "articles/field-layer-comparison.html#worse-than-the-models-people-will-compare-us-to",
+    "href": "articles/field-layer-comparison.html#worse-than-the-models-people-will-compare-us-to",
+    "title": "Field layer versus adjacent research",
+    "section": "Worse than the models people will compare us to",
+    "text": "Worse than the models people will compare us to\nGraphCast, Pangu, NeuralGCM, Prithvi, Earth Engine: they have global grids and (for the first three) forecast skill. We have nine points and no rollout.\nWorse than our own Monitor v1: Niño 3.4, EONET, and RAPID are not in the gods_eye interval job yet.\nWorse than inter-basin transfer literature: no discharge, no legal basin, no canal. Do not confuse RQ5 coupling with IBWT engineering."
+  },
+  {
+    "objectID": "articles/field-layer-comparison.html#what-they-should-steal",
+    "href": "articles/field-layer-comparison.html#what-they-should-steal",
+    "title": "Field layer versus adjacent research",
+    "section": "What they should steal",
+    "text": "What they should steal\nCoverage mask. Latency state. Separate tropical skill. A parked-claim list where the model is not allowed to speak."
+  },
+  {
+    "objectID": "articles/field-layer-comparison.html#what-we-should-steal-back",
+    "href": "articles/field-layer-comparison.html#what-we-should-steal-back",
+    "title": "Field layer versus adjacent research",
+    "section": "What we should steal back",
+    "text": "What we should steal back\nWire Monitor v1 series into the same state enum. Add soil moisture / runoff before talking EDEN water balance. Keep non-deployment."
+  },
+  {
     "objectID": "articles/coupling-monitor.html",
     "href": "articles/coupling-monitor.html",
     "title": "Coupling Monitor v1",
@@ -259,34 +560,6 @@
     "text": "How to use this\nYour national warning service first. Empty or late = missing, not calm. Advice, not an order."
   },
   {
-    "objectID": "offer.html",
-    "href": "offer.html",
-    "title": "Independent review of one exported agent incident",
-    "section": "",
-    "text": "William Edgar Brissey\nIndependent AI Systems Architect, Developer, and Consultant\nI review one bounded LangSmith or LangGraph export and return a signed written opinion: what the file shows, what I infer, what I will not claim.\nI do not replace your tracer. I do not change your systems. I do not take a login. A model may draft. I adjudicate and sign.\nThis page is an offer overview. It is not the engagement agreement."
-  },
-  {
-    "objectID": "offer.html#when-this-is-the-right-door",
-    "href": "offer.html#when-this-is-the-right-door",
-    "title": "Independent review of one exported agent incident",
-    "section": "When this is the right door",
-    "text": "When this is the right door\n\nA production or client-facing agent already traces to LangSmith or LangGraph.\nOne incident window is costing time, money, or a client relationship.\nYou can export runs as a file, or you can say plainly that you cannot."
-  },
-  {
-    "objectID": "offer.html#when-it-is-not",
-    "href": "offer.html#when-it-is-not",
-    "title": "Independent review of one exported agent incident",
-    "section": "When it is not",
-    "text": "When it is not\n\nYou need a patch installed, production access, or a certificate.\nThe only artifact is screenshots or someone else’s GitHub issue.\nYou want every agent in the company reviewed as one job."
-  },
-  {
-    "objectID": "offer.html#what-happens-first",
-    "href": "offer.html#what-happens-first",
-    "title": "Independent review of one exported agent incident",
-    "section": "What happens first",
-    "text": "What happens first\nFifteen minutes. No file on that call.\nIf there is no export yet, the next paid step is requested as scope (Export Clinic or Readiness Audit) — not forced as a Diagnostic.\nBook a 15-minute fit call\nRelated: What a LangSmith export must contain before anyone can review it"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -306,278 +579,5 @@
     "title": "About",
     "section": "Working principles",
     "text": "Working principles\n\nEvidence before assertion. A coherent story is not a verified claim.\nProvenance before confidence. Readers should be able to recover the source, transformation, uncertainty, and revision behind a conclusion.\nDisagreement before false consensus. Credible contradictions remain visible until evidence resolves them.\nHuman authority before automation. AI-assisted workflows remain advisory in consequential settings.\nCorrection before defense. A stronger reproducible result supersedes the architecture."
-  },
-  {
-    "objectID": "DISTRIBUTION.html",
-    "href": "DISTRIBUTION.html",
-    "title": "Publication distribution system",
-    "section": "",
-    "text": "This repository is the controlling source for every public edition. A release begins as one reviewed Quarto document and becomes several channel-native artifacts; it is not copied blindly into incompatible editors.\n\n\n\n\n\n\n\n\n\n\nLayer\nAdopted technology\nRole\n\n\n\n\nControlling source\nGitHub + Quarto\nRevision history, corrections, canonical HTML, and complete PDF\n\n\nWeb edition\nQuarto + GitHub Pages\nCanonical, searchable, accessible long-form publication\n\n\nPDF edition\nQuarto + KOMA-Script styling\nComplete downloadable and LinkedIn document edition\n\n\nX edition\nTypefully API/MCP/Agent Skill\nNative long-form X Article with cover, preview, comments, and approval\n\n\nLinkedIn edition\nTypefully document post\nComplete PDF as a native LinkedIn document with a concise caption\n\n\nSubstack edition\nGenerated native Markdown + draft-only MCP pattern\nFull newsletter draft, email preview, and deliberate final send\n\n\nAuthenticated UI execution\nOne bounded Grok Publisher Bot, when already included in an eligible plan\nCreates or updates drafts in Substack and other unsupported channel UIs, then stops for approval\n\n\nSocial artwork\nRepository-controlled 1600×900 covers\nConsistent Open Graph, X, LinkedIn, and newsletter previews\n\n\n\nTypefully was selected over a generic scheduler because it explicitly supports X Articles, LinkedIn PDF documents, realistic previews, collaboration, an API, MCP, and an official Agent Skill. Postiz and Mixpost remain credible short-form schedulers, but self-hosting them would add infrastructure and platform-app maintenance without solving the long-form edition problem.\nSubstack is handled separately. Its documented public API does not expose general long-form publishing. The safe operating model is to create a private draft, review the web and email previews, and make the final send a deliberate human action. Session-cookie automation must not run in GitHub Actions or receive credentials through chat.\nGrok Bot is an optional last-mile executor, not the source of content or design. Its early-beta cloud computer can work through authenticated interfaces that lack a reliable API, but it must consume the repository-generated bundle and follow grok-bot-handoff.md. Use one Publisher Bot with narrow channel ownership. Do not create overlapping bots, provide API secrets, permit source edits, or authorize an unattended publish. If Grok Bot is not already included in an eligible plan, the release bundle remains fully usable through ordinary private-draft workflows.\n\n\n\n\nReview and merge the controlling .qmd source.\nLet publish.yml render canonical HTML and PDF editions.\nLet Build publication distribution bundle automatically create the review artifact; use its manual trigger only to select another source or create connected private drafts.\nDownload and review the commit-bound bundle against channel-qa.md.\nWhen the Typefully connection is configured, rerun with Create private X Article and LinkedIn document drafts enabled.\nReview the realistic X and LinkedIn previews in Typefully, then approve publication.\nCreate or update the private Substack draft from substack-article.md manually, with the draft-only MCP, or with one bounded Grok Publisher Bot following grok-bot-handoff.md.\nReview the Substack web and email previews, then send deliberately.\nRecord every live URL in the release log before promotion begins.\n\n\n\n\nAdd these in GitHub repository settings under Secrets and variables → Actions:\n\nTYPEFULLY_API_KEY\nTYPEFULLY_SOCIAL_SET_ID\n\nThe workflow creates private drafts only. It contains no automatic publish or schedule instruction.\n\n\n\nFor each article, scripts/build_distribution.py creates:\n\nx-article.md — complete X Article Markdown with unsupported tables converted to readable labeled records;\nsubstack-article.md — complete Substack-ready Markdown with the same semantic conversion;\nlinkedin-caption.txt — concise caption for the attached complete PDF;\nthe complete rendered PDF;\nthe 1600×900 publication cover;\nmanifest.json — controlling source, revision, canonical URL, and edition map; and\nchannel-qa.md — mandatory visual and metadata review; and\ngrok-bot-handoff.md — exact, bounded instructions for authenticated UI draft creation when that execution path is used.\n\n\n\n\nAutomation may prepare, validate, upload, and create private drafts. It may not erase the distinction between a generated artifact and a reviewed public release. Final publication remains human-approved on every channel."
-  },
-  {
-    "objectID": "DISTRIBUTION.html#adopted-stack",
-    "href": "DISTRIBUTION.html#adopted-stack",
-    "title": "Publication distribution system",
-    "section": "",
-    "text": "Layer\nAdopted technology\nRole\n\n\n\n\nControlling source\nGitHub + Quarto\nRevision history, corrections, canonical HTML, and complete PDF\n\n\nWeb edition\nQuarto + GitHub Pages\nCanonical, searchable, accessible long-form publication\n\n\nPDF edition\nQuarto + KOMA-Script styling\nComplete downloadable and LinkedIn document edition\n\n\nX edition\nTypefully API/MCP/Agent Skill\nNative long-form X Article with cover, preview, comments, and approval\n\n\nLinkedIn edition\nTypefully document post\nComplete PDF as a native LinkedIn document with a concise caption\n\n\nSubstack edition\nGenerated native Markdown + draft-only MCP pattern\nFull newsletter draft, email preview, and deliberate final send\n\n\nAuthenticated UI execution\nOne bounded Grok Publisher Bot, when already included in an eligible plan\nCreates or updates drafts in Substack and other unsupported channel UIs, then stops for approval\n\n\nSocial artwork\nRepository-controlled 1600×900 covers\nConsistent Open Graph, X, LinkedIn, and newsletter previews\n\n\n\nTypefully was selected over a generic scheduler because it explicitly supports X Articles, LinkedIn PDF documents, realistic previews, collaboration, an API, MCP, and an official Agent Skill. Postiz and Mixpost remain credible short-form schedulers, but self-hosting them would add infrastructure and platform-app maintenance without solving the long-form edition problem.\nSubstack is handled separately. Its documented public API does not expose general long-form publishing. The safe operating model is to create a private draft, review the web and email previews, and make the final send a deliberate human action. Session-cookie automation must not run in GitHub Actions or receive credentials through chat.\nGrok Bot is an optional last-mile executor, not the source of content or design. Its early-beta cloud computer can work through authenticated interfaces that lack a reliable API, but it must consume the repository-generated bundle and follow grok-bot-handoff.md. Use one Publisher Bot with narrow channel ownership. Do not create overlapping bots, provide API secrets, permit source edits, or authorize an unattended publish. If Grok Bot is not already included in an eligible plan, the release bundle remains fully usable through ordinary private-draft workflows."
-  },
-  {
-    "objectID": "DISTRIBUTION.html#release-workflow",
-    "href": "DISTRIBUTION.html#release-workflow",
-    "title": "Publication distribution system",
-    "section": "",
-    "text": "Review and merge the controlling .qmd source.\nLet publish.yml render canonical HTML and PDF editions.\nLet Build publication distribution bundle automatically create the review artifact; use its manual trigger only to select another source or create connected private drafts.\nDownload and review the commit-bound bundle against channel-qa.md.\nWhen the Typefully connection is configured, rerun with Create private X Article and LinkedIn document drafts enabled.\nReview the realistic X and LinkedIn previews in Typefully, then approve publication.\nCreate or update the private Substack draft from substack-article.md manually, with the draft-only MCP, or with one bounded Grok Publisher Bot following grok-bot-handoff.md.\nReview the Substack web and email previews, then send deliberately.\nRecord every live URL in the release log before promotion begins."
-  },
-  {
-    "objectID": "DISTRIBUTION.html#required-typefully-secrets",
-    "href": "DISTRIBUTION.html#required-typefully-secrets",
-    "title": "Publication distribution system",
-    "section": "",
-    "text": "Add these in GitHub repository settings under Secrets and variables → Actions:\n\nTYPEFULLY_API_KEY\nTYPEFULLY_SOCIAL_SET_ID\n\nThe workflow creates private drafts only. It contains no automatic publish or schedule instruction."
-  },
-  {
-    "objectID": "DISTRIBUTION.html#generated-bundle",
-    "href": "DISTRIBUTION.html#generated-bundle",
-    "title": "Publication distribution system",
-    "section": "",
-    "text": "For each article, scripts/build_distribution.py creates:\n\nx-article.md — complete X Article Markdown with unsupported tables converted to readable labeled records;\nsubstack-article.md — complete Substack-ready Markdown with the same semantic conversion;\nlinkedin-caption.txt — concise caption for the attached complete PDF;\nthe complete rendered PDF;\nthe 1600×900 publication cover;\nmanifest.json — controlling source, revision, canonical URL, and edition map; and\nchannel-qa.md — mandatory visual and metadata review; and\ngrok-bot-handoff.md — exact, bounded instructions for authenticated UI draft creation when that execution path is used."
-  },
-  {
-    "objectID": "DISTRIBUTION.html#publication-rule",
-    "href": "DISTRIBUTION.html#publication-rule",
-    "title": "Publication distribution system",
-    "section": "",
-    "text": "Automation may prepare, validate, upload, and create private drafts. It may not erase the distinction between a generated artifact and a reviewed public release. Final publication remains human-approved on every channel."
-  },
-  {
-    "objectID": "monitor.html",
-    "href": "monitor.html",
-    "title": "Coupling Monitor v1",
-    "section": "",
-    "text": "Status: Operational board · Monitor v1.0 · binds to RA-CR-2026-08-29\nControlling register · Source snapshot\n\n\nLoading snapshot…\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Research & Architecture",
-    "section": "",
-    "text": "Independent publications by William Edgar Brissey"
-  },
-  {
-    "objectID": "index.html#featured-release",
-    "href": "index.html#featured-release",
-    "title": "Research & Architecture",
-    "section": "Featured release",
-    "text": "Featured release\n\n\n\nPublic Release RA-CR-2026-08-29 · Book One\n\n\nCoupling Register: Water, Air, Earth, Fire\nThe elemental thesis is now a scored coupling graph. CL-002 remains at pilot. 2026 ocean heat and El Niño are current. The 2030s volcanic winter stays parked.\nRead the controlling brief → Open the live monitor →\n\n\n\nControlling version Claim grades live in the Coupling Register, not in Book One’s narrative voice.\nCurrent priority Adversarial review of named cells (CL-002, CL-003, CL-011–016). Safety & Non-Deployment Policy is unchanged."
-  },
-  {
-    "objectID": "index.html#coupling-register-water-air-earth-fire",
-    "href": "index.html#coupling-register-water-air-earth-fire",
-    "title": "Research & Architecture",
-    "section": "Coupling Register: Water, Air, Earth, Fire",
-    "text": "Coupling Register: Water, Air, Earth, Fire\nThe elemental thesis is now a scored coupling graph. CL-002 remains at pilot. 2026 ocean heat and El Niño are current. The 2030s volcanic winter stays parked.\nRead the controlling brief → Open the live monitor →"
-  },
-  {
-    "objectID": "index.html#publication-standard",
-    "href": "index.html#publication-standard",
-    "title": "Research & Architecture",
-    "section": "Publication standard",
-    "text": "Publication standard\n\n\nInspectable\nMaterial claims identify their evidence, assumptions, uncertainty, and break conditions.\n\n\nRevisioned\nEvery public release states its status and revision; corrections replace the controlling version without erasing provenance.\n\n\nHuman-gated\nAI may assist research and drafting, but consequential decisions remain attributable to accountable people.\n\n\nEach release is labeled by status and revision. The purpose is to make claims inspectable, preserve credible disagreement, and expose ideas to correction—not to present unfinished concepts as established science or deployable products."
-  },
-  {
-    "objectID": "index.html#all-publications",
-    "href": "index.html#all-publications",
-    "title": "Research & Architecture",
-    "section": "All publications",
-    "text": "All publications"
-  },
-  {
-    "objectID": "articles/weekly-brief-2026-w35.html",
-    "href": "articles/weekly-brief-2026-w35.html",
-    "title": "This week on the planet — one brief",
-    "section": "",
-    "text": "This is a global note. It is written the same for every reader. It will not try to name your river, your fire line, or your power grid. Those jobs belong to the weather and civil-protection service where you live.\nA page that pretended to brief eight billion streets would be a lie. A page that only briefed one country would be a private letter. This is the middle path: what the shared instruments showed, what that is allowed to mean, and how to attach it to your official warning without us mapping your house."
-  },
-  {
-    "objectID": "articles/weekly-brief-2026-w35.html#the-three-facts-this-week",
-    "href": "articles/weekly-brief-2026-w35.html#the-three-facts-this-week",
-    "title": "This week on the planet — one brief",
-    "section": "The three facts this week",
-    "text": "The three facts this week\n1. The central Pacific, as published, is warm.\nNOAA’s seasonal ONI for May–July 2026 is +1.39. Source: CPC oni.ascii.txt.\nThat is one ocean product. It is not a rain forecast for your town. In past winters, the same index has lined up with drier seasons in some places and wetter in others. We will not issue one seasonal instruction for Earth.\n2. Fire satellites saw thousands of hotspots — and went blind in one large box.\nA daily NOAA-20 pass on 30 August counted on the order of 5,000 thermal anomalies. One western-southern query box returned zero while another box returned thousands. Zero means we did not see that box, not “nothing is burning.” Use your national fire service for the ground you stand on.\n3. The rain memory we keep is still on July.\nThe global CHIRPS monthly file we use for history had not published August by the time this was written. A missing month is late data, not a failed wet season. Do not read a hole as drought.\nA fourth thing we do not have: a fresh number for the Atlantic overturning current people argue about. We will not invent one."
-  },
-  {
-    "objectID": "articles/weekly-brief-2026-w35.html#what-this-is-allowed-to-mean",
-    "href": "articles/weekly-brief-2026-w35.html#what-this-is-allowed-to-mean",
-    "title": "This week on the planet — one brief",
-    "section": "What this is allowed to mean",
-    "text": "What this is allowed to mean\n\n\n\n\n\n\n\nYou might think\nAllowed reading\n\n\n\n\n“The Pacific number is high, so my harvest is already decided.”\nNo. Same ocean, different coasts, different signs in history.\n\n\n“The fire count is high, so my hills are next.”\nNo. Counts are global and one region was blind.\n\n\n“August rain is missing from their file, so the rains failed.”\nNo. The file is late.\n\n\n“This board replaces my weather service.”\nNo. Ever.\n\n\n“I should move country because a dashboard exists.”\nNo."
-  },
-  {
-    "objectID": "articles/weekly-brief-2026-w35.html#how-to-make-it-local-without-us-writing-200-editions",
-    "href": "articles/weekly-brief-2026-w35.html#how-to-make-it-local-without-us-writing-200-editions",
-    "title": "This week on the planet — one brief",
-    "section": "How to make it local without us writing 200 editions",
-    "text": "How to make it local without us writing 200 editions\nYou already have a local office. Use it in this order:\n\nOpen the national or regional warning page for where you are (met service, civil protection, fire service). If they say leave, leave. If they say boil water, boil water.\nAsk only one extra question of this board: is the slow background odd compared with a long record? That is ONI, a 30-year month at a sample of cities, a fire count with holes marked.\nIf you want a named-place sheet later (one town, one basin), that is a separate request with coordinates and the name of your official service. It is not this weekly file. We will not generate a custom brief for every reader as a hidden default.\n\nSample cities on the slow board exist so the South and the North both appear: Ubay, Jakarta, Mumbai, Nairobi, Lagos, Manaus, São Paulo, Mexico City, Paris. They are dots, not your catchment."
-  },
-  {
-    "objectID": "articles/weekly-brief-2026-w35.html#what-a-person-anywhere-can-do-this-week",
-    "href": "articles/weekly-brief-2026-w35.html#what-a-person-anywhere-can-do-this-week",
-    "title": "This week on the planet — one brief",
-    "section": "What a person anywhere can do this week",
-    "text": "What a person anywhere can do this week\nThese are suggestions. They are not law.\n\nKnow which official account issues warnings where you sleep. Bookmark it.\nKeep what people already keep in unsettled seasons: drinking water, a week of medicine, copies of papers, a way to hear an official alert without this site.\nIf you farm or manage water, compare this month to the same month in a long record when you have one — not to a city on another continent.\nIf a map we publish has an empty box over you, assume no coverage, not safety.\n\nDo not treat this brief as a reason to relocate, stop treatment, or pour concrete for a private refuge."
-  },
-  {
-    "objectID": "articles/weekly-brief-2026-w35.html#next-week",
-    "href": "articles/weekly-brief-2026-w35.html#next-week",
-    "title": "This week on the planet — one brief",
-    "section": "Next week",
-    "text": "Next week\nSame three questions: Pacific index, fire sight vs holes, whether the rain memory caught up. New numbers if the files move. Same refusal to turn a global note into a local siren.\nGauges: What the instruments show.\nClaim control if this page and the register disagree: Coupling Register."
-  },
-  {
-    "objectID": "articles/field-layer-comparison.html",
-    "href": "articles/field-layer-comparison.html",
-    "title": "Field layer versus adjacent research",
-    "section": "",
-    "text": "Controlling text lives in the Coupling Register and the Realignment prospectus. This note is comparison, not a new CL grade.\nThe live field layer (CHIRPS/ERA5 1991–2020, USGS monthly, FIRMS boxes, BMKG) is an evidence board. It is not GraphCast, not DestinE, and not an EDEN viability score.\nFull tables: BOOK_ONE_FIELD_COMPARISON.md."
-  },
-  {
-    "objectID": "articles/field-layer-comparison.html#same",
-    "href": "articles/field-layer-comparison.html#same",
-    "title": "Field layer versus adjacent research",
-    "section": "Same",
-    "text": "Same\nERA5, FIRMS, USGS, BMKG, C3S-class products. We consume them. We did not replace their physics or catalogs."
-  },
-  {
-    "objectID": "articles/field-layer-comparison.html#different",
-    "href": "articles/field-layer-comparison.html#different",
-    "title": "Field layer versus adjacent research",
-    "section": "Different",
-    "text": "Different\nFail-closed states. Calendar-month anomaly. Tropics vs extra-tropical split. Claim IDs stay in the register. Inter-basin work (RQ5) is observation + lag + null — not a learned teleconnection presented as cause."
-  },
-  {
-    "objectID": "articles/field-layer-comparison.html#worse-than-the-models-people-will-compare-us-to",
-    "href": "articles/field-layer-comparison.html#worse-than-the-models-people-will-compare-us-to",
-    "title": "Field layer versus adjacent research",
-    "section": "Worse than the models people will compare us to",
-    "text": "Worse than the models people will compare us to\nGraphCast, Pangu, NeuralGCM, Prithvi, Earth Engine: they have global grids and (for the first three) forecast skill. We have nine points and no rollout.\nWorse than our own Monitor v1: Niño 3.4, EONET, and RAPID are not in the gods_eye interval job yet.\nWorse than inter-basin transfer literature: no discharge, no legal basin, no canal. Do not confuse RQ5 coupling with IBWT engineering."
-  },
-  {
-    "objectID": "articles/field-layer-comparison.html#what-they-should-steal",
-    "href": "articles/field-layer-comparison.html#what-they-should-steal",
-    "title": "Field layer versus adjacent research",
-    "section": "What they should steal",
-    "text": "What they should steal\nCoverage mask. Latency state. Separate tropical skill. A parked-claim list where the model is not allowed to speak."
-  },
-  {
-    "objectID": "articles/field-layer-comparison.html#what-we-should-steal-back",
-    "href": "articles/field-layer-comparison.html#what-we-should-steal-back",
-    "title": "Field layer versus adjacent research",
-    "section": "What we should steal back",
-    "text": "What we should steal back\nWire Monitor v1 series into the same state enum. Add soil moisture / runoff before talking EDEN water balance. Keep non-deployment."
-  },
-  {
-    "objectID": "articles/book-one-register/EDEN_SITE_HAZARD_SPEC_v1.html",
-    "href": "articles/book-one-register/EDEN_SITE_HAZARD_SPEC_v1.html",
-    "title": "EDEN site-hazard specification v1.0",
-    "section": "",
-    "text": "EDEN site-hazard specification v1.0\nStatus: RESEARCH DESIGN CONSTRAINTS — not a construction permit.\nRequired tests before Stage 3: H-HEAT, H-DROUGHT, H-FLOOD, H-FIRE, H-SLOPE, H-SEIS, H-GRID, H-FOOD, H-BIO.\n2026 data sizes water, cooling, fire/smoke, and El Nino-year drought storage. It does not size the first prototype for global ash winter.\nSafety Policy unchanged: no inhabited closed loop, no nuclear under this brand, no LLM life-support.\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "articles/book-one-register/CL003_DEMAND_STARTER.html",
-    "href": "articles/book-one-register/CL003_DEMAND_STARTER.html",
-    "title": "CL-003 demand-side starter",
-    "section": "",
-    "text": "CL-003 demand-side starter\nStatus: OPEN / INCOMPLETE. No clock compression.\nRegional starters: (1) Western North America fire and grid; (2) Western Europe and Mediterranean heat, drought, fire.\nPromotion requires five consecutive years where weather-attributed repair-hours rise and qualified crew hours fail to match after automation credit. Labor series is not in this package.\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "articles/book-one-register/PARKED_CLAIMS.html",
-    "href": "articles/book-one-register/PARKED_CLAIMS.html",
-    "title": "Parked claim IDs",
-    "section": "",
-    "text": "Parked claim IDs\n\n\n\nID\nWhy parked\n\n\n\n\nCL-009\nAntarctic track is not CL-002\n\n\nCL-010\nNo export time series\n\n\nCL-016\nAppendix K; no 2026 global eruption-rate jump\n\n\nblended food-chain collapse\nSplit into CL-006-009\n\n\nCL-003 compression from 22 Aug 2026 SST\nSST is not labor hours\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "articles/status-and-purpose.html",
-    "href": "articles/status-and-purpose.html",
-    "title": "Status and Purpose of This Work",
-    "section": "",
-    "text": "Status: Public Release R0\nRevision: R0\nClaim classification: Research prospectus and architecture status statement\nRole: Independent AI Systems Architect, Developer & Consultant\nI am developing an independent body of work at the intersection of AI systems architecture, agent-trace diagnostics, resilience engineering, and interdisciplinary research. Its purpose is to make difficult systems easier to inspect, challenge, and improve—not to present unfinished concepts as established science or deployable products.\nThis distinction matters. The Realignment Architecture, EDEN, and the Second Mind are research and architecture programs at different levels of maturity. They are not completed technologies, commercially available offerings, or empirically validated solutions. Where they make physical, environmental, computational, or social claims, those claims remain hypotheses until they survive appropriate expert review and reproducible testing."
-  },
-  {
-    "objectID": "articles/status-and-purpose.html#what-i-am-building-now",
-    "href": "articles/status-and-purpose.html#what-i-am-building-now",
-    "title": "Status and Purpose of This Work",
-    "section": "1 What I am building now",
-    "text": "1 What I am building now\nMy immediate engineering work is an evidence-bound, post-mortem agent-trace diagnostic platform under development. Its intended purpose is to help investigators reconstruct what happened inside a multi-agent or model-assisted workflow after the fact: which evidence was available, which claims were made, where disagreement appeared, and how a conclusion or failure developed.\nThe design emphasis is provenance, traceability, preserved disagreement, and human review. It is diagnostic rather than authoritative. It does not treat model consensus as truth, and it is not intended to autonomously control high-consequence systems.\nThe public materials will continue to describe this work generically until the implementation, evaluation criteria, and publication controls are mature enough to support a formal product identity."
-  },
-  {
-    "objectID": "articles/status-and-purpose.html#the-broader-research-program",
-    "href": "articles/status-and-purpose.html#the-broader-research-program",
-    "title": "Status and Purpose of This Work",
-    "section": "2 The broader research program",
-    "text": "2 The broader research program\nThe broader work explores several connected questions:\n\nThe Realignment Architecture is a candidate research architecture for examining compounding vulnerabilities across environmental, infrastructure, computational, and economic systems. It is a prospectus pending validation, not a forecast or proof.\nEDEN is a pre-feasibility resilience concept concerned with localized continuity under stressed conditions. Its technical, regulatory, biological, energy, and economic assumptions require domain-specific review before any implementation claim would be justified.\nThe Second Mind is a human-reviewed, local-first advisory architecture. It is not a substitute for professional judgment, institutional accountability, or human decision authority.\nInter-Basin Coupling is an exploratory line of inquiry into possible interactions across oceanic and climate systems. Its claims must be tied to primary observations, explicit causal assumptions, and falsifiable tests.\n\nThese strands are connected by a common method, not by a claim that one unified theory has already been proven."
-  },
-  {
-    "objectID": "articles/status-and-purpose.html#the-role-of-the-architect",
-    "href": "articles/status-and-purpose.html#the-role-of-the-architect",
-    "title": "Status and Purpose of This Work",
-    "section": "3 The role of the architect",
-    "text": "3 The role of the architect\nMy role is architectural integration: identifying relationships across disciplines, defining interfaces and failure boundaries, preserving the provenance of claims, and specifying the conditions under which an idea should be corrected or rejected.\nThat role does not replace the work of oceanographers, geophysicists, climate scientists, security researchers, safety engineers, economists, regulators, or local operators. Serious validation requires relevant specialists, suitable infrastructure, primary data, and independent replication.\nI am responsible for stating clearly where synthesis ends and verified evidence begins."
-  },
-  {
-    "objectID": "articles/status-and-purpose.html#how-the-work-should-be-evaluated",
-    "href": "articles/status-and-purpose.html#how-the-work-should-be-evaluated",
-    "title": "Status and Purpose of This Work",
-    "section": "4 How the work should be evaluated",
-    "text": "4 How the work should be evaluated\nThe standard is not rhetorical coherence. The standard is whether claims are inspectable and whether the architecture makes it easier to discover error.\nAccordingly, the work should:\n\ndistinguish observation, inference, hypothesis, and design proposal;\nidentify the evidence supporting each material claim;\npreserve credible disagreement rather than average it away;\ndefine break conditions and tests that could falsify a claim;\nrecord revisions when stronger evidence changes the architecture; and\nkeep consequential decisions under accountable human authority.\n\nMulti-model review can help expose gaps and contradictions, but it is not independent empirical validation. Models can share blind spots, repeat the same source error, or agree for the wrong reason. Their output must remain subordinate to evidence and expert scrutiny."
-  },
-  {
-    "objectID": "articles/status-and-purpose.html#publication-and-collaboration",
-    "href": "articles/status-and-purpose.html#publication-and-collaboration",
-    "title": "Status and Purpose of This Work",
-    "section": "5 Publication and collaboration",
-    "text": "5 Publication and collaboration\nI will publish this work selectively. Current releases will be clearly labeled by status and revision. Older drafts may remain useful as a record of development, but they should not be treated as the controlling version when a corrected release exists.\nI welcome researchers, systems engineers, independent builders, and critical reviewers who can:\n\ntest or attempt to falsify specific hypotheses;\nidentify unsupported claims or missing primary sources;\nreview safety, security, regulatory, and feasibility assumptions;\npropose measurable evaluation criteria; and\ncontribute implementations only where the evidence and governance justify them.\n\nThe aim is not to defend a finished doctrine. It is to build a disciplined process in which ambitious systems ideas can be examined without overstating what is known.\nNo claim, timeline, or design element is exempt from correction when better, reproducible evidence becomes available. Reality supersedes theory."
-  },
-  {
-    "objectID": "articles/langsmith-export-requirements.html",
-    "href": "articles/langsmith-export-requirements.html",
-    "title": "What a LangSmith export must contain before anyone can review it",
-    "section": "",
-    "text": "Observability captured the run. That is not the same as a file someone else can inspect.\nA review of an agent incident is only as strong as the export. Most “we have LangSmith” conversations still fail this test. The failure is usually not the model. It is the package."
-  },
-  {
-    "objectID": "articles/langsmith-export-requirements.html#screenshots-are-not-an-export",
-    "href": "articles/langsmith-export-requirements.html#screenshots-are-not-an-export",
-    "title": "What a LangSmith export must contain before anyone can review it",
-    "section": "Screenshots are not an export",
-    "text": "Screenshots are not an export\nA screenshot proves that a UI existed at a moment. It does not give stable run IDs, order, tool payloads, or a hash of what was sent.\nIf the only artifact is a picture of the tracer, the honest next step is to produce a file — or to admit the system cannot."
-  },
-  {
-    "objectID": "articles/langsmith-export-requirements.html#a-reviewable-package-is-small-and-named",
-    "href": "articles/langsmith-export-requirements.html#a-reviewable-package-is-small-and-named",
-    "title": "What a LangSmith export must contain before anyone can review it",
-    "section": "A reviewable package is small and named",
-    "text": "A reviewable package is small and named\nOne path. One window. Named start and end, or named run IDs. JSON or JSONL in a zip. No keys in the file. Secrets removed before the file leaves the account. A SHA-256 of the file as sent.\nThe hash proves the bits did not change in transit. It does not prove the bits were redacted."
-  },
-  {
-    "objectID": "articles/langsmith-export-requirements.html#fields-that-have-to-exist",
-    "href": "articles/langsmith-export-requirements.html#fields-that-have-to-exist",
-    "title": "What a LangSmith export must contain before anyone can review it",
-    "section": "Fields that have to exist",
-    "text": "Fields that have to exist\n\nStable run or trace ID on every included run\nTimestamps or another order that reconstructs the path\nRun type or name\nStatus or error, or an explicit note that the vendor did not emit it\nParent / session linkage, or an explicit note that this is one isolated run\n\nIf the complaint is a loop, retry, or overshoot, tool records have to be in the file — or the reviewer must not claim they saw the loop in the trace."
-  },
-  {
-    "objectID": "articles/langsmith-export-requirements.html#absence-is-evidence-of-absence-in-the-file",
-    "href": "articles/langsmith-export-requirements.html#absence-is-evidence-of-absence-in-the-file",
-    "title": "What a LangSmith export must contain before anyone can review it",
-    "section": "Absence is evidence of absence in the file",
-    "text": "Absence is evidence of absence in the file\nA missing stop-condition field is not proof that the product had no stop rule. It is proof that this export does not contain one.\nIf you want a finding about a stop rule, attach the rule as text the owner supplies, or accept that the finding cannot be “the agent ignored the stop rule.” It can only be “the export does not show a stop event.”"
-  },
-  {
-    "objectID": "articles/langsmith-export-requirements.html#refuse",
-    "href": "articles/langsmith-export-requirements.html#refuse",
-    "title": "What a LangSmith export must contain before anyone can review it",
-    "section": "Refuse",
-    "text": "Refuse\nLive dashboard logins. Org-wide dumps with no window. Unredacted secrets. An invoice with no traces offered as proof the model misbehaved.\nJSON that parses is not the same as a path a human can reconstruct. If IDs, order, or tool records are missing, the correct outcome is not a guessed root cause. It is: correct the export, or stop.\nThis note is evidence hygiene. It is not an engagement and not a certificate."
   }
 ]

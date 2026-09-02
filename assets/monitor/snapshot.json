@@ -1,6 +1,6 @@
 {
   "schema": "coupling-monitor-v1",
-  "fetched_at": "2026-09-01T12:37:00+00:00",
+  "fetched_at": "2026-09-02T16:41:11+00:00",
   "disclaimer": "Operational monitor of public feeds. Not a collapse forecast, not a promotion of CL-002, not a 2026 AMOC value.",
   "canonical_register": "https://william-edgar-brissey.github.io/publications/articles/book-one-coupling-register.html",
   "locked": {
@@ -51,7 +51,7 @@
   "quakes_m6": {
     "ok": true,
     "source": "USGS FDSN event service",
-    "source_url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-08-02&minmagnitude=6.0&orderby=magnitude",
+    "source_url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-08-03&minmagnitude=6.0&orderby=magnitude",
     "window_days": 30,
     "min_magnitude": 6.0,
     "count": 13,
@@ -69,12 +69,12 @@
       {
         "id": "us6000tjl2",
         "mag": 7.4,
-        "place": "5 km S of San Jos\u00e9 del Palmar, Colombia",
-        "time_ms": 1786365268125,
+        "place": "2 km SE of San Jos\u00e9 del Palmar, Colombia",
+        "time_ms": 1786365268009,
         "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tjl2",
-        "lon": -76.2422,
-        "lat": 4.8436,
-        "depth_km": 110.285
+        "lon": -76.2182,
+        "lat": 4.8836,
+        "depth_km": 108.174
       },
       {
         "id": "us6000tkyk",
@@ -89,11 +89,11 @@
       {
         "id": "us6000tm81",
         "mag": 6.7,
-        "place": "31 km NW of Aniso, Peru",
-        "time_ms": 1787248818626,
+        "place": "37 km NE of Tambo, Peru",
+        "time_ms": 1787248818541,
         "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tm81",
-        "lon": -73.5236,
-        "lat": -14.6414,
+        "lon": -73.6401,
+        "lat": -14.602,
         "depth_km": 99
       },
       {

@@ -2,19 +2,19 @@
   {
     "listing": "/index.html",
     "items": [
+      "/articles/book-one-register/substack-article.html",
+      "/articles/book-one-register/CL003_DEMAND_STARTER.html",
       "/articles/book-one-register/EDEN_SITE_HAZARD_SPEC_v1.html",
       "/articles/book-one-register/COUPLING_REGISTER_v1.0.html",
-      "/articles/book-one-register/CL003_DEMAND_STARTER.html",
-      "/articles/book-one-register/CL002_2026_REFRESH.html",
       "/articles/book-one-register/PARKED_CLAIMS.html",
-      "/articles/book-one-register/substack-article.html",
+      "/articles/book-one-register/CL002_2026_REFRESH.html",
       "/articles/langsmith-export-requirements.html",
       "/articles/weekly-brief-2026-w35.html",
       "/articles/field-layer-comparison.html",
-      "/articles/coupling-monitor.html",
       "/articles/book-one-coupling-register.html",
-      "/articles/realignment-architecture-prospectus.html",
-      "/articles/status-and-purpose.html"
+      "/articles/coupling-monitor.html",
+      "/articles/status-and-purpose.html",
+      "/articles/realignment-architecture-prospectus.html"
     ]
   }
 ]
