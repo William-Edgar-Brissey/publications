@@ -1,6 +1,6 @@
 {
   "schema": "coupling-monitor-v1",
-  "fetched_at": "2026-09-03T16:32:36+00:00",
+  "fetched_at": "2026-09-04T16:28:21+00:00",
   "disclaimer": "Operational monitor of public feeds. Not a collapse forecast, not a promotion of CL-002, not a 2026 AMOC value.",
   "canonical_register": "https://william-edgar-brissey.github.io/publications/articles/book-one-coupling-register.html",
   "locked": {
@@ -43,15 +43,15 @@
     "ok": true,
     "source": "NOAA CPC sstoi.indices monthly Nino 3.4",
     "source_url": "https://www.cpc.ncep.noaa.gov/data/indices/sstoi.indices",
-    "time": "2026-07",
-    "sst_c": 29.33,
-    "anomaly_c": 2.03,
+    "time": "2026-08",
+    "sst_c": 29.42,
+    "anomaly_c": 2.52,
     "note": "Monthly Nino 3.4. Not extra-polar SST and not AMOC."
   },
   "quakes_m6": {
     "ok": true,
     "source": "USGS FDSN event service",
-    "source_url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-08-04&minmagnitude=6.0&orderby=magnitude",
+    "source_url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-08-05&minmagnitude=6.0&orderby=magnitude",
     "window_days": 30,
     "min_magnitude": 6.0,
     "count": 15,
@@ -99,11 +99,11 @@
       {
         "id": "us6000ti6x",
         "mag": 6.3,
-        "place": "28 km SW of Sarangani, Philippines",
-        "time_ms": 1785903246073,
+        "place": "32 km SW of Sarangani, Philippines",
+        "time_ms": 1785903246079,
         "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti6x",
-        "lon": 125.3134,
-        "lat": 5.1995,
+        "lon": 125.2798,
+        "lat": 5.1799,
         "depth_km": 10
       },
       {
@@ -170,10 +170,10 @@
         "id": "us6000tk74",
         "mag": 6,
         "place": "South Sandwich Islands region",
-        "time_ms": 1786535232117,
+        "time_ms": 1786535232188,
         "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tk74",
-        "lon": -28.9899,
-        "lat": -60.2445,
+        "lon": -29.03,
+        "lat": -60.2463,
         "depth_km": 10
       },
       {
@@ -345,6 +345,24 @@
     "count": 20,
     "events": [
       {
+        "id": "EONET_23868",
+        "title": "Emergency Stabilization BAER McConnell, Humboldt, Nevada",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-NVWID-020663"
+      },
+      {
+        "id": "EONET_23869",
+        "title": "Wildfire Ayers Pond, Prairie, Montana",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-MTMCD-000777"
+      },
+      {
+        "id": "EONET_23870",
+        "title": "Wildfire Snow, Custer, Montana",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-MTLG14-000775"
+      },
+      {
         "id": "EONET_23656",
         "title": "Wildfire Ruggs, Morrow, Oregon",
         "category": "wildfires",
@@ -367,6 +385,12 @@
         "title": "Wildfire Alexander Trail Fire, Pushmataha, Oklahoma",
         "category": "wildfires",
         "link": "https://irwin.doi.gov/observer/incidents/2026-OKOKSC-260966"
+      },
+      {
+        "id": "EONET_23871",
+        "title": "Wildfire Alexander Trail, Pushmataha, Oklahoma",
+        "category": "wildfires",
+        "link": "https://irwin.doi.gov/observer/incidents/2026-OKOKS-260966"
       },
       {
         "id": "EONET_23683",
@@ -439,30 +463,6 @@
         "title": "Wildfire LAUGHLIN, Colfax, New Mexico",
         "category": "wildfires",
         "link": "https://irwin.doi.gov/observer/incidents/2026-NMN2S-27-2057027"
-      },
-      {
-        "id": "EONET_23456",
-        "title": "Wildfire MUSTANG, Malheur, Oregon",
-        "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-ORVAD-260267"
-      },
-      {
-        "id": "EONET_23663",
-        "title": "Wildfire Blue Eagle, Churchill, Nevada",
-        "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-NVCCD-030758"
-      },
-      {
-        "id": "EONET_23682",
-        "title": "Wildfire Paddy Creek, Apache, Arizona",
-        "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-AZFTA-000812"
-      },
-      {
-        "id": "EONET_23677",
-        "title": "Wildfire Buck Creek, Pushmataha, Oklahoma",
-        "category": "wildfires",
-        "link": "https://irwin.doi.gov/observer/incidents/2026-OKOKS-260920"
       }
     ]
   },
