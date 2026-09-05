@@ -32,6 +32,10 @@ Fifteen minutes. **No file on that call.**
 
 If there is no export yet, the next paid step is requested as scope (Export Clinic or Readiness Audit) — not forced as a Diagnostic.
 
+## How you pay
+
+Invoice is in my legal name. After written scope, payment is by **PayPal or Payoneer** as a professional-services invoice. I do not take a production login to get paid.
+
 [Book a 15-minute fit call](mailto:wbrissey@gmail.com?subject=Fit%20call%20%E2%80%94%20one%20exported%20incident){.btn .btn-primary}
 
 Related: [What a LangSmith export must contain before anyone can review it](articles/langsmith-export-requirements.qmd)
