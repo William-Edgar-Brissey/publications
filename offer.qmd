@@ -12,6 +12,8 @@ I review **one bounded LangSmith or LangGraph export** and return a signed writt
 
 I do not replace your tracer. I do not change your systems. I do not take a login. A model may draft. I adjudicate and sign.
 
+This page is the public wedge. It is not the whole catalog. If you have no conforming export, the next paid step is an Export Clinic or Readiness Audit — not a forced Diagnostic. Decision records and named claim sets have their own doors. None of those are listed as extra tiles here.
+
 This page is an offer overview. It is not the engagement agreement.
 
 ## When this is the right door
@@ -30,11 +32,9 @@ This page is an offer overview. It is not the engagement agreement.
 
 Fifteen minutes. **No file on that call.**
 
-If there is no export yet, the next paid step is requested as scope (Export Clinic or Readiness Audit) — not forced as a Diagnostic.
-
 ## How you pay
 
-Invoice is in my legal name. After written scope, payment is by **PayPal or Payoneer** as a professional-services invoice. I do not take a production login to get paid.
+Invoice is in my legal name, Ohio sole proprietor. After written scope I send a **PayPal Invoice** in USD (Payoneer if you cannot use PayPal). Work on that scope starts after the invoice is paid.
 
 [Book a 15-minute fit call](mailto:wbrissey@gmail.com?subject=Fit%20call%20%E2%80%94%20one%20exported%20incident){.btn .btn-primary}
 
